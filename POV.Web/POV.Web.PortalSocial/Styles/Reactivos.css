@@ -1,0 +1,340 @@
+﻿/* Portal Reactivo */
+
+#panel-img-reactivo{
+    display:inline-block;
+}
+#content_portalreactivo {
+    padding: 5px;
+    margin-top:5px;
+}
+#info_reactivo {
+    display:inline-block;
+    vertical-align: top;
+    width:400px;
+}
+#info_reactivo h1 {
+    font-size:26px;
+    font-weight:normal;
+    font-family: Tahoma;
+    
+}
+
+#info_reactivo h2 {
+    font-size:13px;
+    font-weight:normal;
+    font-family: arial, sans-serif;
+    text-shadow: 0px 1px 1px white;
+}
+
+#info_reactivo h3 {
+    font-size:13px;
+    font-weight:normal;
+    font-family: arial, sans-serif;
+}
+#info_reactivo p {
+    font-size:10px;
+    font-weight:normal;
+    color:Gray;
+}
+.text_reactivo
+{
+    border: 1px solid #DDD;
+    background-color: #FEFFFF;
+    font-size:14px;
+    line-height:20px;
+    text-align:justify;
+    margin: 10px 0;
+    padding:10px;
+}
+
+.box_style_reactivo_element {
+    background-color:white;/*#dce5fe;*/
+    border: 1px solid #E6E6E6;
+    padding:4px 10px ;
+}
+#texto_titulo {
+    background-color: #5b85ff;
+    color: #FFF;
+    font-size:16px;
+    font-weight:bold;
+    padding: 6px;
+    width: 150px;
+    margin-left:15px;
+}
+
+.titulo_reactivo {
+    font-size:16px;
+}
+
+.data_reactivo {
+    display:block;
+    width:84%;
+    margin-left: 5px;
+    
+}
+
+#toolbar_reactivo {
+    margin-top:5px;
+    width:100%;
+    margin-bottom: 7px;
+}
+
+#toolbar_reactivo a {
+    padding: 7px 15px;
+    line-height: 22px;
+}
+.data_reactivo a {
+    font-size:14px;
+    font-weight:bold;
+    margin-right:5px;
+}
+#reg_panel {
+    padding:10px;
+}
+.titulo1_portalreactivo {
+    position: relative;
+    margin-bottom: 1px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: #1D1D1D;
+    line-height: 25px;
+}
+.img_reactivo {
+    text-align:center;
+    max-height: 100px;
+    display: block;
+    padding: 2px;
+    border: 2px solid #969696;
+    border-image: initial;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+
+.text_pregunta{
+    display:inline-block;margin-right:5px;
+}
+
+.text_pregunta ul{
+    margin: 5px 0;
+}
+.text_pregunta li{
+    line-height: 28px;
+}
+.info_pregunta {
+    float:left;border-left: 1px solid #E5E5E5;
+    padding-left:8px;
+}
+
+.info_pregunta label {
+    font-weight:bold;
+    text-shadow: 0 -1px #FFF;
+    font-size: 12px;
+    color: #374140;
+}
+
+.info_pregunta span {
+    text-shadow: 0 1px 0px #FFF;
+    font-size: 21px;
+    margin: 5px 0px;
+    margin-left: 25px;
+    color: #FD651B;
+    font-family: 'Century Gothic', Verdana, Sans-Serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.info_pregunta i{
+    margin-left:10px;
+    margin-bottom:3px;
+    vertical-align:middle;
+}
+
+.content_reactivo {
+    padding: 9px;
+    font-size:14px;
+    line-height:20px;
+    text-align:justify;
+}
+
+.item_info_reactivo {
+    width:100px;
+    display:inline-block;
+    vertical-align:top;
+    text-align:center;
+}
+
+.item_info_reactivo p {
+    font-size: 16px;
+    font-family: Tahoma;
+    margin-top:4px;
+}
+
+.item_info_reactivo label {
+    font-size: 28px;
+    color: #FD651B;
+    margin-top:5px;
+    font-family: 'Century Gothic', Verdana, Sans-Serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.contenido {
+    border: 1px solid #000;
+}
+
+.reactivo_columns {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 1%;
+
+}
+
+.reactivo_column_left {
+    margin: 0;
+    padding: 10px;
+    /*border: 1px solid green;*/
+    float: left;
+    width: 670px;
+    text-align:center;
+}
+
+.reactivo_column_right {
+    margin: 0 ;
+    padding: 0;
+    /*border: 1px solid #000;*/
+    float: right;
+    width:240px;
+    vertical-align: top;
+}
+
+
+.reflink {
+    cursor: pointer;
+}
+
+.ul-recursos li{
+    margin: 10px;
+    text-align:center;
+}
+
+/*Estilos Reactivos Nuevo(15/08/2013)*/
+.reactivo_column_left_questions {
+    margin: 0;
+    padding:4px 0px;
+    /*border: 1px solid green;*/
+    float: left;
+    width: 700px;
+    text-align:left;
+}
+.div_reactivo_result_title1
+{
+    border-bottom: 3px solid #91268F;
+    height: 24px;
+    font-size: 14px;
+    font-weight:bold;
+    background-color: #E3E5E7;
+    padding:5px 0 0 10px;
+}
+.div_reactivo_result_title2
+{
+    border-bottom: 3px solid #91268F;
+    height: 24px;
+    font-size: 14px;
+    font-weight:bold;
+    background-color: #FFFFFF;
+    padding:5px 0 0 10px;
+    text-align:left;
+}
+.reactivo_column_left1 {
+    margin: 0;
+    padding:0 0 10px 0;
+    /*border: 1px solid green;*/
+    float: left;
+    width: 700px;
+    text-align:center;
+}
+
+.reactivo_column_right1 {
+    margin: 0 ;
+    padding: 0;
+    /*border: 1px solid #000;*/
+    float: right;
+    left: 740px;
+    width:240px;
+    vertical-align: top;
+}
+.datos_reactivo
+{
+    padding:0;
+    position: absolute;
+    /*border: 1px solid #000;*/
+    height: 180px;
+    margin-left: 725px;
+    margin-top: 9px;
+    width:240px;
+}
+.informacion_reactivo_left
+{
+    width: 98px;
+    height: 100px;
+    background-color: #F5F6F8;
+    text-align: center;
+    float: left;
+}
+.informacion_reactivo_right
+{
+    width: 98px;
+    height: 100px; 
+    text-align: center;
+    background-color: #F5F6F8;
+    text-align: center;
+    float: right;
+}
+.informacion_reactivo_left h2
+{
+    color: #372360;
+}
+.informacion_reactivo_right h2
+{
+    color: #372360;
+}
+.informacion_reactivo_link_left
+{
+    background-color: #39215E;
+    text-align: center;
+    float: left;
+    height: 30px;
+    width: 120px;
+}
+.informacion_reactivo_link
+{
+    margin: 2px 2px 2px 2px;
+    background-color: #39215E;
+    text-align: center;
+    float: right;
+    height: 33px;
+    width: 116px;
+}
+.informacion_reactivo_link a
+{
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 33px;
+}
+.img_nocrop_reactivo{height:54px;width:54px;padding:10px}
+
+.icon_nivel_dificultad {
+    background-repeat: no-repeat;
+    background-image: url('../images/icons/Dificultad.png'); 
+    background-color: transparent;
+    height:54px;width:54px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.margen_top_recursos
+{
+    margin-top: 190px;
+}

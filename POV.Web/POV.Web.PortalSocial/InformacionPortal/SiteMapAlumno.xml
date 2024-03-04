@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset >
+  <url>
+    <seccion></seccion>
+    <name>El patio</name>
+    <loc>
+      ~/PortalAlumno/Noticias.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite consultar las publicaciones y comentarios de los usuarios alumnos pertenecientes al mismo grupo escolar.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>El patio</seccion>
+    <name>Yo</name>
+    <loc>
+      ~/Social/Perfil.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite visualizar la información del perfil del usuario.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>El patio</seccion>
+    <name>Mis apuntes</name>
+    <loc>
+      ~/PortalAlumno/Muro.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite visualizar, comentar y calificar las publicaciones que el usuario ha realizado.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>El patio</seccion>
+    <name>Mis reactivos</name>
+    <loc>
+      ~/PortalAlumno/MisReactivos.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite consultar los reactivos a los que se encuentra suscrito el usuario y provee un acceso para comenzar a resolver el reactivo.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>El patio</seccion>
+    <name>Mis juegos</name>
+    <loc>
+      ~/PortalAlumno/MisJuegos.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite consultar los juegos a los que se encuentra suscrito el usuario y provee un acceso para comenzar a jugarlo.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>El patio</seccion>
+    <name>Mi patio</name>
+    <loc>
+      ~/PortalAlumno/Noticias.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite consultar las publicaciones y comentarios de los usuarios alumnos pertenecientes al mismo grupo escolar.
+    </descripcion>
+  </url>
+  <url>
+    <seccion></seccion>
+    <name>Mis maestros</name>
+    <loc>
+      ~/PortalGrupo/NoticiasDocentes.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite consultar las publicaciones y comentarios del conjunto de docentes del grupo o un docente en particular, consultar y publicar preguntas para un docente así como consultar la lista de compañeros del grupo.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>Mis maestros</seccion>
+    <name>Mis maestros</name>
+    <loc>
+      ~/PortalGrupo/NoticiasDocentes.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite consultar los apuntes (publicaciones y comentarios) del conjunto de docentes del grupo
+    </descripcion>
+  </url>
+  <url>
+    <seccion>Mis maestros</seccion>
+    <name>Aspirantes comunes</name>
+    <loc>
+      ~/PortalGrupo/Alumnos.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite consultar la lista de compañeros del grupo escolar del alumno.
+    </descripcion>
+  </url>
+  <url>
+    <seccion></seccion>
+    <name>Reactivos</name>
+    <loc>
+      ~/Reactivos/BuscarReactivos.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite consultar, resolver y suscribirse a los reactivos de práctica o entrenamiento.
+    </descripcion>
+  </url>
+  <url>
+    <seccion></seccion>
+    <name>Juegos</name>
+    <loc>
+      ~/PortalAlumno/BuscarJuegos.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite consultar, suscribirse y jugar los juegos de práctica o entrenamiento con que cuenta el sistema.
+    </descripcion>
+  </url>
+  <url>
+    <seccion></seccion>
+    <name>Mensajes</name>
+    <loc>
+      ~/Social/Mensajes.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite al usuario del sistema enviar y consultar mensajes.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>Mensajes</seccion>
+    <name>Nuevo mensaje</name>
+    <loc>
+      ~/Social/NuevoMensaje.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite redactar y enviar un nuevo mensaje a algún compañero de grupo.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>Mensajes</seccion>
+    <name>Consultar mensaje</name>
+    <loc>
+      ~/Social/Mensajes.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite al usuario consultar los mensajes que le han sido enviados y responder a ellos.
+    </descripcion>
+  </url>
+  <url>
+    <seccion></seccion>
+    <name>Notificaciones</name>
+    <loc>
+      ~/Social/NotificacionesSocial.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite visualizar las notificaciones que informan al usuario sobre los eventos relevantes que ocurren en su grupo escolar.
+    </descripcion>
+  </url>
+  <url>
+    <seccion></seccion>
+    <name>Mi cuenta</name>
+    <loc>
+      
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite visualizar y editar la información del perfil del usuario.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>Mi cuenta</seccion>
+    <name>Editar perfil</name>
+    <loc>
+      ~/Social/EditarPerfil.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite consultar la información del perfil del usuario, tal como correo electrónico, número celular, estado, foto de perfil.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>Mi cuenta</seccion>
+    <name>Cambiar contraseña</name>
+    <loc>
+      ~/CuentaUsuario/EditarContrasena.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite cambiar la contraseña de acceso al sistema del usuario.
+    </descripcion>
+  </url> 
+</urlset>

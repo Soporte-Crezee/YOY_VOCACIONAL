@@ -1,0 +1,26 @@
+﻿[0]Header
+Orientación vocacional
+[2]Titulo
+Reporte de prueba
+[4]Informacion Habitos
+Este cuestionario pretende ser una herramienta diagnóstica de los posibles problemas en cuanto al rendimiento y las actitudes frente al estudio (aprender a aprender). Conocer los problemas que  se pueden presentar a la hora de enfrentarse a un estudio intenso puede ayudarte a mejorar increíblemente tus resultados.
+[6]Comentarios Habitos
+Gracias a esta herramienta podrás conocer no sólo la valoración general de tus actitudes y motivaciones a la hora de enfrentarte al estudio, sino que podrás obtener unas conclusiones detalladas de cada apartado, orientándote en la búsqueda de soluciones concretas a tus problemas.
+[8]Informacion Dominos
+Esta es una prueba gráfica, no verbal, de inteligencia, destinada a valorar la capacidad de una persona para conceptualizar y aplicar el razonamiento sistemático a nuevos problemas.
+[10]Comentarios Dominos
+El porcentaje de eficiencia da cuenta del sistema de trabajo empleado por el sujeto, como su aproximación cuidadosa a los problemas, sacrificio de la exactitud en beneficio de la rapidez, etc.
+[12]Sin pruebas
+Sin pruebas realizadas
+[14]Informacion Terman
+La prueba Terman Merril tiene como objetivo primordial determinar el cociente intelectual de las personas que cuentan con un grado de escolaridad suficiente con el que puedan comprender problemas expuestos en forma escrita.
+[16]Comentarios Terman
+Es una prueba estructurada, de ejecución máxima ya que exige el máximo rendimiento del examinado.
+[18] Info Kuder
+Este formulario tiene por objeto ayudarle a descubrir sus preferencias vocacionales. No se trata de un examen; aquí no hay respuestas exactas o inexactas. Toda respuesta que refleje fielmente su modo de pensar es una buena respuesta.
+[20] Comentarios Kuder
+Esta prueba permite localizar los intereses y preferencias del examinado en diez áreas generales o escalas de interés.
+[22] Info Allport
+El test de Allport es una prueba psicométrica que mide los principios y valores morales que rigen la conducta del individuo. La prueba de Allport puede resultar de utilidad a las empresas cuando persiguen conocer algo más del candidato a un puesto, que sus conocimientos o sus aptitudes en una materia específica.
+[24] Info Allport
+Esta prueba puede reportar mucha información de cómo es la persona.

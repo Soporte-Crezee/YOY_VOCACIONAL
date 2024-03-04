@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.WebHookConekta", "API.WebHookConekta\API.WebHookConekta.csproj", "{52EAA6DB-A870-496A-80B4-7F03C67CF522}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "conekta", "conekta\conekta.csproj", "{2F249D83-DA55-4A4D-B044-AC779C18C07D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POV.CA.Test", "POV.CA.Test\POV.CA.Test.csproj", "{E4B9ADA1-5CF6-436E-86AC-3CBD3A0CF603}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52EAA6DB-A870-496A-80B4-7F03C67CF522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52EAA6DB-A870-496A-80B4-7F03C67CF522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52EAA6DB-A870-496A-80B4-7F03C67CF522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52EAA6DB-A870-496A-80B4-7F03C67CF522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F249D83-DA55-4A4D-B044-AC779C18C07D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F249D83-DA55-4A4D-B044-AC779C18C07D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F249D83-DA55-4A4D-B044-AC779C18C07D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F249D83-DA55-4A4D-B044-AC779C18C07D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4B9ADA1-5CF6-436E-86AC-3CBD3A0CF603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4B9ADA1-5CF6-436E-86AC-3CBD3A0CF603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4B9ADA1-5CF6-436E-86AC-3CBD3A0CF603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4B9ADA1-5CF6-436E-86AC-3CBD3A0CF603}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

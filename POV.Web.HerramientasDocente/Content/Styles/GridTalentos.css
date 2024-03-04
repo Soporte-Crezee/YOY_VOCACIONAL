@@ -1,0 +1,79 @@
+﻿
+table.SCGridView, table.SCListView {
+    width: 100%;
+    color: #4d4d4d;
+    border: solid 2px #f2f2f2;
+    font-size: 14pt;
+}
+
+    table.SCGridView .th, table.SCGridView .tr, table.SCListView .th, table.SCListView .tr {
+        white-space: normal;
+    }
+
+    table.SCGridView .th, table.SCListView .th {
+        border: none;
+        background: #e2e3e3;
+        color: #4d4d4d;
+        font-weight: bold;
+        height: 20px;
+    }
+
+        table.SCGridView .th th {
+            border: none;
+            background: #0067ac;
+            color:#fff;
+            font-family: Helvetica;
+            font-size: 14pt;
+        }
+
+        table.SCGridView .th a, table.SCListView .th a {
+            color: #4d4d4d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    table.SCGridView .tr, table.SCListView .tr {
+        border: solid 1px #f2f2f2;
+        word-wrap: break-word;
+    }
+
+        table.SCGridView .tr a, table.SCListView .tr a {
+            color: #4d4d4d;
+            text-decoration: none;
+            margin-right: 6px;
+        }
+
+        table.SCGridView .tr td {
+            border: 1px #cccccc solid;
+            padding: 0px 6px 0px 6px;
+            padding: 5px;
+            font-size: 14pt;
+            font-family: Helvetica;
+        }
+
+    table.SCGridView .SCSelected a, table.SCListView .SCSelected a {
+        color: #4d4d4d;
+        text-decoration: none;
+        margin-right: 6px;
+    }
+
+        table.SCGridView .SCSelected a:hover, table.SCListView .SCSelected a:hover {
+            color: #4d4d4d;
+            text-decoration: underline;
+        }
+
+    table.SCGridView .tr a:hover, table.SCListView .tr a:hover {
+        color: #4d4d4d;
+        text-decoration: underline;
+    }
+
+    table.SCGridView .tr:hover, table.SCListView .tr a:hover {
+        background-color: #f1f1f1 !important;
+        text-decoration: none;
+        color: #33acfd !important;
+    }
+
+/*	DataPager	*/
+div.SCPager {
+    padding: 0px 6px;
+}

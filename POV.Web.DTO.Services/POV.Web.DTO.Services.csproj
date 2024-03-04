@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB09AD05-BBC3-4672-902D-230376B1C667}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.Web.DTO.Services</RootNamespace>
+    <AssemblyName>POV.Web.DTO.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Framework.Base">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlumnoDTOCtrl.cs" />
+    <Compile Include="ComentarioDTOCtrl.cs" />
+    <Compile Include="ContactoDTOCtrl.cs" />
+    <Compile Include="AsignacionActividadDTOCtrl.cs" />
+    <Compile Include="OrientacionVocacionalDTOCtrl.cs" />
+    <Compile Include="UsuarioDTOCtrl.cs" />
+    <Compile Include="TutorDTOCtrl.cs" />
+    <Compile Include="PostFavoritoDTOCtrl.cs" />
+    <Compile Include="EscuelaDTOCtrl.cs" />
+    <Compile Include="MensajeDTOCtrl.cs" />
+    <Compile Include="NotificacionDTOCtrl.cs" />
+    <Compile Include="PreguntaDTOCtrl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicacionDTOCtrl.cs" />
+    <Compile Include="RankingDTOCtrl.cs" />
+    <Compile Include="ReactivoDTOCtrl.cs" />
+    <Compile Include="ReporteAbusoDTOCtrl.cs" />
+    <Compile Include="RespuestaReactivoDTOCtrl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POV.Administracion.BO\POV.Administracion.BO.csproj">
+      <Project>{4ccd2661-0b94-4dc8-a41f-864e951ff01f}</Project>
+      <Name>POV.Administracion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Administracion\POV.Administracion.csproj">
+      <Project>{91d85c38-cb3d-404a-bf4e-abccd80b99a8}</Project>
+      <Name>POV.Administracion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Blog.BO\POV.Blog.BO.csproj">
+      <Project>{30c45fc5-94fa-4455-8251-402d99e938aa}</Project>
+      <Name>POV.Blog.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Blog\POV.Blog.csproj">
+      <Project>{4cee81ad-3ee7-4da8-bf54-e843733790dc}</Project>
+      <Name>POV.Blog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo\POV.CentroEducativo.csproj">
+      <Project>{77f2d47f-ef3f-49b4-b20f-bc34520c2df4}</Project>
+      <Name>POV.CentroEducativo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ConfiguracionActividades.BO\POV.ConfiguracionActividades.BO.csproj">
+      <Project>{954ea12b-0652-4a5a-9d84-7105613154a5}</Project>
+      <Name>POV.ConfiguracionActividades.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ContenidoDigital.BO\POV.ContenidoDigital.BO.csproj">
+      <Project>{47da4be5-e69c-48eb-89c6-402c9ae3e288}</Project>
+      <Name>POV.ContenidoDigital.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ContenidoDigital.Services\POV.ContenidoDigital.Services.csproj">
+      <Project>{df345bcb-c7a0-460e-89ef-ecadc50b2cd8}</Project>
+      <Name>POV.ContenidoDigital.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Core.RedSocial\POV.Core.RedSocial.csproj">
+      <Project>{05d43282-0186-4225-bf91-98f358b5af33}</Project>
+      <Name>POV.Core.RedSocial</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Licencias.Services\POV.Licencias.Services.csproj">
+      <Project>{13ab22df-d898-416f-a63f-a6cd09622760}</Project>
+      <Name>POV.Licencias.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.Estandarizado.BO\POV.Modelo.Estandarizado.BO.csproj">
+      <Project>{8c6613e0-1b5e-405f-a64c-10e076c148ac}</Project>
+      <Name>POV.Modelo.Estandarizado.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.Estandarizado.Services\POV.Modelo.Estandarizado.Services.csproj">
+      <Project>{29612f25-c0d7-4f97-91d0-ffe43bacf121}</Project>
+      <Name>POV.Modelo.Estandarizado.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo\POV.Modelo.csproj">
+      <Project>{36c1aff9-323f-4330-aa43-4fb0ab4a0a70}</Project>
+      <Name>POV.Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Web.Controllers.AptitudesSobresalientes\POV.Web.Controllers.AptitudesSobresalientes.csproj">
+      <Project>{023f1483-612e-4d41-99e3-808816e07db2}</Project>
+      <Name>POV.Web.Controllers.AptitudesSobresalientes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.BO\GP.SocialEngine.BO.csproj">
+      <Project>{BC81D924-3BB9-4EBD-B55F-B1C72132C069}</Project>
+      <Name>GP.SocialEngine.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.Interfaces\GP.SocialEngine.Interfaces.csproj">
+      <Project>{1501B668-DC3A-45D9-B9B5-47DF76E12587}</Project>
+      <Name>GP.SocialEngine.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.Services\GP.SocialEngine.Services.csproj">
+      <Project>{D00D4CB1-740D-43F7-8B42-378B035EC181}</Project>
+      <Name>GP.SocialEngine.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Administracion.Services\POV.Administracion.Services.csproj">
+      <Project>{320268A0-718E-4B61-A9FB-489A62584562}</Project>
+      <Name>POV.Administracion.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3A6024CA-2877-409D-84C8-A1997C27616E}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.Services\POV.CentroEducativo.Services.csproj">
+      <Project>{EFEAF5FF-2F2D-4C50-AE27-BAF8DF1DF922}</Project>
+      <Name>POV.CentroEducativo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.BO\POV.Comun.BO.csproj">
+      <Project>{E9BB2466-0E21-4B56-8803-DEB5969D2B49}</Project>
+      <Name>POV.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.Services\POV.Comun.Services.csproj">
+      <Project>{ADB9BA9A-C274-4101-8F0D-3CF6C86A5FB8}</Project>
+      <Name>POV.Comun.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Licencias.BO\POV.Licencias.BO.csproj">
+      <Project>{19961067-7725-4435-8ead-6e2b635f5d34}</Project>
+      <Name>POV.Licencias.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Localizacion.BO\POV.Localizacion.BO.csproj">
+      <Project>{662EEBF8-41AA-4DAF-9603-AB9E92009F77}</Project>
+      <Name>POV.Localizacion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Logger.Services\POV.Logger.Services.csproj">
+      <Project>{B7F1FB2E-42C5-47B7-B717-F9249F2D6843}</Project>
+      <Name>POV.Logger.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.BO\POV.Reactivos.BO.csproj">
+      <Project>{ED9CC55D-68F6-4BE0-9DAE-00BCD226C289}</Project>
+      <Name>POV.Reactivos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.Services\POV.Reactivos.Services.csproj">
+      <Project>{4C5F2ED6-F95D-414E-943B-6A4B7726FC8C}</Project>
+      <Name>POV.Reactivos.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ReactivosUsuario.BO\POV.ReactivosUsuario.BO.csproj">
+      <Project>{1F5A8F39-92B1-4503-BAE7-3440F8D01084}</Project>
+      <Name>POV.ReactivosUsuario.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ReactivosUsuario.Services\POV.ReactivosUsuario.Services.csproj">
+      <Project>{5D0BFD0F-628B-4740-AA20-CBDAC4BE66DF}</Project>
+      <Name>POV.ReactivosUsuario.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.BO\POV.Seguridad.BO.csproj">
+      <Project>{86840DAD-9FCC-46AA-8C98-3CAB83195EC7}</Project>
+      <Name>POV.Seguridad.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.Services\POV.Seguridad.Services.csproj">
+      <Project>{6F8B4B55-E2AB-4592-A770-982EA091583B}</Project>
+      <Name>POV.Seguridad.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Web.Controllers\POV.Web.Controllers.csproj">
+      <Project>{d51f43f8-2b07-40cf-abd1-7f8df08914e9}</Project>
+      <Name>POV.Web.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Web.DTO\POV.Web.DTO.csproj">
+      <Project>{901037D3-2FC7-46E3-BE63-88328B76A37E}</Project>
+      <Name>POV.Web.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

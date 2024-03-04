@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B37C4463-29F6-4F8E-9FC3-C77A3C54FB67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.ContenidosDigital.Busqueda</RootNamespace>
+    <AssemblyName>POV.ContenidosDigital.Busqueda.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Framework.Base">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\PalabraClaveContenidoDDelHlp.cs" />
+    <Compile Include="DAO\PalabraClaveContenidoDigitalDelHlp.cs" />
+    <Compile Include="DAO\PalabraClaveContenidoDelHlp.cs" />
+    <Compile Include="DAO\PalabraClaveContenidoDigitalInsHlp.cs" />
+    <Compile Include="DAO\PalabraClaveContenidoDigitalRetHlp.cs" />
+    <Compile Include="DAO\PalabraClaveContenidoInsHlp.cs" />
+    <Compile Include="DAO\PalabraClaveContenidoRetHlp.cs" />
+    <Compile Include="DAO\PalabraClaveDelHlp.cs" />
+    <Compile Include="DAO\PalabraClaveInsHlp.cs" />
+    <Compile Include="DAO\PalabraClaveRetHlp.cs" />
+    <Compile Include="DA\ContenidoDigitalDARetHlp.cs" />
+    <Compile Include="DA\PalabraClaveContenidoDigitalAgrupadorDARetHlp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\PalabraClaveContenidoCtrl.cs" />
+    <Compile Include="Service\PalabraClaveCtrl.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\POV.ContenidoDigital.BO\POV.ContenidoDigital.BO.csproj">
+      <Project>{47da4be5-e69c-48eb-89c6-402c9ae3e288}</Project>
+      <Name>POV.ContenidoDigital.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Profesionalizacion.BO\POV.Profesionalizacion.BO.csproj">
+      <Project>{249ebefd-a333-4961-9446-c006871afcd6}</Project>
+      <Name>POV.Profesionalizacion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Profesionalizacion.Services\POV.Profesionalizacion.Services.csproj">
+      <Project>{b062d22c-09fd-43d0-9b78-b32fe988f929}</Project>
+      <Name>POV.Profesionalizacion.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.Interfaces\GP.SocialEngine.Interfaces.csproj">
+      <Project>{1501b668-dc3a-45d9-b9b5-47df76e12587}</Project>
+      <Name>GP.SocialEngine.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.BO\POV.Comun.BO.csproj">
+      <Project>{E9BB2466-0E21-4B56-8803-DEB5969D2B49}</Project>
+      <Name>POV.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.Services\POV.Comun.Services.csproj">
+      <Project>{ADB9BA9A-C274-4101-8F0D-3CF6C86A5FB8}</Project>
+      <Name>POV.Comun.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ContenidoDigital.Busqueda.BO\POV.ContenidoDigital.Busqueda.BO.csproj">
+      <Project>{5694A2FB-0BC1-4921-85C4-7EB817EBF1ED}</Project>
+      <Name>POV.ContenidoDigital.Busqueda.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ContenidoDigital.Services\POV.ContenidoDigital.Services.csproj">
+      <Project>{DF345BCB-C7A0-460E-89EF-ECADC50B2CD8}</Project>
+      <Name>POV.ContenidoDigital.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

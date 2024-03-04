@@ -1,0 +1,159 @@
+﻿ .btn-cancel {
+    box-shadow: none !important;
+    background: #ff9e19 !important;
+    color: #FFFFFF !important;
+    font-family: Roboto-Bold !important;
+    font-style: normal !important;
+}
+
+.btn-cancel:hover {
+    font-family: Roboto-Bold !important;
+    background-color: #FFA936 !important;
+    box-shadow: none !important;
+    color: #FFFFFF !important;
+    font-style: normal !important;
+}
+
+div.container_busqueda_general.ui-widget-content {
+     border: #DDD 1px solid !important;
+}
+
+.item_pub, .text-content, .item_pub_content span, .item_pub_content a, 
+.notification_item span, .notification_item a, .label_photo, 
+.control-label, table.table th, table.table td, .post .post-header .post-title, 
+.post .post-info, .post .post-body, .tBienvenidaLabel, .searchcontact, #more, .txt-helvetica{
+    font-family: Roboto-Condensed !important;
+}
+
+.breadcrumb {
+    /*border-color: #ff9e19 !important;*/
+    /*background: #ff9e19 !important;*/
+    font-family: Roboto-Bold !important;
+    /*color:#FFF !important;*/
+    font-size: 30px !important;
+}
+
+/*.breadcrumb a, .breadcrumb li {
+    color:#FFF !important;
+}*/
+
+.btn.btn-sm, .btn-green, .btn.btn-green {
+    color: #FFFFFF !important;
+    font-family: Roboto-Bold !important;
+    background-color: #05AED9 !important;
+    box-shadow: none !important;
+    font-style: normal !important;
+}
+
+.btn.btn-sm:hover, .btn-green:hover, .btn.btn-green:hover {
+    font-family: Roboto-Bold !important;
+    background-color: #7fc3dc !important;
+    box-shadow: none !important;
+    color: #FFFFFF !important;
+    font-style: normal !important;
+}
+
+.panel-heading, .modal_titulo_marco_general, .titulo_marco_general  {
+     background-color: #05aed9 !important;
+     border-bottom: #ff9e19 solid 5px !important;
+     color: #FFFFFF !important;
+     font-family: Roboto-Bold-Condensed !important;
+     font-size: 30px !important;
+}
+
+.panel-body, .panel-body input.form-control {
+    font-family: Roboto-Condensed !important;
+}
+
+.label-header {
+    font-size: 30px !important;
+    font-family: Roboto-Bold !important;
+}
+
+.table table  tbody  tr  td a ,
+.table table  tbody  tr  td  span ,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonFirst,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonPrev{
+position: relative;
+float: left;
+padding: 6px 12px;
+margin-left: -1px;
+line-height: 1.42857143;
+color: #337ab7;
+text-decoration: none;
+background-color: #fff;
+border: 1px solid #ddd;
+}
+
+
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonNext,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonLast {
+position: relative;
+padding: 6px 12px;
+margin-left: -1px;
+line-height: 1.42857143;
+color: #337ab7;
+text-decoration: none;
+background-color: #fff;
+border: 1px solid #ddd;
+}
+
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonFirst:hover,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonPrev:hover,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonNext:hover,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonLast:hover {
+    background: #eee;
+}
+
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonFirst,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonPrev,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonNext,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonLast {
+   
+}
+
+.table table > tbody > tr > td > span{
+z-index: 3;
+color: #fff;
+cursor: default;
+background-color: #05AED9;
+border-color: #05AED9;
+}
+
+.table table > tbody > tr > td:first-child > a,
+.table table > tbody > tr > td:first-child > span,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonFirst,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonPrev,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonNext,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonLast
+ {
+margin-left: 0;
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+}
+
+.table table > tbody > tr > td:last-child > a,
+.table table > tbody > tr > td:last-child > span,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonFirst,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonPrev,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonNext,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonLast {
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+
+.table table > tbody > tr > td > a:hover,
+.table   table > tbody > tr > td > span:hover,
+.table table > tbody > tr > td > a:focus,
+.table table > tbody > tr > td > span:focus,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonFirst:focus,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonPrev:focus,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonNext:focus,
+#page_content_content_selected_gvAlumnos_grdViewPager_ImageButtonLast:focus {
+z-index: 2;
+color: #23527c;
+background-color: #eee;
+border-color: #ddd;
+}
+
+/*End pagination*/

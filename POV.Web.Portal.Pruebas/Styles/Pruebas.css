@@ -1,0 +1,55 @@
+﻿*{margin:0;padding:0}
+@font-face{font-family:RelojFont;src:url(../Content/Fuentes/upcil.eot)}
+body{background-color:#000}
+#Wrap{width:1000px;margin:0 auto}
+.Vacio{clear:both;height:5px}
+.blanco{color:#FFF}
+.amarillo{color:#FFFA53}
+.verde{color:#95FF4C}
+.titulo1{font-size:18px;font-family:Gill Sans MT, Gill Sans, Trebuchet MS, sans-serif}
+.titulo2{font-size:24px}
+.titulo3{font-size:40px}
+#Header{height:92px;position:relative}
+#fondo_instruccion_reactivo{background-color:#000;background-image:url(../Content/Images/fondo_introduccion.jpg);height:641px;width:1000px;margin:0 auto}
+#fondo_cargando{background-color:#000;background-image:url(../Content/Images/cargandov1flotando.png);width:560px;height:340px;margin:0 auto}
+#introduccion{color:#000;font-size:24px;height:190px;left:100px;overflow:hidden;position:relative;text-align:justify;top:270px;width:815px}
+#BotonEmpezar{cursor:pointer;left:750px;position:relative;top:340px;display:block;width:144px;height:34px;background:url(../Content/Images/botonEmpezar.png)}
+#ContenidoPreguntaInicial{background-image:url(../Content/Images/fondo_pregunta_inicial.jpg);background-color:#FFF;height:641px;position:relative;width:1000px}
+#ContenidoPregunta{background-image:url(../Content/Images/fondo_pregunta.jpg);background-color:#FFF;height:641px;position:relative;width:1000px}
+#Instrucciones{float:left;margin-top:40px;margin-left:100px}
+#NombreAlumno,#NombreAlumnoIntro{position:relative;left:650px;top:40px;width:350px}
+#Pregunta{margin-top: 119px;height:391px;margin-left:100px;width:834px}
+#Instruccion{/*height:110px;*/font-family:PISAFont, Arial;/*margin-top:125px;*/text-align:center;width:97.5%;padding:3px;font-size:22px;}
+#ImagenPregunta{/*height:84px;*/width:97%;padding:5px}
+#player_template{text-align:center;height:84px;width:97%;padding:5px}
+#OpcionesRespuesta>div{cursor:pointer;float:left;margin-top:7px;margin-left:10px}
+#OpcionesRespuestaInicial{margin-top:20px}
+#OpcionesRespuestaInicial>div{cursor:pointer;float:left;margin-left:10px}
+#SegunderoBoton{margin-top:15px}
+#Reloj{background-image:url(../Content/Images/fondo_segundero.png);float:left;height:69px;position:relative;top:-5px;width:139px}
+#Segundero{font-size:30px;left:-30px;position:relative;top:-40px;font-family:RelojFont, Lucida Fax, Lucida Console}
+#BotonPaso{position:relative;cursor:pointer;float:right;top:-40px}
+#ContenidoBienvenida{background-image:url(../Content/Images/fondo2Diagnostico.jpg);background-color:#FFF;height:641px;position:relative;width:1000px}
+#SeccionBienvenida{margin-left:85px;position:relative;top:82px;width:815px;padding:10px}
+#BotonIniciar{display:block;width:144px;height:34px;background:url(../Content/Images/botonEmpezar.png)}
+#Hola{margin-top:70px;margin-left:40px;position:relative}
+#DivNombreAlumno{margin-top:30px;margin-left:150px}
+#Texto{margin-top:25px;text-align:justify;width:650px;padding:0 50px}
+#DivBotonIniciar{margin-left:580px;margin-top:50px}
+#Flecha{float:left;margin-left:-45px;margin-top:-4px}
+#ContenidoAcceso{background-image:url(../Content/Images/fondo_accesoPrueba.jpg);background-color:#FFF;height:744px;position:relative;width:1000px}
+#AccesoMensaje{position:relative;top:98px;left:350px;height:60px}
+#txtAccesoPrueba{position:relative;top:275px;left:369px}
+#AccesoFail{position:relative;top:278px;left:363px;height:15px}
+#ibtnAccesoPrueba{position:relative;top:448px;left:523px}
+.error{color:red;font-size:13px;padding-bottom:5px;padding-left:.5em}
+#aBotonForo{display:block;width:184px;height:34px;background:url(../Content/Images/BotonForo.png)}
+#HechoBien,#EstasListoFinal,#Participacion{margin-top:60px;margin-bottom:50px;margin-left:100px}
+#BotonForo{margin-bottom:50px;margin-left:500px}
+#Footer{background-color:#010220;height:10px;width:100%}
+#BotonIniciar:hover,#aBotonForo:hover{background-position:top right!important}
+#Bienvenido,#EstasListo{margin-top:15px;margin-left:500px}
+.maxHeightEnunciado { height: 194px;}
+.heightTextoEnunciado {height:110px;}
+.heightImagenEnunciado {height:84px;}
+.height0px { height:0px;}

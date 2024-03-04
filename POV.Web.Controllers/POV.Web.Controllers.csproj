@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D51F43F8-2B07-40CF-ABD1-7F8DF08914E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.Web.Controllers</RootNamespace>
+    <AssemblyName>POV.Web.Controllers</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\Comun\Bibliotecas\EntityFramework611.net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\Comun\Bibliotecas\EntityFramework611.net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Base">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Base.Entity">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiciosPlataforma\Controllers\CatalogoPlantillaLudicaController.cs" />
+    <Compile Include="ServiciosPlataforma\Controllers\ConfiguracionGeneralController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POV.AmazonAWS.Services\POV.AmazonAWS.Services.csproj">
+      <Project>{22e2aad8-49db-4366-8a81-abf316e75dfc}</Project>
+      <Name>POV.AmazonAWS.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ConfiguracionActividades\POV.ConfiguracionActividades.csproj">
+      <Project>{0b23fa15-e89b-4f62-88f0-12c423a191c6}</Project>
+      <Name>POV.ConfiguracionActividades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.Interfaces\GP.SocialEngine.Interfaces.csproj">
+      <Project>{1501b668-dc3a-45d9-b9b5-47df76e12587}</Project>
+      <Name>GP.SocialEngine.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3a6024ca-2877-409d-84c8-a1997c27616e}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.Services\POV.CentroEducativo.Services.csproj">
+      <Project>{efeaf5ff-2f2d-4c50-ae27-baf8df1df922}</Project>
+      <Name>POV.CentroEducativo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.BO\POV.Comun.BO.csproj">
+      <Project>{e9bb2466-0e21-4b56-8803-deb5969d2b49}</Project>
+      <Name>POV.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.Services\POV.Comun.Services.csproj">
+      <Project>{adb9ba9a-c274-4101-8f0d-3cf6c86a5fb8}</Project>
+      <Name>POV.Comun.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ConfiguracionesPlataforma.BO\POV.ConfiguracionesPlataforma.BO.csproj">
+      <Project>{7fd66f81-13c7-4123-9d26-833aaab3222d}</Project>
+      <Name>POV.ConfiguracionesPlataforma.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ConfiguracionesPlataforma\POV.ConfiguracionesPlataforma.csproj">
+      <Project>{0d48632b-a01e-4aec-8a2f-36e94986105f}</Project>
+      <Name>POV.ConfiguracionesPlataforma</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Expediente.BO\POV.Expediente.BO.csproj">
+      <Project>{34c7eb86-2321-432e-82b5-fe8119a9b622}</Project>
+      <Name>POV.Expediente.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Licencias.BO\POV.Licencias.BO.csproj">
+      <Project>{19961067-7725-4435-8ead-6e2b635f5d34}</Project>
+      <Name>POV.Licencias.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Licencias.Services\POV.Licencias.Services.csproj">
+      <Project>{13ab22df-d898-416f-a63f-a6cd09622760}</Project>
+      <Name>POV.Licencias.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.BO\POV.Modelo.BO.csproj">
+      <Project>{d81e25e7-7ed3-4f7b-9ccf-a3e1e97b198a}</Project>
+      <Name>POV.Modelo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo\POV.Modelo.csproj">
+      <Project>{36c1aff9-323f-4330-aa43-4fb0ab4a0a70}</Project>
+      <Name>POV.Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.BO\POV.Prueba.BO.csproj">
+      <Project>{90c2958d-1935-448e-9ac5-f9abcec3784b}</Project>
+      <Name>POV.Prueba.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Calificaciones.BO\POV.Prueba.Calificaciones.BO.csproj">
+      <Project>{18f00f92-8333-4209-86af-0ea43cae2833}</Project>
+      <Name>POV.Prueba.Calificaciones.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Dinamica.BO\POV.Prueba.Diagnostico.Dinamica.BO.csproj">
+      <Project>{a36c3552-74ff-41af-9466-e59288f9272a}</Project>
+      <Name>POV.Prueba.Diagnostico.Dinamica.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Services\POV.Prueba.Diagnostico.Services.csproj">
+      <Project>{e4ae7ea0-c62f-4a5c-9e9e-8c69d83347e8}</Project>
+      <Name>POV.Prueba.Diagnostico.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Reportes.BO\POV.Prueba.Reportes.BO.csproj">
+      <Project>{79428e4a-6095-48e6-9ac0-860fb8f5cf5e}</Project>
+      <Name>POV.Prueba.Reportes.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Reportes.Services\POV.Prueba.Reportes.Services.csproj">
+      <Project>{fb6e12bd-39af-471d-96e6-88c0dc8b817e}</Project>
+      <Name>POV.Prueba.Reportes.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.BO\POV.Reactivos.BO.csproj">
+      <Project>{ed9cc55d-68f6-4be0-9dae-00bcd226c289}</Project>
+      <Name>POV.Reactivos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.Services\POV.Reactivos.Services.csproj">
+      <Project>{4c5f2ed6-f95d-414e-943b-6a4b7726fc8c}</Project>
+      <Name>POV.Reactivos.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

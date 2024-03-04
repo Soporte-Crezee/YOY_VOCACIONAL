@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FE5A308-87EB-4C1A-980F-59D1AA7B05B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.Administracion</RootNamespace>
+    <AssemblyName>POV.Administracion.Reports</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Charts.v12.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Data.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.PivotGrid.v12.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Printing.v12.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.RichEdit.v12.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Utils.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraCharts.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraEditors.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraPivotGrid.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraReports.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1.Web">
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraReports.v12.1.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\AlumnosGrupoCicloEscolarRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AlumnosGrupoCicloEscolarRpt.Designer.cs">
+      <DependentUpon>AlumnosGrupoCicloEscolarRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadosDiagnosticoAlumnoEscuela.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadosDiagnosticoAlumnoEscuela.Designer.cs">
+      <DependentUpon>ResultadosDiagnosticoAlumnoEscuela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadosPruebaDinamicaEscuelaRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadosPruebaDinamicaEscuelaRpt.Designer.cs">
+      <DependentUpon>ResultadosPruebaDinamicaEscuelaRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadosPruebaEstandarizadaEscuelaRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadosPruebaEstandarizadaEscuelaRpt.Designer.cs">
+      <DependentUpon>ResultadosPruebaEstandarizadaEscuelaRpt.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3A6024CA-2877-409D-84C8-A1997C27616E}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Reportes.BO\POV.Prueba.Reportes.BO.csproj">
+      <Project>{79428E4A-6095-48E6-9AC0-860FB8F5CF5E}</Project>
+      <Name>POV.Prueba.Reportes.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\POV.Administracion.BO.ViewReportePruebaEscuela.datasource" />
+    <None Include="Properties\DataSources\POV.Administracion.Reports.ResultadosDiagnosticoAlumnoEscuela.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\AlumnosGrupoCicloEscolarRpt.resx">
+      <DependentUpon>AlumnosGrupoCicloEscolarRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadosDiagnosticoAlumnoEscuela.resx">
+      <DependentUpon>ResultadosDiagnosticoAlumnoEscuela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadosPruebaDinamicaEscuelaRpt.resx">
+      <DependentUpon>ResultadosPruebaDinamicaEscuelaRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadosPruebaEstandarizadaEscuelaRpt.resx">
+      <DependentUpon>ResultadosPruebaEstandarizadaEscuelaRpt.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POV.Administracion.BO\POV.Administracion.BO.csproj">
+      <Project>{4CCD2661-0B94-4DC8-A41F-864E951FF01F}</Project>
+      <Name>POV.Administracion.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

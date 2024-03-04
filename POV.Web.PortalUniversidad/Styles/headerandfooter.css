@@ -1,0 +1,175 @@
+﻿.titulo-portal {
+    color: #05aed9 !important;
+    font-size: 22px !important;
+    font-family: Roboto-Bold;
+}
+
+.nav.navbar-nav > li > a, .titulo_summary, .nombre-usuario-portal {
+    font-family: Roboto-Bold-Condensed !important;
+    font-size: 16px !important;
+}
+
+.img-portal {
+    max-width: none !important;
+}
+
+.header-container {
+    background: url('../images/headerpattern.png') repeat !important;
+}
+
+.breadcrumb > li {
+    font-size: 30px;
+    font-family: Roboto-Bold;
+    font-weight:normal;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.footerpersonalizado {
+    background: url('../images/fooder-yoy.jpg') !important;
+}
+
+.btn-cancel {
+    box-shadow: none !important;
+    background: #ff9e19 !important;
+    color: #FFFFFF !important;
+    font-family: Roboto-Bold !important;
+    font-style: normal !important;
+}
+.label-header {
+    font-size: 30px !important;
+}
+.control-label, .nav-tabs > li > a, table.table > tbody > tr > td, table.table > tbody > tr > th {
+    font-size: 18px;
+    font-family: Roboto-Condensed;
+}
+
+label.control-label {
+    font-weight: normal;
+}
+
+.btn-cancel:hover {
+    font-family: Roboto-Bold;
+    background-color: #FFc972 !important;
+    box-shadow: none !important;
+    color: #FFFFFF !important;
+    font-style: normal !important;
+}
+
+.btn.btn-sm, .btn-green {
+    font-family: Roboto-Bold !important;
+    background-color: #05AED9 !important;
+    box-shadow: none !important;
+    font-style: normal !important;
+}
+
+.btn.btn-sm:hover, .btn-green:hover {
+    /*Azul-hover*/
+    font-family: Roboto-Bold !important;
+    background-color: #7fc3dc !important;
+    box-shadow: none !important;
+    color: #FFFFFF !important;
+    font-style: normal !important;
+}
+
+.panel-heading {
+    background-color: #05aed9 !important;
+    border-bottom: #ff9e19 solid 5px !important;
+    color: #FFFFFF !important;
+    font-family: Roboto-Bold-Condensed !important;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+
+.panel-body, .panel-body input.form-control {
+    font-family: Roboto-Condensed !important;
+    font-size: 18px !important;
+}
+
+div.menu_toolbar_container nav.navbar.navbar-default,
+div.navbar.navbar-default.navbar-static-top {
+    margin-bottom: 0px;
+	background-color: #05aed9 !important;
+	border-color: #05aed9 !important;	
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > li > a:hover,
+.nav-tabs > li > a:hover {
+    color: #05AED9 !important;
+}
+
+/*Pagination*/
+
+.table table  tbody  tr  td a ,
+.table table  tbody  tr  td  span {
+position: relative;
+float: left;
+padding: 6px 12px;
+margin-left: -1px;
+line-height: 1.42857143;
+color: #337ab7;
+text-decoration: none;
+background-color: #fff;
+border: 1px solid #ddd;
+}
+
+.table table > tbody > tr > td > span {
+z-index: 3;
+color: #fff;
+cursor: default;
+background-color: #337ab7;
+border-color: #337ab7;
+}
+
+.table table > tbody > tr > td:first-child > a,
+.table table > tbody > tr > td:first-child > span {
+margin-left: 0;
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+}
+
+.table table > tbody > tr > td:last-child > a,
+.table table > tbody > tr > td:last-child > span {
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+
+.table table > tbody > tr > td > a:hover,
+.table   table > tbody > tr > td > span:hover,
+.table table > tbody > tr > td > a:focus,
+.table table > tbody > tr > td > span:focus {
+z-index: 2;
+color: #23527c;
+background-color: #eee;
+border-color: #ddd;
+}
+
+/*End pagination*/
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../Styles/fonts/Roboto-Bold_2.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold-Condensed';
+    src: url('fonts/Roboto-BoldCondensed_0.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../Styles/fonts/Roboto-Regular_1.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Condensed';
+    src: url('../Styles/fonts/Roboto-Condensed_0.ttf');
+}
+
+@font-face {
+    font-family: 'Alieron';
+    src: url('../Styles/fonts/Aileron-Regular.otf');
+}

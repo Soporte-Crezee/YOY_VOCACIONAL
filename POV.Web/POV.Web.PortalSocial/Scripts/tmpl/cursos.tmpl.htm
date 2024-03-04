@@ -1,0 +1,47 @@
+﻿<script type="text/x-jquery-tmpl" id="cursoTmpl">
+
+       
+            <li  class="item_pub prof_font_size_12" >
+                 <div  id='${cursoid}'>
+                      <div>
+                            <p><label class="prof_text_size_12_bold">${cursonombre}</label></p>
+                            <p><label >Tema de Curso: </label><label><i>${cursotema}</i></label>  </p>   
+                                         
+                     
+                    {{if cursoinformacion != null}}
+                    <p><a href="..${cursoinformacion}" class="link_blue" target="_blank">Informaci&oacute;n adicional</a></p>  
+                   {{/if}}
+                 </div>
+                <br/>
+                <div style="margin-left:100px;"> 
+                    <div id="ver_contenidos_${cursoid}">
+                        <div id='ocultar_${cursoid}' class="more">
+                            <a onclick="javascript:GetInformacionCurso('${cursoid}');" class="link_blue element_3A2F8B">Mostrar contenidos digitales <i class="icon icon_show_more"></i></a>
+                        </div>
+                    </div>
+                    <div id="resultado_detalle_contenidos_${cursoid}" style="display: none;"> 
+                        <h4 style="font-size:14px;border-bottom: 2px solid #91268F;">Contenidos digitales:</h4> 
+                        <ul id="resultado_curso_detalle_${cursoid}" class="prof_style_subelement_result"> 
+                        </ul>  
+                        <div id="more_${cursoid}" class="more" ></div> 
+                    </div>
+                <div> 
+            </li>
+       
+
+</script>
+<script type="text/x-jquery-tmpl" id="cursoDetalleTmpl">
+
+       <li  style="margin: 5px 50px 5px 2px;" class="">
+                <div >
+                 <label class="prof_text_size_12_bold">
+                  <a href="../ContenidosDigitales/VerContenidoDigital.aspx?contid=${contenidoid}&cursoid=${cursoid}&src=curso" class="link_blue">${nombrecontenido}</a></label>
+               
+                  (
+                  <label>${tipodocumento} </label>
+                      )    
+                 </div>         
+        </li>
+       
+
+</script>

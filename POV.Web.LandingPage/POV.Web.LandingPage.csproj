@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBCD82FF-8060-44C7-8890-AACC06E9334B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.Web.LandingPage</RootNamespace>
+    <AssemblyName>POV.Web.LandingPage</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.html" />
+    <Content Include="Default.aspx" />
+    <Content Include="Images\celular.png" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\header-yoy-template.png" />
+    <Content Include="Images\in.png" />
+    <Content Include="Images\instagram.png" />
+    <Content Include="Images\LandingImages\arribaicon.png" />
+    <Content Include="Images\LandingImages\beneficios1.png" />
+    <Content Include="Images\LandingImages\beneficios2.png" />
+    <Content Include="Images\LandingImages\beneficios3.png" />
+    <Content Include="Images\LandingImages\beneficios4.png" />
+    <Content Include="Images\LandingImages\beneficios5.png" />
+    <Content Include="Images\LandingImages\beneficios6.png" />
+    <Content Include="Images\LandingImages\fbslider.png" />
+    <Content Include="Images\LandingImages\fbtwitter.png" />
+    <Content Include="Images\LandingImages\fondoestudiantes.jpg" />
+    <Content Include="Images\LandingImages\inslider.png" />
+    <Content Include="Images\LandingImages\instaslider.png" />
+    <Content Include="Images\LandingImages\mockup_portal_escuela.png" />
+    <Content Include="Images\LandingImages\mockup_portal_estudiante.png" />
+    <Content Include="Images\LandingImages\mockup_portal_orienytador.png" />
+    <Content Include="Images\LandingImages\mockup_portal_padres.png" />
+    <Content Include="Images\LandingImages\nuestroproceso.jpg" />
+    <Content Include="Images\LandingImages\nuestroproceso.png" />
+    <Content Include="Images\LandingImages\proceso.png" />
+    <Content Include="Images\LandingImages\slider1.jpg" />
+    <Content Include="Images\LandingImages\slider2.jpg" />
+    <Content Include="Images\LandingImages\slider3.jpg" />
+    <Content Include="Images\LandingImages\slider4.jpg" />
+    <Content Include="Images\LandingImages\transparent.png" />
+    <Content Include="Images\LandingImages\twslider.png" />
+    <Content Include="Images\LandingImages\_slider1.jpg" />
+    <Content Include="Images\logo.PNG" />
+    <Content Include="Images\twitter.png" />
+    <Content Include="Images\vinieta.png" />
+    <Content Include="Scripts\city_state.js" />
+    <Content Include="Scripts\LandingPageScripts\boxslider\images\arrowleft.png" />
+    <Content Include="Scripts\LandingPageScripts\boxslider\images\arrowright.png" />
+    <Content Include="Scripts\LandingPageScripts\boxslider\images\bx_loader.gif" />
+    <Content Include="Scripts\LandingPageScripts\boxslider\images\controls.png" />
+    <Content Include="Scripts\LandingPageScripts\boxslider\jquery.bxslider.css" />
+    <Content Include="Scripts\LandingPageScripts\boxslider\jquery.bxslider.js" />
+    <Content Include="Scripts\LandingPageScripts\boxslider\jquery.bxslider.min.css" />
+    <Content Include="Scripts\LandingPageScripts\boxslider\jquery.bxslider.min.js" />
+    <Content Include="Scripts\LandingPageScripts\boxslider\vendor\jquery.easing.1.3.js" />
+    <Content Include="Scripts\LandingPageScripts\boxslider\vendor\jquery.fitvids.js" />
+    <Content Include="Scripts\LandingPageScripts\jquery-2.2.4.min.js" />
+    <Content Include="Scripts\LandingPageScripts\landing.js" />
+    <Content Include="Scripts\LandingPageScripts\Sweetalert2.js" />
+    <Content Include="Scripts\LandingPageScripts\telefonoinput\css\demo.css" />
+    <Content Include="Scripts\LandingPageScripts\telefonoinput\css\intlTelInput.css" />
+    <Content Include="Scripts\LandingPageScripts\telefonoinput\img\flags%402x.png" />
+    <Content Include="Scripts\LandingPageScripts\telefonoinput\img\flags.png" />
+    <Content Include="Scripts\LandingPageScripts\telefonoinput\js\intlTelInput.js" />
+    <Content Include="Scripts\LandingPageScripts\telefonoinput\js\intlTelInput.min.js" />
+    <Content Include="Scripts\LandingPageScripts\telefonoinput\js\utils.js" />
+    <Content Include="Scripts\revolutionslider\assets\arrowleft.png" />
+    <Content Include="Scripts\revolutionslider\assets\arrowright.png" />
+    <Content Include="Scripts\revolutionslider\assets\arrow_large_left.png" />
+    <Content Include="Scripts\revolutionslider\assets\arrow_large_right.png" />
+    <Content Include="Scripts\revolutionslider\assets\arrow_left.png" />
+    <Content Include="Scripts\revolutionslider\assets\arrow_left2.png" />
+    <Content Include="Scripts\revolutionslider\assets\arrow_right.png" />
+    <Content Include="Scripts\revolutionslider\assets\arrow_right2.png" />
+    <Content Include="Scripts\revolutionslider\assets\black50.png" />
+    <Content Include="Scripts\revolutionslider\assets\boxed_bgtile.png" />
+    <Content Include="Scripts\revolutionslider\assets\bullet.png" />
+    <Content Include="Scripts\revolutionslider\assets\bullets.png" />
+    <Content Include="Scripts\revolutionslider\assets\bullets2.png" />
+    <Content Include="Scripts\revolutionslider\assets\bullet_boxed.png" />
+    <Content Include="Scripts\revolutionslider\assets\coloredbg.png" />
+    <Content Include="Scripts\revolutionslider\assets\grain.png" />
+    <Content Include="Scripts\revolutionslider\assets\gridtile.png" />
+    <Content Include="Scripts\revolutionslider\assets\gridtile_3x3.png" />
+    <Content Include="Scripts\revolutionslider\assets\gridtile_3x3_white.png" />
+    <Content Include="Scripts\revolutionslider\assets\gridtile_white.png" />
+    <Content Include="Scripts\revolutionslider\assets\large_left.png" />
+    <Content Include="Scripts\revolutionslider\assets\large_right.png" />
+    <Content Include="Scripts\revolutionslider\assets\loader.gif" />
+    <Content Include="Scripts\revolutionslider\assets\loader2.gif" />
+    <Content Include="Scripts\revolutionslider\assets\navigdots.png" />
+    <Content Include="Scripts\revolutionslider\assets\navigdots_bgtile.png" />
+    <Content Include="Scripts\revolutionslider\assets\shadow1.png" />
+    <Content Include="Scripts\revolutionslider\assets\shadow2.png" />
+    <Content Include="Scripts\revolutionslider\assets\shadow3.png" />
+    <Content Include="Scripts\revolutionslider\assets\small_left.png" />
+    <Content Include="Scripts\revolutionslider\assets\small_left_boxed.png" />
+    <Content Include="Scripts\revolutionslider\assets\small_right.png" />
+    <Content Include="Scripts\revolutionslider\assets\small_right_boxed.png" />
+    <Content Include="Scripts\revolutionslider\assets\timer.png" />
+    <Content Include="Scripts\revolutionslider\assets\timerdot.png" />
+    <Content Include="Scripts\revolutionslider\assets\transparent.jpg" />
+    <Content Include="Scripts\revolutionslider\assets\white50.png" />
+    <Content Include="Scripts\revolutionslider\css\settings-ie8.css" />
+    <Content Include="Scripts\revolutionslider\css\settings.css" />
+    <Content Include="Scripts\revolutionslider\font\revicons.svg" />
+    <Content Include="Scripts\revolutionslider\images\decor_inside.png" />
+    <Content Include="Scripts\revolutionslider\images\decor_inside_white.png" />
+    <Content Include="Scripts\revolutionslider\images\decor_testimonial.png" />
+    <Content Include="Scripts\revolutionslider\images\gradient\g30.png" />
+    <Content Include="Scripts\revolutionslider\images\gradient\g40.png" />
+    <Content Include="Scripts\revolutionslider\js\jquery.themepunch.plugins.min.js" />
+    <Content Include="Scripts\revolutionslider\js\jquery.themepunch.revolution.js" />
+    <Content Include="Scripts\revolutionslider\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="Scripts\revolutionslider\videojs\font\vjs.svg" />
+    <Content Include="Scripts\revolutionslider\videojs\video-js.css" />
+    <Content Include="Scripts\revolutionslider\videojs\video-js.min.css" />
+    <Content Include="Scripts\revolutionslider\videojs\video-js.png" />
+    <Content Include="Scripts\revolutionslider\videojs\video-js.swf" />
+    <Content Include="Scripts\revolutionslider\videojs\video.dev.js" />
+    <Content Include="Scripts\revolutionslider\videojs\video.js" />
+    <Content Include="Styles\fonts\Aileron-Thin.svg" />
+    <Content Include="Styles\LandingPageStyle\1.png" />
+    <Content Include="Styles\LandingPageStyle\1_hover.png" />
+    <Content Include="Styles\LandingPageStyle\2.png" />
+    <Content Include="Styles\LandingPageStyle\2_hover.png" />
+    <Content Include="Styles\LandingPageStyle\3.png" />
+    <Content Include="Styles\LandingPageStyle\3_hover.png" />
+    <Content Include="Styles\LandingPageStyle\4.png" />
+    <Content Include="Styles\LandingPageStyle\4_hover.png" />
+    <Content Include="Styles\LandingPageStyle\brainicon.png" />
+    <Content Include="Styles\LandingPageStyle\checkicon.png" />
+    <Content Include="Styles\LandingPageStyle\css\bootstrap-theme.css" />
+    <Content Include="Styles\LandingPageStyle\css\bootstrap-theme.min.css" />
+    <Content Include="Styles\LandingPageStyle\css\bootstrap.css" />
+    <Content Include="Styles\LandingPageStyle\css\bootstrap.min.css" />
+    <Content Include="Styles\LandingPageStyle\derecha1.jpg" />
+    <Content Include="Styles\LandingPageStyle\escuela_%281%29.png" />
+    <Content Include="Styles\LandingPageStyle\escuela_%282%29.png" />
+    <Content Include="Styles\LandingPageStyle\escuela_%283%29.png" />
+    <Content Include="Styles\LandingPageStyle\escuela_%284%29.png" />
+    <Content Include="Styles\LandingPageStyle\estudiante%281%29.png" />
+    <Content Include="Styles\LandingPageStyle\estudiante%282%29.png" />
+    <Content Include="Styles\LandingPageStyle\estudiante%283%29.png" />
+    <Content Include="Styles\LandingPageStyle\estudiante%284%29.png" />
+    <Content Include="Styles\LandingPageStyle\familyicon.png" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Bold.svg" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Light.svg" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Regular.svg" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-SemiBold.svg" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Thin.svg" />
+    <Content Include="Styles\LandingPageStyle\icon1.png" />
+    <Content Include="Styles\LandingPageStyle\Icon2.png" />
+    <Content Include="Styles\LandingPageStyle\js\bootstrap.js" />
+    <Content Include="Styles\LandingPageStyle\js\bootstrap.min.js" />
+    <Content Include="Styles\LandingPageStyle\js\npm.js" />
+    <Content Include="Styles\LandingPageStyle\orientador%281%29.png" />
+    <Content Include="Styles\LandingPageStyle\orientador%282%29.png" />
+    <Content Include="Styles\LandingPageStyle\orientador%283%29.png" />
+    <Content Include="Styles\LandingPageStyle\orientador%284%29.png" />
+    <Content Include="Styles\LandingPageStyle\pigicon.png" />
+    <Content Include="Styles\LandingPageStyle\Style.css" />
+    <Content Include="Styles\LandingPageStyle\Sweetalert2.css" />
+    <Content Include="Video\empty.txt" />
+    <Content Include="_Default.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Styles\PaginaAccesoStyle\fonts\Aileron-Bold.svg" />
+    <Content Include="Styles\PaginaAccesoStyle\fonts\Aileron-Light.svg" />
+    <Content Include="Styles\PaginaAccesoStyle\fonts\Aileron-Regular.svg" />
+    <Content Include="Images\contacto_blog_ARRIBA.png" />
+    <Content Include="Images\contacto_facebook_ARRIBA.png" />
+    <Content Include="Images\contacto_twitter_ARRIBA.png" />
+    <Content Include="Images\email.png" />
+    <Content Include="Images\LANDIN CAMPUSOV.png" />
+    <Content Include="Images\LANDIN CAMPUSOV2.png" />
+    <Content Include="Images\LANDIN CAMPUSOV4.png" />
+    <Content Include="Images\LANDIN CAMPUSOV5.png" />
+    <Content Include="Images\LANDING_CAMPUSOV1.jpg" />
+    <Content Include="Images\LANDING_CAMPUSOV2.jpg" />
+    <Content Include="Images\LANDING_CAMPUSOV3.jpg" />
+    <Content Include="Images\LANDING_CAMPUSOV4.jpg" />
+    <Content Include="Images\LANDING_corchete_horizontal.png" />
+    <Content Include="Images\PaginaAccesoImages\escuela.png" />
+    <Content Include="Images\PaginaAccesoImages\escuela_.png" />
+    <Content Include="Images\PaginaAccesoImages\facebook.png" />
+    <Content Include="Images\PaginaAccesoImages\facebook_.png" />
+    <Content Include="Images\PaginaAccesoImages\imagen.jpg" />
+    <Content Include="Images\PaginaAccesoImages\in.png" />
+    <Content Include="Images\PaginaAccesoImages\instagram.png" />
+    <Content Include="Images\PaginaAccesoImages\instagram_.png" />
+    <Content Include="Images\PaginaAccesoImages\in_.png" />
+    <Content Include="Images\PaginaAccesoImages\logo.png" />
+    <Content Include="Images\PaginaAccesoImages\orientador.png" />
+    <Content Include="Images\PaginaAccesoImages\orientador_.png" />
+    <Content Include="Images\PaginaAccesoImages\padres.png" />
+    <Content Include="Images\PaginaAccesoImages\padres_.png" />
+    <Content Include="Images\PaginaAccesoImages\twitter.png" />
+    <Content Include="Images\PaginaAccesoImages\twitter_.png" />
+    <Content Include="Images\PORTAL_MOCKUP-admon.png" />
+    <Content Include="Images\PORTAL_MOCKUP-aspirantes.png" />
+    <Content Include="Images\PORTAL_MOCKUP-orientador.png" />
+    <Content Include="Images\PORTAL_MOCKUP-tutores.png" />
+    <Content Include="Images\POVLogo_Header.png" />
+    <Content Include="Images\POV_ORIENTADOR.png" />
+    <Content Include="Images\POV_UNIVERSIDAD.png" />
+    <Content Include="Images\SOV fondo gradient01.jpg" />
+    <Content Include="Images\SOV_botonacceder.png" />
+    <Content Include="Images\SOV_ELEMENTOS_ landing_ asesoria.png" />
+    <Content Include="Images\SOV_ELEMENTOS_ landing_opciones.png" />
+    <Content Include="Images\SOV_ELEMENTOS_ landing_plan.png" />
+    <Content Include="Images\SOV_ELEMENTOS_ landing_realizarlo.png" />
+    <Content Include="Images\SOV_ELEMENTOS_apoyoescolar_off.png" />
+    <Content Include="Images\SOV_ELEMENTOS_apoyoescolar_on.png" />
+    <Content Include="Images\SOV_ELEMENTOS_boton_arriba.png" />
+    <Content Include="Images\SOV_ELEMENTOS_comunidad_off.png" />
+    <Content Include="Images\SOV_ELEMENTOS_comunidad_on.png" />
+    <Content Include="Images\SOV_ELEMENTOS_flecha_previa.png" />
+    <Content Include="Images\SOV_ELEMENTOS_flecha_siguiente.png" />
+    <Content Include="Images\SOV_ELEMENTOS_flecha.png" />
+    <Content Include="Images\SOV_ELEMENTOS_foto testimonio1.png" />
+    <Content Include="Images\SOV_ELEMENTOS_foto testimonio2.png" />
+    <Content Include="Images\SOV_ELEMENTOS_foto testimonio3.png" />
+    <Content Include="Images\SOV_ELEMENTOS_imgError.png" />
+    <Content Include="Images\SOV_ELEMENTOS_logo_VOCAREER1.png" />
+    <Content Include="Images\SOV_ELEMENTOS_orientadores_off.png" />
+    <Content Include="Images\SOV_ELEMENTOS_orientadores_on.png" />
+    <Content Include="Images\SOV_ELEMENTOS_perfilaciones_off.png" />
+    <Content Include="Images\SOV_ELEMENTOS_perfilaciones_on.png" />
+    <Content Include="Images\SOV_ELEMENTOS_portal_administracion.png" />
+    <Content Include="Images\SOV_ELEMENTOS_portal_operaciones.png" />
+    <Content Include="Images\SOV_ELEMENTOS_portal_orientadores.png" />
+    <Content Include="Images\SOV_ELEMENTOS_portal_tutores.png" />
+    <Content Include="Images\SOV_ELEMENTOS_portal_universidad.png" />
+    <Content Include="Images\SOV_ELEMENTOS_usuario_activo.png" />
+    <Content Include="Images\SOV_ELEMENTOS_usuario_inactivo.png" />
+    <Content Include="Images\SOV_slideportal.jpg" />
+    <Content Include="Images\Yoy_Favicon20px.png" />
+    <Content Include="PaginaAcceso.aspx" />
+    <Content Include="RequisitosUniversidad.aspx" />
+    <Content Include="RequisitosOrientador.aspx" />
+    <Content Include="Styles\PaginaAccesoStyle\Style.css" />
+    <Content Include="_PaginaAcceso.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="Errores.Master" />
+    <Content Include="Styles\PaginaAccesoStyle\fonts\Aileron-Bold.eot" />
+    <Content Include="Styles\PaginaAccesoStyle\fonts\Aileron-Bold.ttf" />
+    <Content Include="Styles\PaginaAccesoStyle\fonts\Aileron-Bold.woff" />
+    <Content Include="Styles\PaginaAccesoStyle\fonts\Aileron-Light.eot" />
+    <Content Include="Styles\PaginaAccesoStyle\fonts\Aileron-Light.ttf" />
+    <Content Include="Styles\PaginaAccesoStyle\fonts\Aileron-Light.woff" />
+    <Content Include="Styles\PaginaAccesoStyle\fonts\Aileron-Regular.eot" />
+    <Content Include="Styles\PaginaAccesoStyle\fonts\Aileron-Regular.ttf" />
+    <Content Include="Styles\PaginaAccesoStyle\fonts\Aileron-Regular.woff" />
+    <Content Include="countries\paises.json" />
+    <Content Include="countries\estados.json" />
+    <None Include="Properties\PublishProfiles\POV.Landing.pubxml" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\jquery-1.12.1.min.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.easing.1.3.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.scrolldeck.js" />
+    <Content Include="Scripts\jquery.scrollorama.js" />
+    <Content Include="Scripts\jquery.scrollTo-1.4.3.1.min.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Sliders\css\bootstrap.min.css" />
+    <Content Include="Sliders\js\bootstrap.min.js" />
+    <Content Include="Sliders\js\holder.js" />
+    <Content Include="Sliders\js\jquery-3.2.1.min.js" />
+    <Content Include="Styles\bootstrap-theme.css" />
+    <Content Include="Styles\bootstrap.css" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Styles\modal.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\Style.css" />
+    <Content Include="Styles\theme.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Default.aspx.cs">
+      <DependentUpon>_Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Default.aspx.designer.cs">
+      <DependentUpon>_Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Errores.Master.cs">
+      <DependentUpon>Errores.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errores.Master.designer.cs">
+      <DependentUpon>Errores.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaAcceso.aspx.cs">
+      <DependentUpon>PaginaAcceso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaAcceso.aspx.designer.cs">
+      <DependentUpon>PaginaAcceso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequisitosUniversidad.aspx.cs">
+      <DependentUpon>RequisitosUniversidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequisitosUniversidad.aspx.designer.cs">
+      <DependentUpon>RequisitosUniversidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequisitosOrientador.aspx.cs">
+      <DependentUpon>RequisitosOrientador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequisitosOrientador.aspx.designer.cs">
+      <DependentUpon>RequisitosOrientador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="_PaginaAcceso.aspx.cs">
+      <DependentUpon>_PaginaAcceso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_PaginaAcceso.aspx.designer.cs">
+      <DependentUpon>_PaginaAcceso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Styles\fonts\helr45w.ttf" />
+    <Content Include="Styles\fonts\HelveticaNeueLTPro-MdCnO.otf" />
+    <Content Include="Styles\fonts\HelveticaNeue-BoldCond.otf" />
+    <Content Include="Styles\fonts\HelveticaNeue-LightCond.otf" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\fonts\Roboto-Medium_2.ttf" />
+    <Content Include="Styles\fonts\Roboto-Regular_1.ttf" />
+    <Content Include="Styles\fonts\CooperHewitt-Light_0.otf" />
+    <Content Include="Styles\fonts\Roboto-Light_2.ttf" />
+    <Content Include="Styles\fonts\Roboto-Bold_2.ttf" />
+    <Content Include="Scripts\revolutionslider\assets\arrows.psd" />
+    <Content Include="Scripts\revolutionslider\assets\bullets.psd" />
+    <Content Include="Scripts\revolutionslider\assets\small_arrows.psd" />
+    <Content Include="Scripts\revolutionslider\font\revicons.eot" />
+    <Content Include="Scripts\revolutionslider\font\revicons.ttf" />
+    <Content Include="Scripts\revolutionslider\font\revicons.woff" />
+    <Content Include="Scripts\revolutionslider\videojs\demo.captions.vtt" />
+    <Content Include="Scripts\revolutionslider\videojs\font\vjs.eot" />
+    <Content Include="Scripts\revolutionslider\videojs\font\vjs.ttf" />
+    <Content Include="Scripts\revolutionslider\videojs\font\vjs.woff" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Bold.eot" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Bold.ttf" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Bold.woff" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Light.eot" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Light.ttf" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Light.woff" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Regular.eot" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Regular.ttf" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Regular.woff" />
+    <Content Include="Styles\fonts\Aileron-Thin.eot" />
+    <Content Include="Styles\fonts\Aileron-Thin.ttf" />
+    <Content Include="Styles\fonts\Aileron-Thin.woff" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Thin.eot" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Thin.ttf" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-Thin.woff" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-SemiBold.eot" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-SemiBold.ttf" />
+    <Content Include="Styles\LandingPageStyle\fonts\Aileron-SemiBold.woff" />
+    <Content Include="Styles\LandingPageStyle\css\bootstrap-theme.css.map" />
+    <Content Include="Styles\LandingPageStyle\css\bootstrap-theme.min.css.map" />
+    <Content Include="Styles\LandingPageStyle\css\bootstrap.css.map" />
+    <Content Include="Styles\LandingPageStyle\css\bootstrap.min.css.map" />
+    <Content Include="Scripts\LandingPageScripts\boxslider\LICENSE.md" />
+    <Content Include="Scripts\LandingPageScripts\boxslider\README.md" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>28684</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

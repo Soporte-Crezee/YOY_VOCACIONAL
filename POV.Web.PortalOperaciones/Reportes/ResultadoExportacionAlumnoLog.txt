@@ -1,0 +1,18 @@
+
+Nombre: Enrique Primer Apellido: Garcia Segundo Apellido: Marquez Matrícula: 2783 Curp: GAME910204MHCCRH00 Sexo: Hombre Fecha Nacimiento: 12/03/1989 12:00:00 a. m. Fecha Registro: 03/05/2017 01:10:03 p. m.
+Nombre: Alberto Primer Apellido: Garcia Segundo Apellido: Marquez Matrícula: 2783 Curp: GAMA910204MHCCRH00 Sexo: Hombre Fecha Nacimiento: 12/03/1989 12:00:00 a. m. Fecha Registro: 03/05/2017 03:06:24 p. m.
+Nombre: Alberto Primer Apellido: Garcia Segundo Apellido: Marquez Matrícula: 2783 Curp: GAMA910204MHCCRH00 Sexo: Hombre Fecha Nacimiento: 12/03/1989 12:00:00 a. m. Fecha Registro: 03/05/2017 04:04:35 p. m.
+Nombre: Irving Primer Apellido: Garcia Segundo Apellido: Marquez Matrícula: 2783 Curp: GAMI910204MHCCRH00 Sexo: Hombre Fecha Nacimiento: 12/03/1989 12:00:00 a. m. Fecha Registro: 03/05/2017 04:33:14 p. m.
+Nombre: Carlos Alberto Primer Apellido: Gomez Segundo Apellido: Noh Matrícula: 2783 Curp: GONC920502HCCMHR00 Sexo: Hombre Fecha Nacimiento: 02/05/1992 12:00:00 a. m. Fecha Registro: 08/05/2017 10:44:41 a. m.
+Nombre: Carlos Alberto Primer Apellido: Gomez Segundo Apellido: Noh Matrícula: 2783 Curp: GONC920502HCCMHR00 Sexo: Hombre Fecha Nacimiento: 02/05/1992 12:00:00 a. m. Fecha Registro: 08/05/2017 05:45:14 p. m.
+Nombre: Darwin Primer Apellido: Fuentes Segundo Apellido:  Matrícula: 2784 Curp: CURP501078ERT034 Sexo: Hombre Fecha Nacimiento: 25/08/1975 12:00:00 a. m. Fecha Registro: 08/05/2017 05:45:19 p. m.
+Nombre: Carlos Alberto Primer Apellido: Gomez Segundo Apellido: Noh Matrícula: 2783 Curp: GONC920502HCCMHR00 Sexo: Hombre Fecha Nacimiento: 02/05/1992 12:00:00 a. m. Fecha Registro: 08/05/2017 06:53:37 p. m.
+Nombre: Darwin Primer Apellido: Fuentes Segundo Apellido:  Matrícula: 2784 Curp: CURP501078ERT034 Sexo: Hombre Fecha Nacimiento: 25/08/1975 12:00:00 a. m. Fecha Registro: 08/05/2017 06:53:41 p. m.
+Nombre: David Primer Apellido: Becerra Segundo Apellido: Martin Matrícula: 2785 Curp: CURP501078ERT035 Sexo: Hombre Fecha Nacimiento: 04/08/1984 12:00:00 a. m. Fecha Registro: 08/05/2017 06:53:46 p. m.
+Nombre: David Alfredo Primer Apellido: Gomez Segundo Apellido: Noh Matrícula: 2799 Curp: GONC920502HCCMHR11 Sexo: Hombre Fecha Nacimiento: 02/05/1981 12:00:00 a. m. Fecha Registro: 10/05/2017 05:05:48 p. m.
+Nombre: Luis Primer Apellido: Arguello Segundo Apellido: Caamal Matrícula: 101T0083 Curp: ARCL920510MHCCHR00 Sexo: Hombre Fecha Nacimiento: 10/05/1992 12:00:00 a. m. Fecha Registro: 09/06/2017 12:59:02 p. m.
+Nombre: Luis Primer Apellido: Arguello Segundo Apellido: Caamal Matrícula: 101T0083 Curp: ARCL920510MHCCHR00 Sexo: Hombre Fecha Nacimiento: 10/05/1992 12:00:00 a. m. Fecha Registro: 09/06/2017 01:04:49 p. m.
+Nombre: Randy Primer Apellido: Villanueva Segundo Apellido:  Matrícula: AU172340 Curp: VISR990826MQRRNL05 Sexo: Hombre Fecha Nacimiento: 26/08/1999 12:00:00 a. m. Fecha Registro: 21/02/2018 03:18:00 p. m.
+Nombre: Timoteo Primer Apellido: Coral Segundo Apellido:  Matrícula: AO172273 Curp: COMT990325HQRMZR05 Sexo: Hombre Fecha Nacimiento: 25/03/1999 12:00:00 a. m. Fecha Registro: 21/02/2018 03:58:41 p. m.
+Nombre: Rodrigo Primer Apellido: Salas Segundo Apellido:  Matrícula: 1234 Curp: SARO920502HCCMHR00 Sexo: Hombre Fecha Nacimiento: 09/02/1992 12:00:00 a. m. Fecha Registro: 10/04/2018 03:35:41 p. m.
+Nombre: Danely Primer Apellido: Noh Segundo Apellido: Cocom Matrícula: 1235 Curp: SARO920502HCCMHR01 Sexo: Mujer Fecha Nacimiento: 10/02/1992 12:00:00 a. m. Fecha Registro: 10/04/2018 03:35:44 p. m.

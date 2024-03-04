@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A150412-BF04-456A-BCBD-44C90EE6B8CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.DetalleExpediente</RootNamespace>
+    <AssemblyName>POV.DetalleExpediente.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Framework.Base">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\DetalleExpedienteCtrl.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\GP.SocialEngine.Interfaces\GP.SocialEngine.Interfaces.csproj">
+      <Project>{1501B668-DC3A-45D9-B9B5-47DF76E12587}</Project>
+      <Name>GP.SocialEngine.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3A6024CA-2877-409D-84C8-A1997C27616E}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.Services\POV.CentroEducativo.Services.csproj">
+      <Project>{EFEAF5FF-2F2D-4C50-AE27-BAF8DF1DF922}</Project>
+      <Name>POV.CentroEducativo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Expediente.BO\POV.Expediente.BO.csproj">
+      <Project>{34c7eb86-2321-432e-82b5-fe8119a9b622}</Project>
+      <Name>POV.Expediente.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Expediente.Services\POV.Expediente.Services.csproj">
+      <Project>{272d5848-bb03-46d3-a15f-6cdf48a11806}</Project>
+      <Name>POV.Expediente.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.BO\POV.Modelo.BO.csproj">
+      <Project>{D81E25E7-7ED3-4F7B-9CCF-A3E1E97B198A}</Project>
+      <Name>POV.Modelo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.Services\POV.Modelo.Services.csproj">
+      <Project>{F229A4B9-5990-4813-AB22-D38963E16EAC}</Project>
+      <Name>POV.Modelo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.BO\POV.Prueba.BO.csproj">
+      <Project>{90C2958D-1935-448E-9AC5-F9ABCEC3784B}</Project>
+      <Name>POV.Prueba.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Dinamica.BO\POV.Prueba.Diagnostico.Dinamica.BO.csproj">
+      <Project>{A36C3552-74FF-41AF-9466-E59288F9272A}</Project>
+      <Name>POV.Prueba.Diagnostico.Dinamica.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Services\POV.Prueba.Diagnostico.Services.csproj">
+      <Project>{E4AE7EA0-C62F-4A5C-9E9E-8C69D83347E8}</Project>
+      <Name>POV.Prueba.Diagnostico.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

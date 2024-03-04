@@ -1,0 +1,94 @@
+﻿/*Login*/
+.form_login {
+   
+    border: 0;
+    margin: 0px;
+    display: block;
+    font-family:'Lucida Grande', arial, sans-serif;
+    
+    
+    
+    top:-3px;
+    position:relative;
+}
+
+
+/*Fin Login*/
+.operDel
+{
+    position:relative;
+    top:25px;
+    left:-10px;
+}
+#panel_insert_pub
+{
+    width:650px;
+}
+#btnShare
+{
+    margin-left:20px;
+}
+#btnconsultar
+{
+    margin-top:-36px;
+    margin-right:180px;
+    height:25px;
+}
+.text_contentms
+{
+   
+    width:480px;
+}
+#page_content_btnconsultar,#page_content_btnnuevo,#page_content_HplEditarPerfil
+{
+    top:5px;
+    position:relative;
+}
+.comments
+{
+    position:relative;
+    width:570px;
+}
+#panel-img-reactivo
+{
+    float:left;
+}
+.opcionesCuenta
+{
+    background-color:#50435D;
+    padding-left:3px;
+    width:105px;
+    margin-left:-90px;
+    margin-top:15px;
+    display:none;
+    border-bottom:1px solid #969696;
+    border-left:1px solid #969696;
+    border-right:1px solid #969696;
+    z-index:15000;
+    position:absolute;
+}   
+/*****************botones de excelente , bueno y regular***************/
+#boton_e
+{
+    position:relative;
+    background-image:url('../Images/icons/icon_e.png');
+    width:16px;
+    height:16px;
+    top:-1px;
+}
+#boton_b
+{
+    position:relative;
+    background-image:url('../Images/icons/icon_b.png');
+    width:16px;
+    height:16px;
+    top:-1px;
+}
+#boton_r
+{
+    position:relative;
+    background-image:url('../Images/icons/icon_r.png');
+    width:16px;
+    height:16px;
+    top:-1px;
+}

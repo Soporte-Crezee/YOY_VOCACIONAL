@@ -1,0 +1,79 @@
+﻿/* File Created: agosto 24, 2012 */
+.dato
+{
+    height: 2.2em;
+    width: 45em;
+}
+.dato span
+{
+    float: left;
+    padding-top: .5em;
+    width: 10em;
+}
+.dato select
+{
+    width: 20.4em;
+    height: 26px;
+}
+.dato input
+{
+    width: 20em;
+}
+.dato input[type="checkbox"]
+{
+    width: 1.5em;
+}
+#informacion
+{
+    width: 90.5em;
+}
+#pais, #fechacontrato, #fechainicio, #licencias
+{
+    float: left;
+}
+#estado, #clave, #fechafin, #numerolicencias
+{
+    float: right;
+}
+#infocliente .dato
+{
+    width: 100%;
+}
+#infocliente .dato input
+{
+    width: 65.5em;
+}
+#infocliente .dato#telefonocte input
+{
+    width: 20em;
+}
+#enviar
+{
+    padding-top: .5em;
+    padding-left: 10em;
+}
+.dato#pais span, .dato#estado span
+{
+    padding-top: .5em;
+}
+#ilimitadasetiqueta
+{
+    display: inline;
+}
+#ilimitadascaptura
+{
+    padding-top: .6em;
+}
+* > .dato select /* Gecko incluye Firefox*/
+{
+    height: 1.6em;
+    height: 26px;
+}
+* > .dato#pais span, * > .dato#estado span /* Gecko incluye Firefox*/
+{
+    padding-top: .2em;
+}
+html>body #ilimitadascaptura /* IE7 */
+{
+    *padding-top: .3em;
+}

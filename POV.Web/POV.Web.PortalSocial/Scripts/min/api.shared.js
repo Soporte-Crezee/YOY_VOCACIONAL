@@ -1,0 +1,1 @@
+﻿(function(a){a.apiCall=function(b){var c=a.extend({type:"GET",data:{},contentType:"application/x-www-form-urlencoded",success:function(){},error:function(){}},b);a.ajax({type:c.type,url:c.url,contentType:c.contentType,data:c.data,success:function(a){c.success(a)},error:function(a){c.error(a)}})}})(jQuery)

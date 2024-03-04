@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="xrRichText2.SerializableRtfString" xml:space="preserve">
+    <value>ewBcAHIAdABmADEAXABhAG4AcwBpAFwAYQBuAHMAaQBjAHAAZwAxADIANQAyAFwAZABlAGYAZgAwAHsAXABmAG8AbgB0AHQAYgBsAHsAXABmADAAXABmAG4AaQBsAFwAZgBjAGgAYQByAHMAZQB0ADAAIABBAHIAaQBhAGwAOwB9AHsAXABmADEAXABmAG4AaQBsACAAVABpAG0AZQBzACAATgBlAHcAIABSAG8AbQBhAG4AOwB9AH0ADQAKAFwAdgBpAGUAdwBrAGkAbgBkADQAXAB1AGMAMQBcAHAAYQByAGQAXABsAGEAbgBnADMAMAA4ADIAXABmAHMAMgA0ACAAMAAuACAAQQBjAHQAaQB2AGkAZABhAGQAIABhAGwAIABhAGkAcgBlACAAbABpAGIAcgBlAC4AIABBAGwAdABvAHMAIABwAHUAbgB0AGEAagBlAHMAIABlAG4AIABlAHMAdABhACAAXAAnAGUAMQByAGUAYQAgAHMAaQBnAG4AaQBmAGkAYwBhAG4AIABxAHUAZQAgAGEAbAAgAGUAeABhAG0AaQBuAGEAZABvACAAbABlACAAZwB1AHMAdABhACAAcABhAHMAYQByACAAbABhACAAbQBhAHkAbwByACAAcABhAHIAdABlACAAZABlAGwAIAB0AGkAZQBtAHAAbwAgAGUAbgAsACAAZQBsACAAYwBhAG0AcABvACwAIABlAG4AIABsAG8AcwAgAGIAbwBzAHEAdQBlAHMAIABvACAAZQBuACAAZQBsACAAbQBhAHIALAAgAGwAZQAgAGEAZwByAGEAZABhACAAYwB1AGwAdABpAHYAYQByACAAcABsAGEAbgB0AGEAcwAsACAAYwB1AGkAZABhAHIAIABhAG4AaQBtAGEAbABlAHMALAAgAGUAdABjAC4AIABFAG4AIABjAGEAbQBiAGkAbwAsACAAbgBvACAAcwBlACAAcwBlAG4AdABpAHIAXAAnAGUAZABhACAAbQB1AHkAIABhACAAZwB1AHMAdABvACAAZQBuACAAdQBuAGEAIABmAFwAJwBlADEAYgByAGkAYwBhACwAIABlAG4AIAB1AG4AIABsAGEAYgBvAHIAYQB0AG8AcgBpAG8AIABvACAAZQBuACAAdQBuAGEAIABvAGYAaQBjAGkAbgBhAC4AXABwAGEAcgANAAoAMQAuACAASQBuAHQAZQByAFwAJwBlADkAcwAgAG0AZQBjAFwAJwBlADEAbgBpAGMAbwAuACAAVQBuACAAYQBsAHQAbwAgAHAAdQBuAHQAYQBqAGUAIABhAHEAdQBcACcAZQBkACAAaQBuAGQAaQBjAGEAIABpAG4AdABlAHIAXAAnAGUAOQBzACAAcABhAHIAYQAgAHQAcgBhAGIAYQBqAGEAcgAgAGMAbwBuACAAbQBcACcAZQAxAHEAdQBpAG4AYQBzACAAeQAgAGgAZQByAHIAYQBtAGkAZQBuAHQAYQBzACwAIABjAG8AbgBzAHQAcgB1AGkAcgAgAG8AIABhAHIAcgBlAGcAbABhAHIAIABvAGIAagBlAHQAbwBzACAAbQBlAGMAXAAnAGUAMQBuAGkAYwBvAHMALAAgAGEAcgB0AGUAZgBhAGMAdABvAHMAIABlAGwAXAAnAGUAOQBjAHQAcgBpAGMAbwBzACwAIABtAHUAZQBiAGwAZQBzACwAIABlAHQAYwAuAFwAcABhAHIADQAKADIALgAgAEkAbgB0AGUAcgBcACcAZQA5AHMAIABwAG8AcgAgAGUAbAAgAGMAXAAnAGUAMQBsAGMAdQBsAG8ALgAgAEwAbwAgAHAAbwBzAGUAZQBuACAAYQBxAHUAZQBsAGwAYQBzACAAcABlAHIAcwBvAG4AYQBzACAAYQAgAHEAdQBpAGUAbgBlAHMAIABsAGUAcwAgAGcAdQBzAHQAYQAgAHQAcgBhAGIAYQBqAGEAcgAgAGMAbwBuACAAbgBcACcAZgBhAG0AZQByAG8AcwAuACAATQB1AGMAaABvAHMAIABpAG4AZwBlAG4AaQBlAHIAbwBzACAAcgBlAHYAZQBsAGEAbgAgAHQAYQBtAGIAaQBcACcAZQA5AG4AIAB1AG4AIABtAGEAcgBjAGEAZABvACAAaQBuAHQAZQByAFwAJwBlADkAcwAgAHAAbwByACAAbABhAHMAIABhAGMAdABpAHYAaQBkAGEAZABlAHMAIAByAGUAbABhAGMAaQBvAG4AYQBkAGEAcwAgAGMAbwBuACAAZQBsACAAYwBcACcAZQAxAGwAYwB1AGwAbwAuAFwAcABhAHIADQAKADMALgAgAEkAbgB0AGUAcgBcACcAZQA5AHMAIABjAGkAZQBuAHQAXAAnAGUAZABmAGkAYwBvAC4AIABNAGEAbgBpAGYAaQBlAHMAdABhAG4AIABlAHMAdABlACAAaQBuAHQAZQByAFwAJwBlADkAcwAgAGwAYQBzACAAcABlAHIAcwBvAG4AYQBzACAAcQB1AGUAIABlAG4AYwB1AGUAbgB0AHIAYQBuACAAcABsAGEAYwBlAHIAIABlAG4AIABpAG4AdgBlAHMAdABpAGcAYQByACAAbABhACAAcgBhAHoAXAAnAGYAMwBuACAAZABlACAAbABvAHMAIABoAGUAYwBoAG8AcwAgAG8AIABkAGUAIABsAGEAcwAgAGMAbwBzAGEAcwAsACAAZQBuACAAZABlAHMAYwB1AGIAcgBpAHIAIABzAHUAcwAgAGMAYQB1AHMAYQBzACAAeQAgAGUAbgAgAHIAZQBzAG8AbAB2AGUAcgAgAHAAcgBvAGIAbABlAG0AYQBzACAAZABlACAAZABpAHMAdABpAG4AdABhACAAXAAnAGUAZABuAGQAbwBsAGUALAAgAHAAbwByACAAbQBlAHIAYQAgAGMAdQByAGkAbwBzAGkAZABhAGQAIABjAGkAZQBuAHQAXAAnAGUAZABmAGkAYwBhACAAeQAgAHMAaQBuACAAcABlAG4AcwBhAHIAIABlAG4AIABsAG8AcwAgAGIAZQBuAGUAZgBpAGMAaQBvAHMAIABlAGMAbwBuAFwAJwBmADMAbQBpAGMAbwBzACAAcQB1AGUAIABwAHUAZQBkAGEAbgAgAHIAZQBzAHUAbAB0AGEAcgAgAGQAZQAgAHMAdQBzACAAZABlAHMAYwB1AGIAcgBpAG0AaQBlAG4AdABvAHMALgAgAEUAbAAgAGkAbgB0AGUAcgBcACcAZQA5AHMAIABjAGkAZQBuAHQAXAAnAGUAZABmAGkAYwBvACAAZQBzACAAZABlACAAZwByAGEAbgAgAGkAbQBwAG8AcgB0AGEAbgBjAGkAYQAgAGUAbgAgAGUAbAAgAGUAagBlAHIAYwBpAGMAaQBvACAAZABlACAAbQB1AGMAaABhAHMAIABjAGEAcgByAGUAcgBhAHMAIABwAHIAbwBmAGUAcwBpAG8AbgBhAGwAZQBzACwAIABhAHUAbgAgAGQAZQAgAGEAcQB1AFwAJwBlADkAbABsAGEAcwAgAGQAbwBuAGQAZQAgAGUAbAAgAG0AXAAnAGYAMwB2AGkAbAAgAGQAZQAgAGwAYQAgAGEAYwB0AGkAdgBpAGQAYQBkACAAcAB1AGUAZABlACAAcwBlAHIAIABkAGUAIABcACcAZQBkAG4AZABvAGwAZQAgAGQAaQBzAHQAaQBuAHQAYQAgAGEAbAAgAHAAcgBvAGcAcgBlAHMAbwAgAGQAZQAgAGwAYQAgAGMAaQBlAG4AYwBpAGEALgBcAHAAYQByAA0ACgA0AC4AIABJAG4AdABlAHIAXAAnAGUAOQBzACAAcABlAHIAcwB1AGEAcwBpAHYAbwAuACAATABvACAAcABvAHMAZQBlAG4AIABhAHEAdQBlAGwAbABhAHMAIABwAGUAcgBzAG8AbgBhAHMAIABhACAAcQB1AGkAZQBuAGUAcwAgAGwAZQBzACAAZwB1AHMAdABhACAAdAByAGEAdABhAHIAIABjAG8AbgAgAGwAYQAgAGcAZQBuAHQAZQAsACAAaQBtAHAAbwBuAGUAcgAgAHMAdQBzACAAcAB1AG4AdABvAHMAIABkAGUAIAB2AGkAcwB0AGEALAAgAGMAbwBuAHYAZQBuAGMAZQByACAAYQAgAGwAbwBzACAAZABlAG0AXAAnAGUAMQBzACAAcgBlAHMAcABlAGMAdABvACAAYQAgAGEAbABnAFwAJwBmAGEAbgAgAHAAcgBvAHkAZQBjAHQAbwAsACAAdgBlAG4AZABlAHIAbABlAHMAIAB1AG4AIABhAHIAdABcACcAZQBkAGMAdQBsAG8ALAAgAGUAdABjAC4AXABwAGEAcgANAAoANQAuACAASQBuAHQAZQByAFwAJwBlADkAcwAgAGEAcgB0AFwAJwBlAGQAcwB0AGkAYwBvAC0AcABsAFwAJwBlADEAcwB0AGkAYwBvAC4AIABMAG8AIABwAG8AcwBlAGUAbgAgAGwAYQBzACAAcABlAHIAcwBvAG4AYQBzACAAYQAgAHEAdQBpAGUAbgBlAHMAIABsAGUAcwAgAGEAZwByAGEAZABhACAAaABhAGMAZQByACAAdAByAGEAYgBhAGoAbwBzACAAZABlACAAYwByAGUAYQBjAGkAXAAnAGYAMwBuACAAZABlACAAdABpAHAAbwAgAG0AYQBuAHUAYQBsACwAIAB1AHMAYQBuAGQAbwAgAGMAbwBtAGIAaQBuAGEAYwBpAG8AbgBlAHMAIABkAGUAIABjAG8AbABvAHIAZQBzACwAIABtAGEAdABlAHIAaQBhAGwAZQBzACwAIABmAG8AcgBtAGEAcwAgAHkAIABkAGkAcwBlAFwAJwBmADEAbwBzAC4AXABwAGEAcgANAAoANgAuACAASQBuAHQAZQByAFwAJwBlADkAcwAgAGwAaQB0AGUAcgBhAHIAaQBvAC4AIABFAHMAIABwAHIAbwBwAGkAbwAgAGQAZQAgAHQAbwBkAG8AcwAgAGEAcQB1AGUAbABsAG8AcwAgAGEAIABxAHUAaQBlAG4AZQBzACAAbABlAHMAIABnAHUAcwB0AGEAIABsAGEAIABsAGUAYwB0AHUAcgBhACAAbwAgAGUAbgBjAHUAZQBuAHQAcgBhAG4AIABwAGwAYQBjAGUAcgAgAGUAbgAgAGUAeABwAHIAZQBzAGEAcgAgAHMAdQBzACAAaQBkAGUAYQBzACAAZQBuACAAZgBvAHIAbQBhACAAbwByAGEAbAAgAG8AIABlAHMAYwByAGkAdABhAC4AXABwAGEAcgANAAoANwAuACAASQBuAHQAZQByAFwAJwBlADkAcwAgAG0AdQBzAGkAYwBhAGwALgAgAFMAZQAgAHMAaQB0AFwAJwBmAGEAYQBuACAAYQBxAHUAXAAnAGUAZAAgAGwAYQBzACAAcABlAHIAcwBvAG4AYQBzACAAcQB1AGUAIABtAHUAZQBzAHQAcgBhAG4AIAB1AG4AIABtAGEAcgBjAGEAZABvACAAZwB1AHMAdABvACAAcABhAHIAYQAgAHQAbwBjAGEAcgAgAGkAbgBzAHQAcgB1AG0AZQBuAHQAbwBzACAAbQB1AHMAaQBjAGEAbABlAHMALAAgAGMAYQBuAHQAYQByACwAIABiAGEAaQBsAGEAcgAsACAAbABlAGUAcgAgAHMAbwBiAHIAZQAgAG0AXAAnAGYAYQBzAGkAYwBhACwAIABlAHMAdAB1AGQAaQBhAHIAIABsAGEAIAB2AGkAZABhACAAZABlACAAYwBvAG0AcABvAHMAaQB0AG8AcgBlAHMAIABmAGEAbQBvAHMAbwBzACwAIABhAHMAaQBzAHQAaQByACAAYQAgAGMAbwBuAGMAaQBlAHIAdABvAHMALAAgAGUAdABjAC4AXABwAGEAcgANAAoAOAAuACAASQBuAHQAZQByAFwAJwBlADkAcwAgAHAAbwByACAAZQBsACAAcwBlAHIAdgBpAGMAaQBvACAAcwBvAGMAaQBhAGwALgAgAFUAbgAgAGEAbAB0AG8AIABwAHUAbgB0AGEAagBlACAAZQBuACAAZQBzAHQAYQAgAFwAJwBlADEAcgBlAGEAIABpAG4AZABpAGMAYQAgAHUAbgAgAGcAcgBhAG4AIABpAG4AdABlAHIAXAAnAGUAOQBzACAAcABvAHIAIABzAGUAcgB2AGkAcgAgAGEAIABsAG8AcwAgAGQAZQBtAFwAJwBlADEAcwA6ACAAYQAgAGwAbwBzACAAbgBlAGMAZQBzAGkAdABhAGQAbwBzACwAIABlAG4AZgBlAHIAbQBvAHMALAAgAG4AaQBcACcAZgAxAG8AcwAgAHkAIABhAG4AYwBpAGEAbgBvAHMALgBcAHAAYQByAA0ACgA5AC4AIABJAG4AdABlAHIAXAAnAGUAOQBzACAAcABvAHIAIABlAGwAIAB0AHIAYQBiAGEAagBvACAAZABlACAAbwBmAGkAYwBpAG4AYQAuACAARQBzACAAcAByAG8AcABpAG8AIABkAGUAIABsAGEAcwAgAHAAZQByAHMAbwBuAGEAcwAgAGEAIABxAHUAaQBlAG4AZQBzACAAbABlAHMAIABnAHUAcwB0AGEAIAB1AG4AIAB0AGkAcABvACAAZABlACAAdAByAGEAYgBhAGoAbwAgAGQAZQAgAGUAcwBjAHIAaQB0AG8AcgBpAG8ALAAgAHEAdQBlACAAcgBlAHEAdQBpAGUAcgBlACAAZQB4AGEAYwB0AGkAdAB1AGQAIAB5ACAAcAByAGUAYwBpAHMAaQBcACcAZgAzAG4ALgBcAHAAYQByAA0ACgBcAHAAYQByAGQAXABmAGkALQAzADYAMABcAGwAaQAzADYAMABcAGwAYQBuAGcAMgAwADUAOABcAGYAMQBcAHAAYQByAA0ACgB9AA0ACgA=</value>
+  </data>
+  <data name="xrRichText1.SerializableRtfString" xml:space="preserve">
+    <value>ewBcAHIAdABmADEAXABhAG4AcwBpAFwAYQBuAHMAaQBjAHAAZwAxADIANQAyAFwAZABlAGYAZgAwAHsAXABmAG8AbgB0AHQAYgBsAHsAXABmADAAXABmAG4AaQBsACAAQQByAGkAYQBsADsAfQB7AFwAZgAxAFwAZgBuAGkAbABcAGYAYwBoAGEAcgBzAGUAdAAwACAAQQByAGkAYQBsADsAfQB7AFwAZgAyAFwAZgBuAGkAbAAgAFQAaQBtAGUAcwAgAE4AZQB3ACAAUgBvAG0AYQBuADsAfQB9AA0ACgB7AFwAYwBvAGwAbwByAHQAYgBsACAAOwBcAHIAZQBkADAAXABnAHIAZQBlAG4AMABcAGIAbAB1AGUAMAA7AH0ADQAKAFwAdgBpAGUAdwBrAGkAbgBkADQAXAB1AGMAMQBcAHAAYQByAGQAXABjAGYAMQBcAGwAYQBuAGcAMgAwADUAOABcAGYAMABcAGYAcwAyADQAIABMAGEAIABwAHIAdQBlAGIAYQAgAEsAdQBkAGUAcgAgAHAAZQByAG0AaQB0AGUAIABjAG8AbgBvAGMAZQByACAAZQBuACAAcQB1AFwAZgAxAFwAJwBlADkAXABmADAAIAAgAFwAZgAxAFwAJwBlADEAXABmADAAIAByAGUAYQBzACAAbwBjAHUAcABhAGMAaQBvAG4AYQBsAGUAcwAgAHMAZQAgAG0AYQBuAGkAZgBpAGUAcwB0AGEAbgAgAGwAbwBzAFwAZgAxACAAIABcAGYAMAAgAGkAbgB0AGUAcgBlAHMAZQBzACAAeQAgAHAAcgBlAGYAZQByAGUAbgBjAGkAYQBzACAAZABlAGwAIABlAHgAYQBtAGkAbgBhAGQAbwAgAHkAIABsAG8AcwAgAHQAaQBwAG8AcwAgAGQAZQAgAGEAYwB0AGkAdgBpAGQAYQBkAGUAcwAgAGEAIABsAG8AcwAgAGMAdQBhAGwAZQBzACwAIABwAHIAbwBiAGEAYgBsAGUAbQBlAG4AdABlACwAIABsAGUAIABnAHUAcwB0AGEAcgBcAGYAMQBcACcAZQBkAFwAZgAwACAAYQAgAHYAaQBuAGMAdQBsAGEAcgBzAGUALgBcAHAAYQByAA0ACgBFAGwAIABpAG4AcwB0AHIAdQBtAGUAbgB0AG8AIABlAHMAIABcAGYAMQBcACcAZgBhAFwAZgAwACAAdABpAGwAIABwAGEAcgBhACAAcQB1AGUAIABsAG8AcwAgAGUAcwB0AHUAZABpAGEAbgB0AGUAcwAgAHAAdQBlAGQAYQBuACAAcgBlAGEAbABpAHoAYQByACAAdQBuACAAZQBzAHQAdQBkAGkAbwAgAG8AcgBnAGEAbgBpAHoAYQBkAG8AIABkAGUAIABsAGEAcwAgAG8AYwB1AHAAYQBjAGkAbwBuAGUAcwAsACAAcwBlAGwAZQBjAGMAaQBvAG4AYQByACAAdQBuAGEAIABjAGEAcgByAGUAcgBhACAAeQAgAG8AcgBpAGUAbgB0AGEAcgAgAGwAYQBzACAAYQBjAHQAaQB2AGkAZABhAGQAZQBzACAAZgBvAHIAbQBhAHQAaQB2AGEAcwAgAHkAXABmADEAIAAgAFwAZgAwACAAdgBvAGMAYQBjAGkAbwBuAGEAbABlAHMAIABwAGEAcgBhACAAZQBuAGMAbwBuAHQAcgBhAHIAIABtAGEAeQBvAHIAZQBzACAAcwBhAHQAaQBzAGYAYQBjAGMAaQBvAG4AZQBzACAAYQBjAHQAdQBhAGwAZQBzACAAeQAgAGYAdQB0AHUAcgBhAHMALgAgAFMAdQBzACAAdQBzAG8AcwBcAGYAMQAgACAAXABmADAAIABlAHMAcABlAGMAXABmADEAXAAnAGUAZABcAGYAMAAgAGYAaQBjAG8AcwAgAHMAbwBuADoAIABhACkAIABzAGUAXABmADEAXAAnAGYAMQBcAGYAMAAgAGEAbABhAHIAIABhAHEAdQBlAGwAbABhAHMAIAB2AG8AYwBhAGMAaQBvAG4AZQBzACAAcQB1AGUALAAgAGEAdQBuAHEAdQBlACAAZABlAHMAYwBvAG4AbwBjAGkAZABhAHMAIABwAG8AcgAgAGUAbAAgAHMAdQBqAGUAdABvACwAXABmADEAIAAgAFwAZgAwACAAaQBtAHAAbABpAGMAYQBuACAAYQBjAHQAaQB2AGkAZABhAGQAZQBzACAAcwBpAG0AaQBsAGEAcgBlAHMAIABhACAAbABhAHMAIABlAGwAZQBnAGkAZABhAHMAIABlAG4AIABzAHUAcwAgAHAAcgBlAGYAZQByAGUAbgBjAGkAYQBzADsAIABiACkAIABjAG8AbQBwAHIAbwBiAGEAcgAgAHMAaQAgAGwAYQBcAGYAMQAgACAAXABmADAAIABpAG4AYwBsAGkAbgBhAGMAaQBcAGYAMQBcACcAZgAzAFwAZgAwACAAbgAgAGQAZQAgAHUAbgBhACAAcABlAHIAcwBvAG4AYQAgAGgAYQBjAGkAYQAgAHUAbgBhACAAbwBjAHUAcABhAGMAaQBcAGYAMQBcACcAZgAzAFwAZgAwACAAbgAgAGUAcwAgAGMAbwBuAHMAaQBzAHQAZQBuAHQAZQAgAGMAbwBuACAAZQBsACAAdABpAHAAbwAgAGQAZQAgAHQAYQByAGUAYQBzACAAcQB1AGUAXABmADEAIAAgAFwAZgAwACAAbwByAGQAaQBuAGEAcgBpAGEAbQBlAG4AdABlACAAcAByAGUAZgBpAGUAcgBlACAAaABhAGMAZQByAC4AXABwAGEAcgANAAoARQBuACAAcgBlAHMAdQBtAGUAbgAsACAAZQBzAHQAYQAgAGgAZQByAHIAYQBtAGkAZQBuAHQAYQAgAGUAcwAgAHUAbgBhACAAZABlACAAbABhAHMAIABtAGUAagBvAHIAZQBzACAAbQBlAGQAaQBkAGEAcwAgAGUAeABpAHMAdABlAG4AdABlAHMAIABkAGUAIABsAG8AcwAgAGkAbgB0AGUAcgBlAHMAZQBzACwAXABmADEAIAAgAFwAZgAwACAAcABhAHIAdABpAGMAdQBsAGEAcgBtAGUAbgB0AGUAIABwAGEAcgBhACAAZQBzAHQAdQBkAGkAYQBuAHQAZQBzACAAYQBkAG8AbABlAHMAYwBlAG4AdABlAHMALgAgAFMAdQBzACAAZQBsAGUAbQBlAG4AdABvAHMALAAgAGQAZQBsACAAdABpAHAAbwAgAGQAZQAgAHAAcgBlAGYAZQByAGUAbgBjAGkAYQBzACwAXABmADEAIAAgAFwAZgAwACAAYQB1AG4AcQB1AGUAIABvAHIAaQBnAGkAbgBhAGwAbQBlAG4AdABlACAAcwBlAGwAZQBjAGMAaQBvAG4AYQBkAG8AcwAgAGQAZQAgAG0AbwBkAG8AIABzAHUAYgBqAGUAdABpAHYAbwAsACAAaABhAG4AIABzAGkAZABvACAAcAByAG8AYgBhAGQAbwBzACAAbQBlAGQAaQBhAG4AdABlAFwAZgAxACAAIABcAGYAMAAgAGkAbgB2AGUAcwB0AGkAZwBhAGMAaQBcAGYAMQBcACcAZgAzAFwAZgAwACAAbgAsACAAeQAgAHMAZQAgAHAAdQBlAGQAZQAgAHAAcgBlAHMAdQBtAGkAcgAgAHEAdQBlACAAbABhAHMAIABwAHUAbgB0AHUAYQBjAGkAbwBuAGUAcwAgAG8AYgB0AGUAbgBpAGQAYQBzACAAZQBuACAAdQBuAGEAcwAgAFwAZgAxAFwAJwBlADEAXABmADAAIAByAGUAYQBzAFwAZgAxACAAIABcAGYAMAAgAGEAbQBwAGwAaQBhAHMAIABzAG8AbgAgAHIAYQB6AG8AbgBhAGIAbABlAG0AZQBuAHQAZQAgAG8AYgBqAGUAdABpAHYAYQBzAC4AIABFAG4AIABvAGMAYQBzAGkAbwBuAGUAcwAsACAAcwBlACAAYwBvAG4AcwBpAGQAZQByAGEAIABxAHUAZQAgAGwAYQAgAGEAcABsAGkAYwBhAGMAaQBcAGYAMQBcACcAZgAzAFwAZgAwACAAbgAgAGQAZQBcAGYAMQAgACAAXABmADAAIABlAHMAdABhACAAcAByAHUAZQBiAGEAIABlAHMAIABiAGEAcwB0AGEAbgB0AGUAIABzAHUAZwBlAHIAZQBuAHQAZQAgAHAAYQByAGEAIABlAHgAcABsAG8AcgBhAHIALAAgAGoAdQBuAHQAbwAgAGMAbwBuACAAbwB0AHIAbwBzACAAZABhAHQAbwBzACAAcgBlAGYAZQByAGUAbgB0AGUAcwAgAGEAIABsAGEAcwBcAGYAMQAgACAAXABmADAAIABhAHAAdABpAHQAdQBkAGUAcwAgAHkAIABsAGEAIABwAGUAcgBzAG8AbgBhAGwAaQBkAGEAZAAsACAAbABhAHMAIABwAG8AcwBpAGIAaQBsAGkAZABhAGQAZQBzACAAZABlACAAdQBuAGEAIABlAGwAZQBjAGMAaQBcAGYAMQBcACcAZgAzAFwAZgAwACAAbgAgAHYAbwBjAGEAYwBpAG8AbgBhAGwALgBcAGMAZgAwAFwAZgAyAFwAcABhAHIADQAKAH0ADQAKAA==</value>
+  </data>
+  <data name="xrTableCell32.Text" xml:space="preserve">
+    <value>Cirujano dentista, Consejería vocacional, Fisioterapia y rehabilitación, Licenciatura en bibliotecología, Licenciatura en desarrollo comunitario, Licenciatura en educación básica/media superior, Licenciatura en enfermería, Licenciatura en enseñanza de las matemáticas, Licenciatura en nutrición, Licenciatura en optometría, Licenciatura en psicología educativa, Licenciatura en psicología social, Licenciatura en psicopedagogía, Licenciatura en sociología, Licenciatura en trabajo social, Médico cirujano, Médicos y cirujanos, Sacerdote o religioso con estudios en filosofía, Sacerdote o religioso con estudios en teología.</value>
+  </data>
+  <data name="xrTableCell38.Text" xml:space="preserve">
+    <value>Estudios en telemática, Licenciatura en administración, Licenciatura en bibliotecología, Licenciatura en ciencias de la comunicación, Licenciatura en contaduría, Licenciatura en historia, Licenciatura en informática administrativa, Licenciatura en literatura latinoamericana, Licenciatura en tecnologías de la información, Licenciatura en traducción, Psicología organizacional.</value>
+  </data>
+  <data name="xrTableCell96.Text" xml:space="preserve">
+    <value>Antropólogos, Arqueólogos, Astrónomos, Biólogos, Biólogos, Cirujano dentista, Fisioterapia y rehabilitación, Ingenieros de alimentos, Ingenieros químicos, Licenciatura en historia, Licenciatura en nutrición, Licenciatura en optometría, Licenciatura en psicología clínica, Medicina veterinaria y zootecnia, Médico cirujano, Químico bacteriólogo y parasitario, Químico farmacéutico.</value>
+  </data>
+  <data name="xrTableCell98.Text" xml:space="preserve">
+    <value>Actuación, Ciencias políticas y administración pública, Licenciatura en ciencias de la comunicación, Licenciatura en criminología y criminalística, Licenciatura en derecho, Licenciatura en educación básica/media superior, Licenciatura en enseñanza de las matemáticas, Licenciatura en medios sociales y digitales, Licenciatura en Mercadotecnia, Licenciatura en periodismo, Locución de radio y TV, Sacerdote o religioso con estudios en filosofía, Sacerdote o religioso con estudios en teología.</value>
+  </data>
+  <data name="xrTableCell100.Text" xml:space="preserve">
+    <value>Animación digital, Licenciatura en Arquitectura, Licenciatura en arte contemporáneo, Licenciatura en artes plásticas, Licenciatura en artes visuales, Licenciatura en diseño de modas, Licenciatura en diseño de productos, Licenciatura en diseño del hábitat, Licenciatura en diseño gráfico, Licenciatura en diseño industrial, Licenciatura en diseño multimedia.</value>
+  </data>
+  <data name="xrTableCell102.Text" xml:space="preserve">
+    <value>Estudio de idiomas, Licenciatura en bibliotecología, Licenciatura en derecho, Licenciatura en educación básica/media superior, Licenciatura en enseñanza de las matemáticas, Licenciatura en filosofía, Licenciatura en historia, Licenciatura en literatura latinoamericana, Licenciatura en periodismo, Licenciatura en teología, Licenciatura en traducción.</value>
+  </data>
+  <data name="xrTableCell104.Text" xml:space="preserve">
+    <value>Actuación, Artistas de Ballet, Licenciatura en ciencias del arte, Licenciatura en Danza, Licenciatura en docencia de la danza clásica, Licenciatura en educación artística, Licenciatura en música, Licenciatura en producción musical, Licenciatura en teatro, Profesores de música.</value>
+  </data>
+  <data name="xrTableCell23.Text" xml:space="preserve">
+    <value>Carreras militares y oficiales de ejército, marina, aviación, policía, Ciencias de la tierra y de la atmósfera, Ciencias del mar, Desarrollo sustentable, Ingeniería en energía, Ingeniería en geofísica, Ingeniería en geología, Ingeniería en recursos renovables, Ingeniería petrolera, Ingenieros agrónomos, Ingenieros de minas, Ingenieros forestales, Ingenieros pesqueros, Licenciatura en antropología, Licenciatura en arqueología, Licenciatura en biología marina, Licenciatura en criminología y criminalística, Licenciatura en ecología, Licenciatura en oceanología, Licenciatura en sociología, Licenciatura en turismo, Licenciaturas en biología, Medicina veterinaria y zootecnia, Profesores de educación física, Sacerdote o religioso con estudios en filosofía, Sacerdote o religioso con estudios en teología, Sistema de producción ganadera.</value>
+  </data>
+  <data name="xrTableCell29.Text" xml:space="preserve">
+    <value>Estudios en telemática, Físicos, Ingeniería Aeronáutica, Ingeniería Biónica, Ingeniería en Alimentos, Ingeniería en Biotecnología, Ingeniería en energía, Ingeniería en mecatrónica, Ingeniería en recursos renovables, Ingeniería en robótica, Ingeniería Industrial Logística, Ingeniería petrolera, Ingeniería Química Industrial, Ingenieros civiles, Ingenieros de minas, Ingenieros electricistas, Ingenieros industriales, Ingenieros mecánicos, Ingenieros metalúrgicos, Ingenieros químicos, Licenciatura en radio y televisión, Piloto aviadores, Química Aplicada, Química Industrial, Sistema de producción ganadera.</value>
+  </data>
+  <data name="xrTableCell35.Text" xml:space="preserve">
+    <value>Enseñanza de las matemáticas, Gestión de negocios, Ingeniería de datos, Ingeniería en computación, Ingeniería en robótica, Ingeniería en software, Ingenieros de sistemas computacionales, Licenciatura en actuaría, Licenciatura en administración, Licenciatura en ciencias de la computación, Licenciatura en comercio y negocios internacionales, Licenciatura en contaduría, Licenciatura en economía, Licenciatura en Estadística, Licenciatura en finanzas, Licenciatura en matemáticas, Licenciatura en Mercadotecnia.</value>
+  </data>
+  <data name="xrTableCell2.Text" xml:space="preserve">
+    <value>La tabla que aparece anteriormente menciona únicamente algunas ocupaciones, profesionales y semiprofesionales, asociadas al resultado obtenido. Para profundizar más puede consultar el anexo y comentar los resultados con el orientador vocacional.</value>
+  </data>
+  <data name="xrTableCell16.Text" xml:space="preserve">
+    <value>Ingenieros agrónomos especializados en maquinaria agrícola, Ingenieros civiles especializados en hidráulica, Ingenieros en vías de comunicación, Ingenieros de minas, Ingenieros de petróleo, Ingenieros navales.</value>
+  </data>
+  <data name="xrTableCell19.Text" xml:space="preserve">
+    <value>Astrónomos, Actuarios, Economistas, Estadígrafos, Físicos, Ingenieros civiles, Ingenieros electricistas, Ingenieros industriales, Ingenieros mecánicos, Ingenieros de petróleos, Ingenieros químicos, Matemáticos, Profesores de matemáticas, Químicos.</value>
+  </data>
+</root>

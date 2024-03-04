@@ -1,0 +1,190 @@
+﻿/*	DDGridView/DDListView	*/
+/*	DDGridView/DDListView	*/
+table.DDGridView, table.DDListView
+{
+	width: 100%;
+	color: #666;
+	border:solid 2px #dbddff ;
+	font-family:Helvetica;
+    font-size:14pt;
+}
+
+table.DDGridView .th, table.DDGridView .td, table.DDListView .th, table.DDListView .td
+{
+	white-space: nowrap;
+}
+
+table.DDGridView .th, table.DDListView .th
+{
+	
+	border: 1px solid #dbddff; 
+	background: #da9937 ;
+	color: #ffffff; font-weight: bold;
+    height: 20px;
+}
+
+table.DDGridView .th a, table.DDListView .th a
+{
+	color: #444;
+	text-decoration: none;
+}
+
+table.DDGridView .td, table.DDListView .td
+{
+	border:  1px solid #dbddff;
+	border-left-width:0px;
+	border-right-width:0px;
+	padding: 6px;
+    
+}
+table.DDGridView th {padding:5px;}
+table.DDGridView td {padding:5px;}
+table.DDGridView .td a, table.DDListView .td a
+{
+	color: #666;
+    text-decoration: none;
+    margin-right: 6px;
+	
+}
+
+table.DDGridView .DDSelected a, table.DDListView .DDSelected a
+{
+	color: #718ABE;
+    text-decoration: none;
+    margin-right: 6px;
+	
+}
+
+table.DDGridView .DDSelected a:hover, table.DDListView .DDSelected a:hover
+{
+	color: #000099;
+	text-decoration: underline;
+}
+
+table.DDGridView .td a:hover, table.DDListView .td a:hover
+{
+	color: #33acfd;
+	text-decoration: underline;
+}
+table.DDGridView .td:hover,table.DDGridView  .tr:hover,table.DDListView .td a:hover
+{
+    background-color: #F5F6CE;
+    text-decoration: none;
+}
+
+/*	DataPager	*/
+div.DDPager
+{
+    padding: 0px 6px;
+}
+
+
+/*	DDGridViewWrap/DDListViewWrap	*/
+table.DDGridViewWrap, table.DDListViewWrap
+{
+	width: 100%;
+	color: #666;
+	border:solid 2px #dbddff ;
+	font: 12px Tahoma, Arial, Sans-Serif;
+}
+
+table.DDGridViewWrap .th, table.DDGridViewWrap .td, table.DDListViewWrap .th, table.DDListViewWrap .td
+{
+	white-space:normal;
+    min-width: 60px;
+
+}
+
+table.DDGridViewWrap .th, table.DDListViewWrap .th
+{
+	
+	border: 1px solid #dbddff; 
+	background: #da9937 ;
+	color: #ffffff; font-weight: bold;
+    height: 20px;
+}
+
+table.DDGridViewWrap .th a, table.DDListViewWrap .th a
+{
+	color: white;
+	text-decoration: none;
+}
+
+table.DDGridViewWrap .td, table.DDListViewWrap .td
+{
+	border:  1px solid #dbddff;
+	border-left-width:0px;
+	border-right-width:0px;
+	padding: 6px;
+    
+}
+table.DDGridViewWrap th {padding:5px;}
+table.DDGridViewWrap td {padding:5px;}
+table.DDGridViewWrap .td a, table.DDListViewWrap .td a
+{
+	color: #718ABE;
+    text-decoration: none;
+    margin-right: 6px;
+	
+}
+
+table.DDGridViewWrap .DDSelected a, table.DDListViewWrap .DDSelected a
+{
+	color: #718ABE;
+    text-decoration: none;
+    margin-right: 6px;
+	
+}
+
+table.DDGridViewWrap .DDSelected a:hover, table.DDListViewWrap .DDSelected a:hover
+{
+	color: #000099;
+	text-decoration: underline;
+}
+
+table.DDGridViewWrap .td a:hover, table.DDListViewWrap .td a:hover
+{
+	color: #000099;
+	text-decoration: underline;
+}
+table.DDGridViewWrap .td:hover,table.DDGridViewWrap .tr:hover, table.DDListViewWrap .td a:hover
+{
+    background-color: #F5F6CE !important;
+    text-decoration: none;
+}
+        .DDGridView
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .DDGridView .td:hover, .DDGridView .tr:hover
+        {
+            background-color: #f1f1f1 !important;
+            text-decoration: none;
+            color:#33acfd !important;
+        }
+        table.DDGridView .th, table.DDGridView .td, table.DDListView .th, table.DDListView .td
+        {
+            white-space: pre-line;
+        }
+        .wrap
+        {
+            white-space: nowrap;
+        }
+        table.DDGridView th {
+            background-color: #0067ac;
+            border: 1px solid #0067ac;
+            height: 20px;
+            padding: 3px;
+            color: #ffffff;
+        }
+        table.DDGridView td {                        
+            border: 1px solid #ccc;
+            white-space:initial !important;
+            padding: 20px 5px !important;
+
+        }
+        div.DDPager {
+            padding: 0px 6px;
+        }

@@ -1,0 +1,27 @@
+
+Nombre: Chespirito Primer Apellido: Chapulin Segundo Apellido: Colorado Curp: CHCC910204MHCCRH00 Sexo: Hombre Fecha Nacimiento: 30/06/1978 12:00:00 a. m. Fecha Registro: 20/04/2017 05:42:28 p. m.
+Nombre: Margarita Primer Apellido: Zavala Segundo Apellido: Calderon Curp: DOCE101010EERT204 Sexo: Mujer Fecha Nacimiento: 25/08/1971 12:00:00 a. m. Fecha Registro: 08/05/2017 01:47:37 p. m.
+Nombre: Orientador Primer Apellido: Primero Segundo Apellido:  Curp: DOCE101010EERT203 Sexo: Hombre Fecha Nacimiento: 02/08/1972 12:00:00 a. m. Fecha Registro: 08/05/2017 05:44:52 p. m.
+Nombre: Orientador Primer Apellido: Primero Segundo Apellido:  Curp: DOCE101010EERT203 Sexo: Hombre Fecha Nacimiento: 02/08/1972 12:00:00 a. m. Fecha Registro: 08/05/2017 06:52:44 p. m.
+Nombre: Margarita Primer Apellido: Zavala Segundo Apellido: Calderon Curp: DOCE101010EERT204 Sexo: Mujer Fecha Nacimiento: 25/08/1971 12:00:00 a. m. Fecha Registro: 08/05/2017 06:53:00 p. m.
+Nombre: Margarita Primer Apellido: Zavala Segundo Apellido: Calderon Curp: DOCE101010EERT204 Sexo: Mujer Fecha Nacimiento: 25/08/1971 12:00:00 a. m. Fecha Registro: 09/05/2017 05:43:05 p. m.
+Nombre: Margarita Primer Apellido: Zavala Segundo Apellido: Calderon Curp: DOCE101010EERT204 Sexo: Mujer Fecha Nacimiento: 25/08/1971 12:00:00 a. m. Fecha Registro: 10/05/2017 04:15:27 p. m.
+Nombre: Margarita Primer Apellido: Zavala Segundo Apellido: Calderon Curp: DOCE101010EERT204 Sexo: Mujer Fecha Nacimiento: 25/08/1971 12:00:00 a. m. Fecha Registro: 10/05/2017 04:28:49 p. m.
+Nombre: Margarita Primer Apellido: Zavala Segundo Apellido: Calderon Curp: DOCE101010EERT204 Sexo: Mujer Fecha Nacimiento: 25/08/1971 12:00:00 a. m. Fecha Registro: 10/05/2017 04:47:10 p. m.
+Nombre: Margarita Primer Apellido: Zavala Segundo Apellido: Calderon Curp: DOCE101010EERT204 Sexo: Mujer Fecha Nacimiento: 25/08/1971 12:00:00 a. m. Fecha Registro: 10/05/2017 04:53:09 p. m.
+Nombre: Margarita Primer Apellido: Zavala Segundo Apellido: Calderon Curp: DOCE101010EERT204 Sexo: Mujer Fecha Nacimiento: 25/08/1971 12:00:00 a. m. Fecha Registro: 10/05/2017 04:58:02 p. m.
+Nombre: Manuela Primer Apellido: Torres Segundo Apellido: Calderon Curp: DOCE101010EERT205 Sexo: Mujer Fecha Nacimiento: 25/08/1981 12:00:00 a. m. Fecha Registro: 10/05/2017 05:11:41 p. m.
+Nombre: Manuela Primer Apellido: Torres Segundo Apellido: Calderon Curp: DOCE101010EERT205 Sexo: Mujer Fecha Nacimiento: 25/08/1981 12:00:00 a. m. Fecha Registro: 22/05/2017 01:45:04 p. m.
+Nombre: Rodrigo Primer Apellido: Perez Segundo Apellido: Calderon Curp: DOCE101010EERT289 Sexo: Hombre Fecha Nacimiento: 25/08/1981 12:00:00 a. m. Fecha Registro: 22/05/2017 04:13:39 p. m.
+Nombre: Arely Primer Apellido: Martínez Segundo Apellido: Miam Curp: MAMA910903MGTTLL03 Sexo: Mujer Fecha Nacimiento: 03/09/1991 12:00:00 a. m. Fecha Registro: 20/02/2018 05:23:12 p. m.
+Nombre: Carlos Primer Apellido: Noh Segundo Apellido:  Curp: NOOC720202MDGLRR02 Sexo: Hombre Fecha Nacimiento: 02/02/1972 12:00:00 a. m. Fecha Registro: 20/02/2018 05:23:16 p. m.
+Nombre: Arely Primer Apellido: Martínez Segundo Apellido: Miam Curp: MAMA910903MGTTLL03 Sexo: Mujer Fecha Nacimiento: 03/09/1991 12:00:00 a. m. Fecha Registro: 21/02/2018 10:15:32 a. m.
+Nombre: Carlos Primer Apellido: Noh Segundo Apellido:  Curp: NOOC720202MDGLRR02 Sexo: Hombre Fecha Nacimiento: 02/02/1972 12:00:00 a. m. Fecha Registro: 21/02/2018 10:15:32 a. m.
+Nombre: Arely Primer Apellido: Martínez Segundo Apellido: Miam Curp: MAMA910903MGTTLL03 Sexo: Mujer Fecha Nacimiento: 03/09/1991 12:00:00 a. m. Fecha Registro: 21/02/2018 10:27:11 a. m.
+Nombre: Carlos Primer Apellido: Noh Segundo Apellido:  Curp: NOOC720202MDGLRR02 Sexo: Hombre Fecha Nacimiento: 02/02/1972 12:00:00 a. m. Fecha Registro: 21/02/2018 10:27:11 a. m.
+Nombre: Arely Primer Apellido: Martínez Segundo Apellido: Miam Curp: MAMA910903MGTTLL03 Sexo: Mujer Fecha Nacimiento: 03/09/1991 12:00:00 a. m. Fecha Registro: 21/02/2018 11:59:59 a. m.
+Nombre: Carlos Primer Apellido: Noh Segundo Apellido:  Curp: NOOC720202MDGLRR02 Sexo: Hombre Fecha Nacimiento: 02/02/1972 12:00:00 a. m. Fecha Registro: 21/02/2018 11:59:59 a. m.
+Nombre: Dayana Primer Apellido: Caamal Segundo Apellido:  Curp: UDME730303MDGLRR03 Sexo: Mujer Fecha Nacimiento: 03/03/1973 12:00:00 a. m. Fecha Registro: 21/02/2018 11:59:59 a. m.
+Nombre: Emmanuel Primer Apellido: Estrada Segundo Apellido:  Curp: ESIE920902HCCMHR00 Sexo: Hombre Fecha Nacimiento: 02/09/1992 12:00:00 a. m. Fecha Registro: 10/04/2018 04:06:52 p. m.
+Nombre: Miguel Primer Apellido: Ucan Segundo Apellido:  Curp: MIUC920902HCCMHR01 Sexo: Hombre Fecha Nacimiento: 03/09/1992 12:00:00 a. m. Fecha Registro: 10/04/2018 04:06:54 p. m.
+Nombre: Oscar Primer Apellido: Naal Segundo Apellido:  Curp: OSNA920902HCCMHR02 Sexo: Hombre Fecha Nacimiento: 04/09/1992 12:00:00 a. m. Fecha Registro: 10/04/2018 04:06:55 p. m.

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FBB178A8-5730-472E-B105-1197F5827888}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.OXXOPay.Services</RootNamespace>
+    <AssemblyName>POV.OXXOPay.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\EntityFramework611.net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\EntityFramework611.net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Base.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppCode\ConnectionHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\OxxoPayCtrl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3a6024ca-2877-409d-84c8-a1997c27616e}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.Services\POV.CentroEducativo.Services.csproj">
+      <Project>{efeaf5ff-2f2d-4c50-ae27-baf8df1df922}</Project>
+      <Name>POV.CentroEducativo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo\POV.CentroEducativo.csproj">
+      <Project>{77f2d47f-ef3f-49b4-b20f-bc34520c2df4}</Project>
+      <Name>POV.CentroEducativo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Licencias.BO\POV.Licencias.BO.csproj">
+      <Project>{19961067-7725-4435-8ead-6e2b635f5d34}</Project>
+      <Name>POV.Licencias.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Licencias.Services\POV.Licencias.Services.csproj">
+      <Project>{13ab22df-d898-416f-a63f-a6cd09622760}</Project>
+      <Name>POV.Licencias.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo\POV.Modelo.csproj">
+      <Project>{36c1aff9-323f-4330-aa43-4fb0ab4a0a70}</Project>
+      <Name>POV.Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.BO\POV.Seguridad.BO.csproj">
+      <Project>{86840dad-9fcc-46aa-8c98-3cab83195ec7}</Project>
+      <Name>POV.Seguridad.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.Services\POV.Seguridad.Services.csproj">
+      <Project>{6f8b4b55-e2ab-4592-a770-982ea091583b}</Project>
+      <Name>POV.Seguridad.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A6024CA-2877-409D-84C8-A1997C27616E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.CentroEducativo</RootNamespace>
+    <AssemblyName>POV.CentroEducativo.BO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BO\Alumno.cs" />
+    <Compile Include="BO\AreaConocimiento.cs" />
+    <Compile Include="BO\AsignacionAlumnoGrupo.cs" />
+    <Compile Include="BO\AsignacionDocenteEscuela.cs" />
+    <Compile Include="BO\AsignacionEspecialistaEscuela.cs" />
+    <Compile Include="BO\AsignacionMateriaGrupo.cs" />
+    <Compile Include="BO\Carrera.cs" />
+    <Compile Include="BO\CentroComputo.cs" />
+    <Compile Include="BO\CicloEscolar.cs" />
+    <Compile Include="BO\Director.cs" />
+    <Compile Include="BO\Docente.cs" />
+    <Compile Include="BO\DocenteEscuela.cs" />
+    <Compile Include="BO\EAmbito.cs" />
+    <Compile Include="BO\EControl.cs" />
+    <Compile Include="BO\EEsPremium.cs" />
+    <Compile Include="BO\EEstadoPago.cs" />
+    <Compile Include="BO\EGrado.cs" />
+    <Compile Include="BO\EncuestaSatisfaccion.cs" />
+    <Compile Include="BO\ENivelEscolar.cs" />
+    <Compile Include="BO\Escuela.cs" />
+    <Compile Include="BO\ESesionOrientacion.cs" />
+    <Compile Include="BO\EspecialistaEscuela.cs" />
+    <Compile Include="BO\EspecialistaPruebas.cs" />
+    <Compile Include="BO\ETurno.cs" />
+    <Compile Include="BO\EventoUniversidad.cs" />
+    <Compile Include="BO\Grupo.cs" />
+    <Compile Include="BO\GrupoCicloEscolar.cs" />
+    <Compile Include="BO\InfoAlumnoUsuario.cs" />
+    <Compile Include="BO\Materia.cs" />
+    <Compile Include="BO\NivelEducativo.cs" />
+    <Compile Include="BO\NotaCompra.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BO\PlanEducativo.cs" />
+    <Compile Include="BO\RespuestaAlumno.cs" />
+    <Compile Include="BO\SesionOrientacion.cs" />
+    <Compile Include="BO\TipoNivelEducativo.cs" />
+    <Compile Include="BO\TipoServicio.cs" />
+    <Compile Include="BO\Tutor.cs" />
+    <Compile Include="BO\TutorAlumno.cs" />
+    <Compile Include="BO\Universidad.cs" />
+    <Compile Include="BO\UniversidadAlumno.cs" />
+    <Compile Include="BO\UniversidadCarrera.cs" />
+    <Compile Include="BO\Zona.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POV.Comun.BO\POV.Comun.BO.csproj">
+      <Project>{E9BB2466-0E21-4B56-8803-DEB5969D2B49}</Project>
+      <Name>POV.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Localizacion.BO\POV.Localizacion.BO.csproj">
+      <Project>{662EEBF8-41AA-4DAF-9603-AB9E92009F77}</Project>
+      <Name>POV.Localizacion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.BO\POV.Modelo.BO.csproj">
+      <Project>{d81e25e7-7ed3-4f7b-9ccf-a3e1e97b198a}</Project>
+      <Name>POV.Modelo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.Estandarizado.BO\POV.Modelo.Estandarizado.BO.csproj">
+      <Project>{8c6613e0-1b5e-405f-a64c-10e076c148ac}</Project>
+      <Name>POV.Modelo.Estandarizado.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

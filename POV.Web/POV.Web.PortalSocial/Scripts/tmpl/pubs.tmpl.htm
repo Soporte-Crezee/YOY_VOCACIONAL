@@ -1,0 +1,460 @@
+﻿<script id="pubTmpl" type="text/x-jquery-tmpl" runat="server">   
+	<div id="${publicacionid}" class="item_pub" style="display:none;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 col-xs-12" style="text-align:center">
+		            <div class="border_img">
+			            <div class="img_pub">
+				            {{if renderlink}}
+				            <a href="../Social/ViewMuro.aspx?u=${usuariosocialid}" class="pconfirmacorreo" >					       
+						            <img src="${$item.urlFiles()}&img=thumb&usr=${usuariosocialid}"  alt="imagen"/>
+				            </a>
+				            {{else}}				      
+					            <img src="${$item.urlFiles()}&img=thumb&usr=${usuariosocialid}"  alt="imagen"/>				      
+				            {{/if}}
+			            </div>
+		            </div>
+                </div>
+                <div class="col-md-10 col-xs-12">
+                    <div class="floatRight" style="text-align:center;">
+			            {{if renderdelete}}
+			            <button id="btn-del-${publicacionid}" class="pconfirmacorreo" style="height:20px;width:20px;margin-right: 3px;" type="button" onclick="javascript:removePublicacion('${publicacionid}');">Eliminar publicaci&oacute;n</button>   
+			            {{/if}}
+			            {{if renderreporteabuso}}
+			            <button id="btn-reportar-${publicacionid}" class="pconfirmacorreo" style="height:20px;width:20px;margin-right: 3px;" type="button" onclick="javascript:reportarAbusoPublicacion('${publicacionid}');">Reportar abuso</button>
+			            {{/if}}
+		            </div>
+		            <div class="item_pub_content">		
+			        <span>
+                        <strong>
+					          {{if renderlink}}
+					          <a class="user_pub link_blue pconfirmacorreo" href="../Social/ViewMuro.aspx?u=${usuariosocialid}">${usuariosocialnombre}</a> 
+				
+					          {{else}}
+					          <label class="user_pub">${usuariosocialnombre}</label>
+					          {{/if}}
+				        </strong>
+				        {{if renderfor}}
+				        para 
+				        {{if renderforlink}}
+				        <a class="user_pub link_blue pconfirmacorreo" href="../Social/ViewMuro.aspx?u=${destinatarioid}">${destinatarionombre}</a>
+				        {{else}}
+				        <label class="user_pub">${destinatarionombre}</label>
+				        {{/if}}
+				        {{/if}}
+			        </span> -
+                    <span class="dateformat" title="${fechapublicacion}">${fechaformated}</span>			
+			                {{if tipo == 1}}
+			                    <div class="text_content">${contenido}</div>
+			                {{else}}
+                                {{if tipo == 2}}
+                                    <div class="text_content">${contenido}</div>
+			                        <div class="item_pub_app">
+				                        <img src="../Images/${reactivo.thumb}" alt="imagen" class="img_nocrop_pub"/>
+				                        <div class="pub_app_content" >
+					
+					                        <div ><span><strong>${reactivo.areatitulo}</strong> - <i><a href="../Reactivos/MuroReactivo.aspx?id=${reactivo.reactivoid}" class="link_blue pconfirmacorreo">"${reactivo.nombrereactivo}"</a></i></span>
+						                        <p></p>
+						                        <span>Complejidad ${reactivo.nombrecomplejidad}</span>
+					                        </div>
+				                        </div>
+		
+			                        </div>
+                                {{else}}
+                
+                                    {{if recursocompartido != null && recursocompartido.tipo == 1}}
+                                        <div class="text_content">${contenido}</div>
+                                        <div class="item_pub_app">
+				                            <img src="../Images/icons/ico.pruevas.asignadas.resultado.de.prueba.png" alt="imagen" 
+                                                style="float: left;padding: 2px;"/>
+				                            <div class="pub_app_content" >
+					
+					                            <div ><span><strong>REACTIVO:</strong><p>&nbsp;</p><i><a href="../Reactivos/MuroReactivo.aspx?id=${recursocompartido.recursoid}" 
+                                                    class="link_blue pconfirmacorreo">"${recursocompartido.etiqueta}"</a></i></span>
+					                            </div>
+				                            </div>
+		
+			                            </div>
+                                    {{else}}
+                                        {{if recursocompartido != null && recursocompartido.tipo == 2}}
+                                            <div class="text_content">${contenido}</div>
+                                            <div class="item_pub_app">
+				                                <img src="../Images/icons/ico.resultado.juegos.png" alt="imagen" 
+                                                    style="float: left;padding: 2px;"/>
+				                                <div class="pub_app_content" >
+					
+					                                <div ><span><strong>JUEGO:</strong><p>&nbsp;</p><i><a href="../PortalJuego/Muro.aspx?id=${recursocompartido.recursoid}" 
+                                                        class="link_blue pconfirmacorreo">"${recursocompartido.etiqueta}"</a></i></span>
+					                                </div>
+				                                </div>
+			                                </div>
+                                        {{else}}
+                                            <div class="text_content">${contenido}</div>
+                                            <div class="item_pub_app">
+				                                <img src="../Images/icons/ico.calificaciones.todos.png" alt="imagen" 
+                                                    style="float: left;padding: 2px;"/>
+				                                <div class="pub_app_content" >
+					
+					                                <div ><span><strong>CONTENIDO:</strong><p>&nbsp;</p><i>
+                                                        <a href="../ContenidosDigitales/VerContenidoDigital.aspx?src=share&contid=${recursocompartido.recursoid}&token=${recursocompartido.token}" 
+                                                        class="link_blue pconfirmacorreo">"${recursocompartido.etiqueta}"</a></i></span>
+					                                </div>
+				                                </div>
+			                                </div>
+                                        {{/if}}
+                                    {{/if}}
+                                {{/if}}
+			                {{/if}}
+			            <div class="lista_horizontal content_clear" style="margin-top:10px;">
+				    <ul style="padding:0">
+					    <li>
+						    <div class="boton_link">
+							    <input id="boton_e" type="button" title="Excelente" class="pconfirmacorreo" onclick="javascript: LikePub('${publicacionid}', 0);" />
+							    <input type="button" id="votes0_${publicacionid}" class="pconfirmacorreo" onclick="javascript: showPeople('${rankingid}', 0);" title="${numvotes1} excelente" value="(${numvotes1})"/>
+						    </div>
+					    </li>
+					    <li><span class="separador_link">-</span></li>
+					    <li>
+						    <div class="boton_link">
+							    <input id="boton_b" type="button" title="Bien" class="pconfirmacorreo" onclick="javascript: LikePub('${publicacionid}', 1);"/>
+							    <input type="button" id="votes1_${publicacionid}" class="pconfirmacorreo" onclick="javascript: showPeople('${rankingid}', 1);" title="${numvotes2} bien" value="(${numvotes2})"/>
+						    </div>
+					    </li>
+					    <li><span class="separador_link">-</span></li>
+					    <li>
+						    <div class="boton_link">
+							    <input id="boton_r" type="button" title="Regular" class="pconfirmacorreo" onclick="javascript: LikePub('${publicacionid}', 2);"/>
+							    <input type="button" id="votes2_${publicacionid}" class="pconfirmacorreo" onclick="javascript: showPeople('${rankingid}', 2);" title="${numvotes3} regular" value="(${numvotes3})"/>
+						    </div>
+					    </li>
+				    </ul>
+			    </div>
+		            </div>
+                </div>
+            </div>
+		    <!-- inicio comentarios -->
+            <div class="row">
+    		    <div class="comments">
+			    {{if totalcomentarios > 3 && !complete}}
+			    <div class="boton_link" id="more_comments_${publicacionid}">
+				    <input type="button" title="Mostrar ${totalcomentarios} comentarios" class="pconfirmacorreo" value="${totalcomentarios} comentarios" onclick="javascript: LoadPubComplete('${publicacionid}');"/>
+			    </div>
+			    {{/if}}
+
+			    {{if complete}}
+			    <div id="request_complete_${publicacionid}"></div>
+			    {{/if}}
+			    <ul id="${publicacionid}_comments">
+				    {{each comentarios}}
+				    <li id="${comentarioid}" class="item_comment">
+					    <div  class="floatRight" style="text-align:center;">
+					   
+						    {{if renderreporteabuso}}
+						    <button id="btn-reportar-${comentarioid}" class="operDel floatRight pconfirmacorreo" style="height:20px;width:20px;" type="button" onclick="javascript:reportarAbusoComentario('${comentarioid}')">Reportar abuso</button>
+						    {{/if}}
+
+						    {{if renderdelete}}
+						    <button id="btn-del-${comentarioid}" class="operDel floatRight pconfirmacorreo" style="height:20px;width:20px;" type="button" onclick="javascript:removeComentario('${comentarioid}');">Eliminar comentario</button>
+						    {{/if}}   
+						
+
+					    </div>
+						    <div class="img_comment_div">
+							    <div class="img_comment">
+								    {{if renderlink}}
+								    <a href="../Social/ViewMuro.aspx?u=${usuariosocialidcom}" class="pconfirmacorreo">
+									    <center><img src="${$item.urlFiles()}&img=thumb&usr=${usuariosocialidcom}" alt="imagen" /></center>
+								     </a>
+								     {{else}}
+									    <center><img src="${$item.urlFiles()}&img=thumb&usr=${usuariosocialidcom}" alt="imagen" /></center>
+								    {{/if}}
+							    </div>
+						    </div>
+						    <div class="item_comment_content">
+							
+							    <div class="break_text" style="width:90%;">
+							
+								    <strong>
+								    {{if renderlink}}
+								       <a  class="user_comment link_blue pconfirmacorreo" href="../Social/ViewMuro.aspx?u=${usuariosocialidcom}"> ${usuariosocialnombrecom}</a>
+								    {{else}}
+									    <label  class="user_comment">${usuariosocialnombrecom}</label>
+								    {{/if}}
+								    </strong>
+							     - ${contenidocom}
+							    </div>
+							    {{if tipo == 3}}
+                                    {{if recursocompartido != null && recursocompartido.tipo == 1}}
+                                        <div class="item_pub_app">
+				                            <img src="../Images/icons/ico.pruevas.asignadas.resultado.de.prueba.png" alt="imagen" 
+                                                style="float: left;padding: 2px;"/>
+				                            <div class="pub_app_content" >
+					
+					                            <div ><span><strong>REACTIVO:</strong><p>&nbsp;</p><i><a href="../Reactivos/MuroReactivo.aspx?id=${recursocompartido.recursoid}" 
+                                                    class="link_blue pconfirmacorreo">"${recursocompartido.etiqueta}"</a></i></span>
+					                            </div>
+				                            </div>
+		
+			                            </div>
+                                    {{else}}
+                                        {{if recursocompartido != null && recursocompartido.tipo == 2}}
+                                        
+                                            <div class="item_pub_app">
+				                                <img src="../Images/icons/ico.resultado.juegos.png" alt="imagen" 
+                                                    style="float: left;padding: 2px;"/>
+				                                <div class="pub_app_content" >
+					
+					                                <div ><span><strong>JUEGO:</strong><p>&nbsp;</p><i><a href="../PortalJuego/Muro.aspx?id=${recursocompartido.recursoid}" 
+                                                        class="link_blue pconfirmacorreo">"${recursocompartido.etiqueta}"</a></i></span>
+					                                </div>
+				                                </div>
+		
+			                                </div>
+                                        {{else}}
+                                            <div class="item_pub_app">
+				                                <img src="../Images/icons/ico.calificaciones.todos.png" alt="imagen" 
+                                                    style="float: left;padding: 2px;"/>
+				                                <div class="pub_app_content" >
+					
+					                                <div ><span><strong>CONTENIDO:</strong><p>&nbsp;</p><i>
+                                                        <a href="../ContenidosDigitales/VerContenidoDigital.aspx?src=share&contid=${recursocompartido.recursoid}&token=${recursocompartido.token}" 
+                                                        class="link_blue pconfirmacorreo">"${recursocompartido.etiqueta}"</a></i></span>
+					                                </div>
+				                                </div>
+		
+			                                </div>
+                                        {{/if}}
+                                    {{/if}}
+                                {{/if}}
+							    <p style="margin-top:10px;"><span class="dateformat" title="${fechacom}">${fechacomformated}</span>
+								    <span class="separador_link"></span>
+								    <span class="boton_link">
+									    <input id="boton_e" type="button" title="Excelente" class="pconfirmacorreo" onclick="javascript: LikeComment('${comentarioid}', 0);" />
+									    <input type="button" id="votes0_${comentarioid}" class="pconfirmacorreo" onclick="javascript: showPeople('${rankingid}', 0);" title="${numvotes1} excelente" value="(${numvotes1})"/>
+								    </span>
+								    <span class="separador_link">-</span>
+				
+								    <span class="boton_link">
+									    <input id="boton_b" type="button" title="Bien" class="pconfirmacorreo" onclick="javascript: LikeComment('${comentarioid}', 1);"/>
+
+									    <input type="button" id="votes1_${comentarioid}" class="pconfirmacorreo" onclick="javascript: showPeople('${rankingid}', 1);" title="${numvotes2} bien" value="(${numvotes2})"/>
+								    </span>
+								    <span class="separador_link">-</span>
+								    <span class="boton_link">
+									    <input id="boton_r" type="button" title="Regular" class="pconfirmacorreo" onclick="javascript: LikeComment('${comentarioid}', 2);"/>
+									    <input type="button" id="votes2_${comentarioid}" class="pconfirmacorreo" onclick="javascript: showPeople('${rankingid}', 2);" title="${numvotes3} regular" value="(${numvotes3})"/>
+								    </span>
+							    </p>
+							
+						    </div>
+					    </li>
+					    {{/each}}
+				    </ul>
+			    </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-11 col-xs-12">
+                    <div class="lista_horizontal content_clear marginderecho" style="margin-top:10px;border-top:1px solid #082d49;padding-top:5px;">
+				        <ul style="padding:0">
+					        <li>
+						        <div class="boton_link">
+							        <input type="button" title="Comentar esta publicación" class="pconfirmacorreo" value="Comentar" onclick="javascript: commentenable('${publicacionid}');"/>
+						        </div>
+					        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+			<!--fin comentarios-->
+	</div>
+</script>
+
+<script id="comTmpl" type="text/x-jquery-tmpl">
+    <div id="${comentarioid}" class="item_comment" style="display: none;">
+        <div class="img_comment_div">
+            <div class="img_comment">
+                {{if renderlink}}
+				<a href="../Social/ViewMuro.aspx?u=${usuariosocialidcom}" class="pconfirmacorreo">
+                    <center><img src="${$item.urlFiles()}&img=thumb&usr=${usuariosocialidcom}" alt="imagen" /></center>
+                </a>
+                {{else}}
+				<center><img src="${$item.urlFiles()}&img=thumb&usr=${usuariosocialidcom}" alt="imagen" /></center>
+                {{/if}}
+            </div>
+        </div>
+        <div class="item_comment_content">
+            <div class="floatRight" style="text-align: center;">
+                {{if renderdelete}}
+				<button id="btn-del-${comentarioid}" class="operDel floatRight pconfirmacorreo" style="height: 20px; width: 20px;" type="button" onclick="javascript:removeComentario('${comentarioid}');">Eliminar comentario</button>
+                {{/if}}
+			 
+			  {{if renderreporteabuso}}
+				<button id="btn-reportar-${comentarioid}" class="operDel floatRight pconfirmacorreo" style="height: 20px; width: 20px;" type="button">Reportar abuso</button>
+                {{/if}}        
+            </div>
+            <div class="break_text" style="width: 90%;">
+                <strong>{{if renderlink}}
+					<a class="user_comment link_blue pconfirmacorreo" href="../Social/ViewMuro.aspx?u=${usuariosocialidcom}">${usuariosocialnombrecom}</a>
+                    {{else}}
+					<label class="user_comment">${usuariosocialnombrecom}</label>
+                    {{/if}}
+                </strong>
+                - ${contenidocom}
+            </div>
+            {{if tipo == 3}}
+                {{if recursocompartido != null && recursocompartido.tipo == 1}}
+                    <div class="item_pub_app">
+                        <img src="../Images/icons/ico.pruevas.asignadas.resultado.de.prueba.png" alt="imagen"
+                            style="float: left; padding: 2px;" />
+                        <div class="pub_app_content">
+
+                            <div>
+                                <span><strong>REACTIVO:</strong><p>&nbsp;</p>
+                                    <i><a href="../Reactivos/MuroReactivo.aspx?id=${recursocompartido.recursoid}"
+                                        class="link_blue pconfirmacorreo">"${recursocompartido.etiqueta}"</a></i></span>
+                            </div>
+                        </div>
+
+                    </div>
+            {{else}}
+                    {{if recursocompartido != null && recursocompartido.tipo == 2}}
+                                        
+                        <div class="item_pub_app">
+                            <img src="../Images/icons/ico.resultado.juegos.png" alt="imagen"
+                                style="float: left; padding: 2px;" />
+                            <div class="pub_app_content">
+
+                                <div>
+                                    <span><strong>JUEGO:</strong><p>&nbsp;</p>
+                                        <i><a href="../PortalJuego/Muro.aspx?id=${recursocompartido.recursoid}"
+                                            class="link_blue pconfirmacorreo">"${recursocompartido.etiqueta}"</a></i></span>
+                                </div>
+                            </div>
+
+                        </div>
+            {{else}}
+                        <div class="item_pub_app">
+                            <img src="../Images/icons/ico.calificaciones.todos.png" alt="imagen"
+                                style="float: left; padding: 2px;" />
+                            <div class="pub_app_content">
+
+                                <div>
+                                    <span><strong>CONTENIDO:</strong><p>&nbsp;</p>
+                                        <i>
+                                            <a href="../ContenidosDigitales/VerContenidoDigital.aspx?src=share&contid=${recursocompartido.recursoid}&token=${recursocompartido.token}"
+                                                class="link_blue pconfirmacorreo">"${recursocompartido.etiqueta}"</a></i></span>
+                                </div>
+                            </div>
+
+                        </div>
+            {{/if}}
+                {{/if}}
+            {{/if}}
+            <p style="margin-top: 10px;">
+                <span class="dateformat" title="${fechacom}">${fechacomformated}</span>
+                <span class="separador_link"></span>
+                <span class="boton_link">
+                    <input id="boton_e" type="button" title="Excelente" class="pconfirmacorreo" onclick="javascript: LikeComment('${comentarioid}', 0);" />
+                    <input type="button" id="votes0_${comentarioid}" class="pconfirmacorreo" onclick="javascript: showPeople('${rankingid}', 0);" title="${numvotes1} excelente" value="(${numvotes1})" />
+                </span>
+                <span class="separador_link">-</span>
+
+                <span class="boton_link">
+                    <input id="boton_b" type="button" title="Bien" class="pconfirmacorreo" onclick="javascript: LikeComment('${comentarioid}', 1);" />
+                    <input type="button" id="votes1_${comentarioid}" class="pconfirmacorreo" onclick="javascript: showPeople('${rankingid}', 1);" title="${numvotes2} bien" value="(${numvotes2})" />
+                </span>
+                <span class="separador_link">-</span>
+                <span class="boton_link">
+                    <input id="boton_r" type="button" title="Regular" class="pconfirmacorreo" onclick="javascript: LikeComment('${comentarioid}', 2);" />
+                    <input type="button" id="votes2_${comentarioid}" class="pconfirmacorreo" onclick="javascript: showPeople('${rankingid}', 2);" title="${numvotes3} regular" value="(${numvotes3})" />
+                </span>
+            </p>
+
+        </div>
+    </div>
+</script>
+
+<script id="areacomShareTmpl" type="text/x-jquery-tmpl">
+    <div id="panelcomment">
+            <div id="cmt_${publicacionid}">
+                <textarea class="autoresizable" id="txtComment"></textarea>
+                <div class="pnl-insertar">
+                    <!--<span>Compartir: </span> 
+                    <button id="btn-add-contenido-reactivo-com" type="button" title="Reactivo" onclick="myApiCompartir.showDialogCompartir('com','reactivo');">
+                        <span class="icon icon_reactivos" style="padding:0px;"></span>
+                    </button>
+                    <button id="btn-add-contenido-juego-com" type="button" title="Juego" onclick="myApiCompartir.showDialogCompartir('com','juego');">
+                        <span class="icon icon_juegos" style="padding:0px;"></span>
+                    </button>
+                    <button id="btn-add-contenido-digital-com" type="button" title="Contenido digital" onclick="myApiCompartir.showDialogCompartir('com','contenido');">
+                        <span class="icon icon_reportar" style="padding:0px;"></span></button>-->
+
+                    <div id="pnl-contenido-seleccionado-com" class="pnl-contenido-agregado ui-state-highlight">
+                        <input type="hidden" id="hdn-tipo-contenido-com" />
+                        <input type="hidden" id="hdn-identificador-contenido-com" />
+                        <label id="txt-nombre-contenido-com">Mi archivo</label>
+                        <button id="btn-delete-contenido-com" type="button" title="Quitar"
+                            class="pconfirmacorreo"
+                            style="float: right; margin-top: 3px;"
+                            onclick="myApiCompartir.quitarContenido('com');">
+                            <span class="icon icon_trash" style="padding: 0px;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="">
+                    <input type="button" value="Publicar comentario" onclick="javascript: sendcomment('${publicacionid}');" class="btn-green pconfirmacorreo" />
+                    <input type="button" value="Cancelar" onclick="javascript: cancelComment();" class="btn-cancel" />
+                </div>
+            </div>
+        </div>
+</script>
+
+<script id="areacomTmpl" type="text/x-jquery-tmpl">
+    <div id="panelcomment">
+        <div id="cmt_${publicacionid}">
+            <textarea class="autoresizable" id="txtComment" placeholder="Escribe tu comentario"></textarea>
+            <div class="row">
+                <input type="button" value="Publicar comentario" onclick="javascript: sendcomment('${publicacionid}');" class="btn-green button_clip_39215E pconfirmacorreo" />
+                <input type="button" value="Cancelar" onclick="javascript: cancelComment();" class="btn-cancel" />
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="peopleTmpl" type="text/x-jquery-tmpl">
+    <div class="row">
+        <ul>
+            {{each peoples}}
+        <li id="${usuariosocialid}" class="item_pub" style="min-height: 54px;">
+            <div class="img_comment_div">
+                <div class="img_comment">
+                    {{if renderlink}}
+			<a href="../Social/ViewMuro.aspx?u=${usuariosocialid}" class="pconfirmacorreo">
+                <center>
+					<img src="${$item.urlFiles()}&img=thumb&usr=${usuariosocialid}" class="img_pub" alt="imagen"/>
+				</center>
+            </a>
+                    {{else}}
+				<center>
+					<img src="${$item.urlFiles()}&img=thumb&usr=${usuariosocialid}" class="img_pub" alt="imagen"/>
+				</center>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="item_comment_content">
+                <span>
+                    <strong>{{if renderlink}}
+				<a class="title_5 link_blue pconfirmacorreo" href="../Social/ViewMuro.aspx?u=${usuariosocialid}">${screenname}</a>
+                        {{else}}
+				<label class="title_5">${screenname}</label>
+                        {{/if}}
+                    </strong>
+                </span>
+            </div>
+        </li>
+            {{/each}}
+        </ul>
+    </div>
+</script>

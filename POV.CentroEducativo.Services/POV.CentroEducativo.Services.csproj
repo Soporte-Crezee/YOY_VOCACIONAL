@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFEAF5FF-2F2D-4C50-AE27-BAF8DF1DF922}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.CentroEducativo</RootNamespace>
+    <AssemblyName>POV.CentroEducativo.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Framework.Base">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\AlumnoInsHlp.cs" />
+    <Compile Include="DAO\AlumnoRetHlp.cs" />
+    <Compile Include="DAO\AlumnoUpdHlp.cs" />
+    <Compile Include="DAO\AsignacionAlumnoGrupoInsHlp.cs" />
+    <Compile Include="DAO\AsignacionAlumnoGrupoRetHlp.cs" />
+    <Compile Include="DAO\AsignacionAlumnoGrupoUpdHlp.cs" />
+    <Compile Include="DAO\AsignacionDocenteEscuelaInsHlp.cs" />
+    <Compile Include="DAO\AsignacionDocenteEscuelaRetHlp.cs" />
+    <Compile Include="DAO\AsignacionDocenteEscuelaUpdHlp.cs" />
+    <Compile Include="DAO\AsignacionEspecialistaEscuelaInsHlp.cs" />
+    <Compile Include="DAO\AsignacionEspecialistaEscuelaRetHlp.cs" />
+    <Compile Include="DAO\AsignacionEspecialistaEscuelaUpdHlp.cs" />
+    <Compile Include="DAO\AsignacionMateriaGrupoInsHlp.cs" />
+    <Compile Include="DAO\AsignacionMateriaGrupoRetHlp.cs" />
+    <Compile Include="DAO\AsignacionMateriaGrupoUpdHlp.cs" />
+    <Compile Include="DAO\CentroComputoDelHlp.cs" />
+    <Compile Include="DAO\CentroComputoInsHlp.cs" />
+    <Compile Include="DAO\CentroComputoRetHlp.cs" />
+    <Compile Include="DAO\CentroComputoUpdHlp.cs" />
+    <Compile Include="DAO\CicloEscolarInsHlp.cs" />
+    <Compile Include="DAO\CicloEscolarRetHlp.cs" />
+    <Compile Include="DAO\CicloEscolarUpdHlp.cs" />
+    <Compile Include="DAO\DirectorDelHlp.cs" />
+    <Compile Include="DAO\DirectorInsHlp.cs" />
+    <Compile Include="DAO\DirectorRetHlp.cs" />
+    <Compile Include="DAO\DirectorUpdHlp.cs" />
+    <Compile Include="DAO\DocenteEscuelaDelHlp.cs" />
+    <Compile Include="DAO\DocenteEscuelaInsHlp.cs" />
+    <Compile Include="DAO\DocenteEscuelaRetHlp.cs" />
+    <Compile Include="DAO\DocenteEscuelaUpdHlp.cs" />
+    <Compile Include="DAO\DocenteInsHlp.cs" />
+    <Compile Include="DAO\DocenteRetHlp.cs" />
+    <Compile Include="DAO\DocenteUpdHlp.cs" />
+    <Compile Include="DAO\EscuelaDelHlp.cs" />
+    <Compile Include="DAO\EscuelaInsHlp.cs" />
+    <Compile Include="DAO\EscuelaRetHlp.cs" />
+    <Compile Include="DAO\EscuelaUpdHlp.cs" />
+    <Compile Include="DAO\EspecialistaEscuelaDelHlp.cs" />
+    <Compile Include="DAO\EspecialistaEscuelaInsHlp.cs" />
+    <Compile Include="DAO\EspecialistaEscuelaRetHlp.cs" />
+    <Compile Include="DAO\EspecialistaEscuelaUpdHlp.cs" />
+    <Compile Include="DAO\EspecialistaInsHlp.cs" />
+    <Compile Include="DAO\EspecialistaRetHlp.cs" />
+    <Compile Include="DAO\EspecialistaUpdHlp.cs" />
+    <Compile Include="DAO\GrupoCicloEscolarInsHlp.cs" />
+    <Compile Include="DAO\GrupoCicloEscolarRetHlp.cs" />
+    <Compile Include="DAO\GrupoCicloEscolarUpdHlp.cs" />
+    <Compile Include="DAO\GrupoDelHlp.cs" />
+    <Compile Include="DAO\GrupoInsHlp.cs" />
+    <Compile Include="DAO\GrupoRetHlp.cs" />
+    <Compile Include="DAO\GrupoUpdHlp.cs" />
+    <Compile Include="DAO\InfoAlumnoUsuarioRetHlp.cs" />
+    <Compile Include="DAO\MateriaInsHlp.cs" />
+    <Compile Include="DAO\MateriaPlanEducativoDelHlp.cs" />
+    <Compile Include="DAO\MateriaPlanEducativoInsHlp.cs" />
+    <Compile Include="DAO\MateriaPlanEducativoRetHlp.cs" />
+    <Compile Include="DAO\MateriaPlanEducativoUpdHlp.cs" />
+    <Compile Include="DAO\MateriaRetHlp.cs" />
+    <Compile Include="DAO\MateriaUpdHlp.cs" />
+    <Compile Include="DAO\NivelEducativoInsHlp.cs" />
+    <Compile Include="DAO\NivelEducativoRetHlp.cs" />
+    <Compile Include="DAO\PlanEducativoDelHlp.cs" />
+    <Compile Include="DAO\PlanEducativoInsHlp.cs" />
+    <Compile Include="DAO\PlanEducativoRetHlp.cs" />
+    <Compile Include="DAO\PlanEducativoUpdHlp.cs" />
+    <Compile Include="DAO\PruebaAsignadaAlumnoRetHlp.cs" />
+    <Compile Include="DAO\RespuestaAlumnoRetHlp.cs" />
+    <Compile Include="DAO\TipoNivelEducativoInsHlp.cs" />
+    <Compile Include="DAO\TipoNivelEducativoRetHlp.cs" />
+    <Compile Include="DAO\TipoServicioInsHlp.cs" />
+    <Compile Include="DAO\TipoServicioRetHlp.cs" />
+    <Compile Include="DAO\TipoServicioUpdHlp.cs" />
+    <Compile Include="DAO\UniversidadAlumnoInsHlp.cs" />
+    <Compile Include="DAO\UniversidadAlumnoRetHlp.cs" />
+    <Compile Include="DAO\UniversidadCarreraRetHlp.cs" />
+    <Compile Include="DAO\UniversidadRetHlp.cs" />
+    <Compile Include="DAO\ZonaInsHlp.cs" />
+    <Compile Include="DAO\ZonaRetHlp.cs" />
+    <Compile Include="DAO\ZonaUpdHlp.cs" />
+    <Compile Include="DA\EscuelaDARetHlp.cs" />
+    <Compile Include="DA\MateriaDocenteGrupoCicloEscolarDARetHlp.cs" />
+    <Compile Include="DA\PlanEducativoMateriasDARetHlp.cs" />
+    <Compile Include="DA\AlumnosAsignadosDocentePortal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\AlumnoCtrl.cs" />
+    <Compile Include="Service\AsignacionUniversidadCtrl.cs" />
+    <Compile Include="Service\CicloEscolarCtrl.cs" />
+    <Compile Include="Service\DirectorCtrl.cs" />
+    <Compile Include="Service\DocenteCtrl.cs" />
+    <Compile Include="Service\DocenteEscuelaCtrl.cs" />
+    <Compile Include="Service\EscuelaCtrl.cs" />
+    <Compile Include="Service\EspecialistaCtrl.cs" />
+    <Compile Include="Service\EspecialistaEscuelaCtrl.cs" />
+    <Compile Include="Service\GrupoCicloEscolarCtrl.cs" />
+    <Compile Include="Service\GrupoCtrl.cs" />
+    <Compile Include="Service\InfoAlumnoUsuarioCtrl.cs" />
+    <Compile Include="Service\MateriaCtrl.cs" />
+    <Compile Include="Service\NivelEducativoCtrl.cs" />
+    <Compile Include="Service\PlanEducativoCtrl.cs" />
+    <Compile Include="Service\RespuestaAlumnoCtrl.cs" />
+    <Compile Include="Service\TipoNivelEducativoCtrl.cs" />
+    <Compile Include="Service\TipoServicioCtrl.cs" />
+    <Compile Include="Service\ZonaCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3A6024CA-2877-409D-84C8-A1997C27616E}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.BO\POV.Comun.BO.csproj">
+      <Project>{E9BB2466-0E21-4B56-8803-DEB5969D2B49}</Project>
+      <Name>POV.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Localizacion.BO\POV.Localizacion.BO.csproj">
+      <Project>{662EEBF8-41AA-4DAF-9603-AB9E92009F77}</Project>
+      <Name>POV.Localizacion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Localizacion.Services\POV.Localizacion.Services.csproj">
+      <Project>{9F69AACA-BD9F-48B3-ADDC-0049FFF35C1A}</Project>
+      <Name>POV.Localizacion.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.BO\POV.Modelo.BO.csproj">
+      <Project>{d81e25e7-7ed3-4f7b-9ccf-a3e1e97b198a}</Project>
+      <Name>POV.Modelo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.Estandarizado.BO\POV.Modelo.Estandarizado.BO.csproj">
+      <Project>{8c6613e0-1b5e-405f-a64c-10e076c148ac}</Project>
+      <Name>POV.Modelo.Estandarizado.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.Estandarizado.Services\POV.Modelo.Estandarizado.Services.csproj">
+      <Project>{29612f25-c0d7-4f97-91d0-ffe43bacf121}</Project>
+      <Name>POV.Modelo.Estandarizado.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.BO\POV.Prueba.BO.csproj">
+      <Project>{90c2958d-1935-448e-9ac5-f9abcec3784b}</Project>
+      <Name>POV.Prueba.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Dinamica.BO\POV.Prueba.Diagnostico.Dinamica.BO.csproj">
+      <Project>{a36c3552-74ff-41af-9466-e59288f9272a}</Project>
+      <Name>POV.Prueba.Diagnostico.Dinamica.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.BO\POV.Seguridad.BO.csproj">
+      <Project>{86840dad-9fcc-46aa-8c98-3cab83195ec7}</Project>
+      <Name>POV.Seguridad.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Errores.master.cs" Inherits="POV.Web.PortalSocial.Errores" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>YOY - SOCIAL</title>
+    <link rel="shortcut icon" href="~/Images/Yoy_Favicon20px.png" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Default.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Default.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/headerandfooter.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--jscripts-->
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery-1.7.2.min.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery-ui-1.8.16.custom.min.js")%>"
+        type="text/javascript"></script>
+    <style type="text/css">
+        .header-container {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+         @media only screen and (max-width : 368px) {
+            .ajuste {
+                padding-right: 0px !important;
+                padding-left: 0px !important;
+            }
+            #Image2 {
+                margin: 0px !important;
+            }
+             
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="page">
+
+            <!-- inicio header -->
+            <div class="">
+                <div id="" class="header-container col-xs-12">
+                    <div class="vertical-divider">
+                        <div class="col-xs-12 col-sm-4 col-md-3" style="text-align: center">
+                            <img alt="Logo" src="~/Images/SOV_VOCAREER1.png" runat="server" style="margin-top:10px;" />
+                        </div>
+                        <div class="" >
+                            <div class="col-xs-12 col-sm-8 col-md-9" style="margin-top:20px;margin-bottom:20px">
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ajuste" style="text-align:center">
+                                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/SOV_ELEMENTOS_portalestudiante.png" />
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ajuste" style="text-align:center">
+                                    <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/SOV_ELEMENTOS_portalorientador.png" />
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ajuste" style="text-align:center">
+                                    <asp:Image ID="Image4" runat="server" ImageUrl="~/Images/SOV_tutores.png" />
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ajuste" style="text-align:center">
+                                    <asp:Image ID="Image5" runat="server" ImageUrl="~/Images/SOV_universidad.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin header -->
+
+            <!-- Contenido principal -->
+            <div class="main">
+                <div id="content">
+                    <asp:ContentPlaceHolder ID="content" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footerpersonalizado"></div>
+            </div>
+            <!-- End contenido principal -->
+
+        </div>
+
+    </form>
+</body>
+</html>

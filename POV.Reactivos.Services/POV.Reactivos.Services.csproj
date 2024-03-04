@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C5F2ED6-F95D-414E-943B-6A4B7726FC8C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.Reactivos</RootNamespace>
+    <AssemblyName>POV.Reactivos.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Framework.Base">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\DeleteByRespuestaPlantillaFinalHlp.cs" />
+    <Compile Include="DAO\DeleteOpcionByRespuestaDiagnosticoHlp.cs" />
+    <Compile Include="DAO\DeletePreguntaDiagnosticoReactivoHlp.cs" />
+    <Compile Include="DAO\EvaluacionRangoInsHlp.cs" />
+    <Compile Include="DAO\EvaluacionRangoRetHlp.cs" />
+    <Compile Include="DAO\EvaluacionRangoUpdHlp.cs" />
+    <Compile Include="DAO\OpcionRespuestaPlantillaDinamicoDelHlp.cs" />
+    <Compile Include="DAO\OpcionRespuestaPlantillaDinamicoInsHlp.cs" />
+    <Compile Include="DAO\OpcionRespuestaPlantillaDinamicoRetHlp.cs" />
+    <Compile Include="DAO\OpcionRespuestaPlantillaDinamicoUpdHlp.cs" />
+    <Compile Include="DAO\PreguntaDiagnosticoDelHlp.cs" />
+    <Compile Include="DAO\PreguntaDiagnosticoInsHlp.cs" />
+    <Compile Include="DAO\PreguntaDiagnosticoRetHlp.cs" />
+    <Compile Include="DAO\PreguntaDiagnosticoUpdHlp.cs" />
+    <Compile Include="DAO\PreguntaDinamicoInsHlp.cs" />
+    <Compile Include="DAO\PreguntaDinamicoRetHlp.cs" />
+    <Compile Include="DAO\PreguntaDinamicoUpdHlp.cs" />
+    <Compile Include="DAO\DeleteOpcionByRespuestaPlantillaHlp.cs" />
+    <Compile Include="DAO\DeletePreguntaReactivoHlp.cs" />
+    <Compile Include="DAO\OpcionRespuestaPlantillaDelHlp.cs" />
+    <Compile Include="DAO\OpcionRespuestaPlantillaInsHlp.cs" />
+    <Compile Include="DAO\OpcionRespuestaPlantillaRetHlp.cs" />
+    <Compile Include="DAO\OpcionRespuestaPlantillaUpdHlp.cs" />
+    <Compile Include="DAO\PreguntaDelHlp.cs" />
+    <Compile Include="DAO\PreguntaInsHlp.cs" />
+    <Compile Include="DAO\PreguntaRetHlp.cs" />
+    <Compile Include="DAO\PreguntaUpdHlp.cs" />
+    <Compile Include="DAO\ReactivoDelHlp.cs" />
+    <Compile Include="DAO\ReactivoDinamicoDelHlp.cs" />
+    <Compile Include="DAO\ReactivoDinamicoInsHlp.cs" />
+    <Compile Include="DAO\ReactivoDinamicoRetHlp.cs" />
+    <Compile Include="DAO\ReactivoDinamicoUpdHlp.cs" />
+    <Compile Include="DAO\ReactivoInsHlp.cs" />
+    <Compile Include="DAO\ReactivoRetHlp.cs" />
+    <Compile Include="DAO\ReactivoUpdHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaAbiertaDelHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaAbiertaInsHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaAbiertaRetHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaAbiertaUpdHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaDelHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaDiagnosticoDelHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaDiagnosticoInsHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaDiagnosticoRetHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaDiagnosticoUpdHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaDinamicoInsHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaDinamicoRetHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaDinamicoUpdHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaInsHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaOpcionMultipleDelHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaOpcionMultipleDinamicoUpdHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaOpcionMultipleFinalInsHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaOpcionMultipleFinalRetHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaOpcionMultipleFinalUpdHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaOpcionMultipleDinamicoInsHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaOpcionMultipleDinamicoRetHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaOpcionMultipleInsHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaOpcionMultipleRetHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaOpcionMultipleUpdHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaRetHlp.cs" />
+    <Compile Include="DAO\RespuestaPlantillaUpdHlp.cs" />
+    <Compile Include="DA\ReactivoDARetHlp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\EvaluacionRangoCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\OpcionRespuestaPlantillaCtrl.cs" />
+    <Compile Include="Service\PreguntaCtrl.cs" />
+    <Compile Include="Service\ReactivoCtrl.cs" />
+    <Compile Include="Service\RespuestaPlantillaCtrl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POV.Modelo.Estandarizado.BO\POV.Modelo.Estandarizado.BO.csproj">
+      <Project>{8c6613e0-1b5e-405f-a64c-10e076c148ac}</Project>
+      <Name>POV.Modelo.Estandarizado.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.Interfaces\GP.SocialEngine.Interfaces.csproj">
+      <Project>{1501B668-DC3A-45D9-B9B5-47DF76E12587}</Project>
+      <Name>GP.SocialEngine.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3a6024ca-2877-409d-84c8-a1997c27616e}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.BO\POV.Modelo.BO.csproj">
+      <Project>{D81E25E7-7ED3-4F7B-9CCF-A3E1E97B198A}</Project>
+      <Name>POV.Modelo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.Services\POV.Modelo.Services.csproj">
+      <Project>{F229A4B9-5990-4813-AB22-D38963E16EAC}</Project>
+      <Name>POV.Modelo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.BO\POV.Reactivos.BO.csproj">
+      <Project>{ED9CC55D-68F6-4BE0-9DAE-00BCD226C289}</Project>
+      <Name>POV.Reactivos.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

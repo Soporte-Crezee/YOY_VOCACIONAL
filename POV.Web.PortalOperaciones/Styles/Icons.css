@@ -1,0 +1,146 @@
+﻿/*Configuraciones iconos*/
+.icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    margin: -2px 0 0 0;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+.icon_48 {
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    vertical-align: middle;
+    margin: -2px 0 0 0;
+    padding-right: 3px;
+    padding-left: 3px;
+    background-color: transparent;
+}
+
+.icon_note {
+    background-image: url('../images/icons/note.png');   
+}
+
+.icon_note_add {
+    background-image: url('../images/icons/note_add.png');   
+}
+
+.icon_note_edit {
+    background-image: url('../images/icons/note_edit.png');
+}
+
+.icon_heart {
+    background-image: url('../images/icons/heart.png');
+}
+
+.icon_comment {
+    background-image: url('../images/icons/comment.png');
+}
+
+.icon_group {
+    background-image: url('../images/icons/group.png');
+}
+
+.icon_email {
+    background-image: url('../images/icons/email.png');
+}
+
+.icon_profile{
+    background-image: url('../images/icons/status_online.png');
+}
+
+.icon_user_edit {
+    background-image: url('../images/icons/user_edit.png');
+}
+
+.icon_user_delete {
+    background-image: url('../images/icons/user_delete.png');
+}
+
+.icon_accept {
+    background-image: url('../images/icons/accept.png');
+}
+
+.icon_delete {
+    background-image: url('../images/icons/delete.png');
+}
+
+.icon_eye {
+    background-image: url('../images/icons/eye.png');
+}
+
+.icon_happy {
+    background-image: url('../images/icons/emoticon_happy.png');
+}
+
+.icon_exclamation {
+    background-image: url('../images/icons/exclamation.png');
+}
+
+.icon_tick {
+    background-image: url('../images/icons/tick.png');
+}
+
+.icon_cross {
+    background-image: url('../images/icons/cross.png');
+}
+
+.icon_comments_add{
+    background-image: url('../images/icons/comments_add.png');
+}
+
+.icon_bullet_arrow_down{
+    background-image: url('../images/icons/bullet_arrow_down.png');
+}
+
+.icon_newspaper{
+    background-image: url('../images/icons/newspaper.png');
+}
+
+.icon_page_white_text{
+    background-image: url('../images/icons/page_white_text.png');
+}
+
+.icon_lightbulb{
+    background-image: url('../images/icons/lightbulb.png');
+}
+
+.icon_noteedit48 {
+    background-image: url('../images/icon_6_noticias.png');
+}
+
+.icon_gear48 {
+    background-image: url('../images/icon_9_cuenta.png');
+}
+
+.icon_noteschool48 {
+    background-image: url('../images/icon_18_not_alumnos.png');
+}
+
+.icon_user48 {
+    background-image: url('../images/icon_24_pefil_usuario.png');
+}
+
+.icon_notereactivos48 {
+    background-image: url('../images/icon_29_portal_reactivos.png');
+}
+
+.icon_reactivos48 {
+    background-image: url('../images/icon_30_busc_rectvo.png');
+}
+
+.icon_amasmas48 {
+    background-image: url('../images/icon_32_sus_reactiv.png');
+}
+
+.icon_pagegear {
+    background-image: url('../images/page_gear.png');
+}
+
+.icon_games48 {
+    background-image: url('../images/icon_31_busc_juegos.png');
+}

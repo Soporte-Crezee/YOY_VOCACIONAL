@@ -1,0 +1,268 @@
+﻿body {
+}
+
+.boton {
+    background-color: #23CC9D;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #fff;
+    color: #fff;
+    font-weight: bold;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.TituloTalentos {
+}
+
+.divPrincipal {
+    padding-bottom: 60px;
+}
+
+.divTitulo {
+    border-bottom: 3px solid #77aea9;
+    height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0 0 10px;
+}
+
+.divFiltrado {
+    border-bottom: 3px solid #0067ac;
+    font-family: Helvetica;
+    font-size: 16pt;
+    font-weight: bold;
+    background-color: #c8c6e2;
+    padding: 5px 0 0 10px;
+}
+
+.divFiltradoCont {
+    background-color: #f3f3f4;
+    width: 97%;
+    margin: 0 auto;
+}
+
+.hr {
+    color: #A63992;
+    border: 15px;
+    width: 100%;
+}
+
+.tdLabel {
+    text-align: right;
+    font-family: Helvetica;
+    font-size: 14pt !important;
+    color: #000000;
+}
+
+.labelTalentos {
+    font-family: Helvetica;
+}
+
+/** DISEÑO GENERALES : TITULO PAGINA Y PANEL CONTENEDOR **/
+.titulo_marco {
+    border-bottom: 3px solid #0067ac;
+    font-size: 16pt;
+    font-weight: bold;
+    background-color: #c8c6e2;
+    padding: 5px 0 0 10px;
+    margin-top: 15px;
+}
+
+.titulo_marco_default {
+    font-size: 16pt;
+    background-color: #c8c6e2;
+    padding: 5px 0 0 60px;
+    margin-top: 15px;
+    font-family: Helvetica-Bold;
+    text-transform: uppercase;
+    border-bottom: 3px solid #082d49;
+}
+
+.titulo_principal_superior {
+    border-bottom: 3px solid #0067ac;
+    font-size: 16pt;
+    font-weight: bold;
+    padding: 5px 0 0 10px;
+    margin-bottom: 10px;
+}
+
+@font-face {
+    font-family: "Helvetica Neue LT Pro";
+    src: url("../Styles/fonts/HelveticaNeueLTPro-MdCnO.otf");
+}
+
+.labelButton {
+    font-family: "Helvetica Neue LT Pro" !important;
+    background-color: #33acfd;
+    color: #fff;
+    font-weight: bold;
+    min-width: 100px;
+    font-weight: bolder !important;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14pt;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-shadow: inset 0 0 0 2px #f1f1f1;
+}
+
+    .labelButton:hover {
+        background: #f1f1f1;
+        font-family: Helvetica Neue LT Pro;
+        font-style: italic;
+        color: #33acfd !important;
+        box-shadow: inset 0 0 0 2px #33acfd;
+    }
+
+.button_clip_39215E {
+    font-family: "Helvetica Neue LT Pro" !important;
+    background-color: #33acfd;
+    color: #fff;
+    font-weight: bold;
+    min-width: 100px;
+    font-weight: bolder !important;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14pt;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-shadow: inset 0 0 0 2px #f1f1f1;
+}
+
+    .button_clip_39215E:hover {
+        background: #f1f1f1;
+        font-family: Helvetica Neue LT Pro;
+        font-style: italic;
+        color: #33acfd !important;
+        box-shadow: inset 0 0 0 2px #33acfd;
+    }
+
+a.button_clip_39215E:hover {
+    background: #f1f1f1;
+    font-family: Helvetica Neue LT Pro;
+    font-style: italic;
+    color: #ffc972 !important;
+    box-shadow: inset 0 0 0 2px #97bf0d;
+}
+
+a.button_clip_39215E {
+    background-color: #97bf0d;
+    border-color: #97bf0d;
+    font-family: Helvetica Neue LT Pro;
+    color: #fff !important;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12pt !important;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-shadow: inset 0 0 0 2px #f1f1f1;
+}
+
+.elemento_seleccionado_talentos {
+    background-color: #91268F;
+    color: #fff;
+}
+
+/** DISEÑO GENERAL: FORMULARIO DOS COLUMNAS BASADO EN TABLAS **/
+table.formulario_talentos_linea {
+    width: 98%;
+    margin: 15px auto;
+}
+
+    table.formulario_talentos_linea tr.form_group {
+    }
+
+        table.formulario_talentos_linea tr.form_group td.form_label {
+            width: 120px;
+            text-align: right;
+            font-size: 14pt;
+            font-family: Helvetica;
+            padding-right: 10px;
+        }
+
+        table.formulario_talentos_linea tr.form_group td.form_control {
+            width: 35%;
+        }
+
+            table.formulario_talentos_linea tr.form_group td.form_control input {
+                height: 24px;
+                width: 100%;
+            }
+
+            table.formulario_talentos_linea tr.form_group td.form_control select {
+                height: 28px;
+                width: 101%;
+            }
+
+            table.formulario_talentos_linea tr.form_group td.form_control textarea {
+                width: 100%;
+            }
+
+.titulo-popup {
+    background-color: #39215E;
+    border: 0px;
+    color: #fff;
+    min-height: 24px;
+    font-weight: bold;
+    min-width: 24px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 0 3px 10px;
+}
+
+.btn-cancel {
+    background-color: #bf0d0d;
+    border-color: #bf0d0d;
+    font-family: Helvetica Neue LT Pro;
+    font-style: italic;
+    font-weight: bolder !important;
+    color: #fff;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14pt;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-shadow: inset 0 0 0 2px #f1f1f1;
+}
+
+    .btn-cancel:hover {
+        background: #f1f1f1;
+        font-family: Helvetica Neue LT Pro !important;
+        color: #bf0d0d !important;
+        box-shadow: inset 0 0 0 2px #bf0d0d;
+    }

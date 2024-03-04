@@ -1,0 +1,956 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-attachment: fixed;
+    font: 12px Tahoma, Arial, Sans-Serif;
+    color: #696969;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    list-style: none;
+}
+
+a:link, a:visited {
+    color: #034af3;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+.color-black {
+    color: rgb(0,0,0);
+}
+
+.error_compra {
+    border: 1px solid #ED1C24;
+    background-color: #FFD0D2;
+}
+
+.verificar_compra {
+    border: 1px solid #fffb1b;
+    background-color: #fff4d2;
+}
+
+.compra_completa {
+    border: 1px solid #32ee1d;
+    background-color: #d6ffd0;
+}
+
+.modal_titulo_marco_general {
+    border-bottom: 3px solid #91268F;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #E3E5E7;
+    min-height: 44px !important;
+    padding: 5px 0 0 10px !important;
+}
+
+.tabla_titulo_marco_general {
+    border-bottom: 3px solid #77aea9;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #E3E5E7;
+    min-height: 30px !important;
+    padding: 3px 0 0 10px !important;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+img {
+    border: none;
+}
+.notas {
+}
+.rojo {
+    color: Red;
+}
+.negritas {
+    font-weight: bold;
+}
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #404040;
+    /*font-variant: small-caps;*/
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2 {
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page {
+    background-color: #fff;
+    margin: 0px auto 0px auto;
+    min-width: 960px;
+}
+
+#header{
+    background: #fff  no-repeat scroll 0 0 / 100% 100%;
+    margin: 0;
+    min-height: 92px !important;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.img-teachers {
+    position: relative;    
+    box-shadow: 0 7px 10px 4px rgba(0, 0, 0, 0.75) /*Sombra Inferior*/
+}
+
+
+
+.title_bienvenido {
+    font-weight: normal;
+    color: #333;
+    font-size: 40px;
+    font-family: Arial Narrow, Sans-Serif;
+    text-shadow: 0 1px -1px black;
+    margin-top:0px;
+    clear:both;
+}
+
+.title_logo_app {
+    font-weight: bold;
+    color: #333;
+    font-size: 35px;
+    font-family: Arial Narrow, Sans-Serif;
+    text-shadow: 0 1px -1px black;
+}
+.header_topmenu {
+    float:right;
+    margin: 5px 5px;
+}
+
+.header_topmenu img {
+    border: 1px solid white;
+    vertical-align: middle;
+
+}
+
+.header_topmenu a {
+    
+    border-left: 1px solid #49156A;
+    height: 10px;
+    padding-left: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header_topmenu a:hover {
+    text-decoration: underline;
+    color:#EDA33B;
+}
+.header_submenu {
+    float:right;
+    margin: 0px 15px;
+}
+
+
+#right-side {
+    float: right;
+    padding-top: 15px;
+}
+#right-side img {
+    border: 1px solid white;
+    vertical-align: middle;
+}
+#right-side a {
+    color: white;
+    border-left: 1px solid #49156A;
+    height: 10px;
+    padding-left: 10px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+#right-side a:hover {
+    text-decoration: underline;
+}
+#right-side a.first {
+    border: none;
+    padding: 0;
+}
+.title_logo_app i {
+    color: #000000;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.header h1 {
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+.hrule {
+  height:3px;
+  border:none;
+  color:rgb(122,122,122);
+  background-color:rgb(122,122,122);
+}
+.text_size {
+    font-size:1.4em;
+}
+
+.text{
+    font-size:3.4em;
+}
+
+.main {
+    padding: 0px 0px;
+   /* margin: 12px 8px 8px 8px;*/
+    min-height: 400px;
+    background-color: rgb(222,218,212);
+}
+
+.fondo-gris {
+    background-color: rgb(222,218,212);
+}
+
+.leftCol {
+    padding: 6px 0px;
+    margin: 12px 8px 8px 0px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer {
+    color: #4e5766;
+    padding: 0px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink {
+    background-color: #3a4f63;
+    width: 100%;
+}
+
+div.menu {
+    padding: 4px 0px 4px 0px;
+}
+
+div.menu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited {
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover {
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active {
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset {
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p {
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label {
+    display: block;
+}
+
+fieldset label.inline {
+    display: inline;
+}
+
+legend {
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 0px;
+}
+
+input.textEntry {
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry {
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo {
+    width: 300px;
+}
+
+/* TWO COLUMNS <div class="TCContainer"> <div class="TCLeftColumn"></div> <div class="TCRightColumn"></div> </div>
+----------------------------------------------------------*/
+.TCContainer{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 1%;
+}
+
+.TCLeftColumn{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 49%;
+}
+
+.TCRightColumn{
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: 48%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear {
+    clear: both;
+}
+
+.title {
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+
+
+
+.failureNotification {
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.submitButton {
+    text-align: right;
+    padding-right: 10px;
+}
+
+/*finder y results*/
+.finder {
+    
+    padding: 10px;
+}
+
+.buscar {
+    float: right;
+    position: relative;
+}
+.nuevo {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    color: #49156A !important;
+}
+.nuevo a {
+    color: #49156A !important;
+}
+.nuevo a:hover {
+    color: #1C94C4 !important;
+}
+
+select {
+    height: 26px;
+}
+
+div.ui-datepicker {
+    font-size: 12px;
+}
+div.ui-button {
+    font-size: 10px;
+}
+
+/*pager*/
+div.DDPager {
+    padding: 0px 0px;
+}
+.DDControl {
+    padding: 0px;
+    color: #666;
+}
+
+.DDFloatLeft {
+    float: left;
+}
+.DDFloatLeft input {
+    border: none;
+    padding: 1px;
+}
+.DDFloatRight {
+    float: right;
+}
+
+.DDFooter {
+}
+
+.form-register {
+    float: left;
+    padding: 10px;
+    margin: 0px auto 0px auto;
+}
+.finder a {
+    text-decoration: none;
+    vertical-align: top;
+}
+.finder a .label {
+    vertical-align: top;
+}
+.EmptyData {
+    height: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+.actionGrid {
+    padding: 0px;
+    border: none;
+}
+.actionGrid img {
+    border: none;
+}
+
+.ui-widget-header {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 5px;
+    clear: both;
+}
+
+.titlediv {
+    border: 3px solid #eeeeee;
+    background: #a6c9e2 url(redmond/images/ui-bg_glass_85_dfeffc_1x400.png) repeat-x;
+    color: #203360;
+    margin: 0px auto 0px auto;
+}
+
+.datashower {
+    float: left;
+    border: 3px solid #eeeeee;
+    padding: 1px;
+    background: #a6c9e2;
+    color: #203360;
+    width: 442px;
+}
+.info {
+    color: #203360;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.rol {
+    color: #696969;
+}
+#frmMain label.error {
+    color: red;
+}
+
+#UserExist {
+    color: red;
+}
+
+#UserExist {
+    color: red;
+}
+
+#error {
+    background-color: #ffebe8;
+    border: 1px solid #dd3c10;
+    padding: 7px 3px;
+    text-align: center;
+    margin-top: 10px;
+    visibility: hidden;
+}
+.boton {
+
+}
+
+.icon_input {
+    width: 16px;
+    height: 16px;
+    padding: 2px !important;
+}
+.item_lista {
+    padding: 5px;
+    margin: 0px;
+    margin-top: 5px;
+    border: 1px solid #DDD;
+    background-color: #FEFFFF;
+    min-height: 65px;
+}
+.title_6 {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #787878;
+}
+.form_login {
+    width: 350px;
+    border: 0;
+    margin: 0px;
+    display: block;
+    padding: 20px;
+    padding-left: 80px;
+    font-family: 'Lucida Grande' , arial, sans-serif;
+    border: 5px solid #ddd !important;
+    color: #333;
+}
+
+.form_login p label, .form_login p span {
+    float: left;
+    text-align: right;
+    width: 70px;
+    margin-right: 10px;
+    padding-top: 7px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form_login p input {
+    height: 20px;
+    width: 225px;
+    margin-bottom: 15px;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.form_login p select {
+    width: 188px;
+    margin-bottom: 15px;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.form_login ul {
+    margin-top: 7px;
+    font-size: 11px;
+    float: left;
+}
+
+.form_login li {
+    display: inline;
+    margin-left: 10px;
+    float: left;
+}
+
+.form_login li a {
+    display: inline;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.form_login li a:hover {
+    text-decoration: underline;
+}
+
+
+/*Asignación Materias Grupo Ciclo Escolar Docente*/
+
+.imageButtonshow {
+    visibility: visible;
+}
+.imageButtonhide {
+    visibility: hidden;
+     display:none;
+}
+/*Asignación Materias Grupo Ciclo Escolar Docente*/
+
+/*************CONFIRMAR UNIVERSIDAD **************************************/
+#ContenidoConfirmar {
+    margin: 0px auto;
+    padding : 15px;
+}
+#InformacionPersonalUniversidad, #InformacionEditable, #InformacionEscuelas {
+    border: 1px solid #DDD;
+    background-color:#FEFEFE;
+    margin: 5px 0px;
+    padding: 15px;
+}
+#InformacionEscuelas table {
+    width: 100%;
+}
+#InformacionEscuelas table td {
+    border: 1px solid gray;
+    text-align: center;
+}
+
+/*Default Error Page*/
+.pageError {
+    background-color: #fff;
+    color: #333;
+    font-family: Georgia,Palatino, 'Book Antiqua' ,serif;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+p.contenidoError {
+    font-style: italic;
+    color: #333;
+    font-family: Georgia,Palatino, 'Book Antiqua' ,serif;
+    font-size: 14px;
+}
+
+.contenidoError {
+    width: 90%;
+    margin: auto;
+}
+.imgError {
+    width: 500px;
+    margin: auto;
+}
+img.imgError {
+    border: none;
+}
+
+/*----- menu default ------*/
+
+.menu-default ul li {
+    list-style: none;
+    margin: 10px 0 0 10px;
+    padding: 15px;
+    border: 1px solid #DDD;
+    background-color:  #FEFEFE;
+    font-size: 14px;
+    color: #000;
+}
+
+.menu-default ul li h1 {
+    font-weight: bold;
+}
+
+.contenedor-opciones {
+    margin-left: 50px;
+    
+    
+}
+.contenedor-opciones a {
+    padding-top: 4px;
+    white-space:nowrap;
+    line-height: 24px;
+}
+.menu-default a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #55269B;
+}
+
+.menu-default a:hover {
+    text-decoration: underline;
+    color: #7049AB;
+    
+}
+/* ------------- seleccionar escuela -------------- */
+.info-escuela{
+    color:#333;
+    font-size: 14px;
+}
+.seleccion-escuela ul li {
+    list-style: none;
+    margin: 10px 0 0 20px;
+    padding: 15px;
+    border: 1px solid #DDD;
+    background-color:  #FEFEFE;
+    font-size: 20px;
+}
+.seleccion-escuela a {
+    text-decoration: none;
+}
+
+.seleccion-escuela a:hover {
+    text-decoration: underline;
+    
+}
+/* ------------- confirmar universidad -------------- */
+
+.container-escuelas {
+    overflow: hidden;
+    height: 1%;
+    border-bottom: 1px solid #DDD;
+    padding: 5px;
+    margin: 10px 0;
+     background-color:  #FEFEFE;
+}
+
+.info-miescuela {
+    float: left;
+    width: 35%;
+}
+.info-miescuela li label {
+    width:100px;
+}
+.info-ccomputo {
+    float: right;
+    width: 60%;
+}
+.container-escuelas ul{
+    list-style: none;
+}
+.container-escuelas li {
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+
+
+.border-bottom-gray1{
+    border-bottom: 1px solid #DDD;
+    padding: 2px 3px 3px 3px;
+    margin: 2px 0 15px 0;
+}
+
+.error_label, .error {
+    color: red;
+    font-size: 13px;
+    padding-bottom:5px;
+    padding-left: .5em;
+}
+
+.formulario_3 {
+    border: 0;
+    margin: 14px 0px;
+    display: block;
+    padding: 10px 15px;
+    font-family:'Lucida Grande', arial, sans-serif;
+     border-bottom: 1px solid #E5E5E5;
+     list-style : none;
+}
+
+.formulario_3 legend, .formulario_3_title_1 {
+    font-size:16px;font-weight:bold;
+}
+.formulario_3 li {
+    margin-top:15px;
+    margin-bottom:15px;
+}
+.formulario_3 li label:first-child {
+    display:inline-block;
+    text-align: left;
+    width: 170px;
+    margin-right: 10px;
+    padding: 7px 5px;
+    font-size: 13px;
+    font-weight:bold;
+}
+
+.formulario_3 li input[type="text"],
+.formulario_3 li input[type="password"] {
+    height: 18px;
+    width: 231px;
+    padding: 3px;
+    font-size: 14px;
+    
+}
+
+.formulario_3 li select {
+    
+    padding: 3px;
+    font-size: 14px;
+}
+.formulario_3 li i {
+    width:16px;
+    font-weight:bold;
+    font-size: 12px;
+}
+
+.editar_contrasenia {
+    border-style: none;
+	border-color: inherit;
+	border-width: 0;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+	list-style: none;
+	text-decoration:none;
+}
+
+.boton_editar_contrasenia a:hover , .boton_editar_contrasenia input:hover{
+    color:#7049AB;
+}
+.boton_editar_contrasenia a, .boton_editar_contrasenia input {
+    background: #FCFCFC;
+    background: -moz-linear-gradient(top, #FCFCFC 0%, #EEE 100%);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FCFCFC), to(#EEE));
+    border-top: 1px solid #EFD0EB;
+    border-right: 1px solid #EFD0EB;
+    border-bottom: 1px solid #EFD0EB;
+    border-left: 1px solid #EFD0EB;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: inset 0 1px 0 0 #f5f5f5, 0 1px 0 0 #DDD;
+    -webkit-box-shadow: inset 0 1px 0 0 #f5f5f5, 0 1px 0 0 #DDD;
+    color: #49156A;
+    font-size: 13px;
+    line-height: 1;
+    padding: 5px 12px;
+    text-align: center;
+    text-shadow: 0 -1px #F5F5F5;
+    margin: 1px 2px 1px 2px;
+    -webkit-background-clip: padding-box;
+    cursor:pointer;
+}
+
+/**Estilos Catálogos***/
+
+/*Consultar*/
+table.finder{
+    padding: 0;
+    
+}
+table.finder .label{
+    text-transform: none;
+    text-align: right;
+    width: 150px;
+}
+table.finder td.label span{
+    padding-right: 5px;
+}
+
+table.finder td.input{
+    text-align: left;
+    width: 230px;
+}
+table.finder td.input input[type="text"] {
+    width: 230px;
+}
+
+table.finder td.input select {
+    width: 230px;
+}
+table.finder td .buscar {
+    text-align: left;
+    width: 230px;
+}
+.results {
+   float: left;
+   margin: 1px 1px;
+   width: 100%;
+    
+}
+.break_text{
+    white-space: pre-line;
+    word-break: break-word;
+    word-wrap:break-word;
+    
+    }
+/*Consultar*/
+
+/* Registrar */
+.td-label
+{
+    width:150px;
+    text-align:left;
+    padding-right: 5px;
+}
+.td-label-texarea 
+{
+    width:150px;
+    text-align:right;
+    vertical-align: top;
+    padding-right: 5px;
+}
+/* END Registrar*/
+/**************/
+
+.line {
+    border-bottom: 2px solid #DDD;
+    padding: 5px 2px 5px 2px;
+    width: 100%;
+    margin: 0px 12px 5px 0px;
+}
+
+.button_clip_39215E {
+    background-color: #39215E;
+    border: 0px;
+    color: #fff;
+    height: 26px;
+    min-width: 100px;
+    cursor:pointer;
+}

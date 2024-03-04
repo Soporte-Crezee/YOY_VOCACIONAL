@@ -1,0 +1,43 @@
+﻿ .btn-cancel, .boton_iniciarBienvenida {
+    box-shadow: none !important;
+    background: #ff9e19 !important;
+    color: #FFFFFF !important;
+    font-family: Roboto-Bold;
+    font-style: normal !important;
+}
+
+.btn-cancel:hover, .boton_iniciarBienvenida:hover {
+    font-family: Roboto-Bold;
+    background-color: #FFA936 !important;
+    box-shadow: none !important;
+    color: #FFFFFF !important;
+    font-style: normal !important;
+}
+
+.btn.btn-sm, .btn-green {
+    color: #FFFFFF !important;
+    font-family: Roboto-Bold;
+    background-color: #05AED9 !important;
+    box-shadow: none !important;
+    font-style: normal !important;
+}
+
+.btn.btn-sm:hover, .btn-green:hover {
+    font-family: Roboto-Bold;
+    background-color: #05AFF9 !important;
+    box-shadow: none !important;
+    color: #FFFFFF !important;
+    font-style: normal !important;
+}
+
+.panel-heading {
+     background-color: #05aed9 !important;
+     border-bottom: #ff9e19 solid 5px !important;
+     color: #FFFFFF !important;
+     font-family: Roboto-Bold-Condensed !important;
+}
+
+.panel-body, .panel-body input.form-control {
+    font-family: Roboto-Condensed !important;
+}
+

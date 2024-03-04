@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{663C9536-4FC1-4C18-A661-B5B1569D65BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.Profesionalizacion.DTO</RootNamespace>
+    <AssemblyName>POV.Profesionalizacion.DTO.BO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BO\agrupadorinputdto.cs" />
+    <Compile Include="BO\agrupadoroutputdto.cs" />
+    <Compile Include="BO\asistenciadto.cs" />
+    <Compile Include="BO\asistenciainputdto.cs" />
+    <Compile Include="BO\contenidodigitaldto.cs" />
+    <Compile Include="BO\contenidodigitaloutputdto.cs" />
+    <Compile Include="BO\agrupadordto.cs" />
+    <Compile Include="BO\cotenidodigitalinputdto.cs" />
+    <Compile Include="BO\cursodetalledto.cs" />
+    <Compile Include="BO\cursodto.cs" />
+    <Compile Include="BO\cursoinputdto.cs" />
+    <Compile Include="BO\ejetematicodto.cs" />
+    <Compile Include="BO\ejetematicoinputdto.cs" />
+    <Compile Include="BO\situacionaprendizajedto.cs" />
+    <Compile Include="BO\situacionaprendizajeinputdto.cs" />
+    <Compile Include="BO\situacionaprendizajeoutputdto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POV.ContenidosDigital.DTO.BO\POV.ContenidosDigital.DTO.BO.csproj">
+      <Project>{D74934DE-F495-4EB0-B6BF-CAD8E7299DC6}</Project>
+      <Name>POV.ContenidosDigital.DTO.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Logger.Services\POV.Logger.Services.csproj">
+      <Project>{B7F1FB2E-42C5-47B7-B717-F9249F2D6843}</Project>
+      <Name>POV.Logger.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

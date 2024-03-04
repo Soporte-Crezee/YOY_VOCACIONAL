@@ -1,0 +1,296 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="POV.Web.PortalUniversidad.Site" %>
+
+<%-- Catalogo de Expertos --%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>YOY - ESCUELA</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="images/Yoy_Favicon20px.png" />
+    <!-- styles -->
+    <link href="~/Styles/Default.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Menu.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/ui-lightness/jquery-ui-1.12.1.custom.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Icons.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>bootstrap-navbar-color.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>headerandfooter.css" rel="stylesheet" type="text/css" />
+
+    <!--jscripts-->
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery-1.12.1.min.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/bootstrap.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery-migrate-1.2.1.min.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery-ui-1.12.1.custom.min.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/api/api.menu.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/api/api.dialogs.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery.blockUI.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery.ui.datepicker-es.js")%>" type="text/javascript"></script>
+
+    <style type="text/css">
+        .divider-vertical {
+            height: 100%;
+            margin: 0 2px;
+            border-right: 2px solid #242525;
+        }
+    </style>
+
+    <script language="javascript" type="text/javascript">
+        var imgLoader = '<%= Page.ResolveClientUrl("~/images/SOV_cargando.flotante.gif")%>';
+        $(document).ready(function () {
+
+            var api = new MenuApi();
+            api.BuildMenu();
+            initMasterClient();
+            $.blockUI.defaults.fadeOut = 200;
+            $.blockUI.defaults.fadeOut = 100;
+            $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+            $.blockUI.defaults.message = '<img src="' + imgLoader + '" />';
+            changeColorDisableInputs();
+
+            $("form").keypress(function (e) {
+                if (e.which == 13) {
+                    return false;
+                }
+            });
+        });
+        
+        function changeColorDisableInputs() {
+            $("input:disabled, textarea:disabled, select:disabled").each(function (index) {
+
+                $(this).addClass("color-black");
+            });
+        }
+
+        function initMasterClient() {
+            if ($("#<%#hdnShowMessage.ClientID%>").val() === "1") { mostrarError(); }
+            if ($("#<%#hdnShowMessage.ClientID%>").val() === "2") { mostrarWarning(); }
+            if ($("#<%#hdnShowMessage.ClientID%>").val() === "3") { mostrarInfo(); }
+        }
+        function mostrarError() {
+            var api = new MessageApi();
+            var text = $("#<%# hdnLastMessage.ClientID %>").val();
+            api.CreateMessage(text, "ERROR");
+            resetHiden();
+            api.Show();
+        }
+        function mostrarWarning() {
+            var api = new MessageApi();
+            var text = $("#<%# hdnLastMessage.ClientID %>").val();
+            api.CreateMessage(text, "WARNING");
+            resetHiden();
+            api.Show();
+        }
+        function mostrarInfo() {
+            var api = new MessageApi();
+            var text = $("#<%# hdnLastMessage.ClientID %>").val();
+            api.CreateMessage(text, "INFO");
+            resetHiden();
+            api.Show();
+        }
+        function resetHiden() { $("#<%# hdnShowMessage.ClientID %>").val("0"); $("#<%# hdnLastMessage.ClientID %>").val(""); }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!--Deteccion jscript-->
+    <div id="jsEnabled" class="ui-state-error" style="display: none;">
+        El navegador no está ejecutando javascript
+    </div>
+    <script type="text/javascript">        $("#jsEnabled").hide();</script>
+    <!--Deteccion jscript-->
+    <form id="frmMain" runat="server" style="height: 100%">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+        <script type="text/javascript">
+            var imgLoader = '<%= Page.ResolveClientUrl("~/images/SOV_cargando.flotante.gif")%>';
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(End);
+            function End(sender, args) {
+                //initMasterClient();
+                $(".boton").button();
+            }
+
+            Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(OnBeginRequestBlockUI);
+            function OnBeginRequestBlockUI(sender, args) {
+                DocumentBlockUI();
+            }
+
+            function DoFormBlockUI() {
+                $("#frmMain").submit(function () { DocumentBlockUI(); return true; });
+            }
+            function DocumentBlockUI() {
+
+                $.blockUI.defaults.fadeOut = 200;
+                $.blockUI.defaults.fadeOut = 100;
+                $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+                $.blockUI.defaults.message = '<h1 style="font-size:20px;"><img src="' + imgLoader + '" /></h1>';
+                $.blockUI();
+            }
+
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(OnEndRequestUnblockUI);
+            function OnEndRequestUnblockUI(sender, args) {
+                DocumentUnblockUI();
+            }
+
+            function DocumentUnblockUI() {
+                $.blockUI.defaults.fadeOut = 200;
+                $.blockUI.defaults.fadeOut = 100;
+                $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+                $.blockUI.defaults.message = '<h1 style="font-size:20px;"><img src="' + imgLoader + '" /></h1>';
+                $.unblockUI();
+            }
+        </script>
+
+        <!-- inicio page-->
+        <div id="container" class="page_container_login">
+            <div class="">
+                <div id="cabeza" class="" style="margin: 0px; padding: 0px;">
+                    <!--begin header-->
+                    <div id="header" class="header-container">
+                        <div class="container-fluid">
+                            <%-- LOGO --%>
+                            <div class="col-xs-12 col-sm-12 col-lg-3 col-md-3 text-center">
+                                <a href="<%=Page.ResolveClientUrl("~/Default.aspx")%>">
+                                    <img src="~/images/SOV_VOCAREER1.png" runat="server" id="imgLogo_Header" alt="logo" style="padding-top:5px; margin-top:10px;margin-bottom:10px;"/>
+                                </a>
+                            </div>
+                            <%-- Menu-Top --%>
+                            <div class="">
+                                <div id="menu-top" class="menu_container">
+                                    <asp:MultiView ID="MultiViewTopMenu" runat="server">
+                                        <%-- Menu-Top UNIVERSIDAD --%>
+                                        <asp:View ID="ViewTopMenuUniversidad" runat="server">
+                                            <div class="text-center">
+                                                <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
+                                                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/SOV_universidad.png" style="margin: 20px 0px 0px 10px; padding: 0px" width="50px"/>
+                                                </div>
+                                                <div class="col-xs-8 col-sm-6 col-md-5 col-lg-7">
+                                                    <h1 class="pull-left titulo-portal" style="padding-top:10px;">PORTAL ESCUELA</h1>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="menu_top_container col-xs-12">
+                                                    <ul id="menu-top-universidad" class="list-inline" style="float: right; text-align: right; padding: 10px 0 0 0">
+                                                        <li>
+                                                            <asp:HyperLink ID="HplNombreUniversidad" runat="server" ToolTip="Universidad" CssClass="menuItem titulo_menu">
+                                                            </asp:HyperLink>
+                                                        </li>
+
+                                                        <li class="divider-vertical" style="display: none;">
+                                                            <a href="#" class="first">
+                                                                <asp:Label ID="LblNombreUsuario" runat="server" CssClass="menuItem" /></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </asp:View>
+                                    </asp:MultiView>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--end header-->
+
+                    <div id="wrapper" class="content">
+                        <!--begin Menú-->
+                        <div id="menu-toolbar" class="menu_container menu_toolbar_container ">
+                            <asp:MultiView ID="MultiViewToolBarMenu" runat="server">
+                                <%-- ToolBar-Menu UNIVERSIDAD --%>
+                                <asp:View ID="ViewToolBarMenuUniversidad" runat="server">
+                                    <nav role="navigation" class="navbar navbar-default col-xs-12">
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>									
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+										<ul class="nav navbar-nav">
+                                            <li id="menu_OrientadoresCatalogo" class="menu_item" runat="server" visible="false">
+                                                <a href="<%=Page.ResolveClientUrl("~/Orientadores/BuscarOrientadores.aspx") %>">Orientadores</a>
+											</li>
+                                            
+                                            <li id="menu_CarrerasCatalogo" runat="server" visible="false">
+                                                <a href="<%=Page.ResolveClientUrl("~/Carreras/BuscarCarreras.aspx") %>">Cat&aacute;logo de carreras</a>
+											</li>
+											
+                                            <li id="menu_EventosCatalogo" class="menu_item" runat="server" visible="false">
+                                                <a href="<%=Page.ResolveClientUrl("~/Eventos/BuscarEventos.aspx") %>">Eventos</a>
+											</li>
+
+                                            <li id="menu_VerExpedienteCatalogo" class="menu_item" runat="server" visible="false">
+                                                <a href="<%=Page.ResolveClientUrl("~/Pages/ExpedienteAlumnoUniversidad.aspx") %>">Expedientes</a>
+											</li>
+                                            <li class="dropdown mPosicion menu_item">
+                                                <a data-toggle="dropdown" class="dropdown-toggle menuItem" id="MiCuenta" href="javascript:void(0)" title="Click para desplegar el menu">
+                                                    Mi cuenta<b class="caret"></b>
+                                                </a>
+                                                <ul class="dropdown-menu bottom-up">
+                                                    <li>
+                                                        <asp:HyperLink runat="server" CssClass="anidada_cuenta menuItem" Text="Editar perfil" ID="HlpEditarPerfil" ToolTip="Edita los datos de usuario"></asp:HyperLink>
+                                                    </li>
+                                                    <li>
+                                                        <asp:HyperLink runat="server" Text="Cambiar contraseña" ID="HlpCambiarPassword" ToolTip="Cambiar contraseña" CssClass="menuItem"></asp:HyperLink>
+                                                    </li>
+                                                 </ul>
+                                            </li>
+                                            <li class="menu_item">                                                
+                                                <asp:HyperLink ID="HplLogout" runat="server" ToolTip="Salir del portal">Salir</asp:HyperLink>
+                                            </li>
+										</ul>
+									</div>
+									<!-- /.navbar-collapse -->
+								</nav>
+                                </asp:View>
+                            </asp:MultiView>
+                        </div>
+                        <!--begin Menú-->
+
+                        <!--begin update Panel-->
+                        <div class="modal fade" tabindex="-1" role="dialog" id="updPanelMaster">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header" id="modalHeader">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #FFF; opacity: 1; filter: none;">
+                                            <span aria-hidden="true" style="font-size: 25px; opacity: 1;">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title" style="color: white;">YOY - ESCUELA
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p id="message"></p>
+                                        <asp:HiddenField ID="hdnLastMessage" runat="server" />
+                                        <asp:HiddenField ID="hdnShowMessage" runat="server" Value="0" />
+                                    </div>
+                                    <div class="modal-footer" id="modalFooter">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end update Panel-->
+                    </div>
+                </div>
+            </div>
+            <!--begin Content-->
+            <div id="content" class="container">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!--end Content-->
+            <!--begin footer-->
+            <!--End footer-->
+        </div>
+        <div class="footer">
+            <div class="footerpersonalizado">
+            </div>
+        </div>
+        <!-- fin page -->
+    </form>
+</body>
+</html>

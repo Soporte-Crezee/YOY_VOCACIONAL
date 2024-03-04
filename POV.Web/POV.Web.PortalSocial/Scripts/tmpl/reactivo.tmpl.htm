@@ -1,0 +1,231 @@
+﻿<script id="reactivoTmpl" type="text/x-jquery-tmpl">
+    <li class="item_pub">
+        <img src="../Images/${thumb}" alt="imagen" class="img_nocrop_pub"/>
+        <div class="item_pub_content" >
+            <div class="value_reactivo_search floatRight" >
+            <p>Valor<p>
+            <label>${valor}</label>
+            </div>
+            <div style="width:85%;"><span><strong>${areatitulo}</strong> - <i><a href="../Reactivos/Muro.aspx?id=${reactivoid}" class="link_blue">"${nombrereactivo}"</a></i></span>
+            <p></p>
+            <span>Complejidad ${nombrecomplejidad}</span>
+            <div class="lista_horizontal">
+			<ul>
+                <li id="option_${reactivoid}">
+                    <div class="boton_link">
+                        <input type="button"  value="¡Suscribirse!" onclick="javascript:suscribirse('${reactivoid}');"/>
+                    </div>
+                </li>
+			</ul></div>
+            
+			</div>
+        </div>
+        
+    </li>
+</script>
+
+<script id="reactivoUserTmpl" type="text/x-jquery-tmpl">
+    <li class="item_pub">
+        <img src="../Images/${thumb}" alt="imagen" class="img_nocrop_pub"/>
+        <div class="item_pub_content">
+            <div class="value_reactivo_search floatRight" >
+            <p>Valor<p>
+            <label>${valor}</label>
+            </div>
+            <div  style="width:85%;"><span><strong>${areatitulo}</strong> - <i><a href="../Reactivos/Muro.aspx?id=${reactivoid}" class="link_blue">"${nombrereactivo}"</a></i></span>
+            <p></p>
+            <span>Complejidad ${nombrecomplejidad}</span>
+            <div class="lista_horizontal">
+			<ul>
+                <li id="option_${reactivoid}">
+                    {{html $item.getOption(reactivoid,issuscrito)}}
+                </li>
+			</ul>
+            </div>
+			</div>
+        </div>
+        
+    </li>
+</script>
+
+<script id="reactivoViewTmpl" type="text/x-jquery-tmpl">
+<div id="reactivo">
+<!-- header portal -->
+<div id="header_reactivo" style="height:90px;">
+    <!--div id="left_panel" style="width:120px;">
+        <img src="../Images/${reactivo.thumb}" alt="" class="img_reactivo center"/>
+    </div-->
+    <div class=" data_reactivo ">
+        <div id="info_reactivo">
+            <h1>${reactivo.nombrereactivo}</h1>
+            <h2>EJERCICIO DE PRÁCTICA DE ${reactivo.areatitulo}</h2>
+            <h3>COMPLEJIDAD ${reactivo.nombrecomplejidad}</h3>
+            <p>Suscrito desde ${fecharegistro}</p>
+        </div>
+        <div class="item_info_reactivo">
+            <p>Valor</p>
+            <label>${reactivo.valor}</label>
+        </div>
+        <div class="item_info_reactivo">
+            <p>Mi Calificaci&oacute;n</p>
+            <label>${calificacion}</label>
+        </div>
+        <!--div id="toolbar_reactivo">
+        <a id="link_reactivo" href="#" onclick="javascript:mostrarReactivo();" class="link_blue">Reactivo</a>
+        <a id="link_sugerencia" href="#" onclick="javascript:mostrarSugerencias();" class="link_blue">Sugerencias</a>
+        </div-->
+    </div>
+    
+</div>
+<div style=""></div>
+<!-- espacio texto reactivo -->
+<div id="reactivo_tab">
+<div class="content_reactivo">
+    <div class="box_style_reactivo_element">
+        <div class="titulo1_portalreactivo">${reactivo.nombrereactivo}</div>
+        <div><iframe id="frame_r" scrolling="yes" frameborder="0" style="width:100%;" onload="resizeFrame(this);" src="../Files/ResourceProxy.aspx?url=${reactivo.plantilla}"></iframe>
+        </div>
+    </div>
+</div>
+<!-- espacio preguntas -->
+<div class="content_reactivo">
+    <div class="">
+        <div class="titulo1_portalreactivo">Preguntas</div>
+        <ol>
+        <!-- template preguntas -->
+
+        {{tmpl(preguntas,{getTipoPlantilla: getTipoPlantilla}) "#preguntaTmpl"}}
+        </ol>
+    </div>
+</div>
+{{if !finalizo}}
+    <div class="boton_1" style="margin:6px;">
+        <input type="button" value="Registrar" onclick="javascript:registrar();"/>
+    <div class="boton_1" style="margin-top:6px; text-align:right;">
+{{/if}}
+</div>
+
+
+</script>
+
+<script id="preguntaTmpl" type="text/x-jquery-tmpl">
+
+<li id="${pregunta.reactivoid}-${pregunta.preguntaid}" class="box_style_reactivo_element" style="margin-bottom:10px;">
+    <div  class="text_pregunta">
+        <p>${pregunta.textopregunta}</p>
+        <p><iframe id="frame_${pregunta.preguntaid}" scrolling="yes" frameborder="0" style="width:100%;" onload="resizeFrame(this);" src="../Files/ResourceProxy.aspx?url=${pregunta.plantilla}"></iframe></p>
+        
+        {{tmpl getTipoPlantilla(pregunta.tipoplantilla)}}
+        
+
+    </div>
+    <div class="info_pregunta">
+        <ul>
+        <li><label>Valor:</label></li>
+        <li><span>${pregunta.valor}</span></li>
+        <li><label>Mi calificaci&oacute;n:</label></li>
+        <li><span>${calificacion}</span>
+        
+        </li>
+        <li><label>Intentos restantes:</label></li>
+        <li><span>${intentos}</span></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</li>
+</script>
+
+<script id="opcionTmpl" type="text/x-jquery-tmpl">
+<div id="options_${pregunta.reactivoid}-${pregunta.preguntaid}">
+    <ul>
+        {{if !finalizo}}
+            {{each pregunta.opciones}}
+                <li><input id="opt-${pregunta.reactivoid}-${pregunta.preguntaid}-${opcionid}" type="radio" name="${preguntaid}" value="${opcionid}" style="border-color:transparent;"/><label>${texto}</label></li>
+            {{/each}}
+        {{else}}
+             <br/>
+             <li><label style="margin-right:40px;">Tu respuesta:</label> 
+             {{if fallo}}
+                <b class="color_red">${respuestausuario}</b><i class="icon icon_cross" style="margin-left:10px;" title="Ups!"></i>
+             {{else}}
+                <b class="color_green">${respuestausuario}</b><i class="icon icon_tick" style="margin-left:10px;" title="Correcto!"></i>
+             {{/if}}
+             </li>
+             <li><label style="width:120px;">Respuesta correcta:</label> <b class="color_green">${respuestacorrecta}</b><i class="icon icon_tick" style="margin-left:10px;"></i></li>
+        {{/if}}
+    </ul>
+</div>
+</script>
+<script id="abiertaTmpl" type="text/x-jquery-tmpl">
+<div id="abierta_${pregunta.reactivoid}-${pregunta.preguntaid}">
+    {{if !finalizo}}
+        <textarea id="${pregunta.preguntaid}" cols="3" rows="4" style="width:90%;resize:none;"></textarea>
+    {{else}}
+            <br/>
+             <label>Tu respuesta:</label> 
+             {{if fallo}}
+                <b class="color_red">${respuestausuario}</b><i class="icon icon_cross" style="margin-left:10px;" title="Ups!"></i>
+             {{else}}
+                <b class="color_green">${respuestausuario}</b><i class="icon icon_tick" style="margin-left:10px;" title="Correcto!"></i>
+             {{/if}}
+     {{/if}}
+</div>
+</script>
+
+<script id="pubTmpl" type="text/x-jquery-tmpl">
+
+    <li id="${publicacionid}" class="item_pub">
+        <div class="border_img">
+        <div class="img_pub"><a href="../Usuario/Muro.aspx?u=${usuariosocialid}">
+        <center>
+        <img src="../Files/ImagenUsuario/ImagenPerfil.aspx?img=thumb&usr=${usuariosocialid}"  alt="imagen"/>
+        </center>
+        </a>
+        </div>
+        </div>
+        <div class="item_pub_content">
+            <span><strong>
+            <a class="link_blue" href="../Usuario/Muro.aspx?u=${usuariosocialid}">${usuariosocialnombre}</a>
+            </strong></span>- <span class="dateformat" title="${fechapublicacion}">${fechaformated}</span> - <input type="button" id="button_like" title="Me Gusta!" onclick="javascript:LikePub('${publicacionid}');"/>
+            <span class="boton_link">
+                    <input type="button" id="votes_${publicacionid}" onclick="javascript:showPeople('${rankingid}');" title="Ha ${ratingvotes} le ha gustado esta publicaci&oacute;n" value="${ratingvotes}"/>
+            </span>
+                
+            
+            <span></span>
+            <p class="text_content">${contenido}</p>
+            <div class="lista_horizontal content_clear" style="margin-top:10px;">
+			<ul>
+                <li>
+                    </li>
+			</ul>
+			</div>
+            <p></p>
+        </div>
+            <p></p>
+    </li>
+</script>
+
+<script id="peopleTmpl" type="text/x-jquery-tmpl">
+<ul>
+{{each peoples}}
+<li id="${usuariosocialid}" class="item_pub" style="min-height:45px;">
+	<div class="img_comment_div">
+        <div class="img_comment">
+            <a href="../Usuario/Muro.aspx?u=${usuariosocialid}">
+	            <center>
+                <img src="../Files/ImagenUsuario/ImagenPerfil.aspx?img=thumb&usr=${usuariosocialid}" class="img_pub" alt="imagen"/></center>             
+	        </a>
+        </div>
+    </div>
+    <div class="item_comment_content">
+        <span><strong>
+        <a class="title_5 link_blue" href="../Usuario/Muro.aspx?u=${usuariosocialid}">${screenname}</a>
+        </strong>
+        
+        </span>
+    </div>	
+</li> 
+{{/each}}
+</ul>
+</script>

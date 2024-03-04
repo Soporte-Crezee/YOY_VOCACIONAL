@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B062D22C-09FD-43D0-9B78-B32FE988F929}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.Profesionalizacion</RootNamespace>
+    <AssemblyName>POV.Profesionalizacion.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Framework.Base">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\AgrupadorContenidoDigitalDelHlp.cs" />
+    <Compile Include="DAO\AgrupadorContenidoDigitalDetalleDelHlp.cs" />
+    <Compile Include="DAO\AgrupadorContenidoDigitalDetalleInsHlp.cs" />
+    <Compile Include="DAO\AgrupadorContenidoDigitalDetalleRetHlp.cs" />
+    <Compile Include="DAO\AgrupadorContenidoDigitalInsHlp.cs" />
+    <Compile Include="DAO\AgrupadorContenidoDigitalRetHlp.cs" />
+    <Compile Include="DAO\AgrupadorContenidoDigitalUpdHlp.cs" />
+    <Compile Include="DAO\AreaProfesionalizacionInsHlp.cs" />
+    <Compile Include="DAO\AreaProfesionalizacionRetHlp.cs" />
+    <Compile Include="DAO\AreaProfesionalizacionUpdHlp.cs" />
+    <Compile Include="DAO\AsistenciaDelHlp.cs" />
+    <Compile Include="DAO\AsistenciaInsHlp.cs" />
+    <Compile Include="DAO\AsistenciaRetHlp.cs" />
+    <Compile Include="DAO\AsistenciaUpdHlp.cs" />
+    <Compile Include="DAO\ContenidoDigitalAgrupadorDelHlp.cs" />
+    <Compile Include="DAO\ContenidoDigitalAgrupadorInsHlp.cs" />
+    <Compile Include="DAO\ContenidoDigitalAgrupadorRetHlp.cs" />
+    <Compile Include="DAO\ContenidoDigitalCursoDelHlp.cs" />
+    <Compile Include="DAO\ContenidoDigitalCursoInsHlp.cs" />
+    <Compile Include="DAO\CursoDelHlp.cs" />
+    <Compile Include="DAO\CursoInsHlp.cs" />
+    <Compile Include="DAO\CursoRetHlp.cs" />
+    <Compile Include="DAO\CursoUpdHlp.cs" />
+    <Compile Include="DAO\EjeTematicoDelHlp.cs" />
+    <Compile Include="DAO\EjeTematicoInsHlp.cs" />
+    <Compile Include="DAO\EjeTematicoRetHlp.cs" />
+    <Compile Include="DAO\EjeTematicoUpdHlp.cs" />
+    <Compile Include="DAO\MateriaProfesionalizacionInsHlp.cs" />
+    <Compile Include="DAO\MateriaProfesionalizacionRetHlp.cs" />
+    <Compile Include="DAO\MateriaProfesionalizacionUpdHlp.cs" />
+    <Compile Include="DAO\SituacionAprendizajeDelHlp.cs" />
+    <Compile Include="DAO\SituacionAprendizajeInsHlp.cs" />
+    <Compile Include="DAO\SituacionAprendizajeRetHlp.cs" />
+    <Compile Include="DAO\SituacionAprendizajeUpdHlp.cs" />
+    <Compile Include="DAO\TemaAsistenciaDelHlp.cs" />
+    <Compile Include="DAO\TemaAsistenciaInsHlp.cs" />
+    <Compile Include="DAO\TemaAsistenciaRetHlp.cs" />
+    <Compile Include="DAO\TemaAsistenciaUpdHlp.cs" />
+    <Compile Include="DAO\TemaCursoDelHlp.cs" />
+    <Compile Include="DAO\TemaCursoInsHlp.cs" />
+    <Compile Include="DAO\TemaCursoUpdHlp.cs" />
+    <Compile Include="DA\AgrupadorContenidoDARetHlp.cs" />
+    <Compile Include="DAO\TemaCursoRetHlp.cs" />
+    <Compile Include="DA\AsistenciaContenidoDetalleDADelHlp.cs" />
+    <Compile Include="DA\AsistenciaContenidoDetalleDAInsHlp.cs" />
+    <Compile Include="DA\AsistenciaContenidoDetalleDARetHlp.cs" />
+    <Compile Include="DA\AsistenciaDARetHlp.cs" />
+    <Compile Include="DA\ContenidoDigitalAgrupadorDARetHlp.cs" />
+    <Compile Include="DA\CursoDARetHlp.cs" />
+    <Compile Include="DA\CursoDetalleDARetHlp.cs" />
+    <Compile Include="DA\EjeTematicoDARetHlp.cs" />
+    <Compile Include="DA\AgrupadorContenidoDetalleRetHlp.cs" />
+    <Compile Include="DA\EjeTematicoMateriaProfesionalizacionDADelHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DA\EjeTematicoMateriaProfesionalizacionDAInsHlp.cs" />
+    <Compile Include="DA\EjeTematicoMateriaProfesionalizacionDARetHlp.cs" />
+    <Compile Include="DA\SituacionAprendizajeDARetHlp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\AgrupadorContenidoDigitalCtrl.cs" />
+    <Compile Include="Service\AreaProfesionalizacionCtrl.cs" />
+    <Compile Include="Service\AsistenciaCtrl.cs" />
+    <Compile Include="Service\ContenidoDigitalAgrupadorCtrl.cs" />
+    <Compile Include="Service\CursoCtrl.cs" />
+    <Compile Include="Service\EjeTematicoCtrl.cs" />
+    <Compile Include="Service\SituacionAprendizajeCtrl.cs" />
+    <Compile Include="Service\TemaAsistenciaCtrl.cs" />
+    <Compile Include="Service\TemaCursoCtrl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GP.SocialEngine.Interfaces\GP.SocialEngine.Interfaces.csproj">
+      <Project>{1501b668-dc3a-45d9-b9b5-47df76e12587}</Project>
+      <Name>GP.SocialEngine.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3A6024CA-2877-409D-84C8-A1997C27616E}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.Services\POV.CentroEducativo.Services.csproj">
+      <Project>{EFEAF5FF-2F2D-4C50-AE27-BAF8DF1DF922}</Project>
+      <Name>POV.CentroEducativo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.BO\POV.Comun.BO.csproj">
+      <Project>{E9BB2466-0E21-4B56-8803-DEB5969D2B49}</Project>
+      <Name>POV.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.Services\POV.Comun.Services.csproj">
+      <Project>{ADB9BA9A-C274-4101-8F0D-3CF6C86A5FB8}</Project>
+      <Name>POV.Comun.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ContenidoDigital.BO\POV.ContenidoDigital.BO.csproj">
+      <Project>{47DA4BE5-E69C-48EB-89C6-402C9AE3E288}</Project>
+      <Name>POV.ContenidoDigital.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ContenidoDigital.Services\POV.ContenidoDigital.Services.csproj">
+      <Project>{DF345BCB-C7A0-460E-89EF-ECADC50B2CD8}</Project>
+      <Name>POV.ContenidoDigital.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Profesionalizacion.BO\POV.Profesionalizacion.BO.csproj">
+      <Project>{249EBEFD-A333-4961-9446-C006871AFCD6}</Project>
+      <Name>POV.Profesionalizacion.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

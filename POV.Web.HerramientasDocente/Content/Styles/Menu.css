@@ -1,0 +1,128 @@
+﻿ul.topnav {
+    list-style: none;
+    padding: 0 0px;
+    margin: 0;
+    float: left;
+    width: 100%;
+    background: #78648c;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #392f43;
+}
+
+    ul.topnav li {
+        float: left;
+        margin: 0;
+        padding: 0 15px 0 0;
+        position: relative; /*--Declare X and Y axis base for sub navigation--*/
+    }
+
+        ul.topnav li a {
+            padding: 10px 5px;
+            color: #fff;
+            display: block;
+            text-decoration: none;
+            float: left;
+        }
+
+            ul.topnav li a:hover {
+                color: #EDA33B;
+            }
+
+        ul.topnav li span { /*--Drop down trigger styles--*/
+            width: 17px;
+            height: 35px;
+            float: left;
+            background: url(../Images/menu/subnav_btn.gif) no-repeat center top;
+        }
+
+        ul.topnav li .active {
+            color: #99c92f;
+        }
+
+        ul.topnav li span.subhover {
+            background-position: center bottom;
+            cursor: pointer;
+        }
+        /*--Hover effect for trigger--*/
+        ul.topnav li ul.subnav {
+            list-style: none;
+            position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+            left: 0;
+            top: 35px;
+            background: gray;
+            margin: 0;
+            padding: 0;
+            display: none;
+            float: left;
+            width: 170px;
+            border: 1px solid #111;
+        }
+
+            ul.topnav li ul.subnav li {
+                margin: 0;
+                padding: 0;
+                border-top: 1px solid #959595; /*--Create bevel effect--*/
+                border-bottom: 1px solid #959595; /*--Create bevel effect--*/
+                clear: both;
+                width: 170px;
+                position: relative;
+                z-index: 100;
+            }
+
+html ul.topnav li ul.subnav li a {
+    float: left;
+    width: 145px;
+    background: #4D405A;
+    padding-left: 20px;
+}
+
+    html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
+    }
+
+.GroupSection {
+    border: solid 1px #cccccc;
+    width: 880px;
+    margin: 0.4em auto;
+}
+
+.GroupHeader, .GroupHeaderCollapsable, .GroupHeaderGlass {
+    width: auto;
+    margin: 0;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-right: 0;
+    font-size: 12px;
+    font-family: Arial;
+    text-align: left;
+    /*.ui-widget-header de Jquery UI*/
+    border: 1px solid #1a6b80;
+    background: #1a9daf url(Tema.Base/images/ui-bg_diagonals-small_35_1a9daf_40x40.png) 50% 50% repeat;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.GroupHeaderCollapsable {
+    /*.ui-widget-header de Jquery UI*/
+    border: 1px solid #1a6b80;
+    background: #959595;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.GroupHeaderGlass {
+    /*.ui-widget-header de Jquery UI*/
+    border: 1px solid #1a6b80;
+    background: #1a9daf url(Tema.Base/images/ui-bg_diagonals-small_35_1a9daf_40x40.png) 50% 50% repeat;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.GroupContent, .GroupContentCollapsable {
+    width: 100%;
+}
+
+.TableContent {
+    margin: 0;
+    width: 100%;
+}

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36C1AFF9-323F-4330-AA43-4FB0AB4A0A70}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.Modelo</RootNamespace>
+    <AssemblyName>POV.Modelo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\Comun\Bibliotecas\EntityFramework611.net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\Comun\Bibliotecas\EntityFramework611.net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Base.Entity">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\Contexto.cs" />
+    <Compile Include="Mapping\Administracion\CompraPremiumMapping.cs" />
+    <Compile Include="Mapping\Administracion\CompraProductoMapping.cs" />
+    <Compile Include="Mapping\Administracion\CompraCreditoMapping.cs" />
+    <Compile Include="Mapping\Administracion\CostoProductoMapping.cs" />
+    <Compile Include="Mapping\Administracion\PaquetePremiumMapping.cs" />
+    <Compile Include="Mapping\Administracion\ProductoCosteoMapping.cs" />
+    <Compile Include="Mapping\Blog\PostFavoritoMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\AlumnoMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\AsignacionAlumnoGrupoMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\CarreraMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\CicloEscolarMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\EncuestaSatisfaccionMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\SesionOrientacionMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\TutorAlumnoMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\DocenteMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\EscuelaMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\EventoUniversidadMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\GrupoCicloEscolarMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\GrupoMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\NotaCompraMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\TutorMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\UniversidadCarreraMapping.cs" />
+    <Compile Include="Mapping\CentroEducativo\UniversidadMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionActividades\ActividadDocenteMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionActividades\ActividadMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionActividades\AsignacionActividadGrupoMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionActividades\AsignacionActividadMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionActividades\BloqueActividadMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionActividades\ClasificadorResultadoDinamicaMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionActividades\ClasificadorResultadoMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionActividades\TareaContenidoDigitalMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionActividades\TareaReactivoMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionActividades\TareaPruebaMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionActividades\TareaEjeTematicoMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionActividades\TareaMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionActividades\TareaRealizadaMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionPlataforma\ConfiguracionGeneralMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionPlataforma\PlantillaLudicaMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionPlataforma\PosicionActividadMapping.cs" />
+    <Compile Include="Mapping\ConfiguracionPlataforma\PreferenciaUsuarioMapping.cs" />
+    <Compile Include="Mapping\ContenidosDigital\ContenidoDigitalMapping.cs" />
+    <Compile Include="Mapping\ContenidosDigital\URLContenidoMapping.cs" />
+    <Compile Include="Mapping\Expediente\UniversidadCarreraAspiranteMapping.cs" />
+    <Compile Include="Mapping\Expediente\UsuarioExpedienteMapping.cs" />
+    <Compile Include="Mapping\Licencias\ContratoMapping.cs" />
+    <Compile Include="Mapping\ModeloDiagnostico\AModeloMapping.cs" />
+    <Compile Include="Mapping\ModeloDiagnostico\ClasificadorMapping.cs" />
+    <Compile Include="Mapping\ModeloDiagnostico\ModeloDinamicoMapping.cs" />
+    <Compile Include="Mapping\Operaciones\ResultadoExportacionOrientadorMapping.cs" />
+    <Compile Include="Mapping\Profesionalizacion\EjeTematicoMapping.cs" />
+    <Compile Include="Mapping\Pruebas\PruebaMapping.cs" />
+    <Compile Include="Mapping\Reactivos\ReactivoMapping.cs" />
+    <Compile Include="Mapping\Seguridad\ConfigCalendarMapping.cs" />
+    <Compile Include="Mapping\Seguridad\EventCalendarMapping.cs" />
+    <Compile Include="Mapping\Seguridad\UsuarioMapping.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GP.SocialEngine.BO\GP.SocialEngine.BO.csproj">
+      <Project>{bc81d924-3bb9-4ebd-b55f-b1c72132c069}</Project>
+      <Name>GP.SocialEngine.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.Interfaces\GP.SocialEngine.Interfaces.csproj">
+      <Project>{1501b668-dc3a-45d9-b9b5-47df76e12587}</Project>
+      <Name>GP.SocialEngine.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Administracion.BO\POV.Administracion.BO.csproj">
+      <Project>{4ccd2661-0b94-4dc8-a41f-864e951ff01f}</Project>
+      <Name>POV.Administracion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Blog.BO\POV.Blog.BO.csproj">
+      <Project>{30c45fc5-94fa-4455-8251-402d99e938aa}</Project>
+      <Name>POV.Blog.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ContenidoDigital.BO\POV.ContenidoDigital.BO.csproj">
+      <Project>{47da4be5-e69c-48eb-89c6-402c9ae3e288}</Project>
+      <Name>POV.ContenidoDigital.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.Estandarizado.BO\POV.Modelo.Estandarizado.BO.csproj">
+      <Project>{8c6613e0-1b5e-405f-a64c-10e076c148ac}</Project>
+      <Name>POV.Modelo.Estandarizado.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Operaciones.BO\POV.Operaciones.BO.csproj">
+      <Project>{8b5d5f65-30f6-4a30-a3be-ace5d2220418}</Project>
+      <Name>POV.Operaciones.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Reportes.BO\POV.Prueba.Reportes.BO.csproj">
+      <Project>{79428e4a-6095-48e6-9ac0-860fb8f5cf5e}</Project>
+      <Name>POV.Prueba.Reportes.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3a6024ca-2877-409d-84c8-a1997c27616e}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.BO\POV.Comun.BO.csproj">
+      <Project>{e9bb2466-0e21-4b56-8803-deb5969d2b49}</Project>
+      <Name>POV.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ConfiguracionActividades.BO\POV.ConfiguracionActividades.BO.csproj">
+      <Project>{954ea12b-0652-4a5a-9d84-7105613154a5}</Project>
+      <Name>POV.ConfiguracionActividades.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ConfiguracionesPlataforma.BO\POV.ConfiguracionesPlataforma.BO.csproj">
+      <Project>{7fd66f81-13c7-4123-9d26-833aaab3222d}</Project>
+      <Name>POV.ConfiguracionesPlataforma.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Expediente.BO\POV.Expediente.BO.csproj">
+      <Project>{34c7eb86-2321-432e-82b5-fe8119a9b622}</Project>
+      <Name>POV.Expediente.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Licencias.BO\POV.Licencias.BO.csproj">
+      <Project>{19961067-7725-4435-8ead-6e2b635f5d34}</Project>
+      <Name>POV.Licencias.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Localizacion.BO\POV.Localizacion.BO.csproj">
+      <Project>{662eebf8-41aa-4daf-9603-ab9e92009f77}</Project>
+      <Name>POV.Localizacion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.BO\POV.Modelo.BO.csproj">
+      <Project>{d81e25e7-7ed3-4f7b-9ccf-a3e1e97b198a}</Project>
+      <Name>POV.Modelo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Profesionalizacion.BO\POV.Profesionalizacion.BO.csproj">
+      <Project>{249ebefd-a333-4961-9446-c006871afcd6}</Project>
+      <Name>POV.Profesionalizacion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.BO\POV.Prueba.BO.csproj">
+      <Project>{90c2958d-1935-448e-9ac5-f9abcec3784b}</Project>
+      <Name>POV.Prueba.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Dinamica.BO\POV.Prueba.Diagnostico.Dinamica.BO.csproj">
+      <Project>{a36c3552-74ff-41af-9466-e59288f9272a}</Project>
+      <Name>POV.Prueba.Diagnostico.Dinamica.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.BO\POV.Reactivos.BO.csproj">
+      <Project>{ed9cc55d-68f6-4be0-9dae-00bcd226c289}</Project>
+      <Name>POV.Reactivos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.BO\POV.Seguridad.BO.csproj">
+      <Project>{86840dad-9fcc-46aa-8c98-3cab83195ec7}</Project>
+      <Name>POV.Seguridad.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

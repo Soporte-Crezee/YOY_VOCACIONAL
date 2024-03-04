@@ -1,0 +1,601 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="POV.Web.PortalTutor.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>YOY - PADRES</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/Yoy_Favicon20px.png" />
+    <asp:PlaceHolder ID="holder" runat="server">
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>jquery.notice.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Default.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Icons.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Default-responsive.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>bootstrap-navbar-color.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>alertify.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>alertify.default.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>styleAcordion.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>jquery-ui-v1.12.0.css" rel="stylesheet" type="text/css" />
+
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>jquery-1.12.1.min.js" type="text/javascript"></script>
+
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery.ui.datepicker-es.js")%>" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery-migrate-1.2.1.min.js")%>" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery.blockUI.js")%>" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>json.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>alertify.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>jquery.notice.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>bootstrap.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/api/api.menu.js")%>" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/api/api.dialogs.js")%>" type="text/javascript"></script>
+
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>bootstrap-modal-carousel.min.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>headerandfooter.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">
+            var imgLoader = '<%= Page.ResolveClientUrl("~/images/SOV_cargando.flotante.gif")%>';
+            $(document).ready(function () {
+
+                var api = new MenuApi();
+                api.BuildMenu();
+                initMasterClient();
+                $.blockUI.defaults.fadeOut = 200;
+                $.blockUI.defaults.fadeOut = 100;
+                $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+                $.blockUI.defaults.message = '<h1 style="font-size:20px;"><img src="' + imgLoader + '" /></h1>';
+
+                $("form1").keypress(function (e) {
+                    if (e.which == 13) {
+                        return false;
+                    }
+                });
+
+                //Mouse hover -> menu bootstrap
+                $("li").hover(
+                function () {
+                    if ($(this).hasClass('menu_item')) {
+                        $(this).addClass("active");
+                    }
+                },
+                function () {
+                    if ($(this).hasClass('menu_item')) {
+                        $(this).removeClass("active");
+                    }
+                }
+                );
+
+                $('html').click(function () {
+                    $(".opcionesCuenta").slideUp("fast");
+                });
+                $(".miCuenta").click(function (e) {
+                    $(".opcionesCuenta").slideDown("fast");
+                    e.stopPropagation();
+                });
+
+                $(function () {
+
+                    //Ventana modal//_____________________________________________________________
+                    $("#HlpEstadoProceso").on("click", function () {
+                        if ($("#<%=txtCorreoConfirmado1.ClientID%>").val() == "True") {
+                            $("#btnModal").click();
+                            setTimeout(function () { $("#opcionesCuenta").attr('style', 'display: none'); return true; }, 1000);
+                        }
+                        else {
+                            alert("No ha confirmado su correo!");
+                        }
+                    });
+
+                    if ($("#<%=txtCorreoConfirmado1.ClientID%>").val() == "False") {
+                        $("#btnPrimerosPasos").click();
+                    }
+
+
+                    $('#txtDatosCompletos').hide();
+                    $("#btnConfirmarCorreo").on("click", function () {
+                        __doPostBack('btnConfirmarCorreo', '');
+                    });
+
+                    function getStatusDatosCompletos() {
+                        var datosCompletos = $("#txtDatosCompletos").val();
+                        var correoConfirmado = $('txtCorreoConfirmado').val();
+                        if (correoConfirmado == 'True') {
+                            if (datosCompletos == 'False') {
+                                jQnotice('Completa tu perfil !');
+                                $('#MiCuenta').attr("style", "color: #FFA500");
+                                alertify.set('notifier', 'position', 'bottom-left');
+                                var notification = alertify.warning('Completa tu perfil !');
+                                $(".ajs-message").click(function () {
+                                    window.location = "Pages/EditarPerfil.aspx";
+                                });
+
+                                $(".notice").click(function () {
+                                    window.location = "Pages/EditarPerfil.aspx";
+                                });
+                                notification.ondismiss = function () { $('#MiCuenta').removeAttr("style"); };
+                            }
+                            else {
+                                clearInterval(verificarDatosCompletos);
+                            }
+                        }
+                    }
+
+                    function habilitarReporte() {
+                        var datosCompletos = $("#txtDatosCompletos").val();
+                        if (datosCompletos == 'False') {
+                            clearInterval(esperandoDatosCompletos);
+                            $('.pcompletaperfils').each(function () {
+                                $(this).removeAttr('onclick');
+                                $(this).removeAttr('href');
+                            });
+                            $('.pcompletaperfils').click(function ()
+                            { alert("Para visualizar esta sección es necesario que completes tu perfil!"); return false; });
+                        }
+                        else {
+                            clearInterval(esperandoDatosCompletos);
+                            $('.pcompletaperfils').unbind('click');
+                        }
+                    }
+
+                    function habilitarOpciones() {
+                        var correoConfirmado = $("#<%=txtCorreoConfirmado1.ClientID%>").val();
+                        if (correoConfirmado == 'False') {
+                            clearInterval(esperando);
+                            $('#divConfirmaCorreo').show();
+                            $('.pconfirmacorreo').each(function () {
+                                $(this).removeAttr('onclick');
+                                $(this).removeAttr('href');
+                            });
+                            $('.pconfirmacorreo').click(function () { alert("No ha confirmado su correo!"); return false; });
+                            localStorage['session_correo_confirmado'] = "False";
+                        }
+                        else {
+                            clearInterval(esperando);
+                            $('.pconfirmacorreo').unbind('click');
+                            $('#divConfirmaCorreo').hide();
+                            localStorage['session_correo_confirmado'] = "True";
+                        }
+                    }
+                    var esperando = setInterval(habilitarOpciones, 1000);
+
+                    var esperandoDatosCompletos = setInterval(habilitarReporte, 1000);
+                    var tiempoEsperaNotificacion = "<%#tiempoEsperaNotificacion%>";
+                    var verificarDatosCompletos = setInterval(getStatusDatosCompletos, tiempoEsperaNotificacion);
+
+                    $('.pcompletaperfils').click(function () {
+                        getStatusDatosCompletos();
+                    });
+
+                });
+
+            });
+
+            function verDescripcion(step) {
+                $("#" + step).attr('style', 'display: block');
+            }
+
+            function ocultarDescripcion(step) {
+                $("#" + step).attr('style', 'display: none');
+            }
+
+            function initMasterClient() {
+                if ($("#<%#hdnShowMessage.ClientID%>").val() === "1") { mostrarError(); }
+                if ($("#<%#hdnShowMessage.ClientID%>").val() === "2") { mostrarWarning(); }
+                if ($("#<%#hdnShowMessage.ClientID%>").val() === "3") { mostrarInfo(); }
+                $("#<%#hdnShowMessage.ClientID%>").val("0");
+            }
+
+            function mostrarError() {
+                var api = new MessageApi();
+                var text = $("#<%# hdnLastMessage.ClientID %>").val();
+                            api.CreateMessage(text, "ERROR");
+                            resetHiden();
+                            api.Show();
+                        }
+                        function mostrarWarning() {
+                            var api = new MessageApi();
+                            var text = $("#<%# hdnLastMessage.ClientID %>").val();
+            api.CreateMessage(text, "WARNING");
+            resetHiden();
+            api.Show();
+        }
+        function mostrarInfo() {
+            var api = new MessageApi();
+            var text = $("#<%# hdnLastMessage.ClientID %>").val();
+                api.CreateMessage(text, "INFO");
+                resetHiden();
+                api.Show();
+
+            }
+            function resetHiden() { $("#<%#hdnShowMessage.ClientID%>").attr('value', '0'); $("#<%# hdnLastMessage.ClientID %>").val(""); }
+        </script>
+        <style type="text/css">
+            .title_logo_app {
+                color: #77aea9;
+                font-family: Helvetica Neue LT Pro;
+                font-style: italic;
+            }
+
+            .carousel-indicators {
+                bottom: -10px;
+            }
+
+                .carousel-indicators li {
+                    border-color: #999;
+                    background-color: #ccc;
+                }
+
+            .carousel-inner {
+                margin-bottom: 30px;
+            }
+        </style>
+    </asp:PlaceHolder>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true" />
+        <script type="text/javascript">
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(End);
+            function End(sender, args) {
+                //initMasterClient();
+                $(".boton").button();
+            }
+
+            Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(OnBeginRequestBlockUI);
+            function OnBeginRequestBlockUI(sender, args) {
+                DocumentBlockUI();
+            }
+
+            function DoFormBlockUI() {
+                $("#form1").submit(function () { DocumentBlockUI(); return true; });
+            }
+            function DocumentBlockUI() {
+
+                $.blockUI.defaults.fadeOut = 200;
+                $.blockUI.defaults.fadeOut = 100;
+                $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+                $.blockUI.defaults.message = '<h1 style="font-size:20px;"><img src="' + imgLoader + '" /></h1>';
+                $.blockUI();
+            }
+
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(OnEndRequestUnblockUI);
+            function OnEndRequestUnblockUI(sender, args) {
+                DocumentUnblockUI();
+            }
+
+            function DocumentUnblockUI() {
+                $.blockUI.defaults.fadeOut = 200;
+                $.blockUI.defaults.fadeOut = 100;
+                $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+                $.blockUI.defaults.message = '<h1 style="font-size:20px;"><img src="' + imgLoader + '" /></h1>';
+                $.unblockUI();
+            }
+
+
+        </script>
+        <div id="container" class="page_container_login">
+            <%-- header --%>
+            <div style="display: none">
+                <asp:TextBox ID="txtCorreoConfirmado1" Style="margin-top: -35px;" MaxLength="30" runat="server" CssClass="form-control" Width="250px" Enabled="true"></asp:TextBox>
+            </div>
+
+            <div id="divConfirmaCorreo" class="alert alert-danger text-center" style="display: none;">
+                Para poder disfrutar de los beneficios totales de la plataforma deberá <a href="#" class="alert-link" id="btnConfirmarCorreo">confirmar su correo</a> Gracias!!
+            </div>
+
+            <div>
+                <asp:TextBox ID="txtDatosCompletos" Style="margin-top: -35px;" MaxLength="30" runat="server" CssClass="form-control" Width="250px" Enabled="true"></asp:TextBox>
+            </div>
+
+            <div id="cabeza" class="" style="padding: 0px; margin: 0px;">
+                <div id="header" class="header-container">
+                    <div class="container-fluid">
+                        <%-- Logo --%>
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
+                            <asp:HyperLink ID="HyperLink2" NavigateUrl="~/Default.aspx" runat="server">
+                                <img src="~/images/SOV_VOCAREER1.png" runat="server" id="imgLogo_Header" alt="logo" class="" style="padding-top: 5px; margin-top: 10px; margin-bottom: 10px;" />
+                            </asp:HyperLink>
+
+                        </div>
+                        <%-- Menu-Top --%>
+                        <div class="">
+                            <div id="menu-top" class="menu_container">
+                                <asp:MultiView ID="MultiviewTopMenu" runat="server">
+                                    <%-- Menu-Top-Tutor --%>
+                                    <asp:View ID="ViewTopMenuTutor" runat="server">
+                                        <div class="text-center">
+                                            <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
+                                                <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/SOV_tutores.png" Style="margin: 20px 0px 0px 10px; padding: 0px" Width="50px" />
+                                            </div>
+                                            <div class="col-xs-8 col-sm-6 col-md-5 col-lg-7">
+                                                <h1 class="pull-left titulo-portal" style="padding-top: 10px;">PORTAL PADRES</h1>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="menu_top_container col-xs-12">
+                                                <ul id="menu-top-tutor" class="list-inline" style="float: right; text-align: right; padding: 10px 0 0 0">
+                                                    <li>
+                                                        <asp:HyperLink runat="server" ID="HlpNameTutor" NavigateUrl="~/Default.aspx" ToolTip="" CssClass="pconfirmacorreo">
+                                                            <asp:Label ID="LblNombreTutorTop" runat="server" CssClass="item-titulo"></asp:Label>
+                                                        </asp:HyperLink>
+                                                        <asp:Image ID="Image2" runat="server" ImageUrl="~/images/VOCAREER_usuario.png" class="" Style="max-width: 100px; margin: -12px 0px 0px; padding: 0px" />
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </asp:View>
+                                </asp:MultiView>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <%-- content --%>
+                <div id="wrapper" class="content">
+                    <div id="menu-toolbar" class="menu_container menu_toolbar_container ">
+                        <asp:MultiView ID="MultiViewToolBarMenu" runat="server">
+                            <%-- ToolBar-Menu TUTOR --%>
+                            <asp:View ID="ViewToolBarMenuTutor" runat="server">
+                                <nav role="navigation" class="navbar navbar-default col-xs-12">
+                                    <!-- Brand and toogle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                                        <ul class="nav navbar-nav">
+                                            <li class="menu_item">
+                                                <asp:HyperLink ID="HlpInvitacion" Text="Agregar hijos" runat="server" CssClass="pconfirmacorreo pcompletaperfils menuItem"></asp:HyperLink>
+                                            </li>
+
+                                            <li class="menu_item">
+                                                <asp:HyperLink ID="HlpExpediente" Text="Expediente hijos" runat="server" CssClass="pconfirmacorreo pcompletaperfils menuItem"></asp:HyperLink>
+                                            </li>
+                                            <li class="dropdown mPosicion menu_item pconfirmacorreo pcompletaperfils">
+                                                <a data-toggle="dropdown" class="dropdown-toggle tblog pconfirmacorreo pcompletaperfils menuItem" href="javascript:void(0)">REPORTES
+													<i id="I2">
+                                                        <asp:Label runat="server" ID="Label2"></asp:Label>
+                                                    </i><b class="caret"></b>
+                                                </a>
+                                                <ul class="dropdown-menu bottom-up">
+                                                    <li class="menu_item ">
+                                                        <asp:HyperLink ID="HlpResultadoHabitos" Text="Resultado Hábitos de estudio" runat="server" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item ">
+                                                        <asp:HyperLink ID="HlpResultadoDominos" Text="Resultado Dominós" runat="server" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item ">
+                                                        <asp:HyperLink ID="HlpResultadoTerman" Text="Resultado Terman" runat="server" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item ">
+                                                        <asp:HyperLink ID="HlpResultadoSacks" Text="Resultado SACKS" runat="server" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item ">
+                                                        <asp:HyperLink ID="HlpResultadoCleaver" Text="Resultado CLEAVER" runat="server" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item ">
+                                                        <asp:HyperLink ID="HlpResultadoChaside" Text="Resultado CHASIDE" runat="server" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item ">
+                                                        <asp:HyperLink ID="HlpResultadoAllport" Text="Resultado Allport" runat="server" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item ">
+                                                        <asp:HyperLink ID="HlpResultadoKuder" Text="Resultado Kuder" runat="server" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item ">
+                                                        <asp:HyperLink ID="HlpResultadoRotter" Text="Resultado Rotter" runat="server" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        <asp:HyperLink ID="HlpResultadoRaven" Text="Resultado Raven" runat="server" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        <asp:HyperLink ID="HlpResultadoFrases" Text="Resultado Frases Incompletas" runat="server" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        <asp:HyperLink ID="HlpResultadoZavic" Text="Resultado Zavic" runat="server" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown mPosicion menu_item">
+                                                <a data-toggle="dropdown" class="dropdown-toggle pconfirmacorreo menuItem" id="MiCuenta" href="javascript:void(0)" title="Click para desplegar el menu"></span>Mi cuenta<b class="caret"></b>
+                                                </a>
+                                                <ul class="dropdown-menu bottom-up" style="float: none !important;">
+                                                    <li class="menu_item ">
+                                                        <asp:HyperLink runat="server" CssClass="anidada_cuenta pconfirmacorreo" Text="Editar perfil" ID="HlpEditarPerfilTutor" ToolTip="Edita los datos de usuario"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item ">
+                                                        <asp:HyperLink runat="server" CssClass="pconfirmacorreo " Text="Cambiar contraseña" ID="HlpCambiarPasswordTutor" ToolTip="Cambiar contraseña"></asp:HyperLink>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+                                            <li class="menu_item">
+                                                <asp:HyperLink ID="HplLogoutTutor" runat="server" ToolTip="Salir del portal" CssClass="menuItem">Salir</asp:HyperLink>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </asp:View>
+                        </asp:MultiView>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="content" class="container" style="background-color: white;">
+                <asp:ContentPlaceHolder ID="page_content" runat="server">
+                </asp:ContentPlaceHolder>
+
+                <%-- Modal Primeros Pasos --%>
+                <div class="container">
+                    <%-- Large modal --%>
+                    <button id="btnPrimerosPasos" type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg" style="display: none;">Large modal</button>
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myIntruccionModal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header" style="background: url('../images/headerpattern.png') repeat !important;">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></button>
+                                    <h2 class="modal-title" style="font-family: Roboto-Bold !important; color: #05AED9;">Primeros pasos</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="carousel-example-generic" class="carousel slide carousel-fit" data-ride="carousel">
+
+                                        <%-- Seccion para slider --%>
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <asp:Image runat="server" ImageUrl="~/Images/imgCarousel_confirmaCorreo.png" CssClass="img img-responsive" />
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <h3>Confirma tu correo</h3>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <p>Primero deber&aacute;s confirmar tu correo haciendo clic en este enlace.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <asp:Image runat="server" ImageUrl="~/Images/imgCarousel_miCuenta.png" CssClass="img img-responsive" />
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <h3>Completa tu perfil</h3>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <p>
+                                                            Para poder navegar dentro de la plataforma deber&aacute; completar los datos de tu perfil.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <asp:Image runat="server" ImageUrl="~/Images/imgCarousel_agregarHijos.png" CssClass="img img-responsive" />
+                                                    </div>
+                                                    <div class="col-xs-12">
+
+                                                        <h3>Men&uacute; agregar hijos</h3>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <p>
+                                                            La plataforma YOY pone a tu disposici&oacute;n una apartado para invitar a tu hijo a formar parte de la plataforma.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <asp:Image runat="server" ImageUrl="~/Images/imgCarousel_Expediente.png" CssClass="img img-responsive" />
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <h3>Men&uacute; expediente hijos</h3>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <p>Podr&aacute;s consultar la informaci&oacute;n que la plataforma ha recoletado de tu hijo.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <asp:Image runat="server" ImageUrl="~/Images/imgCarousel_Reportes.png" CssClass="img img-responsive" />
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <h3>Men&uacute; reportes</h3>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <p>Consultar el resultado de las pruebas que tu hijo ha realizado.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <asp:Image runat="server" ImageUrl="~/Images/imgCarousel_cambiaContrasena.png" CssClass="img img-responsive" />
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <h3>Cambia tu contrase&ntilde;a</h3>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <p>Para mayor seguridad te recomendamos cambiar tu contrase&ntilde;a por una que recuerdes f&aacute;cilmente.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <%-- Controles --%>
+                                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                                        </ol>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer" style="background: url('../images/footerpattern.png') repeat !important;">
+
+                                    <button type="button" class="btn btn-cancel" data-dismiss="modal">Entendido</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--End footer-->
+        </div>
+        <%-- footer --%>
+        <div class="footer">
+            <div class="footerpersonalizado">
+            </div>
+        </div>
+        <div class="modal fade" tabindex="-1" role="dialog" id="updPanelMaster">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" id="modalHeader">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #FFF; opacity: 1; filter: none;">
+                            <span aria-hidden="true" style="font-size: 25px; opacity: 1;">&times;</span>
+                        </button>
+                        <h4 class="modal-title" style="color: white;">YOY - PADRES
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="message"></p>
+                        <asp:HiddenField ID="hdnLastMessage" runat="server" />
+                        <asp:HiddenField ID="hdnShowMessage" runat="server" Value="0" />
+                    </div>
+                    <div class="modal-footer" id="modalFooter">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

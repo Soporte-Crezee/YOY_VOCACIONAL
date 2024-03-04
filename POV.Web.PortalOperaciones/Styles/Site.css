@@ -1,0 +1,1090 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-attachment: fixed;
+    font: 12px Tahoma, Arial, Sans-Serif;
+    color: #696969;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    list-style: none;
+    background-color: #FEFEFE;
+}
+.logo-banner {
+    width: 291px;
+    height: 77px;
+    background-color: #fff;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.card {
+    background-color: #f3f3f3;
+}
+
+.divider-vertical {
+    height: 100%;
+    margin: 0 2px;
+    border-right: 1px solid #FFF;
+}
+
+.label {
+    color: #49156a;
+}
+
+
+a:link, a:visited {
+    color: #FFF;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+img {
+    border: none;
+}
+
+.notas {
+}
+
+.rojo {
+    color: Red;
+}
+
+.negritas {
+    font-weight: bold;
+}
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #404040;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2 {
+    margin-top: 0px;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page {
+    background-color: #fff;
+    margin: 0px auto 0px auto;
+}
+
+.header {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #f1f1f1 url(../Images/banner_bg.jpg) no-repeat;
+    width: 100%;
+    height: 92px;
+    box-shadow: 0px 17px 15px -8px rgba(0, 0, 0, 0.6); /*Sombra Inferior*/
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 8px 8px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 8px 8px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 8px 8px 2px rgba(0,0,0,0.75);
+}
+
+.title_logo_app {
+    font-size: 45px;
+    color: #082d49 !important;
+    font-family: Helvetica-Bold;
+    font-weight: bolder;
+}
+
+.header_topmenu {
+    float: right;
+    margin: 5px 5px;
+}
+
+    .header_topmenu img {
+        border: 1px solid white;
+        vertical-align: middle;
+    }
+
+    .header_topmenu a {
+        height: 1px;
+        padding-left: 1px;
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14pt;
+    }
+
+        .header_topmenu a:hover {
+            text-decoration: underline;
+            color: #33acfd;
+        }
+
+.header_submenu {
+    float: right;
+    margin: 0px 15px;
+}
+
+.title_logo_app i {
+    color: #000000;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.header h1 {
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main {
+    padding: 0px 2px;
+    margin: 3px 2px 2px 2px;
+    min-height: 420px;
+}
+
+.leftCol {
+    padding: 6px 0px;
+    margin: 12px 8px 8px 0px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer {
+    color: #4e5766;
+    padding: 0px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+/* menu default 
+----------------------------------------------*/
+.menu-default ul li {
+    list-style: none;
+    margin: 10px 0 0 10px;
+    padding: 15px;
+    border: 1px solid #DDD;
+    background-color: #FEFEFE;
+    font-size: 14px;
+    color: #000;
+}
+
+    .menu-default ul li h1 {
+        font-weight: bold;
+    }
+
+.contenedor-opciones {
+    margin-left: 50px;
+}
+
+    .contenedor-opciones a {
+        margin-top: 4px;
+        white-space: nowrap;
+        line-height: 24px;
+    }
+
+.menu-default a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #252626;
+    font-family: Helvetica;
+}
+
+    .menu-default a:hover {
+        text-decoration: underline;
+        color: #33acfd;
+    }
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink {
+    background-color: #3a4f63;
+    width: 100%;
+}
+
+div.menu {
+    padding: 4px 0px 4px 0px;
+}
+
+    div.menu ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        width: auto;
+    }
+
+        div.menu ul li a, div.menu ul li a:visited {
+            background-color: #465c71;
+            border: 1px #4e667d solid;
+            color: #dde4ec;
+            display: block;
+            line-height: 1.35em;
+            padding: 4px 20px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+            div.menu ul li a:hover {
+                background-color: #bfcbd6;
+                color: #465c71;
+                text-decoration: none;
+            }
+
+            div.menu ul li a:active {
+                background-color: #465c71;
+                color: #cfdbe6;
+                text-decoration: none;
+            }
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+fieldset {
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+    fieldset p {
+        margin: 2px 12px 10px 10px;
+    }
+
+    fieldset.login label, fieldset.register label, fieldset.changePassword label {
+        display: block;
+    }
+
+    fieldset label.inline {
+        display: inline;
+    }
+
+legend {
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 0px;
+}
+
+input.textEntry {
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry {
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo {
+    width: 300px;
+}
+/* TWO COLUMNS <div class="TCContainer"> <div class="TCLeftColumn"></div> <div class="TCRightColumn"></div> </div>
+----------------------------------------------------------*/
+.TCContainer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 1%;
+}
+
+.TCLeftColumn {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 49%;
+}
+
+.TCRightColumn {
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: 48%;
+}
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.title {
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.failureNotification {
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.submitButton {
+    text-align: right;
+    padding-right: 10px;
+}
+
+#right-side {
+    float: right;
+    padding-top: 15px;
+}
+
+    #right-side img {
+        border: 1px solid white;
+        vertical-align: middle;
+    }
+
+    #right-side a {
+        color: white;
+        border-left: 1px solid #49156A;
+        height: 10px;
+        padding-left: 10px;
+        color: #FFF;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        #right-side a:hover {
+            text-decoration: underline;
+        }
+
+        #right-side a.first {
+            border: none;
+            padding: 0;
+        }
+/*finder y results*/
+.finder {
+    padding: 10px;
+}
+
+.buscar {
+    float: right;
+    position: relative;
+}
+
+.nuevo {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    color: #49156A !important;
+}
+
+    .nuevo a {
+        color: #fff !important;
+    }
+
+        .nuevo a:hover {
+            background: #f1f1f1;
+            color: #33acfd !important;
+        }
+
+input[type="text"], input[type="password"], select {
+    width: 230px;
+    font-size: 14pt;
+    font-family: Helvetica !important;
+    margin-bottom: 3px;
+    margin-right: 3px;
+}
+
+select {
+    height: 26px;
+}
+
+div.ui-datepicker {
+    font-size: 12px !important;
+}
+
+div.ui-button {
+    font-size: 10px;
+}
+
+/*pager*/
+div.DDPager {
+    padding: 0px 0px;
+}
+
+.DDControl {
+    padding: 0px;
+    color: #666;
+}
+
+.DDFloatLeft {
+    float: left;
+}
+
+    .DDFloatLeft input {
+        border: none;
+        padding: 1px;
+    }
+
+.DDFloatRight {
+    float: right;
+}
+
+.DDFooter {
+}
+
+.form-register {
+    float: left;
+    padding: 10px;
+    margin: 0px auto 0px auto;
+}
+
+.finder a {
+    text-decoration: none;
+    vertical-align: top;
+}
+
+    .finder a .label {
+        vertical-align: top;
+    }
+
+.EmptyData {
+    height: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.actionGrid {
+    padding: 0px;
+    border: none;
+}
+
+    .actionGrid img {
+        border: none;
+    }
+
+.ui-widget-header {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 5px;
+    clear: both;
+}
+
+.titlediv {
+    border: 3px solid #eeeeee;
+    background: #a6c9e2 url(redmond/images/ui-bg_glass_85_dfeffc_1x400.png) repeat-x;
+    color: #203360;
+    margin: 0px auto 0px auto;
+}
+
+.datashower {
+    float: left;
+    border: 3px solid #eeeeee;
+    padding: 1px;
+    background: #a6c9e2;
+    color: #203360;
+    width: 442px;
+}
+
+.info {
+    color: #203360;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.rol {
+    color: #696969;
+}
+
+#frmMain label.error {
+    color: red;
+}
+
+#UserExist {
+    color: red;
+}
+
+
+#UserExist {
+    color: red;
+}
+
+.active {
+    color: #99c92f;
+    border-top: 2px solid;
+    font-weight: bold;
+}
+
+#error {
+    background-color: #ffebe8;
+    border: 1px solid #dd3c10;
+    padding: 7px 3px;
+    text-align: center;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.boton {
+}
+
+.icon_input {
+    width: 16px;
+    height: 16px;
+    padding: 2px !important;
+}
+
+.item_lista {
+    padding: 5px;
+    margin: 0px;
+    margin-top: 5px;
+    border: 1px solid #DDD;
+    background-color: #FEFFFF;
+    min-height: 65px; /*  width:700px;*/
+}
+
+.title_6 {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #787878;
+}
+
+.form_login {
+    width: 350px;
+    border: 0;
+    margin: 0px;
+    display: block;
+    padding: 20px;
+    padding-left: 80px;
+    font-family: 'Lucida Grande', arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    border: 5px solid #ddd !important;
+}
+
+    .form_login p label, .form_login p span {
+        float: left;
+        text-align: right;
+        width: 70px;
+        margin-right: 10px;
+        padding-top: 7px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .form_login p input {
+        height: 20px;
+        width: 215px;
+        margin-bottom: 15px;
+        padding: 3px;
+        font-size: 16px;
+    }
+
+    .form_login p select {
+        width: 188px;
+        margin-bottom: 15px;
+        padding: 3px;
+        font-size: 16px;
+    }
+
+    .form_login ul {
+        margin-top: 7px;
+        font-size: 11px;
+        float: left;
+    }
+
+    .form_login li {
+        display: inline;
+        margin-left: 10px;
+        float: left;
+    }
+
+        .form_login li a {
+            display: inline;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+            .form_login li a:hover {
+                text-decoration: underline;
+            }
+
+
+/*Asignación Materias Grupo Ciclo Escolar Docente*/
+.imageButtonshow {
+    visibility: visible;
+}
+
+.imageButtonhide {
+    visibility: hidden;
+}
+/*Asignación Materias Grupo Ciclo Escolar Docente*/
+
+/*************CONFIRMAR DIRECTOR **************************************/
+#ContenidoConfirmar {
+    margin: 15px auto;
+    width: 90%;
+}
+
+#InformacionPersonalDirector, #InformacionEditable, #InformacionEscuelas {
+    border: 1px solid #959595;
+    margin: 5px 0px;
+    padding: 5px;
+}
+
+    #InformacionEscuelas table {
+        width: 100%;
+    }
+
+        #InformacionEscuelas table td {
+            border: 1px solid gray;
+            text-align: center;
+        }
+
+.line {
+    border-bottom: 2px solid #DDD;
+    padding: 5px 2px 5px 2px;
+    width: 100%;
+    font-weight: bold;
+    margin: 0px 12px 5px 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+/*Default Error Page*/
+.pageError {
+    background-color: #efefef;
+    color: #333;
+    font-family: Georgia,Palatino, 'Book Antiqua',serif; /*	padding: 0; 	margin: 0;*/
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+p.contenidoError {
+    font-style: italic;
+    color: #333;
+    font-family: Helvetica;
+    font-size: 14pt;
+}
+
+.contenidoError {
+    width: 90%;
+    margin: auto;
+}
+
+.imgError {
+    width: 500px;
+    margin: auto;
+}
+
+img.imgError {
+    border: none;
+}
+
+.border-bottom-gray1 {
+    border-bottom: 1px solid #aaa;
+    padding: 2px 3px 3px 3px;
+    margin: 5px 0 5px 0;
+}
+
+/* configuracion diagnostico */
+
+.input_text_number100 {
+    width: 80px !important;
+    margin-left: 3px;
+}
+
+.config-prueba-panel p label:first-child {
+    width: 150px;
+    text-align: right;
+    float: left;
+    margin-right: 3px;
+    font-size: 13px;
+}
+
+.config-prueba-panel h3 {
+    padding: 2px 3px 3px 3px;
+    margin: 15px 0 15px 0;
+    font-weight: bold;
+}
+
+/* Catálogo de Paquetes deJuegos*/
+ul.form-paquete {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.form-paquete {
+    padding: 0px;
+}
+
+    .form-paquete .label_1 {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .form-paquete .form-ul {
+        display: block;
+    }
+
+        .form-paquete .form-ul li {
+            padding-bottom: 4px;
+            padding-top: 4px;
+        }
+
+            .form-paquete .form-ul li.little {
+                width: 300px;
+            }
+
+.separador {
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    margin: 0px 12px 5px 2px;
+    padding: 5px 2px 5px 2px;
+    float: left;
+    display: inline-block;
+}
+
+.form-paquete label.label, .form-ul label.label {
+    width: 5.5em;
+    font-size: 13px;
+    line-height: 20px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.form-paquete span.label.little, .form-ul span.label.little {
+    width: 5.5em;
+    font-size: 13px;
+    line-height: 20px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.form-paquete span.label.normal, .form-ul span.label.normal {
+    width: 10em;
+    font-size: 13px;
+    line-height: 20px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.form-paquete input[type="text"].h1, .form-ul input[type="text"].h1 {
+    height: 26px;
+    width: 350px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.form-paquete input[type="text"].h2, .form-ul input[type="text"].h2 {
+    height: 24px;
+    width: 350px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.form-paquete .form-ul input[type="text"].normal, input[type="text"].normal {
+    height: 20px;
+    width: 200px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.form-paquete textarea.normal_little, .form-ul textarea.normal_little {
+    height: 70px;
+    width: 70%;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.form-paquete select.little, .form-ul select.little {
+    height: 26px;
+    width: 6em;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.form-paquete select.normal, .form-ul select.normal {
+    height: 26px;
+    width: 12em;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.form-paquete ol > li {
+    padding: 3px;
+}
+
+.form-paquete .options_ul li {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.form-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    ul.form-ul .dato {
+        height: 30px;
+        display: block;
+        vertical-align: middle;
+    }
+
+.form-ul input[type="text"].big {
+    height: 20px;
+    width: 350px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.form-buscar {
+    width: 360px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .form-buscar table {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 11px;
+    }
+
+    .form-buscar tr {
+        margin-left: 300px;
+    }
+
+.form-grid-asignarEje {
+    text-align: left;
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/**Estilos Catálogos***/
+/*Consultar*/
+table.finder {
+    padding: 0;
+}
+
+    table.finder .label {
+        text-transform: none;
+        text-align: right;
+        width: 150px;
+    }
+
+    table.finder td.label span {
+        padding-right: 5px;
+    }
+
+    table.finder td.input {
+        text-align: left;
+        width: 230px;
+    }
+
+        table.finder td.input input[type="text"] {
+            width: 230px;
+        }
+
+        table.finder td.input select {
+            width: 230px;
+        }
+
+    table.finder td .buscar {
+        text-align: left;
+        width: 230px;
+    }
+
+.results {
+    float: left;
+    margin: 1px 1px;
+    width: 100%;
+}
+
+.break_text {
+    white-space: pre-line;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+/*Consultar*/
+/* Registrar */
+.td-label {
+    width: 150px;
+    text-align: right;
+}
+
+    .td-label label {
+        padding-right: 5px;
+    }
+
+    .td-label span {
+        padding-right: 5px;
+    }
+
+.td-label-texarea {
+    width: 150px;
+    text-align: right;
+    vertical-align: top;
+    padding-right: 5px;
+}
+
+textarea {
+    min-width: 300px;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+}
+
+input[type="file"] {
+    margin-bottom: 3px;
+    margin-right: 3px;
+    font-family: Helvetica;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../Styles/fonts/HelveticaNeue-LightCond.otf");
+}
+/* Registrar*/
+/**************/
+.btn-green {
+    background-color: #33acfd;
+    border-color: #33acfd;
+    font-family: Helvetica Neue LT Pro;
+    color: #fff !important;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14pt !important;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-shadow: inset 0 0 0 2px #f1f1f1;
+    text-decoration: none !important;
+}
+
+    .btn-green:hover {
+        background: #f1f1f1;
+        font-family: Helvetica Neue LT Pro;
+        font-style: italic;
+        color: #33acfd !important;
+        box-shadow: inset 0 0 0 2px #33acfd;
+        text-decoration: none !important;
+    }
+
+.btn-cancel {
+    background-color: #bf0d0d;
+    border-color: #bf0d0d;
+    font-family: Helvetica Neue LT Pro;
+    color: #fff;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14pt;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-shadow: inset 0 0 0 2px #f1f1f1;
+    text-decoration: none !important;
+}
+
+    .btn-cancel:hover {
+        background: #f1f1f1;
+        font-family: Helvetica Neue LT Pro !important;
+        color: #bf0d0d !important;
+        box-shadow: inset 0 0 0 2px #bf0d0d;
+        text-decoration: none !important;
+    }
+
+.label_paso {
+    font-family: Helvetica;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.label_paso_instruccion {
+    font-family: Helvetica;
+    font-weight: bolder;
+}
+
+.opcion-default {
+    font-family: Helvetica-Bold;
+    text-transform: uppercase;
+    color: #082d49;
+    font-weight: bolder;
+}
+
+#content {
+    height: 100%;
+    overflow: visible;
+    padding: 1em 1em 3em;
+}
+
+.footerpersonalizado {
+     min-height: 50px;
+    vertical-align: middle;
+     margin-bottom: 0;
+    padding: 12px 12px;
+}

@@ -1,0 +1,277 @@
+﻿/*	DDGridView/DDListView	*/
+table.DDGridView, table.DDListView
+{
+	width: 100%;
+	color: #666;
+	border:solid 2px #dbddff ;
+	font: 12px Tahoma, Arial, Sans-Serif;
+	background-color: #FFF;
+}
+
+table.DDGridView .th, table.DDGridView .td, table.DDListView .th, table.DDListView .td
+{
+	white-space: nowrap;
+}
+
+table.DDGridView .th, table.DDListView .th
+{
+	
+	border: 1px solid #dbddff; 
+	background: #4D405A ;
+	color: #ffffff; font-weight: bold;
+    height: 20px;
+}
+
+table.DDGridView .th a, table.DDListView .th a
+{
+	color: white;
+	text-decoration: none;
+}
+
+table.DDGridView .td, table.DDListView .td
+{
+	border:  1px solid #dbddff;
+	border-left-width:0px;
+	border-right-width:0px;
+	padding: 6px;
+    
+}
+table.DDGridView th {padding:5px; background-color:#77aea9;}
+table.DDGridView td {padding:5px;}
+table.DDGridView .td a, table.DDListView .td a
+{
+	color: #718ABE;
+    text-decoration: none;
+    margin-right: 6px;
+    
+	
+}
+
+table.DDGridView .DDSelected a, table.DDListView .DDSelected a
+{
+	color: #718ABE;
+    text-decoration: none;
+    margin-right: 6px;
+	
+}
+
+table.DDGridView .DDSelected a:hover, table.DDListView .DDSelected a:hover
+{
+	color: #000099;
+	text-decoration: underline;
+}
+
+table.DDGridView .td a:hover, table.DDListView .td a:hover
+{
+	color: #000099;
+	text-decoration: underline;
+}
+table.DDGridView .td:hover, table.DDListView .td a:hover
+{
+	/*color: #000099;*/
+    background-color: #F5F6CE;
+    text-decoration: none;
+}
+
+/*	DataPager	*/
+div.DDPager
+{
+    padding: 0px 6px;
+}
+
+
+/*	DDGridViewWrap/DDListViewWrap	*/
+table.DDGridViewWrap, table.DDListViewWrap
+{
+	width: 100%;
+	color: #666;
+	border:solid 2px #dbddff ;
+	font: 12px Tahoma, Arial, Sans-Serif;
+   
+}
+
+table.DDGridViewWrap .th, table.DDGridViewWrap .td, table.DDListViewWrap .th, table.DDListViewWrap .td
+{
+	white-space:normal;
+    min-width: 60px;
+}
+
+table.DDGridViewWrap .th, table.DDListViewWrap .th
+{
+	
+	border: 1px solid #dbddff; 
+	background: #4D405A ;
+	color: #ffffff; font-weight: bold;
+    height: 20px;
+}
+
+table.DDGridViewWrap .th a, table.DDListViewWrap .th a
+{
+	color: white;
+	text-decoration: none;
+}
+
+table.DDGridViewWrap .td, table.DDListViewWrap .td
+{
+	border:  1px solid #dbddff;
+	border-left-width:0px;
+	border-right-width:0px;
+	padding: 6px;
+   
+    
+}
+table.DDGridViewWrap th {padding:5px;}
+table.DDGridViewWrap td {padding:5px;}
+table.DDGridViewWrap .td a, table.DDListViewWrap .td a
+{
+	color: #718ABE;
+    text-decoration: none;
+    margin-right: 6px;
+	
+}
+
+table.DDGridViewWrap .DDSelected a, table.DDListViewWrap .DDSelected a
+{
+	color: #718ABE;
+    text-decoration: none;
+    margin-right: 6px;
+	
+}
+
+table.DDGridViewWrap .DDSelected a:hover, table.DDListViewWrap .DDSelected a:hover
+{
+	color: #000099;
+	text-decoration: underline;
+}
+
+table.DDGridViewWrap .td a:hover, table.DDListViewWrap .td a:hover
+{
+	color: #000099;
+	text-decoration: underline;
+}
+table.DDGridViewWrap .td:hover, table.DDListViewWrap .td a:hover
+{
+	/*color: #000099;*/
+    background-color: #F5F6CE;
+    text-decoration: none;
+}
+
+
+/* ____________________  */
+
+.selectedRow {
+    cursor: pointer;    
+    font: bold;
+}
+
+    .selectedRow:hover, .selectedRow:active {        
+    }
+
+.selectRow {
+    cursor: pointer;
+    /*background : #7eb5e9;*/
+    background: rgba(206, 251, 103, 0.38);
+    color: #000066;
+}      
+
+
+        .pager {
+            background-color: #646464;
+            font-family: Arial;
+            color: White;
+        }
+
+        .paging {
+        }
+
+            .paging a {
+                background-color: #00C157;
+                padding: 5px 7px;
+                text-decoration: none;
+                border: 1px solid #00C157;
+            }
+
+                .paging a:hover {
+                    background-color: #E1FFEF;
+                    color: #00C157;
+                    border: 1px solid #00C157;
+                }
+
+            .paging span {
+                background-color: #E1FFEF;
+                padding: 5px 7px;
+                color: #00C157;
+                border: 1px solid #00C157;
+            }
+
+        tr.paging {
+            background: none !important;
+        }
+
+            tr.paging tr {
+                background: none !important;
+            }
+
+            tr.paging td {
+                border: none;
+            }
+
+        .pagination-ys {
+            /*display: inline-block;*/
+            padding-left: 0;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+            .pagination-ys table > tbody > tr > td {
+                display: inline;
+            }
+
+                .pagination-ys table > tbody > tr > td > a,
+                .pagination-ys table > tbody > tr > td > span {
+                    position: relative;
+                    float: left;
+                    padding: 8px 12px;
+                    line-height: 1.42857143;
+                    text-decoration: none;
+                    color: #dd4814;
+                    background-color: #ffffff;
+                    border: 1px solid #dddddd;
+                    margin-left: -1px;
+                }
+
+                .pagination-ys table > tbody > tr > td > span {
+                    position: relative;
+                    float: left;
+                    padding: 8px 12px;
+                    line-height: 1.42857143;
+                    text-decoration: none;
+                    margin-left: -1px;
+                    z-index: 2;
+                    color: #aea79f;
+                    background-color: #f5f5f5;
+                    border-color: #dddddd;
+                    cursor: default;
+                }
+
+                .pagination-ys table > tbody > tr > td:first-child > a,
+                .pagination-ys table > tbody > tr > td:first-child > span {
+                    margin-left: 0;
+                    border-bottom-left-radius: 4px;
+                    border-top-left-radius: 4px;
+                }
+
+                .pagination-ys table > tbody > tr > td:last-child > a,
+                .pagination-ys table > tbody > tr > td:last-child > span {
+                    border-bottom-right-radius: 4px;
+                    border-top-right-radius: 4px;
+                }
+
+                .pagination-ys table > tbody > tr > td > a:hover,
+                .pagination-ys table > tbody > tr > td > span:hover,
+                .pagination-ys table > tbody > tr > td > a:focus,
+                .pagination-ys table > tbody > tr > td > span:focus {
+                    color: #97310e;
+                    background-color: #eeeeee;
+                    border-color: #dddddd;
+                }

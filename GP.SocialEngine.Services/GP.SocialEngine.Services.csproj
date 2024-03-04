@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D00D4CB1-740D-43F7-8B42-378B035EC181}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GP.SocialEngine</RootNamespace>
+    <AssemblyName>GP.SocialEngine.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Framework.Base">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\AppSuscripcionDelHlp.cs" />
+    <Compile Include="DAO\AppSuscripcionInsHlp.cs" />
+    <Compile Include="DAO\AppSuscripcionRetHlp.cs" />
+    <Compile Include="DAO\AppSuscripcionUpdHlp.cs" />
+    <Compile Include="DAO\ComentarioDelHlp.cs" />
+    <Compile Include="DAO\ComentarioInsHlp.cs" />
+    <Compile Include="DAO\ComentarioRetHlp.cs" />
+    <Compile Include="DAO\ComentarioUpdHlp.cs" />
+    <Compile Include="DAO\ContactoInvitadoInsHlp.cs" />
+    <Compile Include="DAO\ContactoInvitadoRetHlp.cs" />
+    <Compile Include="DAO\DeleteAppSuscripcionByAppSocialHlp.cs" />
+    <Compile Include="DAO\EstadoNotificacionesUpdHlp.cs" />
+    <Compile Include="DAO\GrupoSocialDelHlp.cs" />
+    <Compile Include="DAO\GrupoSocialInsHlp.cs" />
+    <Compile Include="DAO\GrupoSocialRetHlp.cs" />
+    <Compile Include="DAO\GrupoSocialUpdHlp.cs" />
+    <Compile Include="DAO\ImagenPerfilInsHlp.cs" />
+    <Compile Include="DAO\ImagenPerfilRetHlp.cs" />
+    <Compile Include="DAO\InformacionSocialDelHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\InformacionSocialInsHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\InformacionSocialRetHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\InformacionSocialUpdHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\InvitacionInsHlp.cs" />
+    <Compile Include="DAO\InvitacionRetHlp.cs" />
+    <Compile Include="DAO\InvitacionUpdHlp.cs" />
+    <Compile Include="DAO\MensajeInsHlp.cs" />
+    <Compile Include="DAO\MensajeRetHlp.cs" />
+    <Compile Include="DAO\MensajeUpdHlp.cs" />
+    <Compile Include="DAO\NotificacionDelHlp.cs" />
+    <Compile Include="DAO\NotificacionInsHlp.cs" />
+    <Compile Include="DAO\NotificacionRetHlp.cs" />
+    <Compile Include="DAO\NotificacionUpdHlp.cs" />
+    <Compile Include="DAO\PublicacionDelHlp.cs" />
+    <Compile Include="DAO\PublicacionInsHlp.cs" />
+    <Compile Include="DAO\PublicacionPrivacidadInsHlp.cs" />
+    <Compile Include="DAO\PublicacionPrivacidadRetHlp.cs" />
+    <Compile Include="DAO\PublicacionRetHlp.cs" />
+    <Compile Include="DAO\PublicacionUpdHlp.cs" />
+    <Compile Include="DAO\RankingDelHlp.cs" />
+    <Compile Include="DAO\RankingInsHlp.cs" />
+    <Compile Include="DAO\RankingRetHlp.cs" />
+    <Compile Include="DAO\RatingInsHlp.cs" />
+    <Compile Include="DAO\RatingRetHlp.cs" />
+    <Compile Include="DAO\RatingUpdHlp.cs" />
+    <Compile Include="DAO\ReporteAbusoInsHlp.cs" />
+    <Compile Include="DAO\ReporteAbusoRetHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\ReporteAbusoUpdHlp.cs" />
+    <Compile Include="DAO\RetriveFriendsHlp.cs" />
+    <Compile Include="DAO\SocialHubDelHlp.cs" />
+    <Compile Include="DAO\SocialHubGrupoSocialDelHlp.cs" />
+    <Compile Include="DAO\SocialHubGrupoSocialInsHlp.cs" />
+    <Compile Include="DAO\SocialHubGrupoSocialRetHlp.cs" />
+    <Compile Include="DAO\SocialHubInsHlp.cs" />
+    <Compile Include="DAO\SocialHubReactivoInsHlp.cs" />
+    <Compile Include="DAO\SocialHubReactivoRetHlp.cs" />
+    <Compile Include="DAO\SocialHubRetHlp.cs" />
+    <Compile Include="DAO\SocialHubUsuarioInsHlp.cs" />
+    <Compile Include="DAO\SocialHubUsuarioRetHlp.cs" />
+    <Compile Include="DAO\TerminoInsHlp.cs" />
+    <Compile Include="DAO\TerminoRetHlp.cs" />
+    <Compile Include="DAO\TerminoUpdHlp.cs" />
+    <Compile Include="DAO\UsuarioByAreaConocimientoRetHlp.cs" />
+    <Compile Include="DAO\UsuarioGrupoDelHlp.cs" />
+    <Compile Include="DAO\UsuarioGrupoInsHlp.cs" />
+    <Compile Include="DAO\UsuarioGrupoRetHlp.cs" />
+    <Compile Include="DAO\UsuarioGrupoUpdHlp.cs" />
+    <Compile Include="DAO\UsuarioSocialInsHlp.cs" />
+    <Compile Include="DAO\UsuarioSocialRankingDelHlp.cs" />
+    <Compile Include="DAO\UsuarioSocialRankingInsHlp.cs" />
+    <Compile Include="DAO\UsuarioSocialRankingRetHlp.cs" />
+    <Compile Include="DAO\UsuarioSocialRankingUpdHlp.cs" />
+    <Compile Include="DAO\UsuarioSocialRetHlp.cs" />
+    <Compile Include="DAO\UsuarioSocialUpdHlp.cs" />
+    <Compile Include="DA\InvitacionDARetHlp.cs" />
+    <Compile Include="DA\AppSuscripcionDARetHlp.cs" />
+    <Compile Include="DA\MensajeDARetHlp.cs" />
+    <Compile Include="DA\NotificacionDARetHlp.cs" />
+    <Compile Include="DA\PublicacionDARetHlp.cs" />
+    <Compile Include="DA\PublicacionesDARetHlp.cs" />
+    <Compile Include="DA\PublicacionesMurosDARetHlp.cs" />
+    <Compile Include="DA\PublicacionesVotadasDARetHlp.cs" />
+    <Compile Include="DA\RelacionSocialRetHlp.cs" />
+    <Compile Include="DA\ReporteAbusoDARetHlp.cs" />
+    <Compile Include="DA\UsuarioGrupoDARetHlp.cs" />
+    <Compile Include="DA\UsuarioGrupoUsuarioSocialDARetHlp.cs" />
+    <Compile Include="DA\UsuarioSocialDARetHlp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\AppSuscripcionCtrl.cs" />
+    <Compile Include="Service\ComentarioCtrl.cs" />
+    <Compile Include="Service\ContactoInvitadoCtrl.cs" />
+    <Compile Include="Service\GrupoSocialCtrl.cs" />
+    <Compile Include="Service\ImagenPerfilCtrl.cs" />
+    <Compile Include="Service\InformacionSocialCtrl.cs" />
+    <Compile Include="Service\InvitacionCtrl.cs" />
+    <Compile Include="Service\MensajeCtrl.cs" />
+    <Compile Include="Service\NotificacionCtrl.cs" />
+    <Compile Include="Service\PublicacionCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\RankingCtrl.cs" />
+    <Compile Include="Service\RatingCtrl.cs" />
+    <Compile Include="Service\ReporteAbusoCtrl.cs" />
+    <Compile Include="Service\SocialHubCtrl.cs" />
+    <Compile Include="Service\TerminoCtrl.cs" />
+    <Compile Include="Service\UsuarioGrupoCtrl.cs" />
+    <Compile Include="Service\UsuarioSocialCtrl.cs" />
+    <Compile Include="Service\UsuarioSocialRankingCtrl.cs" />
+    <Compile Include="Utils\TimeAgoDateFormat.cs" />
+    <Compile Include="Utils\TimeBeforeDateFormat.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3a6024ca-2877-409d-84c8-a1997c27616e}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ContenidoDigital.BO\POV.ContenidoDigital.BO.csproj">
+      <Project>{47da4be5-e69c-48eb-89c6-402c9ae3e288}</Project>
+      <Name>POV.ContenidoDigital.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.BO\GP.SocialEngine.BO.csproj">
+      <Project>{BC81D924-3BB9-4EBD-B55F-B1C72132C069}</Project>
+      <Name>GP.SocialEngine.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.Interfaces\GP.SocialEngine.Interfaces.csproj">
+      <Project>{1501B668-DC3A-45D9-B9B5-47DF76E12587}</Project>
+      <Name>GP.SocialEngine.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.BO\POV.Comun.BO.csproj">
+      <Project>{E9BB2466-0E21-4B56-8803-DEB5969D2B49}</Project>
+      <Name>POV.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.BO\POV.Reactivos.BO.csproj">
+      <Project>{ED9CC55D-68F6-4BE0-9DAE-00BCD226C289}</Project>
+      <Name>POV.Reactivos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.Services\POV.Reactivos.Services.csproj">
+      <Project>{4C5F2ED6-F95D-414E-943B-6A4B7726FC8C}</Project>
+      <Name>POV.Reactivos.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

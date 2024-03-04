@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="POV.Web.Portal.Pruebas.wcf.OrientacionVocacionalService" CodeBehind="OrientacionVocacionalService.svc.cs" %>

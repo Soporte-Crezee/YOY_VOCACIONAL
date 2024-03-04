@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<urlset >
+  <url>
+    <seccion></seccion>
+    <name>El patio</name>
+    <loc>
+      ~/PortalDocente/Inicio.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      El patio permite consultar las notificaciones del usuario identificado.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>El patio</seccion>
+    <name>Yo</name>
+    <loc>
+      ~/Social/EditarPerfil.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite visualizar la información del perfil del usuario.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>El patio</seccion>
+    <name>Mis apuntes</name>
+    <loc>
+      ~/PortalDocente/Muro.aspx
+    </loc>
+    <imagen>
+      ~/Images/Captura.PNG
+    </imagen>
+    <descripcion>
+      <htmlData>
+        <![CDATA[<html>
+          <p> Permite consultar las publicaciones que el docente ha realizado.</p>
+          <p>Consta de dos secciones:</p>
+          <ul> 
+            <li><b>Mis apuntes:</b> Permite consultar las publicaciones que el docente ha realizado.</li>
+            <li><b>Preguntas de mis alumnos:</b> Permite consultar, comentar y eliminar las preguntas (publicaciones y comentarios) realizados por los alumnos del grupo escolar del docente.</li>
+          </ul>
+        ]]>
+      </htmlData>
+    </descripcion>
+  </url>
+  <url>
+    <seccion>El patio</seccion>
+    <name>El patio</name>
+    <loc>
+      ~/PortalDocente/Noticias.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite consultar las publicaciones y comentarios realizados por el grupo escolar seleccionado, el usuario (docente) puede consultar, comentar y eliminar  apuntes (publicaciones, comentarios) de los alumnos del grupo escolar correspondiente.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>El patio</seccion>
+    <name>Alumnos</name>
+    <loc>
+      ~/PortalDocente/Alumnos.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite visualizar la lista de alumnos que integran el grupo escolar del docente.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>El patio</seccion>
+    <name>Reportes</name>
+    <loc>
+      ~/PortalDocente/Reportes/Reportes.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      <htmlData>
+        <![CDATA[<html>
+          <p> Permite visualizar los reportes de resultados de los alumnos. Sus secciones son:</p>
+          <ul> 
+            <li><b>Reporte de resultados de prueba diagnóstica:</b> El reporte de resultados de prueba diagnóstica presenta los resultados obtenidos por el alumno al presentar la prueba y la descripción de su desempeño en la misma.</li>
+            <li><b>Reporte de entenamiento de reactivos estandarizados:</b> Permite consultar, comentar y eliminar las preguntas (publicaciones y comentarios) realizados por los alumnos del grupo escolar del docente.</li>
+            <li><b>Reporte de juegos: </b></li>
+            <li><b>Reporte de resultados de evaluación final: </b></li>
+          </ul>
+        ]]>
+      </htmlData> 
+    </descripcion>
+  </url>
+  <url>
+    <seccion>El patio</seccion>
+    <name>Confirmar paquetes de juegos</name>
+    <loc>
+      ~/PortalDocente/ConfirmarPaqueteJuegos.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Confirmar paquetes de juegos
+    </descripcion>
+  </url> 
+  <url>
+    <seccion></seccion>
+    <name>Reactivos</name>
+    <loc>
+      ~/Reactivos/BuscarReactivos.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite consultar y resolver los reactivos de práctica o entrenamiento.
+    </descripcion>
+  </url>
+  <url>
+    <seccion></seccion>
+    <name>Juegos</name>
+    <loc>
+      ~/PortalDocente/BuscarJuegosDocente.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite consultar y jugar los diferentes juegos de práctica o entrenamiento con que cuenta el sistema
+    </descripcion>
+  </url>
+  <url>
+    <seccion></seccion>
+    <name>Profesionalización</name>
+    <loc>
+      ~/Profesionalizacion/
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Profesionalización
+    </descripcion>
+  </url>
+  <url>
+    <seccion></seccion>
+    <name>Notificaciones</name>
+    <loc>
+      ~/Social/NotificacionesSocial.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Notificaciones
+    </descripcion>
+  </url>
+  <url>
+    <seccion></seccion>
+    <name>Reportes de abuso</name>
+    <loc>
+      ~/Social/ReportesAbuso.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite consultar, confirmar o rechazar publicaciones que ha sido marcadas como un abuso.
+    </descripcion>
+  </url>
+  <url>
+    <seccion></seccion>
+    <name>Mi cuenta</name>
+    <loc>     
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite visualizar y editar la información del docente.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>Mi cuenta</seccion>
+    <name>Editar perfil</name>
+    <loc>
+      ~/Social/EditarPerfil.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite editar la información de el perfil del usuario, tal como correo electrónico, número de celular, estado, foto de perfil.
+    </descripcion>
+  </url>
+  <url>
+    <seccion>Mi cuenta</seccion>
+    <name>Cambiar contraseña</name>
+    <loc>
+      ~/CuentaUsuario/EditarContrasena.aspx
+    </loc>
+    <imagen></imagen>
+    <descripcion>
+      Permite cambiar la contraseña para el acceso al sistema del docente.
+    </descripcion>
+  </url> 
+</urlset>

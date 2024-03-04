@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="xrRichText1.SerializableRtfString" xml:space="preserve">
+    <value>ewBcAHIAdABmADEAXABhAG4AcwBpAGMAcABnADEAMgA1ADIADQAKAHsADQAKAFwAZgBvAG4AdAB0AGIAbAANAAoAewBcAGYAMAAgAFQAaQBtAGUAcwAgAE4AZQB3ACAAUgBvAG0AYQBuADsAfQANAAoAewBcAGYAMQAgAEEAcgBpAGEAbAA7AH0ADQAKAH0ADQAKAHsADQAKAFwAYwBvAGwAbwByAHQAYgBsAA0ACgA7AA0ACgBcAHIAZQBkADAAXABnAHIAZQBlAG4AMABcAGIAbAB1AGUAMAA7AA0ACgBcAHIAZQBkADAAXABnAHIAZQBlAG4AMABcAGIAbAB1AGUAMgA1ADUAOwANAAoAfQANAAoAXABzAHAAbAB5AHQAdwBuAGkAbgBlAHsAXABzAGUAYwB0AGQAXABwAGEAcgBkAFwAcABsAGEAaQBuAFwAcQBsAHsAXABmADEAXABjAGYAMQAgAEUAcwB0AGUAIABjAHUAZQBzAHQAaQBvAG4AYQByAGkAbwAgAHAAcgBlAHQAZQBuAGQAZQAgAHMAZQByACAAdQBuAGEAIABoAGUAcgByAGEAbQBpAGUAbgB0AGEAIABkAGkAYQBnAG4AXAB1ADIANAAzAFwAJwBmADMAcwB0AGkAYwBhACAAZABlACAAbABvAHMAIABwAG8AcwBpAGIAbABlAHMAIABwAHIAbwBiAGwAZQBtAGEAcwAgAGUAbgAgAGMAdQBhAG4AdABvACAAYQBsACAAcgBlAG4AZABpAG0AaQBlAG4AdABvACAAeQAgAGwAYQBzACAAYQBjAHQAaQB0AHUAZABlAHMAIABmAHIAZQBuAHQAZQAgAGEAbAAgAGUAcwB0AHUAZABpAG8AIAAoAGEAcAByAGUAbgBkAGUAcgAgAGEAIABhAHAAcgBlAG4AZABlAHIAKQAuACAAQwBvAG4AbwBjAGUAcgAgAGwAbwBzACAAcAByAG8AYgBsAGUAbQBhAHMAIABxAHUAZQAgAHMAZQAgAHAAdQBlAGQAZQBuACAAcAByAGUAcwBlAG4AdABhAHIAIABhACAAbABhACAAaABvAHIAYQAgAGQAZQAgAGUAbgBmAHIAZQBuAHQAYQByAHMAZQAgAGEAIAB1AG4AIABlAHMAdAB1AGQAaQBvACAAaQBuAHQAZQBuAHMAbwAgAHAAdQBlAGQAZQAgAGEAeQB1AGQAYQByAHQAZQAgAGEAIABtAGUAagBvAHIAYQByACAAaQBuAGMAcgBlAFwAdQAyADMANwBcACcAZQBkAGIAbABlAG0AZQBuAHQAZQAgAHQAdQBzACAAcgBlAHMAdQBsAHQAYQBkAG8AcwAuAH0AXABmADEAXABjAGYAMQBcAHAAYQByAFwAcABhAHIAZABcAHAAbABhAGkAbgBcAHEAbAB7AFwAZgAxAFwAYwBmADEAIABFAG4AdABlAG4AZABlAG0AbwBzACAAYwBvAG0AbwAgAGgAXAB1ADIAMgA1AFwAJwBlADEAYgBpAHQAbwBzACAAZABlACAAZQBzAHQAdQBkAGkAbwAgAGEAIABhAHEAdQBlAGwAbABhAHMAIABjAG8AbgBkAHUAYwB0AGEAcwAgAHEAdQBlACAAbABvAHMAIABlAHMAdAB1AGQAaQBhAG4AdABlAHMAIABwAHIAYQBjAHQAaQBjAGEAbgAgAHIAZQBnAHUAbABhAHIAbQBlAG4AdABlACwAIABwAGEAcgBhACAAaQBuAGMAbwByAHAAbwByAGEAcgAgAHMAYQBiAGUAcgBlAHMAIABhACAAcwB1ACAAZQBzAHQAcgB1AGMAdAB1AHIAYQAgAGMAbwBnAG4AaQB0AGkAdgBhAC4AIABQAHUAZQBkAGUAbgAgAHMAZQByACAAYgB1AGUAbgBvAHMAIABvACAAbQBhAGwAbwBzACwAIABjAG8AbgAgAGMAbwBuAHMAZQBjAHUAZQBuAGMAaQBhAHMAIABwAG8AcwBpAHQAaQB2AGEAcwAgAG8AIABuAGUAZwBhAHQAaQB2AGEAcwAsACAAcgBlAHMAcABlAGMAdABpAHYAYQBtAGUAbgB0AGUALAAgAGUAbgAgAHMAdQBzACAAcgBlAHMAdQBsAHQAYQBkAG8AcwAuACAAQwBvAG4AdABhAHIAIABjAG8AbgAgAGIAdQBlAG4AbwBzACAAaABcAHUAMgAyADUAXAAnAGUAMQBiAGkAdABvAHMAIABkAGUAIABlAHMAdAB1AGQAaQBvACAAcABvAHMAaQBiAGkAbABpAHQAYQAgAHEAdQBlACAAdQBuAGEAIAB2AGUAegAgAHEAdQBlACAAZQBsACAAYQBsAHUAbQBuAG8AIAB5AGEAIABuAG8AIABjAHUAZQBuAHQAZQAgAGMAbwBuACAAbABhACAAZwB1AFwAdQAyADMANwBcACcAZQBkAGEAIABwAGUAcgBtAGEAbgBlAG4AdABlACAAZABlACAAcwB1AHMAIABkAG8AYwBlAG4AdABlAHMALAAgAHAAdQBlAGQAYQAgAHQAcgBhAG4AcwBmAG8AcgBtAGEAcgBzAGUAIABlAG4AIABhAGwAZwB1AGkAZQBuACAAYwBhAHAAYQB6ACAAZABlACAAZQBzAHQAdQBkAGkAYQByACAAcABvAHIAIABzAFwAdQAyADMANwBcACcAZQBkACAAcwBvAGwAbwAuAH0AXABwAGEAcgB9AA0ACgB9AA0ACgA=</value>
+  </data>
+  <data name="xrTableCell19.Text" xml:space="preserve">
+    <value>8.- Toma descansos, ¿Te sorprende que uno de nuestros hábitos de estudio recomendados sea precisamente interrumpir tu estudio? ¡Déjanos explicarnos! Muchos estudiantes solo conocen la técnica de estudio que consiste en atiborrarse de información los días antes del examen. Sin embargo, está científicamente demostrado que nuestra capacidad de aprender y retener información disminuye en proporción directa al tiempo que pasamos delante de los libros. Por tanto, si quieres maximizar el uso de tu tiempo, es recomendable que dividas tu aprendizaje en el tiempo, realizando descanso entre las diferentes sesiones de aprendizaje.</value>
+  </data>
+  <data name="xrTableCell20.Text" xml:space="preserve">
+    <value>9.- Duerme lo suficiente, El cansancio es el principal enemigo de la excelencia. La razón por la que dormir es importante es que, cuando descansas adecuadamente, tu cerebro asimila lo que has aprendido durante el día. Por lo tanto, cuanto mejor duermas, más aprendes. Este hábito de estudio es habitualmente menospreciado por muchos estudiantes con la excusa de que están muy ocupados. Sin embargo, los estudiantes de éxito reconocen la importancia de un buen descanso.</value>
+  </data>
+  <data name="xrTableCell21.Text" xml:space="preserve">
+    <value>10.- Crea tus propios apuntes. Esto te sirve para generar imágenes mentales de los contenidos y construir aprendizajes más significativos; en otras palabras, que cada estudiante cree sus propios recursos a la hora de estudiar. Muchos de nuestros usuarios nos han mandado sus historias, contándonos esta técnica les ha ayudado a descubrir una manera diferente de aprender, llevándoles a superar sus retos académicos.</value>
+  </data>
+  <data name="xrTableCell22.Text" xml:space="preserve">
+    <value>11.- Aprende de los errores, tuyos y de los demás. Si realmente quieres incorporar los mejores hábitos de estudio en tu rutina, deberías empezar ahora mismo. Echa la mirada atrás, hacia tus últimos exámenes, y repasa dónde te has equivocado y por qué, hasta que lo entiendas todo perfectamente; sin importar si estamos hablando de un examen final, un simple ejercicio de clase o un test online, los estudiantes de éxito siempre analizan sus fallos.</value>
+  </data>
+  <data name="xrTableCell23.Text" xml:space="preserve">
+    <value>12.- Práctica bajo condiciones de examen. Una de las principales maneras de asegurarnos de obtener el resultado deseado en nuestros exámenes es realizando pruebas y simulaciones que se asemejen al examen real. Esto significa que deberás apartar tus libros, introducir el factor tiempo, etc.</value>
+  </data>
+  <data name="xrTableCell24.Text" xml:space="preserve">
+    <value>13.- Aplica el conocimiento a problemas reales, Los estudiantes más destacados tienen claro que aprender no consiste en aprobar exámenes y obtener buenas notas sino de entender conceptos y descubrir cómo puedes usarlos para resolver problemas reales. El aprendizaje basado en problemas es un método que enfatiza precisamente este aspecto, por lo que se encuentra habitualmente entre los más comúnmente usados por los mejores estudiantes.</value>
+  </data>
+  <data name="xrTableCell25.Text" xml:space="preserve">
+    <value>14.- Encuentra lo que les Apasiona, A los estudiantes a los que te gustaría parecerte les gusta lo que aprenden y disfrutan haciéndolo. Gracias a esa pasión, cada día aprenden más y más. Por tanto, otro hábito común entre los mejores estudiantes es que siguen y se interesan por la actualidad y por lo que los expertos opinan.</value>
+  </data>
+  <data name="xrTableCell17.Text" xml:space="preserve">
+    <value>1.- Organiza tus tiempos de estudio, crea un plan. Es importante que no dejes el estudio para cuando sientas que tienes tiempo. Organiza una rutina de estudios y apégate a ella. Puede que parezca difícil incorporar la rutina de estudios al horario de clase y las tareas que te asignen, pero no puedes dejarlo al azar, ya que jamás te dedicarás a ello. Las sesiones constantes te ayudarán a distribuir mejor tus actividades y llegar preparado a los exámenes y pruebas parciales.</value>
+  </data>
+  <data name="xrTableCell18.Text" xml:space="preserve">
+    <value>2.- Dedica más tiempo de estudio a las asignaturas más difíciles. La mayoría de los estudiantes tienen una asignatura a la que temen. En lugar de dejarla para último momento, enfréntala desde el principio y dedica tiempo de estudio a ello. Esto te hará ganar seguridad y tranquilidad y podrás disfrutar de estudiar el resto de las asignaturas que disfrutas.</value>
+  </data>
+  <data name="xrTableCell3.Text" xml:space="preserve">
+    <value>3.- Consigue un compañero de estudios. Si bien, estudiar con un amigo puede ser divertido, es mejor elegir a alguien que se tome en serio el estudio y la responsabilidad de estudiar con alguien más. Si es un compañero de clase podrás compartir notas, hacerse preguntas entre ustedes e incluso tener a alguien que te explique lo que no entiendes.</value>
+  </data>
+  <data name="xrTableCell15.Text" xml:space="preserve">
+    <value>4.- Dosifica tus esfuerzos y estudia un poco todos los días. Si bien es probable que quieras tener un día libre, si te dedicas a diario a ello tendrás una oportunidad mayor de adquirir el hábito. Además, tus tiempos de estudio serán más cortos de este modo y podrás refrescar los conceptos para las pruebas. Mirar el material a diario te ayudará a recordarlo con más facilidad y a mejorar tu rendimiento en clase.</value>
+  </data>
+  <data name="xrTableCell16.Text" xml:space="preserve">
+    <value>5.- Recompensa tu esfuerzo. Las recompensas son una manera sana de incentivar los hábitos de estudio. Cuando alcanzas tus metas cómprate un helado o algo que disfrutes. También puedes optar por pequeñas recompensas entre las diferentes asignaturas como escuchar una canción o comer una golosina.</value>
+  </data>
+  <data name="xrTableCell8.Text" xml:space="preserve">
+    <value>6.- Evita las distracciones. Muchos se enorgullecen de poder realizar varias actividades simultáneamente, pero el estudio no es el momento para ello. Apaga la televisión y guarda el móvil y cualquier dispositivo que pueda distraerte. Considera ir a estudiar a la biblioteca porque si estás solo te tentarás, mientras que en la biblioteca todo el mundo estará estudiando y las tentaciones serán mucho menores.</value>
+  </data>
+  <data name="xrTableCell14.Text" xml:space="preserve">
+    <value>7.- Consigue un tutor que te ayude a estudiar. Si no logras fomentar hábitos de estudio duraderos considera un tutor. No sólo es útil para estudiar cada asignatura sino que además suelen proveer nuevas maneras de estudiar o ayudarte a mejorar tu concentración. En general los tutores colocan anuncios en los tablones o paneles de avisos.</value>
+  </data>
+</root>

@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PortalGrupo.master.cs"
+    Inherits="POV.Web.PortalSocial.PortalGrupo.PortalGrupo" %>
+
+<%@ Register TagPrefix="usctrl" Namespace="POV.Web.PortalSocial.AppCode.Controls"
+    Assembly="POV.Web.PortalSocial" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>muro.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #menu-mis-orientadores ul {
+            list-style-type:none;
+            padding:0px
+        }
+        #menu-mis-docente li {
+            margin-top: 5px;
+            height: 32px !important;
+        }
+
+        #menu-mis-docente a {
+            margin-left: 5px;
+        }
+
+        .item-contact {
+            cursor: pointer;
+            margin-right: 0.1em;
+            overflow: visible;
+            padding: 7px;
+            position: relative;
+            text-align: justify;
+            text-decoration: none !important;
+            background: #f6f6f6 url("../Styles/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png") repeat-x scroll 50% 50%;
+            border: 1px solid #d7deef;
+            color: #242525 !important;
+            border-radius: 4px;
+        }
+
+            .item-contact:hover {
+                background: #f1f1f1;
+                border: 1px solid #33acfd;
+                color: #1c94c4;
+            }
+
+        #ContactosStream li {
+            cursor: pointer;
+            margin-right: 0.1em;
+            overflow: visible;
+            padding: 7px;
+            position: relative;
+            text-align: justify;
+            text-decoration: none !important;
+            background: #f6f6f6 url("../Styles/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png") repeat-x scroll 50% 50%;
+            border: 1px solid #d7deef;
+            color: #242525 !important;
+            border-radius: 4px;
+        }
+
+            #ContactosStream li:hover {
+                background: #f1f1f1;
+                border: 1px solid #33acfd;
+                color: #1c94c4;
+            }
+
+        .ui-tabs .ui-tabs-panel {
+            padding:0px!important
+        }
+
+        @media screen and (max-width:768px) {
+            .ui-tabs .ui-tabs-nav li {
+                width:100%
+            }
+            .titulo_marco_general {
+                font-size:18px !important;
+                height:auto !important;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $(".accordion").accordion({
+                collapsible: false,
+                active: false
+            });
+
+            $('li.item-contact').on('click', function () {
+                $(this).children("a")[0].click();
+            });
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head_selected" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="page_content" runat="server">
+    <div class="bodyadaptable">
+        <div id="panelContainer" style="margin: 0px;" class="row">
+            <div class="bodyadaptable">
+                <h1 style="display: none">
+                    <asp:Label ID="LblNombreGrupo" runat="server"></asp:Label>: 
+        <asp:ContentPlaceHolder ID="page_title_select" runat="server">
+        </asp:ContentPlaceHolder>
+                </h1>
+                <div class="menu_toolbar_container menu_horizontal_2" style="display: none">
+                    <ul class="menu_horizontal">
+                        <li>
+                            <asp:HyperLink ID="HplNoticiasDocentes" Text="Mi orientador" Visible="false" runat="server">
+                            </asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HplListaAlumnos" Text="Aspirantes comunes" Visible="false" runat="server">
+                            </asp:HyperLink>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="leftPanel" class="col-xs-12 col-md-3 col-lg-3">
+                    <asp:ContentPlaceHolder ID="content_left_panel" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                    <div class="titulo_marco_general" style="background-color: #05AED9  !important; border-color: #05AED9  !important;">
+                        <label id="lblMisOrientadores" runat="server" class="titulo_label_general">Mis orientadores</label>
+                    </div>
+
+                    <div id="divOrientadoresPlataforma" runat="server" class="accordion" visible="false">
+                        <h3>Plataforma
+                        </h3>
+                        <div>
+                            <usctrl:MenuLaterarMisDocentes ID="MenuOrientadoresPlataforma" runat="Server"></usctrl:MenuLaterarMisDocentes>
+                        </div>
+                    </div>
+                    <div id="divOrientadoresUniversidad" runat="server" class="accordion" visible="false">
+                        <h3>Asignado(s)
+                        </h3>
+                        <div>
+                            <usctrl:MenuLaterarMisDocentes ID="MenuOrientadoresUniversidad" runat="Server"></usctrl:MenuLaterarMisDocentes>
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+                <div id="center_panel" class="col-xs-12 col-md-9 col-lg-9" runat="server">
+                    <asp:ContentPlaceHolder ID="content_selected" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div id="Div1" class="">
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>

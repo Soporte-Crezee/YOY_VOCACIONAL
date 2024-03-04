@@ -1,0 +1,548 @@
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Hombre Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 04:16:43 pm
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 04:16:43 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 04:16:43 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 04:16:43 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Hombre Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 04:30:22 pm
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 04:30:22 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 04:30:22 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 04:30:22 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Hombre Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 04:34:02 pm
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 04:35:31 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 04:35:35 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 04:35:40 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Hombre Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:06:01 pm
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:23:49 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:23:55 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:23:56 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Hombre Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:33:59 pm
+Estatus: No registrado (El Usuario ya está en uso)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:34:01 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:34:03 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:34:04 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Hombre Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:38:59 pm
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:42:03 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:42:05 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:42:06 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Hombre Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:55:38 pm
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:55:39 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:55:39 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 05:55:39 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Hombre Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 06:19:49 pm
+Estatus: No registrado (UsuarioInsHlp: Los siguientes campos no pueden ser vacios EsActivo, FechaCreacion, PasswordTemp)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 06:19:50 pm
+Estatus: No registrado (El correo electrónico proporcionado no se encuentra disponible)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 06:19:50 pm
+Estatus: No registrado (UsuarioInsHlp: Los siguientes campos no pueden ser vacios EsActivo, FechaCreacion, PasswordTemp)
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 06:19:50 pm
+Estatus: No registrado (El correo electrónico proporcionado no se encuentra disponible)
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 06:35:14 pm
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 06:35:17 pm
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Hombre Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 06:36:00 pm
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 06:36:00 pm
+Estatus: No registrado (El correo electrónico proporcionado no se encuentra disponible)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 06:36:00 pm
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 06:36:01 pm
+Estatus: No registrado (El correo electrónico proporcionado no se encuentra disponible)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 06:36:01 pm
+Estatus: Registrado
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 06:36:01 pm
+Estatus: No registrado (El correo electrónico proporcionado no se encuentra disponible)
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 06:36:01 pm
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:05:11 pm
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:05:13 pm
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:05:16 pm
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:05:16 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:05:16 pm
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:05:16 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:05:16 pm
+Estatus: Registrado
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:05:16 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:05:16 pm
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:06:41 pm
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:06:44 pm
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:06:46 pm
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:06:46 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:06:46 pm
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:06:46 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:06:46 pm
+Estatus: Registrado
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:06:46 pm
+Estatus: No registrado (El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index)
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:06:46 pm
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:08:06 pm
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:08:08 pm
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:08:11 pm
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:08:11 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:08:11 pm
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:08:11 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:08:11 pm
+Estatus: Registrado
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:08:11 pm
+Estatus: No registrado (El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index)
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:08:11 pm
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:08:57 pm
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:08:59 pm
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:09:02 pm
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:09:19 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:09:19 pm
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:09:24 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:09:24 pm
+Estatus: Registrado
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:11:08 pm
+Estatus: No registrado (El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index)
+Nombre: Estafania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:11:08 pm
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:11:45 pm
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:11:47 pm
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:11:50 pm
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:11:50 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:11:50 pm
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:11:50 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:11:50 pm
+Estatus: Registrado
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:16:51 pm
+Estatus: No registrado (El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index)
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:16:51 pm
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:19:24 pm
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:19:29 pm
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:19:33 pm
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:19:41 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:19:41 pm
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:19:41 pm
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:19:41 pm
+Estatus: Registrado
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:19:47 pm
+Estatus: No registrado (El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index)
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:19:47 pm
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:34:09 pm
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:34:11 pm
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:34:13 pm
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:34:13 pm
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:34:13 pm
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:34:14 pm
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:34:14 pm
+Estatus: Registrado
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:34:17 pm
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 24/04/2017 07:34:17 pm
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:08:09 am
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:08:18 am
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:08:20 am
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:08:21 am
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:08:21 am
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:08:21 am
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:08:21 am
+Estatus: Registrado
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:08:24 am
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:08:24 am
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:10:16 am
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:10:19 am
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:10:21 am
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:10:21 am
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:10:21 am
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:10:21 am
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:10:21 am
+Estatus: Registrado
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:10:21 am
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:10:21 am
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:13:35 am
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:13:38 am
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:13:41 am
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:13:42 am
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:13:42 am
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:13:42 am
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:13:42 am
+Estatus: Registrado
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:14:47 am
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:14:47 am
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:26:33 am
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:26:38 am
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:26:44 am
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:26:49 am
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:26:49 am
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:26:49 am
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:26:49 am
+Estatus: Registrado
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:26:58 am
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:26:58 am
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:31:16 am
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:31:19 am
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:31:21 am
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:32:24 am
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:32:24 am
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:32:43 am
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:32:43 am
+Estatus: Registrado
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:32:48 am
+Estatus: No registrado (El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index)
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:32:48 am
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:38:00 am
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:38:03 am
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:38:06 am
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:38:31 am
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:38:31 am
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:38:31 am
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:38:31 am
+Estatus: Registrado
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:38:34 am
+Estatus: No registrado (Referencia a objeto no establecida como instancia de un objeto.)
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:38:34 am
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:54:07 am
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:54:11 am
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:54:15 am
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:54:15 am
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:54:15 am
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:54:16 am
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:54:16 am
+Estatus: Registrado
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:54:18 am
+Estatus: Registrado
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:54:18 am
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:55:31 am
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:55:36 am
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:55:41 am
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:55:41 am
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:55:41 am
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:55:41 am
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:55:41 am
+Estatus: Registrado
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:55:45 am
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:59:20 am
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:59:23 am
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:59:26 am
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:59:27 am
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:59:27 am
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:59:27 am
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:59:27 am
+Estatus: Registrado
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 09:59:30 am
+Estatus: Registrado
+Nombre: Elena Primer Apellido: khon  Segundo Apellido: Concha Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 10:01:10 am
+Estatus: Registrado
+Nombre: Mellissa Primer Apellido: Canche Segundo Apellido: Alonso Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 10:01:14 am
+Estatus: Registrado
+Nombre: Geremias Primer Apellido: Sansores Segundo Apellido: Martinez Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 10:01:23 am
+Estatus: Registrado
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 10:01:23 am
+Estatus: No registrado (El Email ya está en uso)
+Nombre: Lorena Primer Apellido: Cante Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 10:01:23 am
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 10:01:24 am
+Estatus: Registrado
+Nombre: Carolina Primer Apellido: Estrada Segundo Apellido: Gongora Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 10:01:24 am
+Estatus: Registrado
+Nombre: Estefania Guadalupe Primer Apellido: Meriva Segundo Apellido: Donde Sexo: Mujer Fecha Nacimiento: 13/03/1989 12:00:00 am Fecha Registro: 25/04/2017 10:01:26 am
+Estatus: Registrado
+Nombre: Gilberto Primer Apellido: Gomez Segundo Apellido: Gomez Sexo: Hombre Fecha Nacimiento: 22/08/1974 12:00:00 a. m. Fecha Registro: 04/05/2017 03:43:26 p. m.
+Estatus: Registrado
+Nombre: Gilberto Primer Apellido: Gomez Segundo Apellido: Gomez Sexo: Hombre Fecha Nacimiento: 22/08/1974 12:00:00 a. m. Fecha Registro: 04/05/2017 03:43:26 p. m.
+Estatus: Registrado
+Nombre: David Miguel Primer Apellido: Flores Segundo Apellido:  Sexo: Hombre Fecha Nacimiento: 23/08/1985 12:00:00 a. m. Fecha Registro: 04/05/2017 03:43:30 p. m.
+Estatus: Registrado
+Nombre: David Miguel Primer Apellido: Flores Segundo Apellido:  Sexo: Hombre Fecha Nacimiento: 23/08/1985 12:00:00 a. m. Fecha Registro: 04/05/2017 03:43:30 p. m.
+Estatus: Registrado
+Nombre: Raquel Primer Apellido: Escalante Segundo Apellido: Jimenez Sexo: Hombre Fecha Nacimiento: 17/08/1971 12:00:00 a. m. Fecha Registro: 04/05/2017 03:43:34 p. m.
+Estatus: Registrado
+Nombre: Raquel Primer Apellido: Escalante Segundo Apellido: Jimenez Sexo: Hombre Fecha Nacimiento: 17/08/1971 12:00:00 a. m. Fecha Registro: 04/05/2017 03:43:34 p. m.
+Estatus: Registrado
+Nombre: Gilberto Primer Apellido: Gomez Segundo Apellido: Gomez Sexo: Hombre Fecha Nacimiento: 22/08/1974 12:00:00 a. m. Fecha Registro: 08/05/2017 05:44:22 p. m.
+Estatus: Registrado
+Nombre: Gilberto Primer Apellido: Gomez Segundo Apellido: Gomez Sexo: Hombre Fecha Nacimiento: 22/08/1974 12:00:00 a. m. Fecha Registro: 08/05/2017 05:44:22 p. m.
+Estatus: Registrado
+Nombre: David Miguel Primer Apellido: Flores Segundo Apellido:  Sexo: Hombre Fecha Nacimiento: 23/08/1985 12:00:00 a. m. Fecha Registro: 08/05/2017 05:44:31 p. m.
+Estatus: Registrado
+Nombre: David Miguel Primer Apellido: Flores Segundo Apellido:  Sexo: Hombre Fecha Nacimiento: 23/08/1985 12:00:00 a. m. Fecha Registro: 08/05/2017 05:44:31 p. m.
+Estatus: Registrado
+Nombre: Raquel Primer Apellido: Escalante Segundo Apellido: Jimenez Sexo: Hombre Fecha Nacimiento: 17/08/1971 12:00:00 a. m. Fecha Registro: 08/05/2017 05:44:35 p. m.
+Estatus: Registrado
+Nombre: Raquel Primer Apellido: Escalante Segundo Apellido: Jimenez Sexo: Hombre Fecha Nacimiento: 17/08/1971 12:00:00 a. m. Fecha Registro: 08/05/2017 05:44:35 p. m.
+Estatus: Registrado
+Nombre: Gilberto Primer Apellido: Gomez Segundo Apellido: Gomez Sexo: Hombre Fecha Nacimiento: 22/08/1974 12:00:00 a. m. Fecha Registro: 08/05/2017 06:51:47 p. m.
+Estatus: Registrado
+Nombre: Gilberto Primer Apellido: Gomez Segundo Apellido: Gomez Sexo: Hombre Fecha Nacimiento: 22/08/1974 12:00:00 a. m. Fecha Registro: 08/05/2017 06:51:47 p. m.
+Estatus: Registrado
+Nombre: David Miguel Primer Apellido: Flores Segundo Apellido:  Sexo: Hombre Fecha Nacimiento: 23/08/1985 12:00:00 a. m. Fecha Registro: 08/05/2017 06:51:49 p. m.
+Estatus: Registrado
+Nombre: David Miguel Primer Apellido: Flores Segundo Apellido:  Sexo: Hombre Fecha Nacimiento: 23/08/1985 12:00:00 a. m. Fecha Registro: 08/05/2017 06:51:49 p. m.
+Estatus: Registrado
+Nombre: Raquel Primer Apellido: Escalante Segundo Apellido: Jimenez Sexo: Hombre Fecha Nacimiento: 17/08/1971 12:00:00 a. m. Fecha Registro: 08/05/2017 06:51:56 p. m.
+Estatus: Registrado
+Nombre: Raquel Primer Apellido: Escalante Segundo Apellido: Jimenez Sexo: Hombre Fecha Nacimiento: 17/08/1971 12:00:00 a. m. Fecha Registro: 08/05/2017 06:51:56 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:42 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:42 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:42 p. m.
+Estatus: No registrado (Los siguientes parámetros son inválidos :Nombre ,Primer Apellido ,Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:42 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:42 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:42 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:42 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:42 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:42 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:42 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:43 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:43 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:43 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:43 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:43 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:43 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:43 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:43 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:43 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:32:43 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:19 p. m.
+Estatus: No registrado (El Usuario ya está en uso)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:19 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:19 p. m.
+Estatus: No registrado (Los siguientes parámetros son inválidos :Nombre ,Primer Apellido ,Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:19 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:19 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:19 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:19 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:19 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:19 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:19 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:19 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:19 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:20 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:20 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:20 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:20 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:20 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:20 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:20 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguiar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:47:20 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: No registrado (El Usuario ya está en uso)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: No registrado (Los siguientes parámetros son inválidos :Nombre ,Primer Apellido ,Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: Registrado
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: No registrado (Los siguientes parámetros son requeridos:Nombre ,Primer Apellido ,Fecha Nacimiento ,Sexo ,Teléfono , Correo Electrónico)
+Nombre: Asaid Primer Apellido: Aguilar Segundo Apellido: Aguilar Sexo: Mujer Fecha Nacimiento: 01/01/1971 12:00:00 a. m. Fecha Registro: 21/02/2018 12:48:16 p. m.
+Estatus: Registrado
+Nombre: Darwin Primer Apellido: Fuentes Segundo Apellido:  Sexo: Hombre Fecha Nacimiento: 09/09/1989 12:00:00 a. m. Fecha Registro: 10/04/2018 05:37:47 p. m.
+Estatus: Registrado
+Nombre: Fatima Primer Apellido: Noh Segundo Apellido:  Sexo: Mujer Fecha Nacimiento: 10/09/1989 12:00:00 a. m. Fecha Registro: 10/04/2018 05:37:47 p. m.
+Estatus: Registrado

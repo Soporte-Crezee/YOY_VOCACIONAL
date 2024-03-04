@@ -1,0 +1,945 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D247213-163C-4A5C-B2D0-DAB7F7730DC0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.Web.PortalTutor</RootNamespace>
+    <AssemblyName>POV.Web.PortalTutor</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Charts.v12.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Data.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Office.v12.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.PivotGrid.v12.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Printing.v12.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.RichEdit.v12.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Utils.v12.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxEditors.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Web.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraCharts.v12.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraEditors.v12.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraPivotGrid.v12.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraReports.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1.Web, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Base">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Auth\Login.aspx" />
+    <Content Include="Auth\Logout.aspx" />
+    <Content Include="Auth\RecuperarPassword.aspx" />
+    <Content Include="Auth\ValidarAutoLogin.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DefaultSite.Master" />
+    <Content Include="Error.aspx" />
+    <Content Include="Files\ImagenUsuario\ImagenPerfil.aspx" />
+    <Content Include="Files\ImagenUsuario\UnknownProfile.png" />
+    <Content Include="Files\ImagenUsuario\UnknownProfile_thumb.png" />
+    <Content Include="Files\protocolo\config.txt" />
+    <Content Include="Files\protocolo\configHabitos.txt" />
+    <Content Include="Files\protocolo\EmailTemplateConfirmarCorreo.html" />
+    <Content Include="Files\protocolo\EmailTemplateDatosIncorrectos.html" />
+    <Content Include="Files\protocolo\EmailTemplateInviteAspirante.html" />
+    <Content Include="Files\protocolo\EmailTemplateNewUserTutor.html" />
+    <Content Include="Files\protocolo\EmailTemplateNotificacionCredito.html" />
+    <Content Include="Files\protocolo\EmailTemplateNuevoUser.html" />
+    <Content Include="Files\protocolo\EmailTemplatePagoOxxo.html" />
+    <Content Include="Files\protocolo\EmailTemplatePagoTarjeta.html" />
+    <Content Include="Files\protocolo\EmailTemplateRecuperarPassword.html" />
+    <Content Include="Files\protocolo\ValoresAllport.txt" />
+    <Content Include="images\accept.png" />
+    <Content Include="images\add-icon.gif" />
+    <Content Include="images\add_teachers.png" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\alumnoslogin.png" />
+    <Content Include="images\arrow_rtl.png" />
+    <Content Include="images\Aspirante.Login.png" />
+    <Content Include="images\backgorundlogin.png" />
+    <Content Include="images\backgroundlogintutores.jpg" />
+    <Content Include="images\banner_bg.jpg" />
+    <Content Include="images\bglogin.jpg" />
+    <Content Include="images\botonEntrar.jpg" />
+    <Content Include="images\botonRecuperar.jpg" />
+    <Content Include="images\botonSiguiente.jpg" />
+    <Content Include="images\btn_panel_login.png" />
+    <Content Include="images\cargando.flotante.png" />
+    <Content Include="images\edit-button.png" />
+    <Content Include="images\edit-icon.gif" />
+    <Content Include="images\escuela_image.png" />
+    <Content Include="images\expedienteTutorado.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\faviconAdmon.ico" />
+    <Content Include="images\faviconSocial.ico" />
+    <Content Include="images\fooder-yoy.jpg" />
+    <Content Include="images\footerpattern.png" />
+    <Content Include="images\header-yoy.jpg" />
+    <Content Include="images\header.gif" />
+    <Content Include="images\headerpattern.png" />
+    <Content Include="images\head_mail.jpg" />
+    <Content Include="images\Home.png" />
+    <Content Include="images\hr.gif" />
+    <Content Include="images\ico.lanzadora.administracion.especialista.png" />
+    <Content Include="images\icon_10_migrupo.png" />
+    <Content Include="images\icon_17_escuela.png" />
+    <Content Include="images\icon_19_alumnos.png" />
+    <Content Include="images\icon_22_docentes.png" />
+    <Content Include="images\icon_24_pefil_usuario.png" />
+    <Content Include="images\icon_32_sus_reactiv.png" />
+    <Content Include="images\icon_salir.png" />
+    <Content Include="images\imgCarousel_agregarHijos.png" />
+    <Content Include="images\imgCarousel_cambiaContrasena.png" />
+    <Content Include="images\imgCarousel_confirmaCorreo.png" />
+    <Content Include="images\imgCarousel_Expediente.png" />
+    <Content Include="images\imgCarousel_miCuenta.png" />
+    <Content Include="images\imgCarousel_Reportes.png" />
+    <Content Include="images\imgError.jpg" />
+    <Content Include="images\information.png" />
+    <Content Include="images\invitarTutorado.png" />
+    <Content Include="images\key.png" />
+    <Content Include="images\login-icon.gif" />
+    <Content Include="images\LOGO-LOGIN.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logopisa.jpg" />
+    <Content Include="images\magnifier.png" />
+    <Content Include="images\menu\body_bg.png" />
+    <Content Include="images\menu\dropdown_linkbg.gif" />
+    <Content Include="images\menu\GradientSmall.png" />
+    <Content Include="images\menu\subnav_btn - copia.gif" />
+    <Content Include="images\menu\subnav_btn.gif" />
+    <Content Include="images\menu\topnav_bg.gif" />
+    <Content Include="images\menu\topnav_hover.gif" />
+    <Content Include="images\methods_oxxopay.png" />
+    <Content Include="images\methods_visa_mc.png" />
+    <Content Include="images\minus-button.png" />
+    <Content Include="images\notice.png" />
+    <Content Include="images\page_gear.png" />
+    <Content Include="images\paquetePremium.png" />
+    <Content Include="images\PayCreditCard.png" />
+    <Content Include="images\PayOXXO.ico" />
+    <Content Include="images\pisalogin.jpg" />
+    <Content Include="images\plus-button.png" />
+    <Content Include="images\POVLogo.png" />
+    <Content Include="images\POVLogo_Header.png" />
+    <Content Include="images\principal.png" />
+    <Content Include="images\save-icon.gif" />
+    <Content Include="images\search.png" />
+    <Content Include="images\SOV_cargando.flotante.gif" />
+    <Content Include="images\SOV_ELEMENTOS_portalestudiante.png" />
+    <Content Include="images\SOV_ELEMENTOS_portalorientador.png" />
+    <Content Include="images\SOV_imgError.png" />
+    <Content Include="images\SOV_tutores.png" />
+    <Content Include="images\SOV_universidad.png" />
+    <Content Include="images\SOV_VOCAREER1.png" />
+    <Content Include="images\teacher.png" />
+    <Content Include="images\teachers.png" />
+    <Content Include="images\tick.png" />
+    <Content Include="images\top_bar.png" />
+    <Content Include="images\tutor.png" />
+    <Content Include="images\tutoreslogin.png" />
+    <Content Include="images\usericon.jpg" />
+    <Content Include="images\VOCAREER_asignar.png" />
+    <Content Include="images\VOCAREER_buscar.png" />
+    <Content Include="images\VOCAREER_editarPerfil.png" />
+    <Content Include="images\VOCAREER_expedienteTutorado.png" />
+    <Content Include="images\VOCAREER_paquetePremium.png" />
+    <Content Include="images\VOCAREER_salir.png" />
+    <Content Include="images\VOCAREER_tutorados.png" />
+    <Content Include="images\VOCAREER_usuario.png" />
+    <Content Include="images\Yoy_Favicon20px.png" />
+    <Content Include="images\zonebar-downarrow.png" />
+    <Content Include="images\zonebar-navleft.png" />
+    <Content Include="images\zonebar-navright.png" />
+    <Content Include="InformacionPortal\AcercaDe.aspx" />
+    <Content Include="InformacionPortal\TerminosCondiciones.aspx" />
+    <Content Include="Pages\AceptarTerminos.aspx" />
+    <Content Include="Pages\ConfirmarTutor.aspx" />
+    <Content Include="Pages\DetalleExpedienteAlumnoTutor.aspx" />
+    <Content Include="Pages\EditarContrasena.aspx" />
+    <Content Include="Pages\EditarPerfil.aspx" />
+    <Content Include="Pages\ExpedienteAlumnoTutor.aspx" />
+    <Content Include="Pages\Reportes\ReporteAlumnoResultadoZavic.aspx" />
+    <Content Include="Pages\Reportes\ReporteAlumnoResultadoFrasesVocacionales.aspx" />
+    <Content Include="Pages\Reportes\ResultadoPruebaZavicTutorado.aspx" />
+    <Content Include="Pages\Reportes\ResultadoPruebaFrasesVocacionalesTutorado.aspx" />
+    <Content Include="Pages\Reportes\ResultadoPruebaRavenTutorado.aspx" />
+    <Content Include="Pages\Reportes\ReporteAlumnoResultadoRaven.aspx" />
+    <Content Include="Pages\Reportes\ReporteAlumnoResultadoRotter.aspx" />
+    <Content Include="Pages\Reportes\ResultadoPruebaAllportTutorado.aspx" />
+    <Content Include="Pages\Reportes\ResultadoPruebaCleaverTutorado.aspx" />
+    <Content Include="Pages\Reportes\ResultadoPruebaDominosTutorado.aspx" />
+    <Content Include="Pages\Reportes\ResultadoPruebaKuderTutorado.aspx" />
+    <Content Include="Pages\Reportes\ResultadoPruebaRotterTutorado.aspx" />
+    <Content Include="Pages\Reportes\ResultadoPruebaTermanTutorado.aspx" />
+    <Content Include="Pages\Reportes\ReporteAlumnoResultadoAllport.aspx" />
+    <Content Include="Pages\Reportes\ReporteAlumnoResultadoDominos.aspx" />
+    <Content Include="Pages\Reportes\ReporteAlumnoResultadoHabitos.aspx" />
+    <Content Include="Pages\Reportes\ReporteAlumnoResultadoChaside.aspx" />
+    <Content Include="Pages\Reportes\ReporteAlumnoResultadoCleaver.aspx" />
+    <Content Include="Pages\Reportes\ReporteAlumnoResultadoKuder.aspx" />
+    <Content Include="Pages\Reportes\ReporteAlumnoResultadoSACKS.aspx" />
+    <Content Include="Pages\Reportes\ReporteAlumnoResultadoTerman.aspx" />
+    <Content Include="Pages\Reportes\ResultadoPruebaChasideTutorado.aspx" />
+    <Content Include="Pages\Reportes\ResultadoPruebaHabitosTutorado.aspx" />
+    <Content Include="Pages\Reportes\ResultadoPruebaSacksTutorado.aspx" />
+    <Content Include="Pages\Tutorados.aspx" />
+    <Content Include="Scripts\alertify.js" />
+    <Content Include="Scripts\alertify.min.js" />
+    <Content Include="Scripts\api.usuarios.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker-v4.15.35.js" />
+    <Content Include="Scripts\core.usuarios.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.custom.min.js" />
+    <Content Include="Scripts\moment-with-locales-v2.9.0.js" />
+    <Content Include="Scripts\telefonoinput\css\demo.css" />
+    <Content Include="Scripts\telefonoinput\css\intlTelInput.css" />
+    <Content Include="Scripts\telefonoinput\img\flags%402x.png" />
+    <Content Include="Scripts\telefonoinput\img\flags.png" />
+    <Content Include="Scripts\telefonoinput\js\intlTelInput.js" />
+    <Content Include="Scripts\telefonoinput\js\intlTelInput.min.js" />
+    <Content Include="Scripts\telefonoinput\js\utils.js" />
+    <Content Include="Styles\alertify\alertify.css" />
+    <Content Include="Styles\alertify\themes\bootstrap.min.css" />
+    <Content Include="Styles\alertify\themes\default.min.css" />
+    <Content Include="Styles\alertify\themes\semantic.min.css" />
+    <Content Include="Scripts\api.confirmacion.js" />
+    <Content Include="Scripts\api.tutores.js" />
+    <Content Include="Scripts\api\api.dialogs.js" />
+    <Content Include="Scripts\api\api.menu.js" />
+    <Content Include="Scripts\api\api.shared.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\core.confirmacion.js" />
+    <Content Include="Scripts\core.tutores.js" />
+    <Content Include="Scripts\jquery-1.12.1.min.js" />
+    <Content Include="Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\jquery-migrate-1.2.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="Scripts\jquery.maskedinput-1.3.min.js" />
+    <Content Include="Scripts\jquery.notice.js" />
+    <Content Include="Scripts\jquery.timeentry.min.js" />
+    <Content Include="Scripts\jquery.tmpl.min.js" />
+    <Content Include="Scripts\jquery.ui.datepicker-es.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\json.js" />
+    <Content Include="Scripts\lumx.js" />
+    <Content Include="Scripts\messages_es.js" />
+    <Content Include="Scripts\utils\event-scheduler_service.js" />
+    <Content Include="Scripts\utils\transclude-replace_directive.js" />
+    <Content Include="Scripts\utils\transclude_directive.js" />
+    <Content Include="Scripts\utils\utils_service.js" />
+    <Content Include="Scripts\validator.js" />
+    <Content Include="Styles\alertify.core.css" />
+    <Content Include="Styles\alertify.css" />
+    <Content Include="Styles\alertify.default.css" />
+    <Content Include="Styles\alertify.rtl.min.css" />
+    <Content Include="Styles\bootstrap-datetimepicker.min.css" />
+    <Content Include="Styles\bootstrap-modal-carousel.min.css" />
+    <Content Include="Styles\bootstrap-navbar-color.css" />
+    <Content Include="Styles\Default-responsive.css" />
+    <Content Include="Styles\Default.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Styles\headerandfooter.css" />
+    <Content Include="Styles\images\ui-icons_444444_256x240.png" />
+    <Content Include="Styles\images\ui-icons_555555_256x240.png" />
+    <Content Include="Styles\images\ui-icons_777620_256x240.png" />
+    <Content Include="Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Styles\jquery-ui-v1.12.0.css" />
+    <Content Include="Styles\jquery.notice.css" />
+    <Content Include="Styles\reporte.css" />
+    <Content Include="Styles\styleAcordion.css" />
+    <Content Include="Styles\Tutor.css" />
+    <Content Include="Styles\bootstrap-theme.css" />
+    <Content Include="Styles\bootstrap.css" />
+    <Content Include="Styles\gridview.css" />
+    <Content Include="Styles\Icons.css" />
+    <Content Include="Styles\jquery.timeentry.css" />
+    <Content Include="Styles\login.css" />
+    <Content Include="Styles\lumx.css" />
+    <Content Include="Styles\Menu.css" />
+    <Content Include="Styles\overcast\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Styles\overcast\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="Styles\overcast\images\ui-bg_flat_55_c0402a_40x100.png" />
+    <Content Include="Styles\overcast\images\ui-bg_flat_55_eeeeee_40x100.png" />
+    <Content Include="Styles\overcast\images\ui-bg_glass_100_f8f8f8_1x400.png" />
+    <Content Include="Styles\overcast\images\ui-bg_glass_35_dddddd_1x400.png" />
+    <Content Include="Styles\overcast\images\ui-bg_glass_60_eeeeee_1x400.png" />
+    <Content Include="Styles\overcast\images\ui-bg_inset-hard_75_999999_1x100.png" />
+    <Content Include="Styles\overcast\images\ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+    <Content Include="Styles\overcast\images\ui-icons_3383bb_256x240.png" />
+    <Content Include="Styles\overcast\images\ui-icons_454545_256x240.png" />
+    <Content Include="Styles\overcast\images\ui-icons_70b2e1_256x240.png" />
+    <Content Include="Styles\overcast\images\ui-icons_999999_256x240.png" />
+    <Content Include="Styles\overcast\images\ui-icons_fbc856_256x240.png" />
+    <Content Include="Styles\overcast\jquery-ui-1.8.17.custom.css" />
+    <Content Include="Styles\pagination.css" />
+    <Content Include="Styles\print.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\styleTabs.css" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_gloss-wave_35_959595_500x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_highlight-soft_75_959595_1x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_49156a_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_4d405a_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Styles\ui-lightness\jquery-ui-1.12.1.custom.css" />
+    <Content Include="Styles\ui-lightness\jquery-ui-1.8.16.custom.css" />
+    <Content Include="Tutores\NuevoTutor.aspx" />
+    <Content Include="wcf\TutorService.svc" />
+    <Content Include="wcf\UsuarioService.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auth\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\RecuperarPassword.aspx.cs">
+      <DependentUpon>RecuperarPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth\RecuperarPassword.aspx.designer.cs">
+      <DependentUpon>RecuperarPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\ValidarAutoLogin.aspx.cs">
+      <DependentUpon>ValidarAutoLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth\ValidarAutoLogin.aspx.designer.cs">
+      <DependentUpon>ValidarAutoLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultSite.Master.cs">
+      <DependentUpon>DefaultSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultSite.Master.designer.cs">
+      <DependentUpon>DefaultSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Errores.Master.cs">
+      <DependentUpon>Errores.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errores.Master.designer.cs">
+      <DependentUpon>Errores.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Files\ImagenUsuario\ImagenPerfil.aspx.cs">
+      <DependentUpon>ImagenPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Files\ImagenUsuario\ImagenPerfil.aspx.designer.cs">
+      <DependentUpon>ImagenPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ConnectionHlp.cs" />
+    <Compile Include="InformacionPortal\AcercaDe.aspx.cs">
+      <DependentUpon>AcercaDe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InformacionPortal\AcercaDe.aspx.designer.cs">
+      <DependentUpon>AcercaDe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InformacionPortal\TerminosCondiciones.aspx.cs">
+      <DependentUpon>TerminosCondiciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InformacionPortal\TerminosCondiciones.aspx.designer.cs">
+      <DependentUpon>TerminosCondiciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AceptarTerminos.aspx.cs">
+      <DependentUpon>AceptarTerminos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AceptarTerminos.aspx.designer.cs">
+      <DependentUpon>AceptarTerminos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ConfirmarTutor.aspx.cs">
+      <DependentUpon>ConfirmarTutor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ConfirmarTutor.aspx.designer.cs">
+      <DependentUpon>ConfirmarTutor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DetalleExpedienteAlumnoTutor.aspx.cs">
+      <DependentUpon>DetalleExpedienteAlumnoTutor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DetalleExpedienteAlumnoTutor.aspx.designer.cs">
+      <DependentUpon>DetalleExpedienteAlumnoTutor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditarContrasena.aspx.cs">
+      <DependentUpon>EditarContrasena.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\EditarContrasena.aspx.designer.cs">
+      <DependentUpon>EditarContrasena.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditarPerfil.aspx.cs">
+      <DependentUpon>EditarPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\EditarPerfil.aspx.designer.cs">
+      <DependentUpon>EditarPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ExpedienteAlumnoTutor.aspx.cs">
+      <DependentUpon>ExpedienteAlumnoTutor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ExpedienteAlumnoTutor.aspx.designer.cs">
+      <DependentUpon>ExpedienteAlumnoTutor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoZavic.aspx.cs">
+      <DependentUpon>ReporteAlumnoResultadoZavic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoZavic.aspx.designer.cs">
+      <DependentUpon>ReporteAlumnoResultadoZavic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoFrasesVocacionales.aspx.cs">
+      <DependentUpon>ReporteAlumnoResultadoFrasesVocacionales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoFrasesVocacionales.aspx.designer.cs">
+      <DependentUpon>ReporteAlumnoResultadoFrasesVocacionales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaZavicTutorado.aspx.cs">
+      <DependentUpon>ResultadoPruebaZavicTutorado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaZavicTutorado.aspx.designer.cs">
+      <DependentUpon>ResultadoPruebaZavicTutorado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaFrasesVocacionalesTutorado.aspx.cs">
+      <DependentUpon>ResultadoPruebaFrasesVocacionalesTutorado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaFrasesVocacionalesTutorado.aspx.designer.cs">
+      <DependentUpon>ResultadoPruebaFrasesVocacionalesTutorado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaRavenTutorado.aspx.cs">
+      <DependentUpon>ResultadoPruebaRavenTutorado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaRavenTutorado.aspx.designer.cs">
+      <DependentUpon>ResultadoPruebaRavenTutorado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoRaven.aspx.cs">
+      <DependentUpon>ReporteAlumnoResultadoRaven.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoRaven.aspx.designer.cs">
+      <DependentUpon>ReporteAlumnoResultadoRaven.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoRotter.aspx.cs">
+      <DependentUpon>ReporteAlumnoResultadoRotter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoRotter.aspx.designer.cs">
+      <DependentUpon>ReporteAlumnoResultadoRotter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaAllportTutorado.aspx.cs">
+      <DependentUpon>ResultadoPruebaAllportTutorado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaAllportTutorado.aspx.designer.cs">
+      <DependentUpon>ResultadoPruebaAllportTutorado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaCleaverTutorado.aspx.cs">
+      <DependentUpon>ResultadoPruebaCleaverTutorado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaCleaverTutorado.aspx.designer.cs">
+      <DependentUpon>ResultadoPruebaCleaverTutorado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaDominosTutorado.aspx.cs">
+      <DependentUpon>ResultadoPruebaDominosTutorado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaDominosTutorado.aspx.designer.cs">
+      <DependentUpon>ResultadoPruebaDominosTutorado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaKuderTutorado.aspx.cs">
+      <DependentUpon>ResultadoPruebaKuderTutorado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaKuderTutorado.aspx.designer.cs">
+      <DependentUpon>ResultadoPruebaKuderTutorado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaRotterTutorado.aspx.cs">
+      <DependentUpon>ResultadoPruebaRotterTutorado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaRotterTutorado.aspx.designer.cs">
+      <DependentUpon>ResultadoPruebaRotterTutorado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaTermanTutorado.aspx.cs">
+      <DependentUpon>ResultadoPruebaTermanTutorado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaTermanTutorado.aspx.designer.cs">
+      <DependentUpon>ResultadoPruebaTermanTutorado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoAllport.aspx.cs">
+      <DependentUpon>ReporteAlumnoResultadoAllport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoAllport.aspx.designer.cs">
+      <DependentUpon>ReporteAlumnoResultadoAllport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoDominos.aspx.cs">
+      <DependentUpon>ReporteAlumnoResultadoDominos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoDominos.aspx.designer.cs">
+      <DependentUpon>ReporteAlumnoResultadoDominos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoHabitos.aspx.cs">
+      <DependentUpon>ReporteAlumnoResultadoHabitos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoHabitos.aspx.designer.cs">
+      <DependentUpon>ReporteAlumnoResultadoHabitos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoChaside.aspx.cs">
+      <DependentUpon>ReporteAlumnoResultadoChaside.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoChaside.aspx.designer.cs">
+      <DependentUpon>ReporteAlumnoResultadoChaside.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoCleaver.aspx.cs">
+      <DependentUpon>ReporteAlumnoResultadoCleaver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoCleaver.aspx.designer.cs">
+      <DependentUpon>ReporteAlumnoResultadoCleaver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoKuder.aspx.cs">
+      <DependentUpon>ReporteAlumnoResultadoKuder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoKuder.aspx.designer.cs">
+      <DependentUpon>ReporteAlumnoResultadoKuder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoSACKS.aspx.cs">
+      <DependentUpon>ReporteAlumnoResultadoSACKS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoSACKS.aspx.designer.cs">
+      <DependentUpon>ReporteAlumnoResultadoSACKS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoTerman.aspx.cs">
+      <DependentUpon>ReporteAlumnoResultadoTerman.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ReporteAlumnoResultadoTerman.aspx.designer.cs">
+      <DependentUpon>ReporteAlumnoResultadoTerman.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaChasideTutorado.aspx.cs">
+      <DependentUpon>ResultadoPruebaChasideTutorado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaChasideTutorado.aspx.designer.cs">
+      <DependentUpon>ResultadoPruebaChasideTutorado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaHabitosTutorado.aspx.cs">
+      <DependentUpon>ResultadoPruebaHabitosTutorado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaHabitosTutorado.aspx.designer.cs">
+      <DependentUpon>ResultadoPruebaHabitosTutorado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaSacksTutorado.aspx.cs">
+      <DependentUpon>ResultadoPruebaSacksTutorado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\ResultadoPruebaSacksTutorado.aspx.designer.cs">
+      <DependentUpon>ResultadoPruebaSacksTutorado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Tutorados.aspx.cs">
+      <DependentUpon>Tutorados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Tutorados.aspx.designer.cs">
+      <DependentUpon>Tutorados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Tutores\NuevoTutor.aspx.cs">
+      <DependentUpon>NuevoTutor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutores\NuevoTutor.aspx.designer.cs">
+      <DependentUpon>NuevoTutor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tutores\TutoresPage.Master.cs">
+      <DependentUpon>TutoresPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutores\TutoresPage.Master.designer.cs">
+      <DependentUpon>TutoresPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="wcf\TutorService.svc.cs">
+      <DependentUpon>TutorService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="wcf\UsuarioService.svc.cs">
+      <DependentUpon>UsuarioService.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tutores\TutoresPage.Master" />
+    <Content Include="packages.config" />
+    <Content Include="Site.Master" />
+    <Content Include="Styles\fonts\HelveticaNeueLTPro-MdCnO.otf" />
+    <Content Include="Styles\fonts\helr45w.ttf" />
+    <Content Include="Errores.Master" />
+    <Content Include="pdf\avisoprivacidadyoy.pdf" />
+    <Content Include="pdf\terminoscondicionesyoy.pdf" />
+    <None Include="Properties\PublishProfiles\POV.PortalTutor.pubxml" />
+    <Content Include="Styles\fonts\HelveticaNeue-BoldCond.otf" />
+    <Content Include="Styles\fonts\HelveticaNeue-LightCond.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Styles\fonts\Aileron-Regular.otf" />
+    <Content Include="Styles\fonts\Roboto-BoldCondensed_0.ttf" />
+    <Content Include="Styles\fonts\Roboto-Bold_2.ttf" />
+    <Content Include="Styles\fonts\Roboto-Condensed_0.ttf" />
+    <Content Include="Styles\fonts\Roboto-Regular_1.ttf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\conekta\conekta.csproj">
+      <Project>{2f249d83-da55-4a4d-b044-ac779c18c07d}</Project>
+      <Name>conekta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.Interfaces\GP.SocialEngine.Interfaces.csproj">
+      <Project>{1501b668-dc3a-45d9-b9b5-47df76e12587}</Project>
+      <Name>GP.SocialEngine.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Administracion.BO\POV.Administracion.BO.csproj">
+      <Project>{4ccd2661-0b94-4dc8-a41f-864e951ff01f}</Project>
+      <Name>POV.Administracion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Administracion.Services\POV.Administracion.Services.csproj">
+      <Project>{320268a0-718e-4b61-a9fb-489a62584562}</Project>
+      <Name>POV.Administracion.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Administracion\POV.Administracion.csproj">
+      <Project>{91d85c38-cb3d-404a-bf4e-abccd80b99a8}</Project>
+      <Name>POV.Administracion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3a6024ca-2877-409d-84c8-a1997c27616e}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.Services\POV.CentroEducativo.Services.csproj">
+      <Project>{efeaf5ff-2f2d-4c50-ae27-baf8df1df922}</Project>
+      <Name>POV.CentroEducativo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo\POV.CentroEducativo.csproj">
+      <Project>{77f2d47f-ef3f-49b4-b20f-bc34520c2df4}</Project>
+      <Name>POV.CentroEducativo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.BO\POV.Comun.BO.csproj">
+      <Project>{e9bb2466-0e21-4b56-8803-deb5969d2b49}</Project>
+      <Name>POV.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.Services\POV.Comun.Services.csproj">
+      <Project>{adb9ba9a-c274-4101-8f0d-3cf6c86a5fb8}</Project>
+      <Name>POV.Comun.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Core.Tutor\POV.Core.PadreTutor.csproj">
+      <Project>{ebc67d07-5a60-4945-a2ef-96c378f3457e}</Project>
+      <Name>POV.Core.PadreTutor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Expediente.BO\POV.Expediente.BO.csproj">
+      <Project>{34c7eb86-2321-432e-82b5-fe8119a9b622}</Project>
+      <Name>POV.Expediente.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Expediente.Reports\POV.Expediente.Reports.csproj">
+      <Project>{e41a5c36-f001-44b6-b7d1-d1f512c5ee12}</Project>
+      <Name>POV.Expediente.Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Expediente.Services\POV.Expediente.Services.csproj">
+      <Project>{272d5848-bb03-46d3-a15f-6cdf48a11806}</Project>
+      <Name>POV.Expediente.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Licencias.BO\POV.Licencias.BO.csproj">
+      <Project>{19961067-7725-4435-8ead-6e2b635f5d34}</Project>
+      <Name>POV.Licencias.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Licencias.Services\POV.Licencias.Services.csproj">
+      <Project>{13ab22df-d898-416f-a63f-a6cd09622760}</Project>
+      <Name>POV.Licencias.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Localizacion.BO\POV.Localizacion.BO.csproj">
+      <Project>{662eebf8-41aa-4daf-9603-ab9e92009f77}</Project>
+      <Name>POV.Localizacion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Localizacion.Services\POV.Localizacion.Services.csproj">
+      <Project>{9f69aaca-bd9f-48b3-addc-0049fff35c1a}</Project>
+      <Name>POV.Localizacion.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Logger.Services\POV.Logger.Services.csproj">
+      <Project>{b7f1fb2e-42c5-47b7-b717-f9249f2d6843}</Project>
+      <Name>POV.Logger.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.BO\POV.Modelo.BO.csproj">
+      <Project>{d81e25e7-7ed3-4f7b-9ccf-a3e1e97b198a}</Project>
+      <Name>POV.Modelo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo\POV.Modelo.csproj">
+      <Project>{36c1aff9-323f-4330-aa43-4fb0ab4a0a70}</Project>
+      <Name>POV.Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.BO\POV.Prueba.BO.csproj">
+      <Project>{90c2958d-1935-448e-9ac5-f9abcec3784b}</Project>
+      <Name>POV.Prueba.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Calificaciones.Services\POV.Prueba.Calificaciones.Services.csproj">
+      <Project>{222b4ed3-e51c-4989-a531-69281ddbeb03}</Project>
+      <Name>POV.Prueba.Calificaciones.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Dinamica.BO\POV.Prueba.Diagnostico.Dinamica.BO.csproj">
+      <Project>{a36c3552-74ff-41af-9466-e59288f9272a}</Project>
+      <Name>POV.Prueba.Diagnostico.Dinamica.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Dinamica.Services\POV.Prueba.Diagnostico.Dinamica.Services.csproj">
+      <Project>{614a4de8-03df-46ce-97c2-a8fa3534362f}</Project>
+      <Name>POV.Prueba.Diagnostico.Dinamica.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Services\POV.Prueba.Diagnostico.Services.csproj">
+      <Project>{e4ae7ea0-c62f-4a5c-9e9e-8c69d83347e8}</Project>
+      <Name>POV.Prueba.Diagnostico.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.BO\POV.Reactivos.BO.csproj">
+      <Project>{ed9cc55d-68f6-4be0-9dae-00bcd226c289}</Project>
+      <Name>POV.Reactivos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.BO\POV.Seguridad.BO.csproj">
+      <Project>{86840dad-9fcc-46aa-8c98-3cab83195ec7}</Project>
+      <Name>POV.Seguridad.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.Services\POV.Seguridad.Services.csproj">
+      <Project>{6f8b4b55-e2ab-4592-a770-982ea091583b}</Project>
+      <Name>POV.Seguridad.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Web.DTO.Services\POV.Web.DTO.Services.csproj">
+      <Project>{db09ad05-bbc3-4672-902d-230376b1c667}</Project>
+      <Name>POV.Web.DTO.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Web.DTO\POV.Web.DTO.csproj">
+      <Project>{901037d3-2fc7-46e3-be63-88328b76a37e}</Project>
+      <Name>POV.Web.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.BO\GP.SocialEngine.BO.csproj">
+      <Project>{bc81d924-3bb9-4ebd-b55f-b1c72132c069}</Project>
+      <Name>GP.SocialEngine.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.Services\GP.SocialEngine.Services.csproj">
+      <Project>{d00d4cb1-740d-43f7-8b42-378b035ec181}</Project>
+      <Name>GP.SocialEngine.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Files\ImagenUsuario\Normal\" />
+    <Folder Include="Files\ImagenUsuario\Thumbs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>28685</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

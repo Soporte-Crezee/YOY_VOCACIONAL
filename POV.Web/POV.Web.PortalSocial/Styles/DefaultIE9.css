@@ -1,0 +1,25 @@
+﻿/*****************botones de excelente , bueno y regular***************/
+#boton_e
+{
+    position:relative;
+    background-image:url('../Images/icons/icon_e.png');
+    width:16px;
+    height:16px;
+    top:1px;
+}
+#boton_b
+{
+    position:relative;
+    background-image:url('../Images/icons/icon_b.png');
+    width:16px;
+    height:16px;
+    top:1px;
+}
+#boton_r
+{
+    position:relative;
+    background-image:url('../Images/icons/icon_r.png');
+    width:16px;
+    height:16px;
+    top:1px;
+}

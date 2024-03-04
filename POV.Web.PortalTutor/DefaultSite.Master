@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DefaultSite.master.cs" Inherits="POV.Web.PortalTutor.DefaultSite" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>YOY - PADRES</title>
+    <link rel="shortcut icon" href="~/Images/Yoy_Favicon20px.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>jquery-1.12.1.min.js" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>bootstrap.js" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/alertify.min.js")%>" type="text/javascript"></script>
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Default.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Icons.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>headerandfooter.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        #tituloPortalResponsivo {
+            margin-top: 20px;
+        }
+        #HplLogout {
+            font-size: 18px;
+            text-transform: none;
+            text-decoration: none !important;
+        }
+        #HplLogout:hover {
+            color: #05AEDF !important;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+        <script type="text/javascript">
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(End);
+            function End(sender, args) { initMasterClient(); $(".boton").button(); }
+
+            Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(OnBeginRequestBlockUI);
+            function OnBeginRequestBlockUI(sender, args) {
+                DocumentBlockUI();
+            }
+
+            function DoFormBlockUI() {
+                $("#form1").submit(function () { DocumentBlockUI(); return true; });
+            }
+            function DocumentBlockUI() {
+
+                $.blockUI.defaults.fadeOut = 200;
+                $.blockUI.defaults.fadeOut = 100;
+                $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+                $.blockUI.defaults.message = '<h1 style="font-size:20px;"><img src="' + imgLoader + '" /> Procesando...</h1>';
+                $.blockUI();
+            }
+
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(OnEndRequestUnblockUI);
+            function OnEndRequestUnblockUI(sender, args) {
+                DocumentUnblockUI();
+            }
+
+            function DocumentUnblockUI() {
+                $.blockUI.defaults.fadeOut = 200;
+                $.blockUI.defaults.fadeOut = 100;
+                $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+                $.blockUI.defaults.message = '<h1 style="font-size:20px;"><img src="' + imgLoader + '" /> Procesando...</h1>';
+                $.unblockUI();
+            }
+
+
+        </script>
+        <div id="container" class="">
+            <div id="header" class="header-container">
+                <div class="container-fluid">
+                    <%-- Logo --%>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
+                        <img src="~/images/SOV_VOCAREER1.png" runat="server" id="imgLogo_Header" alt="logo" class="" style="padding-top:5px; margin-top:10px;margin-bottom:10px;"/>
+                    </div>
+                    <%-- Menu-Top --%>
+                    <div class="">
+                        <div id="menu-top" class="menu_container">
+                            <%-- Menu-Top-Tutor --%>
+                            <div class="text-center">
+                                <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
+                                    <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/SOV_tutores.png" class="" style="margin: 20px 0px 0px 10px; padding: 0px" width="50px"/>
+                                </div>
+                                <div class="col-xs-9 col-sm-7 col-md-5 col-lg-7">
+                                    <h1 class="pull-left titulo-portal" id="tituloPortalResponsivo" style="padding-top:10px;">PORTAL PADRES</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="menu_top_container col-xs-12">
+                                    <div class="header_topmenu">
+                                        <div>
+                                            <asp:HyperLink ID="HplLogout" runat="server" Height="30px" ToolTip="Salir del portal" CssClass="menuItem">
+                                                Salir <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/VOCAREER_salir.png" Style="max-width: 100px; margin: -7px 0px 0px; padding: 0px" />
+                                            </asp:HyperLink>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper" class="">
+                <div id="content" class="container">
+                    <asp:ContentPlaceHolder ID="page_content" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div>
+            </div>
+            <div class="footer">
+                <div style="height:60px; background: url('../images/footerpattern.png') repeat;"></div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

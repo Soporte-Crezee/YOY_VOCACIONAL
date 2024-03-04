@@ -1,0 +1,73 @@
+﻿.header-container {
+    background: url('../images/headerpattern.png') repeat !important;
+}
+
+.container-fluid {
+    margin-bottom: 10px;
+}
+
+.titulo-portal {
+    color: #05aed9 !important;
+    font-size: 22px !important;
+    font-family: Roboto-Bold;
+}
+
+/*Container*/
+
+.container {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #EEE;
+    width: 100%;
+}
+
+#toolBar {
+    /*width: 110px;*/
+    width:100%;
+    margin: 4px auto;
+}
+
+/*breadcrumb*/
+
+.breadcrumb {
+    background: #05AED9 !important;
+    color: #FFF !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.breadcrumb > li > a, .breadcrumb > li{
+    color: #FFF !important;
+    font-family: Roboto-Bold !important;
+}
+.breadcrumb > li + li:before {
+    color: #FFF;
+}
+#viewer {
+    /*width: 675px;*/
+    width: 100%;
+    margin: 0 auto;
+}
+
+.breadcrumb li{
+    font-size:30px !important;
+}
+
+#toolBar > table, #viewer > div {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*Footer*/
+
+.footerpersonalizado {
+    height: 60px;
+     background: url('../images/fooder-yoy.jpg') !important;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../Styles/fonts/Roboto-Bold_2.ttf');
+}

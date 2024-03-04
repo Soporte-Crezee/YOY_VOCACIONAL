@@ -1,0 +1,9 @@
+﻿{
+	paises[
+		{
+			nombre:"México",
+			codigo:"MX"
+		}
+	]
+
+}

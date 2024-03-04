@@ -1,0 +1,57 @@
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 13/05/2016 12:41:43
+Error sending email in SendMailMessage:  El servidor SMTP requiere una conexión segura o el cliente no se autenticó. La respuesta del servidor fue: 5.5.1 Authentication Required. Learn more at
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 13/05/2016 12:42:01
+Error sending email in SendMailMessage:  El servidor SMTP requiere una conexión segura o el cliente no se autenticó. La respuesta del servidor fue: 5.5.1 Authentication Required. Learn more at
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 13/05/2016 12:42:32
+Error sending email in SendMailMessage:  El servidor SMTP requiere una conexión segura o el cliente no se autenticó. La respuesta del servidor fue: 5.5.1 Authentication Required. Learn more at
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 13/05/2016 12:42:32
+Error sending email in SendMailMessage:  El servidor SMTP requiere una conexión segura o el cliente no se autenticó. La respuesta del servidor fue: 5.5.1 Authentication Required. Learn more at
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 13/05/2016 12:43:01
+Error sending email in SendMailMessage:  El servidor SMTP requiere una conexión segura o el cliente no se autenticó. La respuesta del servidor fue: 5.5.1 Authentication Required. Learn more at
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 13/05/2016 12:43:55
+Error sending email in SendMailMessage:  El servidor SMTP requiere una conexión segura o el cliente no se autenticó. La respuesta del servidor fue: 5.5.1 Authentication Required. Learn more at
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 13/05/2016 12:47:26
+Error sending email in SendMailMessage:  El servidor SMTP requiere una conexión segura o el cliente no se autenticó. La respuesta del servidor fue: 5.5.1 Authentication Required. Learn more at
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 13/05/2016 12:51:34
+Error sending email in SendMailMessage:  El servidor SMTP requiere una conexión segura o el cliente no se autenticó. La respuesta del servidor fue: 5.5.1 Authentication Required. Learn more at
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 13/05/2016 13:05:25
+Error editing profile: Referencia a objeto no establecida como instancia de un objeto.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 13/05/2016 13:09:29
+Error checking stopforumspam.com: Error en el servidor remoto: (503) Servidor no disponible.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 13/05/2016 13:11:20
+Error checking stopforumspam.com: Error en el servidor remoto: (503) Servidor no disponible.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 21/09/2017 17:58:34
+Dashboard news feed: No es posible conectar con el servidor remoto
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 21/09/2017 18:00:39
+Dashboard news feed: No es posible conectar con el servidor remoto
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 21/09/2017 18:09:12
+GET http://localhost:64079/api/dashboard: Se produjo una excepción de tipo 'System.OutOfMemoryException'.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 21/09/2017 18:09:33
+Dashboard news feed: No es posible conectar con el servidor remoto
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 21/09/2017 18:15:34
+Dashboard news feed: No es posible conectar con el servidor remoto
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 21/09/2017 18:16:01
+GET http://localhost:64079/api/dashboard: Se produjo una excepción de tipo 'System.OutOfMemoryException'.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 21/09/2017 18:36:46
+Dashboard news feed: No es posible conectar con el servidor remoto
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Fecha: 25/09/2017 11:24:52
+Dashboard news feed: No es posible conectar con el servidor remoto

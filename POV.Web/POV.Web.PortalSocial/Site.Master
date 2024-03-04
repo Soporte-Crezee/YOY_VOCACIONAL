@@ -1,0 +1,1569 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="POV.Web.PortalSocial.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>YOY - SOCIAL</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="~/Images/Yoy_Favicon20px.png" />
+    <asp:PlaceHolder ID="cosa" runat="server">
+        <%-- librerias java script --%>
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>jquery.notice.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Default.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Icons.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>ui-lightness/jquery-ui-1.12.1.custom.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Default-responsive.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>bootstrap-navbar-color.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/tour/")%>jquery.hemiIntro.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/tour/")%>justified-nav.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>alertify.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>alertify.bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>alertify.default.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>alertify.semantic.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>jquery.easing.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>bootstrap-steps.css" rel="stylesheet" type="text/css" />
+        <!-- Para views -->
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Talentos.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>gridview.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>TimeCircles/TimeCircles.css" rel="stylesheet" type="text/css" />
+
+        <!-- Nuevos estilos genericos -->
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>headerandfooter.css" rel="stylesheet" type="text/css" />
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>container.css" rel="stylesheet" type="text/css" />
+        <!-- Fin estilos genericos -->
+
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>jquery-1.12.1.min.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery.ui.datepicker-es.js")%>" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/bootstrap.js")%>" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>jquery-ui-1.12.1.custom.min.js" type="text/javascript" id="jquery-ui"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/api.dialogs.js")%>" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery.blockUI.js")%>" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>api.shared.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>json.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>api.notificaciones.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>core.notificaciones.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>api.asignacionactividad.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>core.asignacionactividad.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>api.block.ui.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>jquery.notice.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>alertify.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>jquery.easing.min.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>api.orientacionvocacional.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>core.orientacionvocacional.js" type="text/javascript"></script>
+        <script src="<% =Page.ResolveClientUrl("~/Scripts/TimeCircles/")%>TimeCircles.js" type="text/javascript"></script>
+
+        <link href="<% =Page.ResolveClientUrl("~/Styles/")%>bootstrap-modal-carousel.min.css" rel="stylesheet" type="text/css" />
+
+        <style type="text/css">
+            .divider-vertical {
+                height: 100%;
+                margin: 0 2px;
+                border-right: 2px solid #082d49;
+            }
+
+            /*input:required,*/
+            textarea:required {
+                border-color: red !important;
+            }
+
+            .row {
+                margin-right: 0px !important;
+                margin-left: 0px !important;
+            }
+
+            .container {
+                padding: 1em 0 3em 0 !important;
+            }
+
+            .dropdown-header {
+                font-size: 16px !important;
+            }
+
+            @media screen and (max-width: 368px) {
+                #H1 {
+                    margin-top: 10px !important;
+                }
+            }
+
+            @media screen and (max-width:396px) {
+                #H2 {
+                    margin-top: 10px !important;
+                }
+            }
+
+            .carousel-indicators {
+                bottom: -10px !important;
+            }
+
+                .carousel-indicators .active {
+                    background-color: #989898!important;
+                }
+
+                .carousel-indicators li {
+                    border-color: #999 !important;
+                    background-color: #FFF;
+                }
+
+            .carousel-inner {
+                margin-bottom: 30px;
+            }
+        </style>
+
+        <script type="text/javascript">
+            function showMessage(text, redirection) {
+                $("#txtRedirect").val((redirection != undefined) ? "#" : "#");
+                var api = new MessageApi();
+                api.CreateMessage(text, "INFO");
+                api.Show();
+                resetHiden();
+            }
+
+            var HTML_FILE_URL = "<%=Page.ResolveClientUrl("~/EncuestaSatisfaccion.txt")%>";//'../EncuestaSatisfaccion.txt';
+            var encuestaFull = false;
+
+            $(document).ready(function () {
+                $('html').click(function () {
+                    $(".opcionesCuenta").slideUp("fast");
+                });
+                $(".miCuenta").click(function (e) {
+                    $(".opcionesCuenta").slideDown("fast");
+                    e.stopPropagation();
+                });
+            });
+            var url_wcf = "<% =Page.ResolveClientUrl("~/wcf/")%>";
+
+            var sesionesAlumno = [{ sesionorientacionid: undefined }];
+            var cargaSesionesAlumno = false;
+
+            var sesionesDocente = [{ sesionorientacionid: undefined }];
+            var cargaSesionesDocente = false;
+
+            var cargaHrsAlumno = [];
+            var cargaHrsDocente = [];
+
+            var HrsVerifyAlumno = '';
+            var HrsVerifyDocente = '';
+
+            var SesionOrientacionAlumno = {};
+            var SesionOrientacionDocente = {};
+
+            var SesionIniciadaAlumno = {};
+            var SesionIniciadaDocente = {};
+
+            var relojAlumno = '';
+            var relojDocente = '';
+
+            var bandAlumno = false;
+            var bandDocente = false;
+            var pregunta1 = '', pregunta2 = '', pregunta3 = '', pregunta4 = '', pregunta5 = '';
+            var sesionid = '';
+            var alumnoid = '';
+            var docenteid = '';
+
+            var openAlertDocente = false;
+            var openAlertAlumno = false;
+
+            //api bloqueo de interfaz
+            var myApiBlockUI = new BlockUIApi({
+                loadingImg: 'SOV_cargando.flotante.gif',
+                processImg: 'VOCAREER_procesando.flotante.png',
+                searchImg: 'VOCAREER_buscando-flotante.png',
+                sendImg: 'VOCAREER_enviando.flotante.png',
+                imageSource: '<% =Page.ResolveClientUrl("~/Images/")%>'
+            });
+
+            $(document).ready($(function () {
+                initMasterClient();
+                localStorage['session_correo_confirmado'] = '';
+
+                getTotalAsignacionActividad();
+                setInterval("getTotalAsignacionActividad()", 50000);
+
+                getTotalNotificaciones();
+                setInterval("getTotalNotificaciones()", 50000);
+
+                var tiempoEsperaSesion = "<%#tiempoEsperaSesion%>";
+
+                var sesionAlumno = $('#txtSesionAlumno').val();
+                if (sesionAlumno == 'True') {
+                    getSesionOrientacionAlumno();
+                    var verificarSesionesAlumno = setInterval(startStatusSesionesAlumno, tiempoEsperaSesion);
+                    var cargaStatusSesionesAlumno = setInterval(statusSesionesAlumno, 1000);
+                }
+
+                var sesionDocente = $('#txtSesionDocente').val();
+
+                if (sesionDocente == 'True') {
+                    getSesionOrientacionDocente();
+                    var verificarSesionesDocente = setInterval(startStatusSesionesDocente, tiempoEsperaSesion);
+                    var cargaStatusSesionesDocente = setInterval(statusSesionesDocente, 500);
+                }
+
+                function startStatusSesionesAlumno() {
+                    getSesionOrientacionAlumno();
+                    cargaStatusSesionesAlumno = setInterval(statusSesionesAlumno, 1000);
+                }
+
+                function startStatusSesionesDocente() {
+                    getSesionOrientacionDocente();
+                    cargaStatusSesionesDocente = setInterval(statusSesionesDocente, 500);
+                }
+
+                function statusSesionesAlumno() {
+                    var sesionAlumno = $('#txtSesionAlumno').val();
+                    if (sesionAlumno == 'True') {
+                        if (cargaSesionesAlumno) {
+                            SesionOrientacionAlumno();
+                            clearInterval(cargaStatusSesionesAlumno);
+                            cargaSesionesAlumno = false;
+                        }
+                    }
+                }
+
+                function statusSesionesDocente() {
+                    var sesionDocente = $('#txtSesionDocente').val();
+                    if (sesionDocente == 'True') {
+                        if (cargaSesionesDocente) {
+                            SesionOrientacionDocente();
+                            clearInterval(cargaStatusSesionesDocente);
+                            cargaSesionesDocente = false;
+                        }
+                    }
+                }
+
+                function SesionOrientacionAlumno() {
+                    cargaHrsAlumno = [];
+                    var openAlert = false;
+                    if (sesionesAlumno.length != undefined) {
+                        var sAux = "";
+                        var fecha = new Date();
+                        var nowhrs = fecha.format('HH:mm');
+
+                        for (var i = 0; i < sesionesAlumno.length; i++) {
+                            var horaSaveFn = sesionesAlumno[i].fin.split('T')[1];
+                            if (sesionesAlumno[i].estatussesion == 0 && sesionesAlumno[i].asistenciaaspirante == 0 && nowhrs < horaSaveFn) {
+                                sAux += "Sesion de orientación" + "<br/>";
+                                sAux += "Fecha: " + sesionesAlumno[i].fecha + "<br\>";
+                                sAux += "Inicio: " + sesionesAlumno[i].inicio.split('T')[1] + "<br\> ";
+                                sAux += "Fin: " + sesionesAlumno[i].fin.split('T')[1] + "<br\>";
+                                sAux += "<br\>";
+
+                                var hrs = new Object();
+                                hrs.inicio = sesionesAlumno[i].inicio.split('T')[1];
+                                hrs.fin = sesionesAlumno[i].fin.split('T')[1];
+                                hrs.sesionorientacionid = sesionesAlumno[i].sesionorientacionid;
+                                hrs.alumnoid = sesionesAlumno[i].alumnoid;
+                                hrs.asistenciaaspirante = sesionesAlumno[i].asistenciaaspirante;
+                                cargaHrsAlumno.push(hrs);
+                            }
+                            else if (sesionesAlumno[i].estatussesion == 1 || sesionesAlumno[i].asistenciaaspirante == 1 && nowhrs < horaSaveFn) {
+                                SesionIniciadaAlumno = sesionesAlumno[i];
+                                var finSesion = SesionIniciadaAlumno.fin.split('T')[1];
+
+                                relojAlumno = intervalClockAlumno(finSesion);
+                            }
+                            else if (sesionesAlumno[i].encuestacontestada == 0 && sesionesAlumno[i].estatussesion == 2 && sesionesAlumno[0].asistenciaaspirante == 1) {
+
+                                sesionid = sesionesAlumno[i].sesionorientacionid;
+                                docenteid = sesionesAlumno[i].docenteid;
+                                alumnoid = sesionesAlumno[i].alumnoid;
+                                setTimeout(function () {
+                                    llenarEncuesta();
+                                }, 500);
+                                var esperandoEncuesta = setInterval(statusEncuesta, 1000);
+                                function statusEncuesta() {
+                                    if (encuestaFull) {
+                                        clearInterval(esperandoEncuesta);
+                                    }
+                                }
+                                if (encuestaFull == true) {
+                                    $('#frmEncuesta').show();
+                                    $('#btnEncuesta').click();
+                                }
+                                clearInterval(relojAlumno);
+                            }
+                        }
+
+                        var pre = document.createElement('pre');
+                        var textoAlumno = pre.appendChild(document.createTextNode(sAux.toString()));
+
+                        var fecha = new Date();
+                        var nowhrs = fecha.format('HH:mm');
+                        nowhrs = parseFloat(nowhrs.replace(":", ".").toString());
+                        var openModal = false;
+                        if (cargaHrsAlumno.length != undefined) {
+                            for (var i = 0; i < cargaHrsAlumno.length; i++) {
+                                var horaSaveIn = parseFloat(cargaHrsAlumno[i].inicio.replace(":", ".").toString());
+                                var horaSaveFn = parseFloat(cargaHrsAlumno[i].fin.replace(":", ".").toString());
+                                if ((horaSaveIn - 0.15) <= nowhrs && nowhrs < horaSaveFn) {
+                                    openModal = true;
+                                    openAlertAlumno = true;
+                                }
+                            }
+
+                            if (openModal == true && bandAlumno == false) {
+                                HrsVerifyAlumno = setInterval(VerificarHorasAlumno, 15000);
+                            }
+                        }
+                        //launch it.
+                        if (openAlertAlumno == true) {
+                            var notification = alertify.notify(textoAlumno.data, 'success', 10, function () { console.log('dismissed'); });
+                        }
+                    }
+                }
+
+                function SesionOrientacionDocente() {
+                    cargaHrsDocente = [];
+
+                    if (sesionesDocente.length != undefined) {
+                        var sAuxOri = "";
+
+                        var fecha = new Date();
+                        var nowhrs = fecha.format('HH:mm');
+                        for (var i = 0; i < sesionesDocente.length; i++) {
+                            var horaSaveFn = sesionesDocente[i].fin.split('T')[1];
+
+                            if (sesionesDocente[i].estatussesion == 0 && sesionesDocente[i].asistenciaorientador == 0 && nowhrs <= horaSaveFn) {
+
+                                sAuxOri += "Sesion de orientación" + "<br/>";
+                                sAuxOri += "Fecha: " + sesionesDocente[i].fecha + "<br/>";
+                                sAuxOri += "Inicio: " + sesionesDocente[i].inicio.split('T')[1] + "<br/>";
+                                sAuxOri += "Fin: " + sesionesDocente[i].fin.split('T')[1] + "<br/>";
+                                sAuxOri += "<br/>";
+
+
+                                var hrs = new Object();
+                                hrs.inicio = sesionesDocente[i].inicio.split('T')[1];
+                                hrs.fin = sesionesDocente[i].fin.split('T')[1];
+                                hrs.sesionorientacionid = sesionesDocente[i].sesionorientacionid;
+                                hrs.docenteid = sesionesDocente[i].docenteid;
+                                hrs.asistenciaorientador = sesionesDocente[i].asistenciaorientador;
+                                cargaHrsDocente.push(hrs);
+                            }
+                            else if (sesionesDocente[i].estatussesion == 1 || sesionesDocente[i].asistenciaorientador == 1 && nowhrs < horaSaveFn) {
+                                SesionIniciadaDocente = sesionesDocente[i];
+                                var finSesion = SesionIniciadaDocente.fin.split('T')[1];
+
+                                relojDocente = intervalClockDocente(finSesion);
+                            }
+                        }
+
+                        var preOri = document.createElement('pre');
+                        var textoDocente = preOri.appendChild(document.createTextNode(sAuxOri.toString()));
+
+                        var fecha = new Date();
+                        var nowhrs = fecha.format('HH:mm');
+                        nowhrs = parseFloat(nowhrs.replace(":", ".").toString());
+                        var openModal = false;
+                        var horaSaveIn = '';
+                        var horaSaveFn = '';
+                        if (cargaHrsDocente.length != undefined) {
+                            for (var i = 0; i < cargaHrsDocente.length; i++) {
+                                horaSaveIn = parseFloat(cargaHrsDocente[i].inicio.replace(":", ".").toString());
+                                horaSaveFn = parseFloat(cargaHrsDocente[i].fin.replace(":", ".").toString());
+                                if ((horaSaveIn - 0.15) <= nowhrs && nowhrs < horaSaveFn) {
+                                    openModal = true;
+                                    openAlertDocente = true;
+                                }
+                            }
+
+                            if (openModal == true) {
+                                HrsVerifyDocente = setInterval(VerificarHorasDocente, 15000);
+                            }
+                        }
+
+                        if (openAlertDocente == true) {
+                            var notificationDocente = alertify.notify(textoDocente.data, 'success', 10, function () { console.log('dismissed'); });
+                        }
+                    }
+                }
+
+                function VerificarHorasAlumno() {
+                    if (cargaHrsAlumno != undefined) {
+                        var now = new Date();
+                        var fecha = now.format('HH:mm');
+
+                        for (var i = 0; i < cargaHrsAlumno.length; i++) {
+                            var horainicio = cargaHrsAlumno[i].inicio;
+                            var horafin = cargaHrsAlumno[i].fin;
+                            if (fecha >= horainicio && fecha <= horafin && bandAlumno == false) {
+                                bandAlumno = true;
+                                SesionOrientacionAlumno = cargaHrsAlumno[i];
+                                $('#btnModalAsistenciaAlumno').click();
+                            }
+                        }
+                    }
+                }
+
+                function VerificarHorasDocente() {
+                    if (cargaHrsDocente != undefined) {
+                        var now = new Date();
+                        var fecha = now.format('HH:mm');
+
+                        for (var i = 0; i < cargaHrsDocente.length; i++) {
+                            var horainicio = cargaHrsDocente[i].inicio;
+                            var horafin = cargaHrsDocente[i].fin;
+                            if (fecha >= horainicio && fecha <= horafin && bandDocente == false) {
+                                bandDocente = true;
+
+                                SesionOrientacionDocente = cargaHrsDocente[i];
+                                $('#btnModalAsistenciaDocente').click();
+                            }
+                        }
+                    }
+                }
+
+                $("#btnAceptSesionAlumno").click(function () {
+                    bandAlumno = false;
+                    var hrsIn = SesionOrientacionAlumno.inicio;
+                    var dto = {};
+                    var sesion = {};
+                    dto.sesionorientacionid = parseInt(SesionOrientacionAlumno.sesionorientacionid);
+                    dto.alumnoid = parseInt(SesionOrientacionAlumno.alumnoid);
+                    sesion.dto = dto;
+                    clearInterval(HrsVerifyAlumno);
+                    saveSesionOrientacion(sesion);
+
+                    setInterval(startStatusSesionesAlumno, tiempoEsperaSesion);
+                    $('#btnCancelarAlumno').click();
+                    var finSesion = SesionOrientacionAlumno.fin;
+                    relojAlumno = intervalClockAlumno(finSesion);
+                });
+
+                $('#btnCancelarAlumno').click(function () {
+                    bandAlumno = false;
+                });
+
+                $("#btnAceptSesionDocente").click(function () {
+                    bandDocente = false;
+                    var hrsIn = SesionOrientacionDocente.inicio;
+                    var dto = {};
+                    var sesion = {};
+                    dto.sesionorientacionid = SesionOrientacionDocente.sesionorientacionid;
+                    dto.docenteid = SesionOrientacionDocente.docenteid;
+                    sesion.dto = dto;
+                    clearInterval(HrsVerifyDocente);
+                    saveSesionOrientacion(sesion);
+
+                    setInterval(startStatusSesionesDocente, tiempoEsperaSesion);
+                    $('#btnCancelarDocente').click();
+                    var finSesion = SesionOrientacionDocente.fin;
+                    relojDocente = intervalClockDocente(finSesion);
+                });
+
+                $('#btnCancelarDocente').click(function () {
+                    bandDocente = false;
+                });
+
+                function intervalClockAlumno(finSesion) {
+                    if (SesionIniciadaAlumno != undefined && finSesion != '' && SesionIniciadaAlumno.estatussesion != 2) {
+                        var fecha = new Date();
+
+                        var fecha2 = fecha.format('yyyy-MM-dd');
+                        var nowhrs = fecha.format('HH:mm:ss');
+
+                        if (nowhrs < finSesion) {
+                            var date = fecha2;
+                            var time = finSesion;
+                            var datetime = date + ' ' + time;
+                            $('#DateCountdownAlumno').show();
+                            $("#DateCountdownAlumno").data('date', datetime).TimeCircles(
+                                {
+                                    time: {
+                                        Days: { show: false }
+                                    },
+                                    count_past_zero: false
+                                }).addListener(function (unit, amount, total) {
+                                    if (total == 0) { finalizarAlumno(); }
+                                }).start();
+
+                        }
+                    }
+                    else {
+                        clearInterval(relojAlumno);
+                    }
+                }
+
+                function finalizarAlumno() {
+                    clearInterval(relojAlumno);
+                    var fecha = new Date();
+                    var nowhrs = fecha.format('HH:mm:ss');
+                    $('#DateCountdownAlumno').hide();
+                    var dto = {};
+                    var sesion = {};
+                    dto.sesionorientacionid = SesionIniciadaAlumno.sesionorientacionid;
+                    dto.fecha = SesionIniciadaAlumno.fecha;
+                    dto.alumnoid = SesionIniciadaAlumno.alumnoid;
+                    dto.docenteid = SesionIniciadaAlumno.docenteid;
+                    dto.horafinalizada = nowhrs;
+                    sesion.dto = dto;
+                    finSesionOrientacion(sesion);
+                    sesionid = SesionIniciadaAlumno.sesionorientacionid;
+                    docenteid = SesionIniciadaAlumno.docenteid;
+                    alumnoid = SesionIniciadaAlumno.alumnoid;
+                    setTimeout(function () {
+                        llenarEncuesta();
+                    }, 500);
+                    var esperandoEncuesta = setInterval(statusEncuesta, 1000);
+                    function statusEncuesta() {
+                        if (encuestaFull) {
+                            clearInterval(esperandoEncuesta);
+                        }
+                    }
+                    // llenar encuesta
+                    if (encuestaFull == true) {
+                        $('#frmEncuesta').show();
+                        $('#btnEncuesta').click();
+                    }
+                }
+
+                function llenarEncuesta() {
+                    $('#questions').click(function () {
+                        $(this).children('input').click();
+                    });
+
+                    $.get(HTML_FILE_URL, function (data) {
+                        pregunta1 = data.split('-')[0];
+                        var respuesta1 = data.split('-')[1];
+                        pregunta2 = data.split('-')[2];
+                        var respuesta2 = data.split('-')[3];
+                        pregunta3 = data.split('-')[4];
+                        var respuesta3 = data.split('-')[5];
+                        pregunta4 = data.split('-')[6];
+                        var respuesta4 = data.split('-')[7];
+                        pregunta5 = data.split('-')[8];
+                        var respuesta5 = data.split('-')[9];
+                        $('#prg1').text(respuesta1);
+                        $('#prg2').text(respuesta2);
+                        $('#prg3').text(respuesta3);
+                        $('#prg4').text(respuesta4);
+                        $('#prg5').text(respuesta5);
+                        $('input:radio[name=res1]').attr('checked', false);
+                        $('input:radio[name=res2]').attr('checked', false);
+                        $('input:radio[name=res3]').attr('checked', false);
+                        $('input:radio[name=res4]').attr('checked', false);
+                        $('input:radio[name=res5]').attr('checked', false);
+                        encuestaFull = true;
+                    });
+                }
+
+                function intervalClockDocente(finSesion) {
+                    if (SesionIniciadaDocente != undefined && finSesion != '' && SesionIniciadaDocente.estatussesion != 2) {
+                        var fecha = new Date();
+
+                        var fecha2 = fecha.format('yyyy-MM-dd');
+                        var nowhrs = fecha.format('HH:mm:ss');
+
+                        if (nowhrs < finSesion) {
+                            var date = fecha2;
+                            var time = finSesion;
+                            var datetime = date + ' ' + time;
+                            $('#DateCountdownDocente').show();
+                            $("#DateCountdownDocente").data('date', datetime).TimeCircles(
+                                {
+                                    time:
+                                        {
+                                            Days: { show: false }
+                                        },
+                                    count_past_zero: false
+                                }
+                                ).addListener(function (unit, amount, total) {
+                                    if (total == 0) finalizarDocente();
+                                }).start();
+
+                        }
+
+                    }
+                    else {
+                        clearInterval(relojDocente);
+                    }
+                }
+
+                function finalizarDocente() {
+                    var fecha = new Date();
+                    var nowhrs = fecha.format('HH:mm:ss');
+                    clearInterval(relojDocente);
+                    $('#DateCountdownDocente').hide();
+                    var dto = {};
+                    var sesion = {};
+                    dto.sesionorientacionid = SesionIniciadaDocente.sesionorientacionid;
+                    dto.fecha = SesionIniciadaDocente.fecha;
+                    dto.alumnoid = SesionIniciadaDocente.alumnoid;
+                    dto.docenteid = SesionIniciadaDocente.docenteid;
+                    dto.horafinalizada = nowhrs;
+                    sesion.dto = dto;
+                    finSesionOrientacion(sesion);
+                }
+
+                $("#frmEncuesta").on('submit', function (e) {
+                    var respuesta1 = $('input:radio[name=res1]:checked').val();
+                    var respuesta2 = $('input:radio[name=res2]:checked').val();
+                    var respuesta3 = $('input:radio[name=res3]:checked').val();
+                    var respuesta4 = $('input:radio[name=res4]:checked').val();
+                    var respuesta5 = $('input:radio[name=res5]:checked').val();
+
+                    var encuesta = {};
+                    var dto = {};
+                    dto.preguntauno = pregunta1.trim();
+                    dto.respuestauno = respuesta1;
+
+                    dto.preguntados = pregunta2.trim();
+                    dto.respuestados = respuesta2;
+
+                    dto.preguntatres = pregunta3.trim();
+                    dto.respuestatres = respuesta3;
+
+                    dto.preguntacuatro = pregunta4.trim();
+                    dto.respuestacuatro = respuesta4;
+
+                    dto.preguntacinco = pregunta5.trim();
+                    dto.respuestacinco = respuesta5;
+
+                    dto.sesionorientacionid = sesionid;
+                    dto.docenteid = docenteid;
+                    dto.alumnoid = alumnoid;
+
+                    encuesta.dto = dto;
+                    var sesion = {};
+                    sesion.dto = dto;
+                    saveEncuestaSatisfaccion(encuesta);
+
+                    $('#btnCloseEncuesta').click();
+                    $('#frmEncuesta').hide();
+                    e.preventDefault();
+                    e.stopPropagation();
+                });
+
+                $('#txtPremium').hide();
+
+                function getStatusDatosCompletos() {
+                    var datosCompletos = $('#txtDatosCompletos').val();
+                    var correoConfirmado = $('#txtCorreoConfirmado').val();
+                    if (correoConfirmado == 'True') {
+                        if (datosCompletos == 'False') {
+                            jQnotice('Completa tu perfil !');
+                            $('#MiCuenta').attr("style", "color: #33acfd");
+                            alertify.set('notifier', 'position', 'bottom-left pconfirmacorreo');
+                            var notification = alertify.warning('Completa tu perfil !');
+                            $(".ajs-message").click(function () {
+                                window.location = "../Social/EditarPerfil.aspx";
+                            });
+
+                            $(".notice").click(function () {
+                                window.location = "../Social/EditarPerfil.aspx";
+                            });
+                            notification.ondismiss = function () { $('#MiCuenta').removeAttr("style"); };
+                        }
+                        else {
+
+                            clearInterval(verificarDatosCompletos);
+                        }
+                    }
+                }
+                function habilitarPruebas() {
+                    var datosCompletos = $("#txtDatosCompletos").val();
+                    if (datosCompletos == 'False') {
+                        clearInterval(esperandoDatosCompletos);
+                        $('.datos-incompletos').each(function () {
+                            $(this).removeAttr('onclick');
+                            $(this).removeAttr('href');
+                        });
+                        $('.datos-incompletos').click(function ()
+                        { alert("Para visualizar esta sección es necesario que completes tu perfil!"); return false; });
+                    }
+                    else {
+                        clearInterval(esperandoDatosCompletos);
+                        $('.datos-incompletos').unbind('click');
+                    }
+                }
+
+
+                function habilitarOpciones() {
+                    var correoConfirmado = $("#<%=txtCorreoConfirmado1.ClientID%>").val();
+                    if (correoConfirmado == 'False') {
+                        if (cargacompleta) {
+                            clearInterval(esperando);
+                            localStorage['session_correo_confirmado'] = "False";
+                            
+                            $("#btnPrimerosPasos").click();
+                            var cont = 0;
+                            $('#btnConfirmarcorreo').attr('disabled', 'disabled');
+                            $('#carousel-example-generic').on("slid.bs.carousel", "", function () {
+                                cont++;
+
+                                if (cont == 4) {
+                                    $('#btnConfirmarcorreo').removeAttr('disabled');
+                                    $('#btnConfirmarcorreo').attr("data-dismiss", "modal");
+                                    $('#btnConfirmarcorreo').click(function () { __doPostBack('btnConfirmarCorreo', ''); });
+                                }
+                            });
+                        }
+                    }
+                    
+                    else {
+                        clearInterval(esperando);
+                        $('#slidePrimeroPasos').hide();
+                        $('#btnConfirmarcorreo').attr("data-dismiss", "modal");
+                        $('#btnConfirmarcorreo').click();
+                        localStorage['session_correo_confirmado'] = "True";
+                    }
+                    
+                }
+                var esperando = setInterval(habilitarOpciones, 1000);
+
+                var esperandoDatosCompletos = setInterval(habilitarPruebas, 1000);
+                var tiempoEsperaNotificacion = "<%#tiempoEsperaNotificacion%>";
+                var verificarDatosCompletos = setInterval(getStatusDatosCompletos, tiempoEsperaNotificacion);
+
+                $('.datos-incompletos').click(function () {
+                    getStatusDatosCompletos();
+                });
+            }));
+
+            function initMasterClient() {
+                if ($("#<%#hdnShowMessage.ClientID%>").val() == "1") { mostrarError(); }
+                if ($("#<%#hdnShowMessage.ClientID%>").val() == "2") { mostrarWarning(); }
+                if ($("#<%#hdnShowMessage.ClientID%>").val() == "3") { mostrarInfo(); }
+            }
+            function mostrarError() {
+                var api = new MessageApi();
+                var text = $("#<%# hdnLastMessage.ClientID %>").val();
+                api.CreateMessage(text, "ERROR");
+                api.Show();
+                resetHiden();
+            }
+            function mostrarWarning() {
+                var api = new MessageApi();
+                var text = $("#<%# hdnLastMessage.ClientID %>").val();
+                api.CreateMessage(text, "WARNING");
+                api.Show();
+                resetHiden();
+            }
+            function mostrarInfo() {
+                var api = new MessageApi();
+                var text = $("#<%# hdnLastMessage.ClientID %>").val();
+                api.CreateMessage(text, "INFO");
+                api.Show();
+                resetHiden();
+            }
+            function resetHiden() { $("#<%# hdnShowMessage.ClientID %>").val("0"); $("#<%# hdnLastMessage.ClientID %>").val(""); }
+
+            var hdnmessageinputid = "#<%# hdnLastMessage.ClientID %>";
+            var hdnmessagetypeinputid = "#<%# hdnShowMessage.ClientID %>";
+
+            function ShowOptionsDiv() {
+                $("#options_div_notificaciones").hide();
+                $('#option-user-btn').click(function (event) {
+                    event.stopPropagation();
+                });
+
+                if ($("#options_div").css('display') == "none") {
+                    $("#options_div").show('blind', {}, 150);
+
+                    $('body').click(function () {
+                        $("#options_div").hide();
+                    });
+
+                } else {
+                    $("#options_div").hide();
+                }
+            }
+
+            function ShowOptionsDivNotificaciones() {
+                $("#options_div").hide();
+                $('#notify-user-btn').click(function (event) {
+                    event.stopPropagation();
+                });
+                if ($("#options_div_notificaciones").css('display') == "none") {
+                    $("#options_div_notificaciones").show('blind', {}, 150);
+
+
+                    $('body').click(function () {
+                        $('#options_div_notificaciones').hide();
+                    });
+                } else {
+                    $("#options_div_notificaciones").hide();
+                }
+            }
+
+            $(function () {
+
+                //Ventana modal//_____________________________________________________________
+                $("#HlpEstadoProceso").on("click", function () {
+                    if ($("#<%=txtCorreoConfirmado1.ClientID%>").val() == "True") {
+                        $("#btnModal").click();
+                        setTimeout(function () { $("#opcionesCuenta").attr('style', 'display: none'); return true; }, 1000);
+                    }
+                    else {
+                        alert("No ha confirmado su correo!");
+                    }
+                });
+                if ($("#<%=txtDatosCompletos.ClientID%>").val() == "False") {
+                }
+            });
+
+            function verDescripcion(step) {
+                $("#" + step).attr('style', 'display: block');
+            }
+
+            function ocultarDescripcion(step) {
+                $("#" + step).attr('style', 'display: none');
+            }
+
+            //Mouse hover -> menu bootstrap
+            $(document).ready(function () {
+                $("li").hover(
+				function () {
+				    if ($(this).hasClass('menu_item')) {
+				        $(this).addClass("active");
+				    }
+				},
+				function () {
+				    if ($(this).hasClass('menu_item')) {
+				        $(this).removeClass("active");
+				    }
+				}
+				);
+            });
+
+            $(function () {
+                $("#btnModalConfiguracion").on("click", function () {
+
+                });
+            });
+            // Ventana modal de Docente-Cofiguracion
+            function viewModalConfiguracion() {
+                setTimeout(function () {
+                    $("#btnModalConfiguracion").click();
+                }, 500);
+            }
+
+            function mostrarAlerta(tipo, men, op) {
+                window.location = "#divDatosEscolaridad";
+                setTimeout(function () {
+                    if (tipo == "error") {
+                        alert(men);
+                    }
+                }, 500);
+            }
+        </script>
+    </asp:PlaceHolder>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!--[if lte IE 7]>
+    <link href="~/Styles/DefaultIE7.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if IE 9]>
+    <link href="~/Styles/DefaultIE9.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+</head>
+<body class="txt-helvetica">
+    <form id="form1" runat="server" style="height: 100%;">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true" />
+        <script type="text/javascript">
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(End);
+            function End(sender, args) { initMasterClient(); }
+        </script>
+
+        <div class="row">
+            <%-- header --%>
+            <div style="display: none">
+                <asp:TextBox ID="txtCorreoConfirmado1" Style="margin-top: -35px;" MaxLength="30" runat="server" CssClass="form-control" Width="250px" Enabled="true"></asp:TextBox>
+            </div>
+
+            <div id="divConfirmaCorreo" class="alert alert-danger text-center" style="display: none;">
+                Para poder disfrutar de los beneficios totales de la plataforma deberá <a href="#" class="alert-link" id="btnConfirmarCorreoeeee">confirmar su correo</a> Gracias!!
+            </div>
+
+            <div>
+                <asp:TextBox ID="txtDatosCompletos" Style="margin-top: -35px; display: none;" MaxLength="30" runat="server" CssClass="form-control" Width="250px" Enabled="true"></asp:TextBox>
+                <asp:TextBox ID="txtPremium" Style="margin-top: -35px; display: none;" MaxLength="30" runat="server" CssClass="form-control" Width="250px" Enabled="true"></asp:TextBox>
+            </div>
+
+            <div class="navbar navbar-default navbar-static-top" style="background-color: #ffffff !important; border-color: #ffffff !important;">
+                <div class="">
+                    <div id="header" class="header-container col-xs-12">
+                        <asp:TextBox ID="txtSesionAlumno" Style="margin-top: -35px; display: none;" MaxLength="30" runat="server" CssClass="form-control" Width="250px" Enabled="true"></asp:TextBox>
+                        <asp:TextBox ID="txtSesionDocente" Style="margin-top: -35px; display: none;" MaxLength="30" runat="server" CssClass="form-control" Width="250px" Enabled="true"></asp:TextBox>
+                        <div class="container-fluid">
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
+                                <a href="<%=Page.ResolveClientUrl("~/Default.aspx")%>">
+                                    <img alt="logo" id="imgLogo_Header" runat="server" title="Inicio" src="~/Images/SOV_VOCAREER1.png" class="" style="padding-top: 5px; margin-top: 10px; margin-bottom: 10px;" />
+                                </a>
+                            </div>
+                            <%-- LOGO --%>
+                            <%-- Menu-Top --%>
+                            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                                <div id="menu-top" class="menu_container txt-helvetica">
+                                    <asp:MultiView ID="MultiViewTopMenu" runat="server">
+                                        <%-- Menu-Top ALUMNO --%>
+                                        <asp:View ID="ViewTopMenuAlumno" runat="server">
+                                            <div class="text-center">
+                                                <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                                                    <asp:Image runat="server" ImageUrl="~/Images/SOV_ELEMENTOS_portalestudiante.png" class="" Style="margin: 20px 0px 0px 10px; padding: 0px; max-width: none;" Width="50px" />
+                                                </div>
+                                                <div class="col-xs-9 col-sm-6 col-md-10 col-lg-10">
+                                                    <h2 id="H2" class="pull-left titulo-portal" style="padding-top: 10px;">PORTAL ESTUDIANTES</h2>
+                                                </div>
+                                            </div>
+
+                                            <div class="menu_top_container col-xs-12" style="margin-top: 0px">
+                                                <!--<div id="UsuarioNameResponsivo">
+                                                    <asp:HyperLink ID="HyperLink11" runat="server" ToolTip="Ir a mis apuntes" CssClass="tusuario pconfirmacorreo">
+                                                        <%--<asp:Image runat="server" ID="ImgThumbTop" CssClass="user_image_top thumb_superior" />--%>
+                                                        <asp:Label ID="Label1" runat="server" CssClass="titulo"></asp:Label>
+                                                    </asp:HyperLink>
+                                                </div>-->
+                                                <ul class="list-inline" style="float: right; text-align: right; padding: 10px 0 0 0">
+                                                    <li id="usuariolabel">
+                                                        <asp:HyperLink ID="HplNameUsuario" runat="server" ToolTip="Ir a mis apuntes" CssClass="tusuario pconfirmacorreo">
+                                                            <asp:Label ID="LblNombreUsuarioTop" runat="server" CssClass="item-titulo titulo nombreusuario nombre-usuario-portal"></asp:Label>
+                                                        </asp:HyperLink>
+                                                        <asp:Image ID="Image2" runat="server" ImageUrl="~/images/YOY_icono_user.png" class="" Style="max-width: 100px; margin: -12px 0px 0px; padding: 0px" />
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="col-xs-12 form-group">
+                                                    <div class="col-sm-8"></div>
+                                                    <div class="col-sm-4">
+                                                        <div id="DateCountdownAlumno" data-date="2017-01-01 00:00:00" style="width: 250px; height: 80px; padding: 0px; box-sizing: border-box; background-color: #E0E8EF; display: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </asp:View>
+
+                                        <%-- Menu-Top DOCENTE --%>
+                                        <asp:View ID="ViewTopMenuDocente" runat="server">
+                                            <div class="text-center">
+                                                <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                                                    <asp:Image runat="server" CssClass="" ImageUrl="~/Images/SOV_ELEMENTOS_portalorientador.png" Style="margin: 20px 0px 0px 10px; padding: 0px; max-width: none;" Width="50px" />
+                                                </div>
+                                                <div class="col-xs-9 col-sm-6 col-md-10 col-lg-10">
+                                                    <h2 id="H1" class="pull-left titulo-portal" style="padding-top: 10px;">PORTAL ORIENTADOR</h2>
+                                                </div>
+                                            </div>
+                                            <div class="menu_top_container col-xs-12" style="margin-top: 0px">
+                                                <ul class="list-inline" style="float: right; text-align: right; padding: 10px 0 0 0">
+                                                    <li>
+                                                        <asp:Image runat="server" ID="ImgThumbDocenteTop" CssClass="user_image_top pconfirmacorreo" />&nbsp;
+                                                        <asp:HyperLink runat="server" ID="HplNameDocente" ToolTip="" CssClass="pconfirmacorreo">
+                                                            <asp:Label ID="LblNombreDcoenteTop" CssClass="item-titulo titulo nombre-usuario-portal" runat="server"></asp:Label>
+                                                        </asp:HyperLink>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="col-xs-12 form-group">
+                                                    <div class="col-sm-8"></div>
+                                                    <div class="col-sm-4">
+                                                        <div id="DateCountdownDocente" data-date="2017-01-01 00:00:00" style="width: 250px; height: 80px; padding: 0px; box-sizing: border-box; background-color: #E0E8EF; display: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </asp:View>
+                                    </asp:MultiView>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <%-- content --%>
+                    <div id="wrapper" class="content">
+                        <div id="menu-toolbar" class="menu_container menu_toolbar_container ">
+                            <asp:MultiView ID="MultiViewToolBarMenu" runat="server">
+                                <%-- ToolBar-Menu ALUMNO --%>
+                                <asp:View ID="ViewToolBarMenuAlumno" runat="server">
+                                    <nav role="navigation" class="navbar navbar-default col-xs-12">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+										<ul class="nav navbar-nav">											
+											<li class="menu_item">
+												<asp:HyperLink ID="HplMiPortal" Text="Inicio" runat="server" CssClass="tmuro pconfirmacorreo">
+												</asp:HyperLink>
+											</li>
+                                            <li class="dropdown menu_item ">
+                                                <asp:HyperLink ID="HplPruebas" Text="Pruebas" runat="server" CssClass="pconfirmacorreo datos-incompletos"></asp:HyperLink>
+											</li>
+											<li class="dropdown menu_item ">
+												<a data-toggle="dropdown" class="tactividades dropdown-toggle pconfirmacorreo" href="javascript:void(0)">
+													Actividades
+													<i id="actividades_summary" class="">
+													    <asp:Label runat="server" ID="actividadesSummary"  CssClass="titulo_summary"></asp:Label>
+													</i><b class="caret"></b>
+												</a>
+												<ul class="dropdown-menu  bottom-up pull-right" style="float: none !important;">
+													<li class="divider"></li>
+													<li>
+														<a href="<% =Page.ResolveClientUrl("~/Actividades/RealizarActividadesDocenteUI.aspx?AsignadoPor=2")%>">
+															Orientador
+															<i id="orientadores_summary">
+																<asp:Label runat="server" ID="orientadorSummary" ></asp:Label>
+															</i>
+														</a>
+													</li>
+													<li class="divider"></li> 													
+													<li>
+														<a href="<% =Page.ResolveClientUrl("~/Actividades/RealizarActividadesDocenteUI.aspx?AsignadoPor=3")%>">
+															&Aacute;reas de conocimiento
+															<i id="areas_conocimiento_summary">
+															<asp:Label runat="server" ID="areasConocimientoSummary" ></asp:Label>
+															</i>
+														</a>
+													</li>
+												</ul>
+											</li>	 
+                                            <li class="menu_item ">
+												<asp:HyperLink ID="HplMiGrupo" Text="Contactos" runat="server" CssClass="tcontactos pconfirmacorreo">
+												</asp:HyperLink>
+											</li>
+											<li class="dropdown menu_item">
+												<a data-toggle="dropdown" class="dropdown-toggle tblog pconfirmacorreo" href="javascript:void(0)">
+													Blog
+													<i id="posts_Summary">
+															<asp:Label runat="server" ID="postsSummary"></asp:Label>
+													</i> <b class="caret"></b>
+												</a>
+												<ul class="dropdown-menu  bottom-up pull-right" style="float: none !important;" runat="server" id="ulPosts">
+													<li class="dropdown-header">&Aacute;reas de conocimiento</li>
+													<li class="divider"></li>
+												</ul>
+											</li>											
+											<li class="menu_item ">
+												<asp:HyperLink ID="HplUniversidades" Text="Eventos" runat="server" CssClass="tuniversidades pconfirmacorreo">
+												</asp:HyperLink>
+											</li>
+                                            <li class="menu_item">
+                                                <asp:HyperLink ID="HplMensajes" Text="Mensajes" runat="server" ToolTip="Tus mensajes privados" CssClass="tmensajes pconfirmacorreo">
+                                                 Mensajes<i id="mensaje_social_summary"><span id="mensaje_summary"></span></i></asp:HyperLink>
+                                            </li>
+                                            <li class="menu_item">
+                                                <asp:HyperLink ID="HplNotificaciones" Text="Psst Psst" runat="server" ToolTip="Tus notificaciones" CssClass="tnotificaciones pconfirmacorreo" >
+                                                    Notificaciones<i id="notificacion_social_summary"><span id="social_summary" class="tmensajes"></span></i></asp:HyperLink>
+                                            </li>
+                                            <li class="dropdown menu_item mPosicion">
+                                                <a data-toggle="dropdown" class="dropdown-toggle pconfirmacorreo" id="MiCuenta" href="javascript:void(0)" title="Click para desplegar el menu">
+                                                    Mi cuenta<b class="caret"></b>
+                                                </a>
+                                                <ul class="dropdown-menu bottom-up">
+                                                    <li>
+                                                        <asp:HyperLink runat="server" CssClass="anidada_cuenta pconfirmacorreo" Text="Editar perfil" ID="HlpEditarPerfil" ToolTip="Edita los datos de usuario"></asp:HyperLink>
+                                                    </li>
+                                                    <li>
+                                                        <asp:HyperLink runat="server" Text="Cambiar contraseña" ID="HlpCambiarPassword" ToolTip="Cambiar contraseña" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li>
+                                                        <asp:HyperLink runat="server" Text="Intereses" ID="HlpMisIntereses" ToolTip="Intereses" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li>
+                                                        <asp:HyperLink runat="server" Text="Expediente" ID="HlpExpediente" ToolTip="Expediente" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu_item">
+                                                <asp:HyperLink ID="HplLogout" runat="server" ToolTip="Salir del portal">Salir</asp:HyperLink>
+                                            </li>
+										</ul>
+									</div>
+									<!-- /.navbar-collapse -->
+								</nav>
+                                </asp:View>
+
+                                <%-- ToolBar-Menu DOCENTE --%>
+                                <asp:View ID="ViewToolBarMenuDocente" runat="server">
+                                    <nav role="navigation" class="navbar navbar-default col-xs-12">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+										<ul class="nav navbar-nav">
+											<li class="menu_item ">
+												<asp:HyperLink ID="HplInicioDocente" Text="Inicio" runat="server" CssClass="pconfirmacorreo" >
+												</asp:HyperLink>
+											</li>
+											<li class="menu_item ">
+												<asp:HyperLink ID="HplDocenteReactivos" Text="Ejercicios de práctica" runat="server" CssClass="pconfirmacorreo" Visible="false">
+												</asp:HyperLink>
+											</li>
+											<li class="menu_item ">
+												<asp:HyperLink ID="HplDocenteJuegos" Text="Juegos" runat="server" CssClass="pconfirmacorreo" Visible="false">
+												</asp:HyperLink>
+											</li>
+											<li class="menu_item ">
+												<asp:HyperLink ID="HplDocenteProf" Text="Recursos didácticos" NavigateUrl="~/Profesionalizacion/BuscarEjes.aspx"
+													runat="server" CssClass="pconfirmacorreo" Visible="false">
+												</asp:HyperLink>
+											</li>
+											<li class="menu_item ">
+												<asp:HyperLink ID="HyperLink1" Text="Herramientas" NavigateUrl="~/Auth/AccesoHerramientasDocente.aspx?cmd=go"
+													runat="server" CssClass="pconfirmacorreo">
+												</asp:HyperLink>
+											</li>
+
+                                            <li class="dropdown menu_item "> 
+                                                <asp:HyperLink ID="HyperLink2" Text="Expediente del estudiante" NavigateUrl="~/PortalDocente/ExpedienteAlumnoOrientador.aspx"
+													        runat="server" CssClass="pconfirmacorreo">
+												</asp:HyperLink>
+											</li>
+                                            <li class="dropdown menu_item ">
+												<a data-toggle="dropdown" class="dropdown-toggle tblog pconfirmacorreo" href="javascript:void(0)">
+													Reportes
+													<i id="I2">
+															<asp:Label runat="server" ID="Label2" ></asp:Label>
+													</i> <b class="caret"></b>
+												</a>
+                                                <ul class="dropdown-menu bottom-up">
+												    <li class="menu_item" style="display:none;">
+												        <asp:HyperLink ID="HyperLink5" Text="Reportes aspirantes" NavigateUrl="~/PortalDocente/Reportes/ReporteResultadoPruebasAlumno.aspx"
+													        runat="server" CssClass="pconfirmacorreo">
+												        </asp:HyperLink>
+											        </li>
+                                                    <li class="menu_item ">
+												        <asp:HyperLink ID="HyperLink7" Text="Reporte prueba Hábitos de estudio" NavigateUrl="~/PortalDocente/Reportes/BuscarAlumnosHabitosUI.aspx"
+													        runat="server" CssClass="pconfirmacorreo">
+												        </asp:HyperLink>
+											        </li>
+                                                    <li class="menu_item ">
+												        <asp:HyperLink ID="HyperLink8" Text="Reporte prueba Dominós" NavigateUrl="~/PortalDocente/Reportes/BuscarAlumnosDominosUI.aspx"
+													        runat="server" CssClass="pconfirmacorreo">
+												        </asp:HyperLink>
+											        </li>
+                                                    <li class="menu_item ">
+												        <asp:HyperLink ID="HyperLink4" Text="Reporte prueba Terman Merrill" NavigateUrl="~/PortalDocente/Reportes/BuscarAlumnosTermanUI.aspx"
+													        runat="server" CssClass="pconfirmacorreo">
+												        </asp:HyperLink>
+											        </li>
+                                                    <li class="menu_item">
+                                                        <asp:HyperLink ID="Hyperlink15" Text="Reporte prueba Sacks" NavigateUrl="~/PortalDocente/Reportes/BuscarAlumnosSacksUI.aspx"
+                                                            runat="server" CssClass="pconfirmacorreo">
+                                                        </asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item">
+												        <asp:HyperLink ID="HyperLink3" Text="Reporte prueba Cleaver" NavigateUrl="~/PortalDocente/Reportes/BuscarAlumnosCleaverUI.aspx"
+													        runat="server" CssClass="pconfirmacorreo">
+												        </asp:HyperLink>
+											        </li>     
+                                                    <li class="menu_item">
+												        <asp:HyperLink ID="HyperLink10" Text="Reporte prueba CHASIDE" NavigateUrl="~/PortalDocente/Reportes/BuscarAlumnosChasideUI.aspx"
+													        runat="server" CssClass="pconfirmacorreo">
+												        </asp:HyperLink>
+											        </li>                                               										        
+                                                    <li class="menu_item">
+												        <asp:HyperLink ID="HyperLink6" Text="Reporte prueba Allport" NavigateUrl="~/PortalDocente/Reportes/BuscarAlumnosAllportUI.aspx"
+													        runat="server" CssClass="pconfirmacorreo">
+												        </asp:HyperLink>
+											        </li>
+                                                    <li class="menu_item">
+												        <asp:HyperLink ID="HyperLink9" Text="Reporte prueba Kuder" NavigateUrl="~/PortalDocente/Reportes/BuscarAlumnosKuderUI.aspx"
+													        runat="server" CssClass="pconfirmacorreo">
+												        </asp:HyperLink>
+											        </li> 
+                                                    <li class="menu_item">
+                                                        <asp:HyperLink ID="HyperLink12" Text="Reporte prueba Rotter" NavigateUrl="~/PortalDocente/Reportes/BuscarAlumnosRotterUI.aspx"
+                                                            runat="server" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        <asp:HyperLink ID="HyperLink13" Text="Reporte prueba Raven" NavigateUrl="~/PortalDocente/Reportes/BuscarAlumnosRavenUI.aspx"
+                                                            runat="server" CssClass="pconfirmarcorreo"></asp:HyperLink>
+                                                    </li>  
+                                                     <li class="menu_item">
+                                                        <asp:HyperLink ID="HyperLink14" Text="Reporte prueba Frases Incompletas" NavigateUrl="~/PortalDocente/Reportes/BuscarAlumnosFrasesVocacionalesUI.aspx"
+                                                            runat="server" CssClass="pconfirmarcorreo"></asp:HyperLink>
+                                                    </li>  
+                                                    <li class="menu_item">
+                                                        <asp:HyperLink ID="HyperLink16" Text="Reporte prueba Bullying" NavigateUrl="~/PortalDocente/Reportes/BuscarAlumnosBullyingUI.aspx"
+                                                            runat="server" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        <asp:HyperLink ID="HyperLink18" Text="Reporte prueba Inteligencias Múltiples" NavigateUrl="~/PortalDocente/Reportes/BuscarAlumnosInteligenciasMultiplesUI.aspx"
+                                                            runat="server" CssClass="pconfirmacorreo"></asp:HyperLink>
+                                                    </li>    
+                                                                     
+                                                </ul>
+                                            </li>
+                                            <li class="menu_item">
+                                                <asp:HyperLink ID="HplNotificacionesDocente" Text="Psst Psst" runat="server" ToolTip="Tus notificaciones" CssClass="pconfirmacorreo">Notificaciones<i id="notificacion_social_summary"><span id="social_summary"></span></i></asp:HyperLink>
+                                            </li>
+                                            <li class="menu_item" style="display: none;">
+                                                <asp:HyperLink ID="HplReporteAbuso" Text="Reporte abuso" runat="server" ToolTip="Reportes de abuso" CssClass="pconfirmacorreo">Reporte abuso <i id="reporteabuso_summary"><span id="reporte_summary"></span></i></asp:HyperLink>
+                                            </li>
+                                            <li class="menu_item">
+                                                <asp:HyperLink ID="HplCambiarEscuela" Text="Cambiar Escuela" runat="server" ToolTip="Cambiar de escuela" CssClass="pconfirmacorreo"><span class="icon icon_cambiar_escuela"></span>Cambiar escuela </asp:HyperLink>
+                                            </li>
+                                            <li class="dropdown menu_item">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:void(0)" title="Click para desplegar el menu">
+                                                    Mi cuenta<b class="caret"></b>
+                                                </a>
+                                                <ul class="dropdown-menu bottom-up">
+                                                    <li class="menu_item" style="display: none">
+                                                        <asp:HyperLink runat="server" CssClass="anidada_cuenta pconfirmacorreo" Text="Editar mi yo" ID="HlpEditarPerfilDocente" ToolTip="Edita los datos de tu yo"></asp:HyperLink>
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        <asp:HyperLink runat="server" CssClass="pconfirmacorreo" Text="Cambiar contraseña" ID="HlpCambiarPasswordDocente" ToolTip="Cambiar contraseña"></asp:HyperLink>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="menu_item">
+                                                <asp:HyperLink ID="HplLogoutDocente" runat="server" ToolTip="Salir del portal">Salir</asp:HyperLink>
+                                            </li>                  
+										</ul>
+									</div>
+									<!-- /.navbar-collapse -->
+								</nav>
+                                </asp:View>
+                            </asp:MultiView>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="content" class="container">
+                <asp:ContentPlaceHolder ID="page_content" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <input id="txtRedirect" type="hidden" value="<% =Page.ResolveClientUrl("~/Default.aspx")%>" clientidmode="Static" />
+            <!--begin update Panel-->
+            <div>
+                <div class="modal fade" tabindex="-1" role="dialog" id="updPanelMaster">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" id="modalHeader">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #FFF; opacity: 1; filter: none;">
+                                    <span aria-hidden="true" style="font-size: 25px; opacity: 1;">&times;</span>
+                                </button>
+                                <h4 class="modal-title" style="color: white;">YOY - SOCIAL
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <p id="message" class="container-fluid"></p>
+                                <div id="emergentes" class="container-fluid">
+                                </div>
+                                <asp:HiddenField ID="hdnLastMessage" runat="server" />
+                                <asp:HiddenField ID="hdnShowMessage" runat="server" Value="0" />
+                                <div class="modal-footer" id="modalFooter">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end update Panel-->
+
+                <div id="popupAyudaContainer">
+                </div>
+
+                <%-- CG --%>
+                <!-- Ventana modal para abrir el contador y marcar asistencia-->
+                <!-- Elementos para evitar el cierre de la ventana modal al hacer clic fuera de ella  (data-keyboard="false" data-backdrop="static") -->
+                <button type="button" id="btnModalAsistenciaAlumno" class="button_clip_39215E" data-toggle="modal" style="display: none" data-target=".dialog-md-10">YOY - Portal Estudiantes</button>
+                <div class="modal fade dialog-md-10" tabindex="-1"
+                    data-keyboard="false" data-backdrop="static"
+                    role="dialog" aria-labelledby="ventanaModalLabel" id="ventanaModal3">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="col-xs-12 modal_titulo_marco_general center-block">¡Ya es hora de tu sesi&oacute;n!</div>
+                            </div>
+                            <div class="modal-body container_busqueda_general ui-widget-content">
+                                <div class="">
+                                    <div class="row bs-wizard" style="border-bottom: 0;">
+                                        <div class="col-md-12" style="padding: 20px 0px 0px 0px">
+                                            <div class="col-xs-12">
+                                                <div class="col-xs-12 form-group">
+                                                    <div class="col-sm-10">
+                                                        <p>
+                                                            <span class="ui-icon ui-icon-info" style="display: inline-block; vertical-align: middle; margin-top: 0px"></span>
+                                                            <label class="control-label">
+                                                                Inicia tu sesi&oacute;n de Skype y recuerda que debes tener agregado el usuario del orientador (est&aacute; en el correo de confirmaci&oacute;n).
+                                                            </label>
+                                                            <br />
+                                                            <label class="control-label">
+                                                                Al concluir el tiempo de la sesi&oacute;n el sistema te nofiticar&aacute; y deber&aacute;s evaluar tu experiencia de la sesi&oacute;n.
+                                                            </label>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="form-group">
+                                    <div class="col-md-6 pull-right">
+                                        <button type="button" class="btn-green" id="btnAceptSesionAlumno" data-dismiss="modal">Iniciar</button>
+                                        <button type="button" class="btn-cancel" id="btnCancelarAlumno" data-dismiss="modal">Posponer inicio</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <%-- CG --%>
+                <!-- Ventana modal para abrir el contador y marcar asistencia-->
+                <!-- Elementos para evitar el cierre de la ventana modal al hacer clic fuera de ella  (data-keyboard="false" data-backdrop="static") -->
+                <button type="button" id="btnModalAsistenciaDocente" class="button_clip_39215E" data-toggle="modal" style="display: none" data-target=".dialog-md-11">YOY - Portal Orientadores</button>
+                <div class="modal fade dialog-md-11" tabindex="-1"
+                    data-keyboard="false" data-backdrop="static"
+                    role="dialog" aria-labelledby="ventanaModalLabel" id="ventanaModal4">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="col-xs-12 modal_titulo_marco_general center-block">¡Ya es hora de tu sesi&oacute;n!</div>
+                            </div>
+                            <div class="modal-body container_busqueda_general ui-widget-content">
+                                <div class="">
+                                    <div class="row bs-wizard" style="border-bottom: 0;">
+                                        <div class="col-md-12" style="padding: 20px 0px 0px 0px">
+                                            <div class="col-xs-12">
+                                                <div class="col-xs-12 form-group">
+                                                    <div class="col-sm-10">
+                                                        <p>
+                                                            <span class="ui-icon ui-icon-info" style="display: inline-block; vertical-align: middle; margin-top: 0px"></span>
+                                                            <label class="control-label">
+                                                                Inicia tu sesi&oacute;n de Skype, y dir&iacute;gete en nuestra plataforma al apartado de Herramientas, para conducir la sesi&oacute;n desde ah&iacute;.
+                                                            </label>
+                                                            <br />
+                                                            <label class="control-label">
+                                                                Al concluir el tiempo de la sesi&oacute;n el sistema te nofiticar&aacute;.
+                                                            </label>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="form-group">
+                                    <div class="col-md-6 pull-right">
+                                        <button type="button" class="btn-green" id="btnAceptSesionDocente" data-dismiss="modal">Iniciar</button>
+                                        <button type="button" class="btn-cancel" id="btnCancelarDocente" data-dismiss="modal">Posponer inicio</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <%-- Modal Primeros Pasos --%>
+                <div class="container">
+                    <%-- Large modal --%>
+                    <button id="btnPrimerosPasos" type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg" style="display: none;">Large modal</button>
+                    <div id="slidePrimeroPasos" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myIntruccionModal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header" style="background: url('../images/headerpattern.png') repeat !important;">
+                                    <%--<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove"></button>--%>
+                                    <h2 class="modal-title" style="font-family: Roboto-Bold !important; color: #05AED9;">Primeros pasos</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="carousel-example-generic" class="carousel slide carousel-fit" data-ride="carousel">
+
+                                       <%-- Seccion para slider --%>
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/imgCarousel_miCuenta.png" CssClass="img img-responsive" />
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <h3>Completa tu perfil</h3>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <p>
+                                                            Para poder navegar dentro de la plataforma deber&aacute;s completar los datos de tu perfil.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/imgCarousel_Pruebas.png" CssClass="img img-responsive" />
+                                                    </div>
+                                                    <div class="col-xs-12">
+
+                                                        <h3>Men&uacute; pruebas</h3>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <p>
+                                                            La plataforma YOY pone a tu disposici&oacute;n una serie de pruebas que podras realizar en el momento que desees.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <asp:Image ID="Image4" runat="server" ImageUrl="~/Images/imgCarousel_Contactos.png" CssClass="img img-responsive" />
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <h3>Men&uacute; contactos</h3>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <p>En YOY podr&aacute;s interactuar con otros estudiantes de tu escuela que compartan los mismos gustos.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <asp:Image ID="Image5" runat="server" ImageUrl="~/Images/imgCarousel_cambiaContrasena.png" CssClass="img img-responsive" />
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <h3>Cambia tu contrase&ntilde;a</h3>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <p>Para mayor seguridad te recomendamos cambiar tu contrase&ntilde;a por una que recuerdes f&aacute;cilmente.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <%-- Controles --%>
+                                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                            <%--<li data-target="#carousel-example-generic" data-slide-to="4"></li>--%>
+                                        </ol>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer" style="background: url('../images/footerpattern.png') repeat !important;">                                    
+                                    <a href="#" class="btn btn-cancel" id="btnConfirmarcorreo">Entendido</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%-- footer --%>
+            <div class="footer">
+                <div class="footerpersonalizado">
+                </div>
+            </div>
+    </form>
+    <form id="frmEncuesta" style="display: none">
+        <!-- Ventana modal para abrir el contador y marcar asistencia-->
+        <!-- Elementos para evitar el cierre de la ventana modal al hacer clic fuera de ella  (data-keyboard="false" data-backdrop="static") -->
+        <button type="button" id="btnEncuesta" class="button_clip_39215E" data-toggle="modal" style="display: none" data-target=".dialog-md-12">YOY - Portal Estudianteses</button>
+        <div class="modal fade dialog-md-12" tabindex="-1"
+            data-keyboard="false" data-backdrop="static"
+            role="dialog" aria-labelledby="ventanaModalLabel" id="ventanaModal5">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="col-xs-12 modal_titulo_marco_general center-block">Orientaci&oacute;n vocacional</div>
+                    </div>
+                    <div class="modal-body container_busqueda_general ui-widget-content">
+                        <div class="">
+                            <div class="bs-wizard" style="border-bottom: 0;">
+                                <div class="col-md-12" style="padding: 0px 0px 0px 0px">
+                                    <div class="col-xs-12">
+                                        <h3>Encuesta de satisfacci&oacute;n</h3>
+                                        <div class="col-xs-12 form-group">
+                                            <div class="col-sm-12" id="questions">
+
+                                                <div class="form-group">
+                                                    <label class="control-label" id="prg1"></label>
+                                                    <br />
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="res1" id="Radio1" value="Si" required>Si</label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="res1" id="Radio2" value="No" required>No</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" id="prg2"></label>
+                                                    <br />
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="res2" id="Radio3" value="Si" required>Si</label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="res2" id="Radio4" value="No" required>No</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" id="prg3"></label>
+                                                    <br />
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="res3" id="Radio5" value="Si" required>Si</label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="res3" id="Radio6" value="No" required>No</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" id="prg4"></label>
+                                                    <br />
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="res4" id="Radio8" value="Malo" required>Malo</label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="res4" id="Radio7" value="Bueno" required>Bueno</label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="res4" id="Radio9" value="Excelente" required>Excelente</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" id="prg5"></label>
+                                                    <br />
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="res5" id="Radio10" value="Si" required>Si</label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="res5" id="Radio11" value="No" required>No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="form-group">
+                            <div class="col-md-6 pull-right">
+                                <button type="button" class="button_clip_39215E" id="btnCloseEncuesta" data-dismiss="modal" hidden>Posponer</button>
+                                <button type="submit" class="button_clip_39215E" id="btnEnviarEncuesta">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <%-- footer --%>
+</body>
+</html>

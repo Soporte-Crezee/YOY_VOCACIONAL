@@ -1,0 +1,318 @@
+﻿h1
+{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+h2
+{
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+h3
+{
+	font-size: 15px;
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+h4
+{
+	font-size: 12pt !important;
+    font-family:Helvetica !important;
+	margin: 5px 0;
+	font-weight: bold;
+}
+
+.prof_bold
+{
+	font-weight: bold;
+}
+
+.prof_font_size_12
+{
+	font-size: 12px;
+}
+
+.prof_content
+{
+	margin: 10px;
+}
+
+.prof_element_select
+{
+	background-color: #91268F;
+	color: #FFF !Important;
+	text-decoration: none !Important;
+}
+
+.prof_content_box_border
+{
+	border: 1px solid #DDD;
+	background-color: #FEFFFF;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: justify;
+	margin: 10px 0;
+	padding: 10px;
+}
+
+/** contenedores de dos columnas de prof **/
+.tmpl_prof_twocolumns_container
+{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 1%;
+}
+
+.tmpl_prof_twocolumns_left
+{
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 794px;
+}
+
+.tmpl_prof_twocolumns_right
+{
+	margin: 0;
+	padding: 0;
+	float: right;
+	width: 175px;
+	vertical-align: text-top;
+}
+
+/** menu: ejes, situaciones contenidos*/
+.div_prof_menu_anchors
+{
+	height: 28px;
+}
+
+	.div_prof_menu_anchors a
+	{
+		text-decoration: none;
+	}
+
+	.div_prof_menu_anchors li
+	{
+		width: 200px;
+		font-size: 14px;
+		border: 1px solid #ddd;
+		margin: 0px;
+		height: 28px;
+		font-weight: bold;
+		text-align: center;
+		background-color: #E3E5E7;
+	}
+
+.div_prof_title_top
+{
+	min-height: 40px;
+}
+
+.div_prof_result_container
+{
+}
+
+.div_prof_result_title
+{
+	border-bottom: 3px solid #91268F;
+	min-height: 24px;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #E3E5E7;
+	padding: 5px 10px;
+}
+
+.div_prof_situacion_title
+{
+	border-bottom: 3px solid #91268F;
+}
+
+.ver_eje_tematico_bg
+{
+	background: transparent url(../images/eje-tematico-grande.png) no-repeat top left;
+}
+
+.nueva_busqueda_bg
+{
+	background: transparent url(../images/nueva_busqueda_grande.png) no-repeat top left;
+    background-size: 100% 100%;
+}
+/* Stylo Regresar Actividades*/
+.nueva_actividades_bg
+{
+	background: transparent url(../images/btn_regresar_report_listado_n.png) no-repeat top left;
+}
+
+.nueva_actividad_container
+{
+	height: 35px;
+	line-height: 34px;
+	display: block;
+	color: #fff;
+	text-align: right;
+	padding-right: 30%;
+	vertical-align: middle;
+	font-size: 12px;
+}
+
+/**********/
+
+.nueva_busqueda_container
+{
+	height: 35px;
+	line-height: 34px;
+	display: block;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 13px;
+}
+/** menu otros contenidos **/
+.menu_prof_otroscontenidos a
+{
+	text-decoration: none;
+}
+
+.menu_prof_otroscontenidos li:first-child
+{
+	border-bottom: 3px solid #91268F;
+	background-color: #E3E5E7;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 28px;
+}
+
+
+.menu_prof_otroscontenidos li
+{
+	border-bottom: 1px solid #E2E3E3;
+	font-size: 14px;
+	line-height: 20px;
+	padding-left: 5px;
+	background-color: #F5F8F8;
+}
+
+/*** Buscar eje tematico ***/
+.input_prof_height24
+{
+	height: 24px;
+}
+
+
+
+.element_height_28
+{
+	min-height: 28px;
+}
+
+.container_search_eje
+{
+	height: 200px;
+	border: 1px solid #DDD;
+	/*background-color: #F9F9F9;*/
+	width: 100%;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+
+	.container_search_eje td
+	{
+		text-align: right;
+	}
+
+.prof_text_size_12_bold
+{
+	font-size: 13px;
+	margin: 5px 0;
+	line-height: 20px;
+}
+
+.prof_style_subelement_result
+{
+	list-style-type: circle !important;
+}
+
+	.prof_style_subelement_result li
+	{
+		list-style-type: circle !important;
+		min-height: 20px;
+		margin: 5px;
+	}
+
+/** plantilla contenido digital **/
+.prof_contenido_cols_container
+{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 1%;
+}
+
+.prof_contenido_cols_left
+{
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 81%;
+}
+
+.prof_contenido_cols_right
+{
+	margin: 0;
+	padding: 0;
+	float: right;
+	width: 18%;
+	vertical-align: text-top;
+}
+
+.prof_contenido_cols_inside_container
+{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.prof_contenido_cols_inside_left
+{
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 49%;
+}
+
+.prof_contenido_cols_inside_right
+{
+	margin: 0;
+	padding: 0;
+	float: right;
+	width: 49%;
+}
+/* plantilla Visualizar Asistencia.*/
+.align_right_label
+{
+	text-align: right;
+}
+
+.prof_busqueda_box_border
+{
+	border: 1px solid #DDD;
+	background-color: #FEFFFF;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: justify;
+	padding: 5px;
+}
+
+/**/
+.btn_terminar_contenido
+{
+	padding-left: 40px;
+	height: 40px;
+	border: none;
+	cursor: pointer;
+}

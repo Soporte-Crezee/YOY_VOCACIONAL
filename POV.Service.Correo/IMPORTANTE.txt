@@ -1,0 +1,12 @@
+Dentro de la carpeta Comun se encuentran las bibliotecas que utiliza este servicio.
+Estas se toman del proyecto principal(POV) compiladas las aplicaciones y con el funcionamiento que se requiera.
+Las bilbiotecas son:
+- Framework.Base
+- POV.CentroEducativo.BO
+- POV.CentroEducativo.Services
+- POV.Licencias.BO
+- POV.Licencias.Services
+- POV.Seguridad.BO
+- POV.Seguridad.Services
+- POV.Web.Administracion
+ Para probar el servicio incluya dentro de la solucion el Poyecto POV.TestServiceCorreo

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c856356b-2547-41db-a4e5-a94d09b2dfaa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49196/OxxoPaidService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="OxxoPaidService.disco" MetadataType="Disco" ID="1a3027bb-168d-4540-b2c4-58a81688752c" SourceId="1" SourceUrl="http://localhost:49196/OxxoPaidService.svc?disco" />
+    <MetadataFile FileName="OxxoPaidService.xsd" MetadataType="Schema" ID="86421b73-78c7-4475-bcef-4be2750c4934" SourceId="1" SourceUrl="http://localhost:49196/OxxoPaidService.svc?xsd=xsd0" />
+    <MetadataFile FileName="OxxoPaidService1.xsd" MetadataType="Schema" ID="9880466c-2732-4d01-9ff5-de67178430c8" SourceId="1" SourceUrl="http://localhost:49196/OxxoPaidService.svc?xsd=xsd1" />
+    <MetadataFile FileName="OxxoPaidService.wsdl" MetadataType="Wsdl" ID="8f93da05-7168-4e34-be09-459179b15c64" SourceId="1" SourceUrl="http://localhost:49196/OxxoPaidService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

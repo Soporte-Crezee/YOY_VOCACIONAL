@@ -1,0 +1,134 @@
+﻿<script id="new-abierta-tmpl" type="text/jquery-x-tmpl">
+<li id="p-${preguntaid}">
+    <input type="hidden" id="p-${preguntaid}-type" value="1"/>
+    <input type="hidden" id="p-${preguntaid}-ID" />
+    <input type="hidden" id="p-${preguntaid}-plantilla-ID" value=""/>
+    <button type="button"  class="boton_delete_text" onclick="javascript:eliminarPregunta('${preguntaid}');">Eliminar Pregunta</button>
+    <ul class="form-ul">
+        <li><label class="label">Texto</label>
+            <input id="descripcion-p-${preguntaid}" name="descripcion-p-${preguntaid}" type="text"
+                class="required normal textoEnunciado" maxlengh="500"/></li>
+       <li>
+            <textarea cols="58" rows="3"></textarea></li>
+    </ul>
+</li>
+</script>
+<script id="edit-abierta-tmpl" type="text/jquery-x-tmpl">
+<li id="p-${preguntaid}">
+    <input type="hidden" id="p-${preguntaid}-type" value="${tipoplantilla}"/>
+    <input type="hidden" id="p-${preguntaid}-ID" value="${preguntaid}"/>
+    <input type="hidden" id="p-${preguntaid}-plantilla-ID" value="${plantillaid}"/>
+    <button type="button"  class="boton_delete_text" onclick="javascript:eliminarEditPregunta('${preguntaid}');">Eliminar Pregunta</button>
+    <ul class="form-ul">
+        <li><label class="label">Pregunta</label>
+            <input id="descripcion-p-${preguntaid}" name="descripcion-p-${preguntaid}" type="text"
+                class="required normal" maxlengh="500" value="${textopregunta}"/></li>
+       <li>
+            <textarea cols="58" rows="3"></textarea></li>
+    </ul>
+</li>
+</script>
+<script id="new-opt-multiple-tmpl" type="text/jquery-x-tmpl">
+<li id="p-${preguntaid}">
+    <input type="hidden" id="p-${preguntaid}-type" value="2"/>
+    <input type="hidden" id="p-${preguntaid}-ID" />
+    <input type="hidden" id="p-${preguntaid}-plantilla-ID" value=""/>
+    <button type="button" class="boton_delete_text" onclick="javascript:eliminarPregunta('${preguntaid}');">Eliminar Pregunta</button>
+    <ul class="form-ul">
+        <li><label class="label">Pregunta</label>
+            <textarea id="descripcion-p-${preguntaid}" name="descripcion-p-${preguntaid}" 
+                class="required normal textoEnunciado" maxlengh="500" rows="3" style="width:75%;"></textarea></li>
+        <li>
+            <button type="button" onclick="javascript:agregarOpcion('${preguntaid}');" class="boton_add">Agregar Opci&oacute;n</button><label id="options-stream-p-${preguntaid}-error" style="color:red;"></label>
+            <br/><br/><ul class="options_ul">
+                <li><label style="margin-right:23px;">¿Es Correcta?</label><label>Texto</label></li>
+            </ul><br/>
+            <ul id="options-stream-p-${preguntaid}" class="options_ul">
+                <li id="option-li-p-${preguntaid}-0">
+                    <input type="radio" id="option-radio-p-${preguntaid}-0" name="radio-option-p-${preguntaid}" class="required" style="margin:0 44px 0 30px;"/>
+                    <textarea id="option-text-p-${preguntaid}-0" name="option-text-p-${preguntaid}-0" 
+                         class="required normal_little textoEnunciado" maxlengh="200"></textarea>
+                    <button type="button" onclick="javascript:eliminarOpcion('${preguntaid}','0');"  class="boton_delete">Eliminar Opci&oacute;n</button>
+                        <input type="hidden" id="option-li-p-${preguntaid}-0-ID" value=""/>
+                        </li>
+                <li id="option-li-p-${preguntaid}-1">
+                    <input type="radio" id="option-radio-p-${preguntaid}-1" name="radio-option-p-${preguntaid}" class="required" style="margin:0 44px 0 30px;"/>
+                    <textarea id="option-text-p-${preguntaid}-1" name="option-text-p-${preguntaid}-1" 
+                         class="required normal_little textoEnunciado" maxlengh="200"></textarea>
+                    <button type="button" onclick="javascript:eliminarOpcion('${preguntaid}','1');" class="boton_delete">Eliminar Opci&oacute;n</button>
+                        <input type="hidden" id="option-li-p-${preguntaid}-1-ID" value=""/>
+                        </li>
+                    
+                <li id="option-li-p-${preguntaid}-2">
+                    <input type="radio" id="option-radio-p-${preguntaid}-2" name="radio-option-p-${preguntaid}" class="required" style="margin:0 44px 0 30px;"/>
+                    <textarea id="option-text-p-${preguntaid}-2" name="option-text-p-${preguntaid}-2" 
+                         class="required normal_little textoEnunciado" maxlengh="200"></textarea>
+                    <button type="button" onclick="javascript:eliminarOpcion('${preguntaid}','2');" class="boton_delete">Eliminar Opci&oacute;n</button>
+                        <input type="hidden" id="option-li-p-${preguntaid}-2-ID" value=""/>
+                        </li>
+                    
+                <li id="option-li-p-${preguntaid}-3">
+                    <input type="radio" id="option-radio-p-${preguntaid}-3" name="radio-option-p-${preguntaid}" class="required" style="margin:0 44px 0 30px;"/>
+                    <textarea id="option-text-p-${preguntaid}-3" name="option-text-p-${preguntaid}-3" 
+                         class="required normal_little textoEnunciado" maxlengh="200"></textarea>
+                     <button type="button" onclick="javascript:eliminarOpcion('${preguntaid}','3');" class="boton_delete">Eliminar Opci&oacute;n</button>
+                        <input type="hidden" id="option-li-p-${preguntaid}-3-ID" value=""/>
+                        </li>
+            </ul>
+        </li>
+    </ul>
+</li>
+</script>
+<script id="edit-opt-multiple-tmpl" type="text/jquery-x-tmpl">
+<li id="p-${preguntaid}">
+    <input type="hidden" id="p-${preguntaid}-type" value="${tipoplantilla}"/>
+    <input type="hidden" id="p-${preguntaid}-ID" value="${preguntaid}"/>
+    <input type="hidden" id="p-${preguntaid}-plantilla-ID" value="${plantillaid}"/>
+    <button type="button" class="boton_delete_text" onclick="javascript:eliminarEditPregunta('${preguntaid}');">Eliminar Pregunta</button>
+    <ul class="form-ul">
+        <li><label class="label">Pregunta</label>
+            <textarea id="descripcion-p-${preguntaid}" name="descripcion-p-${preguntaid}" 
+                class="required normal textoEnunciado" maxlengh="500" rows="3" style="width:75%;">${textopregunta}</textarea></li>
+        <li>
+            <button type="button" onclick="javascript:agregarOpcion('${preguntaid}');" class="boton_add">Agregar Opci&oacute;n</button><label id="options-stream-p-${preguntaid}-error" style="color:red;"></label>
+            <br/><br/>
+            <ul class="options_ul">
+                <li><label style="margin-right:23px;">¿Es Correcta?</label><label>Texto</label></li>
+            </ul><br/>
+            <ul id="options-stream-p-${preguntaid}" class="options_ul">
+                {{each opciones}}
+                    <li id="option-li-p-${preguntaid}-${opcionid}">
+                       <input type="radio" id="option-radio-p-${preguntaid}-${opcionid}" name="radio-option-p-${preguntaid}" class="required" style="margin:0 44px 0 30px;"
+                       {{if check}}
+                        checked="checked" 
+                       {{/if}}
+                       />
+                       <textarea id="option-text-p-${preguntaid}-${opcionid}" name="option-text-p-${preguntaid}-${opcionid}" 
+                                             class="required normal_little textoEnunciado" maxlengh="200">${texto}</textarea>
+                       <button type="button" onclick="javascript:eliminarEditOpcion('${preguntaid}','${opcionid}');" class="boton_delete">Eliminar Opci&oacute;n</button>
+                       <input type="hidden" id="option-li-p-${preguntaid}-${opcionid}-ID" value="${opcionid}"/>
+                    </li>
+                {{/each}}
+             </ul>
+        </li>
+    </ul>
+</li>
+</script>
+<script id="new-option-tmpl" type="text/jquery-x-tmpl">
+<li id="option-li-p-${preguntaid}-${opcionid}">
+   <input type="radio" id="option-radio-p-${preguntaid}-${opcionid}" name="radio-option-p-${preguntaid}" class="required" style="margin:0 44px 0 30px;"/>
+   <textarea id="option-text-p-${preguntaid}-${opcionid}" name="option-text-p-${preguntaid}-${opcionid}" 
+                         class="required normal_little textoEnunciado" maxlengh="200"></textarea>
+   <button type="button" onclick="javascript:eliminarOpcion('${preguntaid}','${opcionid}');" class="boton_delete">Eliminar Opci&oacute;n</button>
+   <input type="hidden" id="option-li-p-${preguntaid}-${opcionid}-ID" value=""/>
+</li>
+</script>
+<script id="edit-option-tmpl" type="text/jquery-x-tmpl">
+<li id="option-li-p-${preguntaid}-${opcionid}">
+   <input type="radio" id="option-radio-p-${preguntaid}-${opcionid}" name="radio-option-p-${preguntaid}" class="required" style="margin:0 44px 0 30px;"/>
+   <textarea id="option-text-p-${preguntaid}-${opcionid}" name="option-text-p-${preguntaid}-${opcionid}" 
+                         class="required normal_little textoEnunciado" maxlengh="200"></textarea>
+   <button type="button" onclick="javascript:eliminarEditOpcion('${preguntaid}','${opcionid}');" class="boton_delete">Eliminar Opci&oacute;n</button>
+   <input type="hidden" id="option-li-p-${preguntaid}-${opcionid}-ID" value="${opcionid}"/>
+</li>
+</script>

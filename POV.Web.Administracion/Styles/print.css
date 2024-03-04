@@ -1,0 +1,29 @@
+﻿body { 
+  color : #000000; 
+  background : #ffffff;
+  font-family: sans-serif;
+  font-size : 12pt;
+    text-decoration: none;
+}
+a { 
+  text-decoration : underline; 
+  color : #000000; 
+}
+span {
+    text-decoration:none;
+    color: #000000;
+
+}
+.ui-widget-header {
+    text-decoration: cancel-underline;
+    border: 0px;
+    color: #000000;
+    box-shadow: 0px 0px 0px #ffffff;
+}
+.form-register {
+    border: 0px;
+    border-color: #ffffff;
+}
+.header, .topnav,.footer,.buscar {
+    display: none;
+}

@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PortalAlumno.master.cs"
+    Inherits="POV.Web.PortalSocial.PortalAlumno.PortalAlumno" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>YOY - ESTUDIANTE</title>
+    <asp:ContentPlaceHolder ID="head_selected" runat="server"></asp:ContentPlaceHolder>
+    <link href="<% =Page.ResolveClientUrl("~/Styles/Custom/Themes/Standard/css/")%>styles.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/rating/")%>bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/rating/")%>star-rating.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>muro.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .item-option {
+            cursor: pointer;
+            margin-right: 0.1em;
+            overflow: visible;
+            padding: 7px;
+            position: relative;
+            text-align: justify;
+            text-decoration: none !important;
+            background: #ffffff url("../Styles/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png") repeat-x scroll 50% 50%;
+            border: 1px solid #d7deef;
+            color: #242525 !important;
+            border-radius: 4px;
+        }
+
+            .item-option:hover {
+                background: #f1f1f1;
+                border: 1px solid #33acfd;
+                color: #33acfd;
+            }
+
+        /**
+ * Profile image component
+ */
+        .profile-header-container {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .profile-header-img {
+            padding: 34px;
+        }
+
+            .profile-header-img > img.img-circle {
+                width: 160px;
+                height: 160px;
+                border: 3px solid #33acfd;
+            }
+
+        .profile-header {
+            margin-top: 43px;
+        }
+
+        /**
+ * Ranking component
+ */
+        .rank-label-container {
+            margin-top: -19px;
+            text-align: center;
+        }
+
+        .label.label-default.rank-label {
+            background-color: rgb(81, 210, 183);
+            padding: 5px 10px 5px 10px;
+            border-radius: 27px;
+        }
+
+        .profile-userbuttons {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+            .profile-userbuttons .btn {
+                text-transform: uppercase;
+                font-size: 11px !important;
+                font-weight: 400;
+                padding: 6px 15px;
+                margin-right: 5px !important;
+                background: #33acfd;
+                font-family: Helvetica;
+            }
+
+                .profile-userbuttons .btn:last-child {
+                    margin-right: 0px;
+                }
+
+        .label.label-default.rank-label {
+            background-color: #33acfd;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="page_content" runat="server">
+    <div id="panel-container" class="row">
+        <div class="bodyadaptable">
+            <div id="left_panel" class="col-md-3 col-xs-12">
+                <div class="profile-header-container">
+                    <div class="profile-header-img">
+                        <img alt="yo" runat="server" id="ImgUser" class="img-circle" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" />
+                        <!-- badge -->
+                        <div class="rank-label-container">
+                            <span class="label label-default2 rank-label">
+                                <asp:HyperLink ID="HplPerfil" runat="server" Visible="false" CssClass="link_blue yo pconfirmacorreo">Mi perfil</asp:HyperLink></span>
+                        </div>
+                    </div>
+                    <div class="profile-userbuttons">
+                        <asp:HyperLink ID="HplNoticias" runat="server" Visible="false" CssClass="pconfirmacorreo">
+                        <button type="button" class="btn btn-sm">
+                            <i class="icon icon_companeros"></i>&nbsp;&nbsp; Muro
+                        </button>
+                        </asp:HyperLink>
+                        <asp:HyperLink ID="HplMuro" runat="server" CssClass="pconfirmacorreo">
+                        <button type="button" class="btn btn-sm">
+                            <i class="icon icon_muro"></i>&nbsp; Apuntes
+                        </button>
+                        </asp:HyperLink>
+                        <div style="margin-top: 5px;">
+                            <a href='~/PortalAlumno/ViewBlog.aspx?AreaConocimientoBlog=' runat="server" id="UrlPostsFavoritosList" class="pconfirmacorreo">
+                                <button type="button" class="btn btn-sm"><i class="icon icon_favorite"></i>&nbsp;&nbsp;Favoritos</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="center_panel" class="col-xs-12 col-md-9" runat="server">
+                <asp:ContentPlaceHolder ID="content_selected" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+</asp:Content>

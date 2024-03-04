@@ -1,0 +1,95 @@
+﻿body {
+    background: silver;
+    font: 12px Tahoma, Arial, Sans-Serif;
+    color: #696969;
+}
+
+.input-container {
+    padding: 1px;
+}
+
+#div-regForm, .registered {
+    border: 3px solid #eeeeee;
+    padding: 15px;
+    background-color: white;
+    color: #203360;
+    margin: 30px auto 50px auto;
+    width: 400px;
+}
+
+.form-title,
+.form-sub-title {
+    font-size: 20px;
+    font-family: "Lucida Grande",Tahoma,Verdana,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    color: gray;
+}
+
+.form-sub-title {
+    font-weight: normal;
+    padding: 6px 0 15px 0;
+}
+
+.form_login {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+.greenButton {
+    width: 150px;
+    margin: 10px 0 0 2px;
+    padding: 3px 4px 3px 4px;
+    color: white;
+    background-color: #a62420;
+    outline: none;
+    border: 1px solid #006600;
+    font-weight: bold;
+    float: none;
+}
+
+    .greenButton:active {
+        background-color: #4D405A;
+        padding: 4px 3px 2px 5px;
+    }
+
+#loading {
+    left: 10px;
+    position: relative;
+    top: 3px;
+    visibility: hidden;
+}
+
+#error {
+    background-color: #ffebe8;
+    border: 1px solid #dd3c10;
+    padding: 7px 3px;
+    text-align: center;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+#jsEnabled {
+    background-color: #ffebe8;
+    border: 1px solid #dd3c10;
+    padding: 7px 3px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#loginForm input[type=text] {
+    width: 150px;
+    border: 1px solid gray;
+}
+
+#loginForm input[type=password] {
+    width: 150px;
+    border: 1px solid gray;
+}
+
+#loginForm label.error, #loginForm input.submit {
+    color: red;
+}

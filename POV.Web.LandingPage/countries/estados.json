@@ -1,0 +1,10 @@
+﻿{
+	estados[
+		{
+			pais:"MX"
+			nombre:"Yucatán",
+			codigo:"YUC"
+		}
+	]
+
+}

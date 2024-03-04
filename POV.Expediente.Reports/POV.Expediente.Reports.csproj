@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E41A5C36-F001-44B6-B7D1-D1F512C5EE12}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.Expediente.Reports</RootNamespace>
+    <AssemblyName>POV.Expediente.Reports</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Charts.v12.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Data.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Office.v12.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.PivotGrid.v12.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Printing.v12.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.RichEdit.v12.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Utils.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxEditors.v12.1">
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Web.ASPxEditors.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Web.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.Xpo.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraBars.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraCharts.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraEditors.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraPivotGrid.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraReports.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1.Web">
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraReports.v12.1.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Comun\Bibliotecas\XtraReports\DevExpress.XtraRichEdit.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Base">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\auxiliar.cs" />
+    <Compile Include="Reports\ResultadoPruebaInteligenciasMultiplesRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaInteligenciasMultiplesRpt.Designer.cs">
+      <DependentUpon>ResultadoPruebaInteligenciasMultiplesRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaBullyingRpt .cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaBullyingRpt .Designer.cs">
+      <DependentUpon>ResultadoPruebaBullyingRpt .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaInventariodeInteresesRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaInventariodeInteresesRpt.Designer.cs">
+      <DependentUpon>ResultadoPruebaInventariodeInteresesRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaInventarioHerrerarpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaInventarioHerrerarpt.Designer.cs">
+      <DependentUpon>ResultadoPruebaInventarioHerrerarpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaZavicRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaZavicRpt.Designer.cs">
+      <DependentUpon>ResultadoPruebaZavicRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaFrasesVocacionalesRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaFrasesVocacionalesRpt.Designer.cs">
+      <DependentUpon>ResultadoPruebaFrasesVocacionalesRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaRavenRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaRavenRpt.Designer.cs">
+      <DependentUpon>ResultadoPruebaRavenRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaRotterRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaRotterRpt.Designer.cs">
+      <DependentUpon>ResultadoPruebaRotterRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaCHASIDERpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaCHASIDERpt.Designer.cs">
+      <DependentUpon>ResultadoPruebaCHASIDERpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaCleaverRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaCleaverRpt.Designer.cs">
+      <DependentUpon>ResultadoPruebaCleaverRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaDominosRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaDominosRpt.Designer.cs">
+      <DependentUpon>ResultadoPruebaDominosRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaKuderRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaKuderRpt.Designer.cs">
+      <DependentUpon>ResultadoPruebaKuderRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaHabitosRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaHabitosRpt.Designer.cs">
+      <DependentUpon>ResultadoPruebaHabitosRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaAllportRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaAllportRpt.Designer.cs">
+      <DependentUpon>ResultadoPruebaAllportRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaSACKSRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaSACKSRpt.Designer.cs">
+      <DependentUpon>ResultadoPruebaSACKSRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaTermanMerrillRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaTermanMerrillRpt.Designer.cs">
+      <DependentUpon>ResultadoPruebaTermanMerrillRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ExpedienteAlumnoRpt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ExpedienteAlumnoRpt.Designer.cs">
+      <DependentUpon>ExpedienteAlumnoRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaEstilosdeAprendizaje.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ResultadoPruebaEstilosdeAprendizaje.Designer.cs">
+      <DependentUpon>ResultadoPruebaEstilosdeAprendizaje.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3a6024ca-2877-409d-84c8-a1997c27616e}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Expediente.BO\POV.Expediente.BO.csproj">
+      <Project>{34c7eb86-2321-432e-82b5-fe8119a9b622}</Project>
+      <Name>POV.Expediente.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.BO\POV.Modelo.BO.csproj">
+      <Project>{d81e25e7-7ed3-4f7b-9ccf-a3e1e97b198a}</Project>
+      <Name>POV.Modelo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.BO\POV.Prueba.BO.csproj">
+      <Project>{90c2958d-1935-448e-9ac5-f9abcec3784b}</Project>
+      <Name>POV.Prueba.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Dinamica.BO\POV.Prueba.Diagnostico.Dinamica.BO.csproj">
+      <Project>{a36c3552-74ff-41af-9466-e59288f9272a}</Project>
+      <Name>POV.Prueba.Diagnostico.Dinamica.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Dinamica.Services\POV.Prueba.Diagnostico.Dinamica.Services.csproj">
+      <Project>{614a4de8-03df-46ce-97c2-a8fa3534362f}</Project>
+      <Name>POV.Prueba.Diagnostico.Dinamica.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.BO\POV.Reactivos.BO.csproj">
+      <Project>{ed9cc55d-68f6-4be0-9dae-00bcd226c289}</Project>
+      <Name>POV.Reactivos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.BO\POV.Seguridad.BO.csproj">
+      <Project>{86840dad-9fcc-46aa-8c98-3cab83195ec7}</Project>
+      <Name>POV.Seguridad.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Reports\ResultadoPruebaInteligenciasMultiplesRpt.resx">
+      <DependentUpon>ResultadoPruebaInteligenciasMultiplesRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaBullyingRpt .resx">
+      <DependentUpon>ResultadoPruebaBullyingRpt .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaEstilosdeAprendizaje.resx">
+      <DependentUpon>ResultadoPruebaEstilosdeAprendizaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaInventariodeInteresesRpt.resx">
+      <DependentUpon>ResultadoPruebaInventariodeInteresesRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaInventarioHerrerarpt.resx">
+      <DependentUpon>ResultadoPruebaInventarioHerrerarpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaZavicRpt.resx">
+      <DependentUpon>ResultadoPruebaZavicRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaFrasesVocacionalesRpt.resx">
+      <DependentUpon>ResultadoPruebaFrasesVocacionalesRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaRavenRpt.resx">
+      <DependentUpon>ResultadoPruebaRavenRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaRotterRpt.resx">
+      <DependentUpon>ResultadoPruebaRotterRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaCHASIDERpt.resx">
+      <DependentUpon>ResultadoPruebaCHASIDERpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaCleaverRpt.resx">
+      <DependentUpon>ResultadoPruebaCleaverRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaDominosRpt.resx">
+      <DependentUpon>ResultadoPruebaDominosRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaKuderRpt.resx">
+      <DependentUpon>ResultadoPruebaKuderRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaHabitosRpt.resx">
+      <DependentUpon>ResultadoPruebaHabitosRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaAllportRpt.resx">
+      <DependentUpon>ResultadoPruebaAllportRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaSACKSRpt.resx">
+      <DependentUpon>ResultadoPruebaSACKSRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ResultadoPruebaTermanMerrillRpt.resx">
+      <DependentUpon>ResultadoPruebaTermanMerrillRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ExpedienteAlumnoRpt.resx">
+      <DependentUpon>ExpedienteAlumnoRpt.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

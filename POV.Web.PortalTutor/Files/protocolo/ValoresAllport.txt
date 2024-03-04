@@ -1,0 +1,24 @@
+﻿[0] TEORETICO
+Lleva a cabo la búsqueda de la verdad mediante la investigación, utilizando un proceso lógico, ordenado y claro.
+[2] Meta
+Conocimiento
+[4] ECONOMICO
+Preponderancia del valor de la utilidad en las relaciones. Implica lo práctico, materialista, ahorro de energía, espacio y tiempo. Se interesa en hacer suyo el conocimiento técnico para obtener un provecho práctico de las cosas y darles utilidad.
+[6] Meta
+Acumulación de bienes. Ahorro de energía.
+[8]ESTETICO
+Busca su satisfacción personal en la contemplación o producción de belleza.
+[10] Meta
+Producción de belleza.
+[12]SOCIAL
+Busca la compañía de los demás, vive su experiencia vital con sus semejantes. Siente un gran gusto por dar servicio y ayuda a los demás.
+[14] Meta
+Ayuda a los demás.
+[16]POLITICO
+Utiliza los conocimientos como medios para lograr el poder. Requiere de voluntad de mando y deseo de dirigir y gobernar a los demás.
+[18] Meta
+Tener poder.
+[20]RELIGIOSO
+Orienta su propia vida de acuerdo con las convicciones éticas y religiosas, así mismo presenta una tendencia a invitar a los demás a participar en este tipo de actividades.
+[22] Meta
+Tener acceso a la divinidad.

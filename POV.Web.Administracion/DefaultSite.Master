@@ -1,0 +1,163 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DefaultSite.master.cs" Inherits="POV.Web.Administracion.DefaultSite" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>YOY</title>
+    <link rel="shortcut icon"  href="~/Images/Yoy_Favicon20px.png"/>
+    <!-- styles -->
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Menu.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Icons.css"   rel="stylesheet" type="text/css"/>
+    <!--jscripts-->
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery-1.7.2.min.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery-ui-1.8.16.custom.min.js")%>"
+        type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/api/api.menu.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/api/api.dialogs.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery.blockUI.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery.ui.datepicker-es.js")%>"
+        type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+
+        $(document).ready(function () {
+            var api = new MenuApi();
+            api.BuildMenu();
+            initMasterClient();
+            $.blockUI.defaults.fadeOut = 200;
+            $.blockUI.defaults.fadeOut = 100;
+            $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+            $.blockUI.defaults.message = '<h1 style="font-size:20px;"><img src="' + '<% =Page.ResolveClientUrl("~/images/ajax-loader.gif")%>' + '" /> Procesando...</h1>';
+            $(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
+        });
+
+        function initMasterClient() {
+
+            var apimess = new MessageApi();
+            apimess.PrepareDialog();
+            if ($("#<%#hdnShowMessage.ClientID%>").val() == "1") { mostrarError(); }
+            if ($("#<%#hdnShowMessage.ClientID%>").val() == "2") { mostrarWarning(); }
+            if ($("#<%#hdnShowMessage.ClientID%>").val() == "3") { mostrarInfo(); }
+        }
+        function mostrarError() {
+            var api = new MessageApi();
+            var text = $("#<%# hdnLastMessage.ClientID %>").val();
+            api.CreateMessage(text, "ERROR");
+            api.Show();
+            resetHiden();
+        }
+        function mostrarWarning() {
+            var api = new MessageApi();
+            var text = $("#<%# hdnLastMessage.ClientID %>").val();
+            api.CreateMessage(text, "WARNING");
+            api.Show();
+            resetHiden();
+        }
+        function mostrarInfo() {
+            var api = new MessageApi();
+            var text = $("#<%# hdnLastMessage.ClientID %>").val();
+            api.CreateMessage(text, "INFO");
+            api.Show();
+            resetHiden();
+
+        }
+        function resetHiden() { $("#<%# hdnShowMessage.ClientID %>").val("0"); $("#<%# hdnLastMessage.ClientID %>").val(""); }
+
+        var hdnmessageinputid = "#<%# hdnLastMessage.ClientID %>";
+        var hdnmessagetypeinputid = "#<%# hdnShowMessage.ClientID %>";
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!--Deteccion jscript-->
+    <div id="jsEnabled" class="ui-state-error" style="display:none;">
+        El navegador no está ejecutando javascript</div>
+    <script type="text/javascript">        $("#jsEnabled").hide();</script>
+    <!--Deteccion jscript-->
+    <form id="frmMain" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+    <script type="text/javascript">
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(End);
+        function End(sender, args) { initMasterClient(); }
+
+        Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(OnBeginRequestBlockUI);
+        function OnBeginRequestBlockUI(sender, args) {
+            DocumentBlockUI();
+        }
+
+        function DoFormBlockUI() {
+            $("#frmMain").submit(function () { DocumentBlockUI(); return true; });
+        }
+        function DocumentBlockUI() {
+            $.blockUI.defaults.fadeOut = 200;
+            $.blockUI.defaults.fadeOut = 100;
+            $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+            $.blockUI.defaults.message = '<h1 style="font-size:20px;"><img src="' + '<% =Page.ResolveClientUrl("~/images/ajax-loader.gif")%>' + '" /> Procesando...</h1>';
+            $.blockUI();
+        }
+
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(OnEndRequestUnblockUI);
+        function OnEndRequestUnblockUI(sender, args) {
+            DocumentUnblockUI();
+        }
+
+        function DocumentUnblockUI() {
+            $.blockUI.defaults.fadeOut = 200;
+            $.blockUI.defaults.fadeOut = 100;
+            $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+            $.blockUI.defaults.message = '<h1 style="font-size:20px;"><img src="' + '<% =Page.ResolveClientUrl("~/images/ajax-loader.gif")%>' + '" /> Procesando...</h1>';
+            $.unblockUI();
+        }
+    </script>
+    <!-- inicio page-->
+    <div class="page">
+        <!--inicio header-->
+        <div class="header">
+            <div   class="header_topmenu">
+                <a href="#" class="first">
+                    <asp:Label ID="LblNombreUsuario" runat="server"></asp:Label>
+                </a>
+                &ensp; 
+                <asp:HyperLink ID="HyperLink7" NavigateUrl="~/Auth/Logout.aspx" runat="server">Salir</asp:HyperLink> &emsp;
+
+            </div>
+            <div class="title_logo_app">
+                Portal Administraci&oacute;n
+            </div>
+            
+        </div>
+        <!--fin header-->
+       
+        <!--Contenido principal-->
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <!--End contenido principal-->
+        <div class="clear">
+        </div>
+    </div>
+    <!-- fin page -->
+    <!--begin footer-->
+    <div class="footer">
+        <p class="avisos_footer" style="margin-top:20px;">
+            &copy;<asp:Label ID="lblAnio" runat="server"></asp:Label>, Todos los derechos reservados, Compañia
+        </p>
+    </div>
+    <!--End footer-->
+    <asp:UpdatePanel ID="updPanelMaster" runat="server">
+        <ContentTemplate>
+            <div id="dialog" title="YOY - ADMINISTRADOR">
+                <span id="message"></span>
+            </div>
+            <div id="dialog-question" title="YOY - ADMINISTRADOR">
+                <span id="message_question"></span>
+            </div>
+            <asp:HiddenField ID="hdnLastMessage" runat="server" />
+            <asp:HiddenField ID="hdnShowMessage" runat="server" Value="0" />
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    </form>
+</body>
+</html>

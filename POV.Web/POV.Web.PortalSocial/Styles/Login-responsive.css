@@ -1,0 +1,48 @@
+﻿@media (max-width: 767px) 
+{
+    .page_container {
+        width: 100%;
+        background-image: url(../images/login_background_481-x-767.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 767px 481px;
+        min-height: 481px;
+    }
+        .page_container > * { display: block; float: none; }
+
+        .page_container #headerLogin {
+            height: 65px;
+            background-image: url(../images/login_slogan_small.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+            .page_container #headerLogin img { display: none; }
+
+        .page_container #container_login {
+            background-image: url(../images/login_logo_small.png);
+            background-repeat: no-repeat;
+            background-position: center 15px;
+            height: 330px;
+            padding-left: 10px !important;
+        }
+            .page_container #container_login > * { display: block; float: none; }
+            .page_container #container_login #info_login { display: none; }
+            .page_container #container_login #login_panel {
+                background-image: url(../images/login_recuadro_small.png);
+                background-repeat: no-repeat;
+                background-position: center top;
+                height: 226px;
+                width: 241px;
+                margin: 115px auto;
+            }
+                .page_container #container_login #login_panel > div { padding: 50px 20px 5px 5px; }
+                .page_container #container_login #login_panel .form_login { text-align: center; }
+                    .page_container #container_login #login_panel .form_login .div_error_login span { padding: 0px; margin: 0px auto; }
+                    .page_container #container_login #login_panel .form_login #vacio { display: none; }
+                    .page_container #container_login #login_panel .form_login > * { margin: 0px auto; }
+                    .page_container #container_login #login_panel .form_login p > * { margin: 0px auto; display: block; width: 90%; }
+                    .page_container #container_login #login_panel .form_login p > span { text-align: left; padding-left: 5%; padding-top: 3px; }
+                    .page_container #container_login #login_panel .form_login input[type="submit"] { margin-top: 5px; margin-bottom: 2px; }
+
+        .page_container #footer { display: none; }
+}

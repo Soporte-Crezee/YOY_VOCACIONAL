@@ -1,0 +1,52 @@
+﻿<script id="SituacionTmpl" type="text/x-jquery-tmpl">
+    <li class="item_pub">
+ 
+        <button id="btn-res-${situacionid}" title="Ver Resultados" class="operDel floatRight" type="button" onclick="javascript:LoadResultadoSituacion('${situacionid}');">Ver Resultado</button>
+			
+        <img src="../Images/icons/icon_31_busc_juegos.png" alt="imagen" class="img_nocrop_pub"/>
+        <div class="item_pub_content" >
+            <div style="width:85%;">
+                <div>
+                    <i style="float:left;">
+                        <a href="../PortalJuego/Muro.aspx?id=${juegoid}" class="link_blue"><strong>${nombrejuego}</strong> </a>
+                        -     
+                    </i> {{if renderestatus}}
+                    <i class="ui-icon ui-icon-check" title="Juego Finalizado"></i>
+                    {{else}}
+                    <i class="ui-icon ui-icon-star" title="Juego Suscrito"></i>
+                    {{/if}}
+           
+                </div>
+			
+                <p>
+                    ${descripcionsituacion}
+                </p>
+                <span>
+                </span>
+           
+                <span>
+                    <i>
+                        <a href="../PortalJuego/Muro.aspx?id=${juegoid}" class="link_blue">¡Detalles!</a>
+                    </i>
+                </span>
+			
+            </div>
+        </div>
+	</li>
+</script>
+<script id="tmplResultados" type="text/x-jquery-tmpl">
+    <li class="item_pub">
+        <p><strong>${situaciondto.nombresituacion}</strong></p>
+         
+          <table style="width: 80%; margin-left: auto; margin-right: auto;">
+        
+        {{each resultadosvariable}}
+           <tr>
+         <td style="width: 70%;">${nombrevariable}:</td> <td> ${resultado}</td>
+           </tr>
+        {{/each}}
+       
+      </table>
+               
+    </li>
+</script>

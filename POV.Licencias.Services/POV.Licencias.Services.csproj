@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13AB22DF-D898-416F-A63F-A6CD09622760}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.Licencias</RootNamespace>
+    <AssemblyName>POV.Licencias.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Framework.Base">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="POV.Prueba.Diagnostico.Dinamica.BO">
+      <HintPath>..\POV.Prueba.Diagnostico.Dinamica.BO\bin\Debug\POV.Prueba.Diagnostico.Dinamica.BO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\CalendarizacionPruebaGrupoDelHlp.cs" />
+    <Compile Include="DAO\CalendarizacionPruebaGrupoInsHlp.cs" />
+    <Compile Include="DAO\CalendarizacionPruebaGrupoRetHlp.cs" />
+    <Compile Include="DAO\CalendarizacionPruebaGrupoUpdHlp.cs" />
+    <Compile Include="DAO\CicloContratoDelHlp.cs" />
+    <Compile Include="DAO\CicloContratoInsHlp.cs" />
+    <Compile Include="DAO\CicloContratoRetHlp.cs" />
+    <Compile Include="DAO\CicloContratoUpdHlp.cs" />
+    <Compile Include="DAO\ContratoInsHlp.cs" />
+    <Compile Include="DAO\ContratoRetHlp.cs" />
+    <Compile Include="DAO\ContratoUpdHlp.cs" />
+    <Compile Include="DAO\LicenciaUniversidadInsHlp.cs" />
+    <Compile Include="DAO\LicenciaUniversidadRetHlp.cs" />
+    <Compile Include="DAO\LicenciaUniversidadUpdHlp.cs" />
+    <Compile Include="DAO\LicenciaEspecialistaInsHlp.cs" />
+    <Compile Include="DAO\LicenciaEspecialistaRetHlp.cs" />
+    <Compile Include="DAO\LicenciaEspecialistaUpdHlp.cs" />
+    <Compile Include="DAO\LicenciaTutorInsHlp.cs" />
+    <Compile Include="DAO\LicenciaTutorRetHlp.cs" />
+    <Compile Include="DAO\LicenciaTutorUpdHlp.cs" />
+    <Compile Include="DAO\ModeloFuncionalRetHlp.cs" />
+    <Compile Include="DAO\PruebaContratoDelHlp.cs" />
+    <Compile Include="DAO\PruebaContratoInsHlp.cs" />
+    <Compile Include="DAO\PruebaContratoRetHlp.cs" />
+    <Compile Include="DAO\RecursoContratoDelHlp.cs" />
+    <Compile Include="DAO\RecursoContratoInsHlp.cs" />
+    <Compile Include="DAO\RecursoContratoRetHlp.cs" />
+    <Compile Include="DAO\RecursoContratoUpdHlp.cs" />
+    <Compile Include="DA\AlumnosLicenciaEscuelaDARetHlp.cs" />
+    <Compile Include="DA\AlumnoUsuarioSocialDARetHlp.cs" />
+    <Compile Include="DA\UsuarioSocialUsuario.cs" />
+    <Compile Include="DA\UsuarioOrientador.cs" />
+    <Compile Include="DA\UsuarioUniversidad.cs" />
+    <Compile Include="DA\DocenteUsuarioSocialDARetHlp.cs" />
+    <Compile Include="DA\LicenciaAlumnoDesactivarHlp.cs" />
+    <Compile Include="DAO\LicenciaAlumnoInsHlp.cs" />
+    <Compile Include="DAO\LicenciaAlumnoUpdHlp.cs" />
+    <Compile Include="DAO\LicenciaDocenteUpdHlp.cs" />
+    <Compile Include="DAO\LicenciaDocenteInsHlp.cs" />
+    <Compile Include="DAO\LicenciaAlumnoRetHlp.cs" />
+    <Compile Include="DAO\LicenciaDirectorInsHlp.cs" />
+    <Compile Include="DAO\LicenciaDirectorRetHlp.cs" />
+    <Compile Include="DAO\LicenciaDirectorUpdHlp.cs" />
+    <Compile Include="DAO\LicenciaDocenteRetHlp.cs" />
+    <Compile Include="DAO\LicenciaEscuelaInsHlp.cs" />
+    <Compile Include="DAO\LicenciaEscuelaRetHlp.cs" />
+    <Compile Include="DAO\LicenciaEscuelaUpdHlp.cs" />
+    <Compile Include="DAO\LicenciaRetHlp.cs" />
+    <Compile Include="DA\LicenciaDARetHlp.cs" />
+    <Compile Include="DA\ProfesionalizacionContratoDADelHlp.cs" />
+    <Compile Include="DA\ProfesionalizacionContratoDARetHlp.cs" />
+    <Compile Include="DA\ProfesionalizacionContratoInsHlp.cs" />
+    <Compile Include="DA\ProfesionalizacionContratoUpdHlp.cs" />
+    <Compile Include="DA\PruebaEnCicloVigenteDARetHlp.cs" />
+    <Compile Include="DA\PruebasContratoDARetHlp.cs" />
+    <Compile Include="DA\PruebasEscuelaDARetHlp.cs" />
+    <Compile Include="DA\PruebasGrupoDARetHlp.cs" />
+    <Compile Include="DA\UsuarioEspecialista.cs" />
+    <Compile Include="DA\UsuarioSocialAlumno.cs" />
+    <Compile Include="DA\UsuarioAlumno.cs" />
+    <Compile Include="DA\UsuarioDocente.cs" />
+    <Compile Include="DA\UsuarioSocialDocente.cs" />
+    <Compile Include="DA\UsuarioDirector.cs" />
+    <Compile Include="DA\UsuarioTutor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\CalendarizacionPruebaGrupoCtrl.cs" />
+    <Compile Include="Service\CicloContratoCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\ContratoCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\LicenciaEscuelaCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\ModuloFuncionalCtrl.cs" />
+    <Compile Include="Service\PruebaContratoCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\RecursoContratoCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GP.SocialEngine.BO\GP.SocialEngine.BO.csproj">
+      <Project>{BC81D924-3BB9-4EBD-B55F-B1C72132C069}</Project>
+      <Name>GP.SocialEngine.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.Interfaces\GP.SocialEngine.Interfaces.csproj">
+      <Project>{1501B668-DC3A-45D9-B9B5-47DF76E12587}</Project>
+      <Name>GP.SocialEngine.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3A6024CA-2877-409D-84C8-A1997C27616E}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.Services\POV.CentroEducativo.Services.csproj">
+      <Project>{EFEAF5FF-2F2D-4C50-AE27-BAF8DF1DF922}</Project>
+      <Name>POV.CentroEducativo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.BO\POV.Comun.BO.csproj">
+      <Project>{E9BB2466-0E21-4B56-8803-DEB5969D2B49}</Project>
+      <Name>POV.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Expediente.BO\POV.Expediente.BO.csproj">
+      <Project>{34c7eb86-2321-432e-82b5-fe8119a9b622}</Project>
+      <Name>POV.Expediente.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Licencias.BO\POV.Licencias.BO.csproj">
+      <Project>{19961067-7725-4435-8EAD-6E2B635F5D34}</Project>
+      <Name>POV.Licencias.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Localizacion.BO\POV.Localizacion.BO.csproj">
+      <Project>{662EEBF8-41AA-4DAF-9603-AB9E92009F77}</Project>
+      <Name>POV.Localizacion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Localizacion.Services\POV.Localizacion.Services.csproj">
+      <Project>{9F69AACA-BD9F-48B3-ADDC-0049FFF35C1A}</Project>
+      <Name>POV.Localizacion.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Logger.Services\POV.Logger.Services.csproj">
+      <Project>{B7F1FB2E-42C5-47B7-B717-F9249F2D6843}</Project>
+      <Name>POV.Logger.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.BO\POV.Modelo.BO.csproj">
+      <Project>{D81E25E7-7ED3-4F7B-9CCF-A3E1E97B198A}</Project>
+      <Name>POV.Modelo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.Services\POV.Modelo.Services.csproj">
+      <Project>{F229A4B9-5990-4813-AB22-D38963E16EAC}</Project>
+      <Name>POV.Modelo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Profesionalizacion.BO\POV.Profesionalizacion.BO.csproj">
+      <Project>{249EBEFD-A333-4961-9446-C006871AFCD6}</Project>
+      <Name>POV.Profesionalizacion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Profesionalizacion.Services\POV.Profesionalizacion.Services.csproj">
+      <Project>{B062D22C-09FD-43D0-9B78-B32FE988F929}</Project>
+      <Name>POV.Profesionalizacion.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.BO\POV.Prueba.BO.csproj">
+      <Project>{90C2958D-1935-448E-9AC5-F9ABCEC3784B}</Project>
+      <Name>POV.Prueba.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Dinamica.BO\POV.Prueba.Diagnostico.Dinamica.BO.csproj">
+      <Project>{A36C3552-74FF-41AF-9466-E59288F9272A}</Project>
+      <Name>POV.Prueba.Diagnostico.Dinamica.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.BO\POV.Seguridad.BO.csproj">
+      <Project>{86840DAD-9FCC-46AA-8C98-3CAB83195EC7}</Project>
+      <Name>POV.Seguridad.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.Services\POV.Seguridad.Services.csproj">
+      <Project>{6F8B4B55-E2AB-4592-A770-982EA091583B}</Project>
+      <Name>POV.Seguridad.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

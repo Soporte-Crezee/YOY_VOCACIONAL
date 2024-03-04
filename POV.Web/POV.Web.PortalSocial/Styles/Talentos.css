@@ -1,0 +1,246 @@
+﻿body {
+}
+
+.boton {
+    background-color: #97bf0d;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #fff;
+    color: #fff;
+    height: 30px;
+    font-weight: bold;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.btn.btn-sm, .btn-green, .btn.btn-green {
+    color: #FFFFFF !important;
+    font-family: Roboto-Bold !important;
+    background-color: #05AED9 !important;
+    box-shadow: none !important;
+    font-style: normal !important;
+}
+
+.btn.btn-sm:hover, .btn-green:hover, .btn.btn-green:hover {
+    font-family: Roboto-Bold !important;
+    background-color: #7fc3dc !important;
+    box-shadow: none !important;
+    color: #FFFFFF !important;
+    font-style: normal !important;
+}
+.TituloTalentos {
+}
+
+.divPrincipal {
+}
+
+.divTitulo {
+    border-bottom: 3px solid #77aea9;
+    height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0 0 10px;
+}
+
+.divFiltrado {
+    border-bottom: 3px solid #77aea9;
+    height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #E3E5E7;
+    padding: 5px 0 0 10px;
+}
+
+.divFiltradoCont {
+    background-color: #f3f3f4;
+    width: 97%;
+    margin: 0 auto;
+}
+
+.hr {
+    color: #A63992;
+    border: 15px;
+    width: 100%;
+}
+
+.tdLabel {
+    text-align: right;
+    font-family: Arial Rounded MT;
+    color: #39215e;
+}
+
+.labelTalentos {
+    font-family: Arial Rounded MT;
+}
+
+.titulo_marco {
+    border-bottom: 3px solid #0067ac;
+    height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #E3E5E7;
+    padding: 5px 0 0 10px;
+    margin-top: 15px;
+}
+
+.titulo_principal_superior {
+    border-bottom: 3px solid #77aea9;
+    height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0 0 10px;
+    margin-bottom: 10px;
+}
+
+@font-face {
+    font-family: "Helvetica Neue LT Pro";
+    src: url("../Styles/fonts/HelveticaNeueLTPro-MdCnO.otf");
+}
+
+@font-face {
+    font-family: "Helvetica-Bold";
+    src: url("../Styles/fonts/HelveticaNeue-BoldCond.otf");
+}
+
+.labelButton {
+    font-family: "Helvetica Neue LT Pro";
+}
+
+.button_clip_39215E {
+    -moz-user-select: none;
+    background-color: #05aed9;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 0 2px #f1f1f1 inset;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Helvetica Neue LT Pro;
+    font-size: 14pt;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+    .button_clip_39215E:hover {
+        background: #7fc3dc;
+        font-family: Helvetica Neue LT Pro;
+        font-style: italic;
+        color: #33acfd !important;
+        box-shadow: inset 0 0 0 2px #33acfd;
+    }
+
+a.button_clip_39215E:hover {
+    background: #f1f1f1;
+    font-family: Helvetica Neue LT Pro;
+    font-style: italic;
+    color: #33acfd !important;
+    box-shadow: inset 0 0 0 2px #33acfd;
+    text-decoration: none;
+}
+
+a.button_clip_39215E {
+    -moz-user-select: none;
+    background-color: #33acfd;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 0 2px #f1f1f1 inset;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Helvetica Neue LT Pro;
+    font-size: 12pt;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.elemento_seleccionado_talentos {
+    background-color: #91268F;
+    color: #fff;
+}
+
+table.formulario_talentos_linea {
+    width: 98%;
+    margin: 15px auto;
+}
+
+    table.formulario_talentos_linea tr.form_group {
+    }
+
+        table.formulario_talentos_linea tr.form_group td.form_label {
+            width: 120px;
+            text-align: right;
+            font-size: 14px;
+            padding-right: 10px;
+        }
+
+        table.formulario_talentos_linea tr.form_group td.form_control {
+            width: 35%;
+        }
+
+            table.formulario_talentos_linea tr.form_group td.form_control input {
+                height: 24px;
+                width: 100%;
+            }
+
+            table.formulario_talentos_linea tr.form_group td.form_control select {
+                height: 28px;
+                width: 101%;
+            }
+
+            table.formulario_talentos_linea tr.form_group td.form_control textarea {
+                width: 100%;
+            }
+
+.titulo-popup {
+    background-color: #39215E;
+    border: 0px;
+    color: #fff;
+    min-height: 24px;
+    font-weight: bold;
+    min-width: 24px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 0 3px 10px;
+}
+
+.tBienvenida {
+    background-color: #082d49;
+    font-family: Helvetica-Bold !important;
+    color: #fff;
+    border-radius: 5px;
+    padding-left: 25px;
+}
+
+.tFoto {
+    background-color: #c8c6e2;
+    font-family: Helvetica-Bold !important;
+    color: #252626;
+    border-radius: 5px;
+}
+
+.tBienvenidaLabel {
+    font-size: 26pt !important;
+    font-family: Helvetica;
+    font-weight: bolder;    
+}
+
+.btnSalir {
+    background: url(../Images/VOCAREER_salir.png) no-repeat;
+}
+
+.titulo-portal {
+    color: #082d49;
+    font-family: Helvetica-Bold;
+    font-size: 45px;
+    font-weight: bolder;
+}

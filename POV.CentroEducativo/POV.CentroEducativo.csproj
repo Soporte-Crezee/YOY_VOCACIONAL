@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77F2D47F-EF3F-49B4-B20F-BC34520C2DF4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.CentroEducativo</RootNamespace>
+    <AssemblyName>POV.CentroEducativo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\Comun\Bibliotecas\EntityFramework611.net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\Comun\Bibliotecas\EntityFramework611.net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Base.Entity">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries\AlumnoQry.cs" />
+    <Compile Include="Queries\CarreraQry.cs" />
+    <Compile Include="Queries\ConfigCalendarQry.cs" />
+    <Compile Include="Queries\DocenteQry.cs" />
+    <Compile Include="Queries\EncuestaSatisfaccionQry.cs" />
+    <Compile Include="Queries\EventCalendarQry.cs" />
+    <Compile Include="Queries\EventoUniversidadQry.cs" />
+    <Compile Include="Queries\NotaCompraQry.cs" />
+    <Compile Include="Queries\SesionOrientacionQry.cs" />
+    <Compile Include="Queries\TutorAlumnoQry.cs" />
+    <Compile Include="Queries\TutorQry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Queries\UniversidadQry.cs" />
+    <Compile Include="Services\ConfigCalendarCtrl.cs" />
+    <Compile Include="Services\EFAlumnoCtrl.cs" />
+    <Compile Include="Services\CarreraCtrl.cs" />
+    <Compile Include="Services\EFDocenteCtrl.cs" />
+    <Compile Include="Services\EncuestaSatisfaccionCtrl.cs" />
+    <Compile Include="Services\EventCalendarCtrl.cs" />
+    <Compile Include="Services\EventoUniversidadCtrl.cs" />
+    <Compile Include="Services\NotaCompraCtrl.cs" />
+    <Compile Include="Services\SesionOrientacionCtrl.cs" />
+    <Compile Include="Services\TutorAlumnoCtrl.cs" />
+    <Compile Include="Services\TutorCtrl.cs" />
+    <Compile Include="Services\UniversidadCtrl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3a6024ca-2877-409d-84c8-a1997c27616e}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo\POV.Modelo.csproj">
+      <Project>{36c1aff9-323f-4330-aa43-4fb0ab4a0a70}</Project>
+      <Name>POV.Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.BO\POV.Seguridad.BO.csproj">
+      <Project>{86840dad-9fcc-46aa-8c98-3cab83195ec7}</Project>
+      <Name>POV.Seguridad.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+﻿Problemas-
+1) ¿Tuvo algún problema al momento de solicitar la orientación?-
+Asistencia-
+2) ¿La sesión se inició en el horario solicitado?-
+Puntualidad-
+3) ¿El orientador se presentó a la hora acordada?-
+Calificacion-
+4) ¿Cómo califica el Nivel de servicio del orientador?-
+Actividad-
+5) ¿El orientador le asignó una actividad extra para completar la sesión de orientación?

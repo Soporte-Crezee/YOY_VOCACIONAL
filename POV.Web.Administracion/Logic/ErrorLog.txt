@@ -1,0 +1,41 @@
+﻿
+********** 08/08/2016 05:32:59 p. m. **********
+Exception Type: System.Net.WebException
+Exception: No se puede resolver el nombre remoto: 'api-3t.sandbox.paypal.com'
+Source: HttpCall in PayPalFunction.cs
+Stack Trace: 
+   en System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   en System.Net.HttpWebRequest.GetRequestStream()
+   en NVPAPICaller.HttpCall(String NvpRequest) en c:\HOME\PLEN.CAMUN.15.POV\trunk\Aplicacion\Codigo y Pruebas\POV.Web.Administracion\Logic\PayPalFunctions.cs:línea 204
+
+********** 10/08/2016 09:42:45 a. m. **********
+Inner Exception Type: System.Net.Sockets.SocketException
+Inner Exception: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder 173.0.82.83:443
+Inner Source: System
+Inner Stack Trace: 
+   en System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   en System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+Exception Type: System.Net.WebException
+Exception: No es posible conectar con el servidor remoto
+Source: HttpCall in PayPalFunction.cs
+Stack Trace: 
+   en System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   en System.Net.HttpWebRequest.GetRequestStream()
+   en NVPAPICaller.HttpCall(String NvpRequest) en c:\HOME\PLEN.CAMUN.15.POV\trunk\Aplicacion\Codigo y Pruebas\POV.Web.Administracion\Logic\PayPalFunctions.cs:línea 204
+
+********** 10/08/2016 09:42:46 a. m. **********
+Exception Type: System.Net.ProtocolViolationException
+Exception: Debe proporcionar un cuerpo de solicitud si establece ContentLength>0 o SendChunked==true. Para ello, llame a [Begin]GetRequestStream antes de [Begin]GetResponse.
+Source: Se excedió el tiempo de espera
+Stack Trace: 
+   en System.Net.HttpWebRequest.GetResponse()
+   en NVPAPICaller.HttpCall(String NvpRequest) en c:\HOME\PLEN.CAMUN.15.POV\trunk\Aplicacion\Codigo y Pruebas\POV.Web.Administracion\Logic\PayPalFunctions.cs:línea 218
+
+********** 10/08/2016 11:43:00 a. m. **********
+Exception Type: System.Net.WebException
+Exception: Se excedió el tiempo de espera de la operación
+Source: Se excedió el tiempo de espera
+Stack Trace: 
+   en System.Net.HttpWebRequest.GetResponse()
+   en NVPAPICaller.HttpCall(String NvpRequest) en c:\HOME\PLEN.CAMUN.15.POV\trunk\Aplicacion\Codigo y Pruebas\POV.Web.Administracion\Logic\PayPalFunctions.cs:línea 235
+

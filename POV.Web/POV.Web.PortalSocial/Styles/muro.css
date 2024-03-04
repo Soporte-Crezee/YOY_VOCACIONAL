@@ -1,0 +1,102 @@
+﻿.img-circle {
+    border-color: #ff9e19 !important;
+}
+
+.item-option {
+    font-family: Roboto-Condensed;
+}
+
+.item-option:hover {
+    border-color:#FF9E19 !important;
+    background-color: #ffd800 !important;
+}
+
+.border_img {
+    border-color: #ff9e19  !important;
+}
+
+.titulo_marco_general {
+    background-color: #ff9e19 !important;
+    border-bottom: none !important;
+    color: #FFF;
+    font-family: Roboto-Condensed;
+}
+
+.profile_img_marco {
+    border-color: #ff9e19 !important;
+}
+
+.ui-accordion-header.ui-corner-top.ui-state-default.ui-accordion-header-active.ui-state-active.ui-accordion-icons {
+    background-color: #05AED9  !important;
+    border-color: #05AED9  !important;
+}
+
+.more {
+    font-size: 18px !important;
+}
+
+li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active {
+    border: 1px solid #05AED9;
+    background: #05AED9;
+}
+
+#ui-id-4 {
+    height: auto !important;
+}
+
+.tFoto {
+    background: #FFF !important;
+}
+
+div.tFoto {
+    border: #DDD 1px solid !important;
+}
+
+a.button_clip_39215E:hover,
+.button_clip_39215E:hover  {
+    color: #FFF !important;
+}
+
+.btn.btn-sm {
+    background: #ff9e19 !important;
+    font-family: Roboto-Condensed !important;
+    font-style: normal !important;
+}
+
+.btn.btn-sm:hover {
+    color: #ffffff;
+    background: #ff9e19 !important;
+    font-style: normal !important;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+.tBienvenida {
+    background-color: #ff9e19 !important;
+    font-family: Roboto-Bold !important;
+}
+
+.linea-divisor {
+    border-left: #9A9A9A solid !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .linea-divisor {
+        border-left: #FFFFFF !important;
+    }
+}
+
+.titulo_marco_general  {
+     background-color: #05aed9 !important;
+     border-bottom: #ff9e19 solid 5px !important;
+     color: #FFFFFF !important;
+     font-family: Roboto-Bold-Condensed !important;
+}
+
+h3.ui-accordion-header.ui-corner-top.ui-state-default.ui-accordion-header-active.ui-state-active.ui-accordion-icons {
+    background: #05AED9 !important;
+    border-color: #05AED9 !important;
+}

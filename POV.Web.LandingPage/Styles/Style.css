@@ -1,0 +1,353 @@
+﻿/* general styles */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#backgroundprincipal {
+    background: url(../Images/SOV_slideportal.jpg);
+    background-position-x: 10%;
+    background-size: cover;
+}
+
+@media screen and (min-width:992px) and (max-width:1170px) {
+    .fuente {
+        font-size: 19px !important;
+    }
+}
+/* padded section */
+.pad-section {
+    padding: 50px 0;
+}
+
+    .pad-section img {
+        width: 100%;
+    }
+/* vertical-centered text */
+.text-vcenter {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+    .text-vcenter h1 {
+        font-size: 4.5em;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+    }
+
+.login {
+    background: url(../images/SOV_ELEMENTOS_usuario_inactivo.png) no-repeat center center;
+}
+
+    .login:hover {
+        background: url(../images/SOV_ELEMENTOS_usuario_activo.png) no-repeat center center;
+    }
+
+.logo {
+    background: url(../images/SOV_ELEMENTOS_logo_VOCAREER1.png) no-repeat center center;
+}
+
+@media screen and (max-width:480px) {
+    font {
+        font-size: 30px;
+    }
+}
+
+#proceso {
+    background: url('../Images/SOV fondo gradient01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    /*width:100%;*/
+    /*height:100%;*/
+}
+
+.separator {
+    width: 6.5%;
+}
+
+.btnPerfilaciones {
+    border: none;
+    background-color: transparent;
+    background-image: url(../Images/SOV_ELEMENTOS_perfilaciones_off.png);
+    width: 86px;
+    height: 96px;
+}
+
+    .btnPerfilaciones:hover {
+        background-image: url(../Images/SOV_ELEMENTOS_perfilaciones_on.png);
+    }
+
+.btnApoyoEscolar {
+    border: none;
+    background-color: transparent;
+    background-image: url(../Images/SOV_ELEMENTOS_apoyoescolar_off.png);
+    width: 86px;
+    height: 96px;
+}
+
+    .btnApoyoEscolar:hover {
+        background-image: url(../Images/SOV_ELEMENTOS_apoyoescolar_on.png);
+    }
+
+.btnOrientadores {
+    border: none;
+    background-color: transparent;
+    background-image: url(../Images/SOV_ELEMENTOS_orientadores_off.png);
+    width: 86px;
+    height: 96px;
+}
+
+    .btnOrientadores:hover {
+        background-image: url(../Images/SOV_ELEMENTOS_orientadores_on.png);
+    }
+
+.btnComunidad {
+    border: none;
+    background-color: transparent;
+    background-image: url(../Images/SOV_ELEMENTOS_comunidad_off.png);
+    width: 86px;
+    height: 96px;
+}
+
+    .btnComunidad:hover {
+        background-image: url(../Images/SOV_ELEMENTOS_comunidad_on.png);
+    }
+
+.flotante {
+    /*display: scroll;*/
+    position: fixed;
+    bottom: 320px;
+    right: 0px;
+}
+
+.title-card {
+    color: #33acfd;
+}
+
+.body-card {
+    color: white;
+}
+
+#home {
+    background-color: black;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.mycard {
+    width: 400px;
+    height: 150px;
+}
+
+.enlace {
+    bottom: 100px;
+    right: 0px;
+    left: 0;
+    position: fixed;
+}
+
+/* additional sections */
+#imagenFlotante {
+    bottom: 10px;
+    right: 0px;
+    position: fixed;
+}
+
+    #imagenFlotante a img {
+        border: none;
+    }
+
+
+
+#divAbout {
+}
+
+#services {
+    background-color: #306d9f;
+    color: #ffffff;
+}
+
+    #services .glyphicon {
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 60px;
+        height: 140px;
+        line-height: 140px;
+        text-align: center;
+        vertical-align: middle;
+        width: 140px;
+    }
+
+#information {
+    background: url(../images/estate.jpg) no-repeat center center fixed;
+    display: table;
+    height: 800px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+    #information .panel {
+        opacity: 0.85;
+    }
+
+#google_map {
+    height: 500px;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+    footer .glyphicon {
+        color: #333333;
+        font-size: 60px;
+    }
+
+        footer .glyphicon:hover {
+            color: #306d9f;
+        }
+
+.color_text_navbar {
+    color: white !important;
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../Styles/fonts/Roboto-Medium_2.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../Styles/fonts/Roboto-Regular_1.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../Styles/fonts/Roboto-Light_2.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../Styles/fonts/Roboto-Bold_2.ttf);
+}
+
+@font-face {
+    font-family: CooperHewitt-Light;
+    src: url(../Styles/fonts/CooperHewitt-Light_0.otf);
+}
+
+.roboto-medium_13 {
+    font-family: Roboto-Medium;
+    font-size: 13pt;
+    color: white;
+}
+
+.roboto-medium_38 {
+    font-family: Roboto-Medium;
+    font-size: 38pt;
+    Color: #0067ac;
+}
+
+.roboto-regular_23 {
+    font-family: Roboto-Regular;
+    font-size: 23pt;
+    color: black;
+}
+
+.roboto-regular_17 {
+    font-family: Roboto-Regular;
+    font-size: 17pt;
+    color: white !important;
+}
+
+.roboto-regular_17_black {
+    font-family: Roboto-Regular;
+    font-size: 17pt;
+}
+
+.roboto-regular_15 {
+    font-family: Roboto-Regular;
+    font-size: 15pt;
+    color: white;
+}
+
+.roboto-regular_14 {
+    font-family: Roboto-Regular;
+    font-size: 14pt;
+    color: white;
+}
+
+.roboto-light_15 {
+    font-family: Roboto-Light;
+    font-size: 15pt;
+    color: white;
+}
+
+.roboto-light_14 {
+    font-family: Roboto-Light;
+    font-size: 14pt;
+    color: white;
+}
+
+.roboto-light_15_black {
+    font-family: Roboto-Light;
+    font-size: 15pt;
+}
+
+.roboto-light_23 {
+    font-family: Roboto-Light;
+    font-size: 23pt;
+    color: white;
+}
+
+.roboto-bold_39 {
+    font-family: Roboto-Bold;
+    font-size: 39pt;
+    color: white;
+}
+
+.roboto-bold_25 {
+    font-family: Roboto-Bold;
+    font-size: 25pt;
+    color: white;
+}
+
+
+.cooperhewitt-light_31 {
+    font-family: CooperHewitt-Light;
+    font-size: 31pt;
+    color: white;
+    text-align: center;
+}
+
+.cooperhewitt-light_28 {
+    font-family: CooperHewitt-Light;
+    font-size: 28pt;
+    color: white;
+    text-align: center;
+}
+
+label {
+    font-weight: lighter;
+}
+
+.contact {
+    cursor: pointer;
+}
+

@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Errores.master.cs" Inherits="POV.Web.LandingPage.Errores" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>YOY</title>
+    <link rel="shortcut icon" href="~/Images/Yoy_Favicon20px.png" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Default.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Default.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/bootstrap.css" rel="stylesheet" type="text/css" />
+    <!--jscripts-->
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery-1.7.2.min.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/jquery-ui-1.8.16.custom.min.js")%>"
+        type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="page">
+            <!-- inicio header -->
+            <div class="">
+                <div id="" style="">
+                    <div class="vertical-divider">
+                        <div class="col-xs-12 col-sm-4 col-md-3" style="text-align: center">
+                            <img alt="Logo" src="../Images/SOV_VOCAREER1.png" />
+                        </div>
+                        <div class="" >
+                            <div class="col-xs-12 col-sm-8 col-md-9" style="margin-top:20px;margin-bottom:20px">
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="text-align:center">
+                                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/SOV_ELEMENTOS_portalestudiante.png" class="" />
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="text-align:center">
+                                    <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/SOV_ELEMENTOS_portalorientador.png" class="" />
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="text-align:center">
+                                    <asp:Image ID="Image4" runat="server" ImageUrl="~/Images/SOV_tutores.png" class="" />
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="text-align:center">
+                                    <asp:Image ID="Image5" runat="server" ImageUrl="~/Images/SOV_universidad.png" class="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin header -->
+
+            <!-- Contenido principal -->
+            <div class="main">
+                <div id="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <!-- End contenido principal -->
+
+        </div>
+
+    </form>
+</body>
+</html>

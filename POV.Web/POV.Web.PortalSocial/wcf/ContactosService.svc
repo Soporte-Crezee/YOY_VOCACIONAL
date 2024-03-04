@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="POV.Web.PortalSocial.wcf.ContactosService" CodeBehind="ContactosService.svc.cs" %>

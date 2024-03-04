@@ -1,0 +1,158 @@
+<%@ Master Language="C#" AutoEventWireup="true" %>
+<%@ Import Namespace="BlogEngine.Core" %>
+<%
+	Page.Header.DataBind();
+	if (Security.IsAuthenticated)
+	{
+		aLogin.InnerText = Resources.labels.logoff;
+		aLogin.HRef = Utils.RelativeWebRoot + "Account/login.aspx?logoff";
+	}
+	else
+	{
+		aLogin.HRef = Utils.RelativeWebRoot + "Account/login.aspx";
+		aLogin.InnerText = Resources.labels.login;
+	}
+%>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="~/Content/images/blog/blogengine.ico" type="image/x-icon" />
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href="css/ddsmoothmenu.css" rel="stylesheet" type="text/css" />  
+    <link href="~/scripts/syntaxhighlighter/styles/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="~/scripts/syntaxhighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/scripts/XRegExp.js"></script>
+    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/scripts/shAutoloader.js"></script>
+    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/shActivator.js"></script>
+	<script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/jquery.session.js"></script>
+	
+	<script type="text/javascript">
+		  	$(document).ready(function () {
+		  		var splitUrl = function () {
+		  			var vars = [], hash;
+		  			var url = document.URL.split('?')[0];
+		  			var p = document.URL.split('?')[1];
+		  			if (p != undefined) {
+		  				p = p.split('&');
+		  				for (var i = 0; i < p.length; i++) {
+		  					hash = p[i].split('=');
+		  					vars.push(hash[1]);
+		  					vars[hash[0]] = hash[1];
+		  				}
+		  			}
+		  			vars['url'] = url;
+		  			return vars;
+		  		};
+
+		  		var key = 'QSloginHidden';
+		  		var value = splitUrl()['rule'];
+		  		var redirect = splitUrl()['redirect'];
+		  		var checksession = $.session.get(key);
+
+		  		if ((typeof value !== 'undefined' && value == 'loginHidden')) {
+		  		    $(".header").hide();
+		  			$.session.set(key, value);
+		  		}
+
+		  		else {
+		  			if (typeof value == 'undefined' && typeof checksession == 'undefined') {
+		  				setTimeout(function () {
+		  				    $(".header").show();
+		  				}, 100);
+		  				$.session.clear();
+		  			}
+		  		}
+
+		  		if ((checksession == 'loginHidden')) {
+		  		    $(".header").hide();
+		  		}
+
+		  		if (redirect != '' && redirect != undefined) {
+		  			window.location = redirect;
+		  		}
+		  	});
+		</script>
+</head>
+<body class="<%=Resources.labels.LangDirection %>">
+    <form runat="Server">
+        <header class="header">
+            <div class="container">
+				<div id="mainMenu" class="ddsmoothmenu">
+					<ul>
+                        <li><a href="<%=Utils.AbsoluteWebRoot %>"><%=Resources.labels.home %></a></li>
+                        <li><a href="<%=Utils.AbsoluteWebRoot %>archive<%= BlogConfig.FileExtension %>"><%=Resources.labels.archive %></a></li>
+                        <li><a href="<%=Utils.AbsoluteWebRoot %>contact<%= BlogConfig.FileExtension %>"><%=Resources.labels.contact %></a></li>
+                        <li class="login-link"  id="itemLogin"><a runat="server" class="aLogin" id="aLogin"></a></li>
+                    </ul>
+				</div>
+				<div id="topSearch">
+					<input type="submit" value="" id="searchsubmit" onkeypress="BlogEngine.search('<%=Utils.RelativeWebRoot%>');" onclick="BlogEngine.search('<%=Utils.RelativeWebRoot%>');return false;"/>
+					<input type="text" value="<%=BlogSettings.Instance.SearchDefaultText%>" 
+						onblur="$(this).animate({width: '100'}, 300 ); BlogEngine.searchClear('<%=BlogSettings.Instance.SearchDefaultText%>')" 
+						onfocus="$(this).animate({width: '215'}, 300 ); BlogEngine.searchClear('<%=BlogSettings.Instance.SearchDefaultText%>')" 
+						onkeypress="if(event.keyCode==13) return BlogEngine.search('<%=Utils.RelativeWebRoot%>')" id="searchfield" />
+				</div>
+            </div>
+			<div class="container header-title">
+				<p><%=BlogSettings.Instance.Description %></p>
+				<h1><a href="<%=Utils.AbsoluteWebRoot %>"><%=BlogSettings.Instance.Name %></a></h1>
+				
+				<div id="topSocial">
+					<ul>
+						<li><a href="[CUSTOMFIELD|THEME|Boldy|Facebook Account|/]" rel="external nofollow"><img runat="server" src="~/Custom/Themes/Boldy/images/ico_facebook.png" alt="Join Us on Facebook!" /></a></li>
+						<li><a href="[CUSTOMFIELD|THEME|Boldy|Twitter Account|/]" rel="external nofollow"><img runat="server" src="~/Custom/Themes/Boldy/images/ico_twitter.png" alt="Follow Us on Twitter!" /></a></li>
+						<li><a href="[CUSTOMFIELD|THEME|Boldy|Linkedin Account|/]" rel="external nofollow"><img runat="server" src="~/Custom/Themes/Boldy/images/ico_linkedin.png" alt="LinkedIn" /></a></li>
+						<li><a href="[CUSTOMFIELD|THEME|Boldy|RSS Link|/syndication.axd/]" rel="external nofollow"><img runat="server" src="~/Custom/Themes/Boldy/images/ico_rss.png" alt="Subcribe to Our RSS Feed" /></a></li>
+					</ul>
+				</div>	
+			</div>
+        </header>
+        <div class="container">
+            <div class="content-wrapper float-left">
+                <blog:SearchOnSearch ID="SearchOnSearch1" runat="server" MaxResults="3" Headline="You searched for" Text="Here are some results for the search term on this website" />
+                <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+            </div>
+            <aside class="sidebar-wrapper float-right">
+                <blog:WidgetZone ID="WidgetZone1" runat="server" ZoneName="be_WIDGET_ZONE" />
+            </aside>
+        </div>
+        <footer class="footer">
+            <div class="container">
+				<div id="footerWidgets">
+					<div id="footerWidgetsInner">
+						<blog:WidgetZone ID="WidgetZone2" runat="server" ZoneName="PageBottom" />
+					</div>
+				</div>
+                <p class="copyright float-left">
+                    <span>Copyright &copy; <%=DateTime.Now.Year %> - <a href="<%=Utils.AbsoluteWebRoot %>"><%=BlogSettings.Instance.Name %></a></span>
+                    <!--<span>Powered by <a href="http://dotnetblogengine.net" target="_blank" title="BlogEgine.NET <%=BlogSettings.Instance.Version() %>">BlogEngine.NET</a> </span>-->
+                </p>
+                <div id="theme-orig" class="theme-orig float-right">
+                    <!--<span>Original by</span> <a href="http://wordpress.site5.net/boldy/"><img runat="server" src="~/Custom/Themes/Boldy/images/site5.png" alt="site5.com" /></a>-->
+                </div>
+            </div>
+        </footer>
+    </form>
+	<script type="text/javascript" src="<%=Utils.AbsoluteWebRoot %>Custom/Themes/Boldy/js/ddsmoothmenu.js"></script>
+	<script>
+        // Social networks
+        var socialNetwork = $(".social-network li a");
+        for (i = 0; i < socialNetwork.length; ++i) {
+            link = socialNetwork[i];
+            if (link.href == "" || link.href == window.location) {
+                link.parentNode.style.display = "none";
+            }
+        }
+
+        // Admin menu
+        var loginLink = $(".login-link a").attr("href");
+        if (loginLink == "/admin/") {
+            $(".header-nav ul").append('<li><a href="<%=Utils.AbsoluteWebRoot %>Account/login.aspx?logoff">Logoff</a></li>');
+        }
+    </script>
+</body>
+</html>

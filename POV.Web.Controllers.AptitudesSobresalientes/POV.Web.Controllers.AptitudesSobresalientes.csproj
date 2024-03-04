@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{023F1483-612E-4D41-99E3-808816E07DB2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV</RootNamespace>
+    <AssemblyName>POV.Web.Controllers.AptitudesSobresalientes</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\Comun\Bibliotecas\EntityFramework611.net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\EntityFramework611.net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Base.Entity">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiciosActividades\Controllers\AsignarActividadesController.cs" />
+    <Compile Include="ServiciosActividades\Controllers\AsignarActividadesDocenteController.cs" />
+    <Compile Include="ServiciosActividades\Controllers\AsignarActividadGrupoDocenteController.cs" />
+    <Compile Include="ServiciosActividades\Controllers\ConfigurarBloquesActividadController.cs" />
+    <Compile Include="ServiciosActividades\Controllers\ConsultarAlumnosGrupoController.cs" />
+    <Compile Include="ServiciosActividades\Controllers\ConsultarEjesTematicosController.cs" />
+    <Compile Include="ServiciosActividades\Controllers\ConsultarPruebasController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServiciosActividades\Controllers\ConsultarReactivosController.cs" />
+    <Compile Include="ServiciosActividades\Controllers\MantenerAsignacionesDocenteController.cs" />
+    <Compile Include="ServiciosActividades\Controllers\CrearActividadController.cs" />
+    <Compile Include="ServiciosActividades\Controllers\CrearActividadDocenteController.cs" />
+    <Compile Include="ServiciosActividades\Controllers\MantenerActividadesController.cs" />
+    <Compile Include="ServiciosActividades\Controllers\MantenerActividadesDocenteController.cs" />
+    <Compile Include="ServiciosActividades\Controllers\MantenerAsignacionesController.cs" />
+    <Compile Include="ServiciosActividades\Controllers\MonitoreoAvanceAlumnosController.cs" />
+    <Compile Include="ServiciosActividades\Controllers\RealizarActividadesController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ServiciosPaquetes\Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GP.SocialEngine.Interfaces\GP.SocialEngine.Interfaces.csproj">
+      <Project>{1501b668-dc3a-45d9-b9b5-47df76e12587}</Project>
+      <Name>GP.SocialEngine.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.AmazonAWS.Services\POV.AmazonAWS.Services.csproj">
+      <Project>{22e2aad8-49db-4366-8a81-abf316e75dfc}</Project>
+      <Name>POV.AmazonAWS.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3a6024ca-2877-409d-84c8-a1997c27616e}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.Services\POV.CentroEducativo.Services.csproj">
+      <Project>{efeaf5ff-2f2d-4c50-ae27-baf8df1df922}</Project>
+      <Name>POV.CentroEducativo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.BO\POV.Comun.BO.csproj">
+      <Project>{e9bb2466-0e21-4b56-8803-deb5969d2b49}</Project>
+      <Name>POV.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.Services\POV.Comun.Services.csproj">
+      <Project>{adb9ba9a-c274-4101-8f0d-3cf6c86a5fb8}</Project>
+      <Name>POV.Comun.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ConfiguracionActividades.BO\POV.ConfiguracionActividades.BO.csproj">
+      <Project>{954ea12b-0652-4a5a-9d84-7105613154a5}</Project>
+      <Name>POV.ConfiguracionActividades.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ConfiguracionActividades\POV.ConfiguracionActividades.csproj">
+      <Project>{0b23fa15-e89b-4f62-88f0-12c423a191c6}</Project>
+      <Name>POV.ConfiguracionActividades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ConfiguracionesPlataforma.BO\POV.ConfiguracionesPlataforma.BO.csproj">
+      <Project>{7fd66f81-13c7-4123-9d26-833aaab3222d}</Project>
+      <Name>POV.ConfiguracionesPlataforma.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ConfiguracionesPlataforma\POV.ConfiguracionesPlataforma.csproj">
+      <Project>{0d48632b-a01e-4aec-8a2f-36e94986105f}</Project>
+      <Name>POV.ConfiguracionesPlataforma</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ContenidoDigital.BO\POV.ContenidoDigital.BO.csproj">
+      <Project>{47da4be5-e69c-48eb-89c6-402c9ae3e288}</Project>
+      <Name>POV.ContenidoDigital.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ContenidoDigital.Services\POV.ContenidoDigital.Services.csproj">
+      <Project>{df345bcb-c7a0-460e-89ef-ecadc50b2cd8}</Project>
+      <Name>POV.ContenidoDigital.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Expediente.BO\POV.Expediente.BO.csproj">
+      <Project>{34c7eb86-2321-432e-82b5-fe8119a9b622}</Project>
+      <Name>POV.Expediente.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Licencias.BO\POV.Licencias.BO.csproj">
+      <Project>{19961067-7725-4435-8ead-6e2b635f5d34}</Project>
+      <Name>POV.Licencias.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Licencias.Services\POV.Licencias.Services.csproj">
+      <Project>{13ab22df-d898-416f-a63f-a6cd09622760}</Project>
+      <Name>POV.Licencias.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Logger.Services\POV.Logger.Services.csproj">
+      <Project>{b7f1fb2e-42c5-47b7-b717-f9249f2d6843}</Project>
+      <Name>POV.Logger.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.BO\POV.Modelo.BO.csproj">
+      <Project>{d81e25e7-7ed3-4f7b-9ccf-a3e1e97b198a}</Project>
+      <Name>POV.Modelo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.Services\POV.Modelo.Services.csproj">
+      <Project>{f229a4b9-5990-4813-ab22-d38963e16eac}</Project>
+      <Name>POV.Modelo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo\POV.Modelo.csproj">
+      <Project>{36c1aff9-323f-4330-aa43-4fb0ab4a0a70}</Project>
+      <Name>POV.Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Operaciones.BO\POV.Operaciones.BO.csproj">
+      <Project>{8b5d5f65-30f6-4a30-a3be-ace5d2220418}</Project>
+      <Name>POV.Operaciones.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Operaciones.Services\POV.Operaciones.Services.csproj">
+      <Project>{78537c65-b1ea-4c34-85af-01ae35d97c13}</Project>
+      <Name>POV.Operaciones.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Profesionalizacion.BO\POV.Profesionalizacion.BO.csproj">
+      <Project>{249ebefd-a333-4961-9446-c006871afcd6}</Project>
+      <Name>POV.Profesionalizacion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Profesionalizacion.Services\POV.Profesionalizacion.Services.csproj">
+      <Project>{b062d22c-09fd-43d0-9b78-b32fe988f929}</Project>
+      <Name>POV.Profesionalizacion.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.BO\POV.Prueba.BO.csproj">
+      <Project>{90c2958d-1935-448e-9ac5-f9abcec3784b}</Project>
+      <Name>POV.Prueba.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Calificaciones.BO\POV.Prueba.Calificaciones.BO.csproj">
+      <Project>{18f00f92-8333-4209-86af-0ea43cae2833}</Project>
+      <Name>POV.Prueba.Calificaciones.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Dinamica.BO\POV.Prueba.Diagnostico.Dinamica.BO.csproj">
+      <Project>{a36c3552-74ff-41af-9466-e59288f9272a}</Project>
+      <Name>POV.Prueba.Diagnostico.Dinamica.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Services\POV.Prueba.Diagnostico.Services.csproj">
+      <Project>{e4ae7ea0-c62f-4a5c-9e9e-8c69d83347e8}</Project>
+      <Name>POV.Prueba.Diagnostico.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.BO\POV.Reactivos.BO.csproj">
+      <Project>{ed9cc55d-68f6-4be0-9dae-00bcd226c289}</Project>
+      <Name>POV.Reactivos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.Services\POV.Reactivos.Services.csproj">
+      <Project>{4c5f2ed6-f95d-414e-943b-6a4b7726fc8c}</Project>
+      <Name>POV.Reactivos.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.BO\POV.Seguridad.BO.csproj">
+      <Project>{86840dad-9fcc-46aa-8c98-3cab83195ec7}</Project>
+      <Name>POV.Seguridad.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F8B4B55-E2AB-4592-A770-982EA091583B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.Seguridad</RootNamespace>
+    <AssemblyName>POV.Seguridad.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Framework.Base">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\AccionUpdHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\AccionInsHlp.cs" />
+    <Compile Include="DAO\AccionRetHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\AplicacionInsHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\AplicacionRetHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\PerfilUpdHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\PerfilDelHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\PerfilInsHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\PerfilPermisoRetHlp.cs" />
+    <Compile Include="DAO\PerfilPermisoRetCompleteHlp.cs" />
+    <Compile Include="DAO\PerfilPermisoDelHlp.cs" />
+    <Compile Include="DAO\PerfilPermisoByPerfilDelHlp.cs" />
+    <Compile Include="DAO\PerfilPermisoInsHlp.cs" />
+    <Compile Include="DAO\PerfilRetHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\PermisoDelHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\PermisoInsHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\PermisoRetHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\PermisoUpdHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\PrivilegioRetHlp.cs" />
+    <Compile Include="DAO\PrivilegioDelHlp.cs" />
+    <Compile Include="DAO\PrivilegioInsHlp.cs" />
+    <Compile Include="DAO\UsuarioAccesoRetHlp.cs" />
+    <Compile Include="DAO\UsuarioAccesoDelHlp.cs" />
+    <Compile Include="DAO\UsuarioAccesoUsuarioPrivilegiosDelHlp.cs" />
+    <Compile Include="DAO\UsuarioAccesoInsHlp.cs" />
+    <Compile Include="DAO\UsuarioAccesoPrivilegiosRetHlp.cs" />
+    <Compile Include="DAO\UsuarioDelHlp.cs" />
+    <Compile Include="DAO\UsuarioInsHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\UsuarioPrivilegiosUpdHlp.cs" />
+    <Compile Include="DAO\UsuarioPrivilegiosRetHlp.cs" />
+    <Compile Include="DAO\UsuarioPrivilegiosUsuarioRetHlp.cs" />
+    <Compile Include="DAO\UsuarioPrivilegiosInsHlp.cs" />
+    <Compile Include="DAO\UsuarioRetHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\UsuarioUpdHlp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\AccionCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\AplicacionCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\PerfilCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\PerfilPermisoCtrl.cs" />
+    <Compile Include="Service\PermisoCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\PrivilegioCtrl.cs" />
+    <Compile Include="Service\UsuarioAccesoCtrl.cs" />
+    <Compile Include="Service\UsuarioConPrivilegiosActualizarCtrl.cs" />
+    <Compile Include="Service\UsuarioCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\UsuarioPrivilegiosCtrl.cs" />
+    <Compile Include="Utils\EncryptHash.cs" />
+    <Compile Include="Utils\PasswordProvider.cs" />
+    <Compile Include="Utils\UsernameProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GP.SocialEngine.BO\GP.SocialEngine.BO.csproj">
+      <Project>{BC81D924-3BB9-4EBD-B55F-B1C72132C069}</Project>
+      <Name>GP.SocialEngine.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.Interfaces\GP.SocialEngine.Interfaces.csproj">
+      <Project>{1501B668-DC3A-45D9-B9B5-47DF76E12587}</Project>
+      <Name>GP.SocialEngine.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.Services\GP.SocialEngine.Services.csproj">
+      <Project>{D00D4CB1-740D-43F7-8B42-378B035EC181}</Project>
+      <Name>GP.SocialEngine.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3A6024CA-2877-409D-84C8-A1997C27616E}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.Services\POV.CentroEducativo.Services.csproj">
+      <Project>{EFEAF5FF-2F2D-4C50-AE27-BAF8DF1DF922}</Project>
+      <Name>POV.CentroEducativo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.BO\POV.Comun.BO.csproj">
+      <Project>{E9BB2466-0E21-4B56-8803-DEB5969D2B49}</Project>
+      <Name>POV.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.Services\POV.Comun.Services.csproj">
+      <Project>{ADB9BA9A-C274-4101-8F0D-3CF6C86A5FB8}</Project>
+      <Name>POV.Comun.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.BO\POV.Seguridad.BO.csproj">
+      <Project>{86840DAD-9FCC-46AA-8C98-3CAB83195EC7}</Project>
+      <Name>POV.Seguridad.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

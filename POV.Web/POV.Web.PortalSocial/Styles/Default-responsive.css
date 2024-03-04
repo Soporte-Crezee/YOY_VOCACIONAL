@@ -1,0 +1,326 @@
+﻿/*Un iPhone tiene 320 de ancho*/
+@media (max-width: 480px)
+{
+    .page_container { width: 100%; }
+
+    /*Bloqueo de la pantalla*/
+    .blockUI img.mensaje_bloqueo { width: 98%; }
+
+    /*Cabecera*/
+    #header { height: auto; }
+    #header .menu_top_container { margin-right: 0px; margin-top: 30px; }
+        #header .menu_top_container .menu_horizontal { text-align: right; }
+            #header .menu_top_container .menu_horizontal > li.miCuenta { width: auto; margin-right: 0px; }
+                #header .menu_top_container .menu_horizontal > li.miCuenta > .opcionesCuenta { margin-left: -23px; text-align: center; }
+            #header .menu_top_container .menu_horizontal > li#opcSalir { margin-left: -67px; }
+            #header .menu_top_container .menu_horizontal > li > a > span.titulo { display: none; }
+            #header .menu_top_container .menu_horizontal > li > a > .icon.icon_email { margin-top: 6px; margin-right: -6px; }
+    #header #logo-banner {
+        height: 30px;
+        background-size: 66px 30px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    /*Menú horizontal superior*/
+    #menu-toolbar {
+        font-size: 1.0em;
+        height: auto;
+        min-height: 33px;
+        max-height: 66px;
+    }
+        #menu-toolbar .menu-maintop { height: auto; min-height: 21px; max-height: 42px; }
+            #menu-toolbar .menu-maintop li { margin: 0 5px; }
+                #menu-toolbar .menu-maintop li a { height: 21px; line-height: 21px; vertical-align: middle; }
+                
+    /*Menú lateral*/
+    #content #panel-container {  }
+        #content #panel-container #left_panel {
+            display: block;
+            min-width: 190px;
+            width: 100%;
+            float: none;
+        }
+            #content #panel-container #left_panel #menu_lateral #user_img { display: inline; }
+            /*Área de insignias*/
+            #content #panel-container #left_panel .user_badges .user_badges_last_earned { display: none; }
+            /*Área de opciones de navegación*/
+            #content #panel-container #left_panel #left_menu { margin-top: 0px; }
+            /*Área del top de alumnos*/
+            #content #panel-container #left_panel .top_alumnos { display: none; }
+            #content #panel-container #left_panel .top_alumnos #topAlumnos { 
+                width: 96%; 
+                position: inherit; 
+                margin-right: auto;
+                margin-left: auto;
+            }
+            #content #panel-container #left_panel .top_alumnos .alumno { 
+                float: none; 
+                display: table; 
+                margin-right: auto;
+                margin-left: auto; 
+            }
+            #content #panel-container #left_panel .top_alumnos .separador { margin-bottom: 0px !important; }
+                #content #panel-container #left_panel .top_alumnos .alumno > div { display: table-cell; float: none; }
+                    #content #panel-container #left_panel .top_alumnos .alumno > div.posicion {
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        vertical-align: middle;
+                        padding-right: 10px;
+                    }
+                        #content #panel-container #left_panel .top_alumnos .alumno > div.posicion > div { margin-top: 2px; margin-right: -10px; }
+            #content #panel-container #left_panel .top_alumnos .separadorAuxiliar { display: none; }
+
+    /*Área de contenido de la página*/
+    #content #panel-container #center_panel {
+        display: block;
+        float: none;
+        width: 100%;
+        padding-left: 0px;
+                padding-right: 0px !important;
+    }
+
+    /*Pantallas de búsqueda*/
+    #content .container_busqueda_general > tbody > tr > td:first-child { width: 20%; }
+    #content .container_busqueda_general input[type="text"] { width: 98%; }
+    #content .container_busqueda_general select {  width: 100% !important; }
+    #content .resultadosDeReactivos { width: auto; }
+    #content .resultadoJuegos { width: auto; }
+    
+    /*Sección Actividades*/
+    #content #panel-container #center_panel .panel_actividades { width: 100%; }
+        #content #panel-container #center_panel .panel_actividades .area_opciones_generales { width: 100%; max-width: 220px; }
+    /*Ventana de diálogo de las instrucciones*/
+    .dialogInstrucciones { width: auto !important; top: 590px !important; left: 15px !important; right: 15px; }
+    /*Ventana de diálogo de las actividades*/
+    .dialogActividades { width: 98% !important; }
+
+    /*Sección de mensajes*/
+    #message { width: 100%; }
+        #message .messagearea, 
+        #message .msmain,
+        #message .msfooter { width: 100%; }
+            #message .messagearea .msheader { width: 100%; margin-left: 0px; margin-right: 0px; }
+                #message .messagearea .msheader .submenu .actions { height: auto; padding-top: 0px; padding-left: 0px; }
+                    #message .messagearea .msheader .submenu .actions > a { margin-bottom: 5px; }
+            #message .msmain .actions { 
+                width: 100%; 
+                margin-left: 0px; margin-right: 0px; 
+                padding-top: 0px; padding-left: 0px; 
+                height: auto;  
+            }
+                #message .msmain .actions .searchcontact { float: none; padding: 5px; }
+                #message .msmain .actions .searchcontact > * { display: block; margin: auto; }
+            #message .msmain .newms {
+                width: 100%; 
+                height: auto; min-height: inherit;
+                margin-left: 0px; margin-right: 0px; 
+            }
+                #message .msmain .newms .txtnewms { width: 96%; }
+                    #message .msmain .newms .txtnewms .msubtitle { width: 100%; }
+                    #message .msmain .newms .txtnewms > textarea { width: 98% !important; }
+        #message .msfooter { margin-left: auto; margin-right: auto; }
+
+    /*Reactivos*/
+    #content #informacion_reactivo { position: inherit; margin: auto; }
+    #content #panel_reactivo { max-width: 700px; margin: auto; }
+    #content #panel_reactivo #questions.content_reactivo { width: auto !important; }
+    #content #panel_reactivo .reactivo_column_left { width: 98%; }
+    #content #panel_reactivo .content_reactivo #reactivo-contenido { width: 100%; float: none; height: auto !important; }
+        #content #panel_reactivo .content_reactivo #reactivo-contenido .reactivo_column_left1 { width: 100%; }
+        #content #panel_reactivo .content_reactivo #reactivo-contenido #enunciado-reactivo-container { width: 100%; }
+            #content #panel_reactivo .content_reactivo #reactivo-contenido #enunciado-reactivo-container img { width: 96%; margin-top: auto !important; }
+        #content #panel_reactivo .content_reactivo #reactivo-recursos-container { display: none; }
+    #content #panel_reactivo .content_reactivo #wrapReactivo .reactivo_columns { width: auto; }
+        #content #panel_reactivo .content_reactivo #wrapReactivo .reactivo_columns > #reactivo-contenido { width: auto; }
+
+    /*Cambio de contraseña*/
+    #content .formulario_cambio_contraseña { padding: 5px 10px; }
+        #content .formulario_cambio_contraseña .formulario_3 { margin-top: 0px; }
+        #content .formulario_cambio_contraseña ul li { margin-top: 5px; margin-bottom: 5px; }
+            #content .formulario_cambio_contraseña ul li > * { 
+                display: block; 
+                width: 100% !important; 
+                margin-right: 0px; 
+                padding-left: 0px; padding-right: 0px; 
+            }
+    #content .formulario_cambio_contraseña .opciones_formulario { margin-left: auto; text-align: center; }
+
+    /*Editar perfil*/
+    #content #panel-container.panel_edicion_perfil #center_panel #info_perfil,
+    #content #panel-container.panel_edicion_perfil #center_panel #info_perfil > * { margin-bottom: 0px; }
+    #content #panel-container.panel_edicion_perfil #center_panel .perfil_div { margin-top: 0px; padding-top: 0px; }
+        #content #panel-container.panel_edicion_perfil #center_panel .perfil_div #container_photo { width: 97%; }
+            #content #panel-container.panel_edicion_perfil #center_panel .perfil_div #container_photo label,
+            #content #panel-container.panel_edicion_perfil #center_panel .perfil_div #container_photo input[type="file"] { width: auto; }
+        #content #panel-container.panel_edicion_perfil #center_panel .perfil_div .container_busqueda_general input[type="text"],
+        #content #panel-container.panel_edicion_perfil #center_panel .perfil_div .container_busqueda_general label { width: inherit; }
+        #content #panel-container.panel_edicion_perfil #center_panel .perfil_div .container_busqueda_general .label_general { width: auto; }
+        #content #panel-container.panel_edicion_perfil #center_panel .perfil_div .opciones_formulario {
+                margin-left: auto !important;
+                text-align: center;
+            }
+
+    /*Aspirantes comunes*/
+    #content #panel-container #center_panel .listado_Aspirantes { width: 100% !important; }
+}
+/*Aquí cae un iPhone en Landscape y un iPad en Portrait*/
+@media (min-width: 481px) and (max-width: 767px)
+{
+    .page_container { width: 100%; }
+
+    /*Bloqueo de la pantalla*/
+    .blockUI img.mensaje_bloqueo { width: 90%; max-width: 450px; }
+
+    /*Cabecera*/
+    #header .menu_top_container { margin-right: 0px; }
+        #header .menu_top_container .menu_horizontal { text-align: right; font-size: 94%; }
+            #header .menu_top_container .menu_horizontal > li { margin-right: 0px; }
+            #header .menu_top_container .menu_horizontal > li.miCuenta { width: auto; }
+                #header .menu_top_container .menu_horizontal > li.miCuenta > .opcionesCuenta { margin-left: -15px; text-align: center; }
+            #header .menu_top_container .menu_horizontal > li#opcSalir { margin-left: -69px; }
+    #header #logo-banner {
+        height: 50px;
+        background-size: 111px 50px;
+        margin-top: 5px;
+    }
+
+    /*Menú horizontal superior*/
+    #menu-toolbar { font-size: 1.1em; height: auto; }
+            #menu-toolbar .menu-maintop li { margin: 0 5px; }
+
+    /*Menú lateral*/
+    #content #panel-container { display: table; width: 100%; }
+        #content #panel-container #left_panel {
+            display: table-cell;
+            min-width: 190px;
+            /*float: none;*/
+        }
+            #content #panel-container #left_panel #menu_lateral { min-height: initial; }
+            /*Área del top de alumnos*/
+            #content #panel-container #left_panel .top_alumnos #topAlumnos { width: 190px; position: inherit; }
+            #content #panel-container #left_panel .top_alumnos .alumno { display: table; float: none; }
+                #content #panel-container #left_panel .top_alumnos .alumno > div { display: table-cell; float: none; }
+                    #content #panel-container #left_panel .top_alumnos .alumno > div.posicion {
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        height: auto;
+                        vertical-align: middle;
+                    }
+                        #content #panel-container #left_panel .top_alumnos .alumno > div.posicion > div{ margin-top: 2px; }
+                    #content #panel-container #left_panel .top_alumnos .alumno > div.info { width: 140px; }
+                        #content #panel-container #left_panel .top_alumnos .alumno > div.info #dvInfoAlumno { width: 100px; }
+            #content #panel-container #left_panel .top_alumnos .separadorAuxiliar { display: none; }
+
+    /*Área de contenido de la página*/
+    #content #panel-container #center_panel {
+        display: table-cell;
+        /*width: auto;
+        float: none;*/
+        padding-left: 20px;
+    }
+    
+    /*Pantallas de búsqueda*/
+    #content .resultadosDeReactivos { width: auto; }
+    #content .resultadoJuegos { width: auto; }
+
+    /*Sección Actividades*/
+    #content #panel-container #center_panel .panel_actividades { width: 100%; max-width: 450px; }
+    /*Ventana de diálogo de las actividades*/
+    .dialogActividades { width: 98% !important; }
+
+    /*Reactivos*/
+    #content #informacion_reactivo { position: inherit; margin: auto; }
+    #content #panel_reactivo { max-width: 700px; margin: auto; }
+    #content #panel_reactivo #questions.content_reactivo { width: auto !important; }
+    #content #panel_reactivo .reactivo_column_left { width: 98%; }
+    #content #panel_reactivo .content_reactivo #reactivo-contenido { width: 100%; float: none; height: auto !important; }
+        #content #panel_reactivo .content_reactivo #reactivo-contenido .reactivo_column_left1 { width: 100%; }
+        #content #panel_reactivo .content_reactivo #reactivo-contenido #enunciado-reactivo-container { width: 100%; }
+            #content #panel_reactivo .content_reactivo #reactivo-contenido #enunciado-reactivo-container img { width: 96%; margin-top: auto !important; }
+        #content #panel_reactivo .content_reactivo #reactivo-recursos-container { display: none; }
+    #content #panel_reactivo .content_reactivo #wrapReactivo .reactivo_columns { width: auto; }
+        #content #panel_reactivo .content_reactivo #wrapReactivo .reactivo_columns > #reactivo-contenido { width: auto; }
+
+    /*Cambio de contraseña*/
+    #content .formulario_cambio_contraseña ul li label { width: 160px; margin-right: 0px;  }
+    #content .formulario_cambio_contraseña ul li input[type="password"] { width: 185px !important; }
+    #content .formulario_cambio_contraseña .opciones_formulario { margin-left: 162px; }
+
+    /*Editar perfil*/
+    #content #panel-container.panel_edicion_perfil #left_panel { min-width: 164px; }
+    #content #panel-container.panel_edicion_perfil #center_panel { padding-left: 5px; }
+        #content #panel-container.panel_edicion_perfil #center_panel .perfil_div #container_photo { width: 97%; }
+            #content #panel-container.panel_edicion_perfil #center_panel .perfil_div #container_photo label,
+            #content #panel-container.panel_edicion_perfil #center_panel .perfil_div #container_photo input[type="file"] { width: auto; }
+        #content #panel-container.panel_edicion_perfil #center_panel .perfil_div .container_busqueda_general input[type="text"],
+        #content #panel-container.panel_edicion_perfil #center_panel .perfil_div .container_busqueda_general label { width: inherit; }
+        #content #panel-container.panel_edicion_perfil #center_panel .perfil_div .container_busqueda_general .label_general { width: auto; }
+        #content #panel-container.panel_edicion_perfil #center_panel .perfil_div .opciones_formulario {
+            margin-left: auto !important;
+            text-align: center;
+        }
+
+    /*Aspirantes comunes*/
+    #content #panel-container #center_panel .listado_Aspirantes { width: 100% !important; }
+}
+/*El layout de social tiene 1000px de ancho*/
+@media (min-width: 768px) and (max-width: 999px)
+{
+    .page_container { width: 100%; }
+
+    /*Cabecera*/
+    #header .menu_top_container { margin-right: 0px; }
+        #header .menu_top_container .menu_horizontal { text-align: right; }
+            #header .menu_top_container .menu_horizontal > li.miCuenta { width: auto; }
+                #header .menu_top_container .menu_horizontal > li.miCuenta > .opcionesCuenta { margin-left: -15px; text-align: center; }
+            #header .menu_top_container .menu_horizontal > li#opcSalir { margin-left: -76px; }
+    
+    /*Menú lateral*/
+    #content #panel-container { display: table; width: 100%; }
+        #content #panel-container #left_panel {
+            display: table-cell;
+            min-width: 215px;
+            /*float: none;*/
+        }
+            #content #panel-container #left_panel #menu_lateral { min-height: initial; }
+
+    /*Área de contenido de la página*/
+    #content #panel-container #center_panel {
+        display: table-cell;
+        /*width: auto;*/
+        /*float: none;*/
+        padding-left: 20px;
+    }
+        
+    /*Pantallas de búsqueda*/
+    #content .resultadosDeReactivos { width: auto; }
+    #content .resultadoJuegos { width: auto; }
+
+    /*Sección Actividades*/
+    /*Ventana de diálogo de las actividades*/
+    .dialogActividades { width: 750px !important; }
+
+    /*Reactivos*/
+    #content #informacion_reactivo { position: inherit; margin: auto; }
+    #content #panel_reactivo { max-width: 700px; margin: auto; }
+    #content #panel_reactivo #questions.content_reactivo { width: auto !important; }
+    #content #panel_reactivo .reactivo_column_left { width: 98%; }
+    #content #panel_reactivo .content_reactivo #reactivo-contenido { width: 100%; float: none; }
+        #content #panel_reactivo .content_reactivo #reactivo-contenido .reactivo_column_left1 { width: 100%; }
+        #content #panel_reactivo .content_reactivo #reactivo-contenido #enunciado-reactivo-container { width: 100%; }
+            #content #panel_reactivo .content_reactivo #reactivo-contenido #enunciado-reactivo-container img { width: 96%; }
+        #content #panel_reactivo .content_reactivo #reactivo-recursos-container { display: none; }
+    #content #panel_reactivo .content_reactivo #wrapReactivo .reactivo_columns { width: auto; }
+        #content #panel_reactivo .content_reactivo #wrapReactivo .reactivo_columns > #reactivo-contenido { width: auto; }
+}
+/*Esto es por el margen negativo que se usa en el menú para alinearlo a la derecha que crea un espacio en blanco*/
+@media (min-width: 1000px) and (max-width: 1076px) 
+{
+    /*Cabecera*/
+    #header .menu_top_container { margin-right: 0px; }
+        #header .menu_top_container .menu_horizontal { text-align: right; }
+            #header .menu_top_container .menu_horizontal > li.miCuenta { width: auto; }
+                #header .menu_top_container .menu_horizontal > li.miCuenta > .opcionesCuenta { margin-left: -15px; text-align: center; }
+            #header .menu_top_container .menu_horizontal > li#opcSalir { margin-left: -76px; }
+}

@@ -1,0 +1,607 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="POV.Content.MasterPages.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>YOY - HERRAMIENTAS ORIENTADOR</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="~/Content/Images/Yoy_Favicon20px.png" />
+    <!-- styles -->
+    <link href="~/Content/Styles/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Styles/bootstrap-navbar-color.css" rel="stylesheet" />
+    <link href="~/Content/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Styles/Talentos.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Styles/Actividades.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Styles/Menu.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Styles/ui-lightness/jquery-ui-1.12.1.custom.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Styles/Icons.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Styles/GridTalentos.css" rel="stylesheet" />
+    <link href="~/Content/Styles/TimeCircles/TimeCircles.css" rel="stylesheet" type="text/css" />
+
+    <!--jscripts-->
+    <script src="<% =Page.ResolveClientUrl("~/Content/Scripts/")%>jquery-1.12.1.min.js" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Content/Scripts/")%>bootstrap.js" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Content/Scripts/jquery-migrate-1.2.1.min.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Content/Scripts/jquery-ui-1.8.16.custom.min.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Content/Scripts/api/api.menu.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Content/Scripts/api/api.dialogs.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Content/Scripts/jquery.blockUI.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Content/Scripts/jquery.ui.datepicker-es.js")%>" type="text/javascript"></script>
+
+
+    <script src="<% =Page.ResolveClientUrl("~/Content/Scripts/")%>json.js" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Content/Scripts/api/")%>api.shared.js" type="text/javascript"></script>
+    <link href="<% =Page.ResolveClientUrl("~/Content/Styles/")%>alertify.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Content/Styles/")%>alertify.bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Content/Styles/")%>alertify.default.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Content/Styles/")%>alertify.semantic.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Styles/headerandfooter.css" rel="stylesheet" type="text/css" />
+
+    <script src="<% =Page.ResolveClientUrl("~/Content/Scripts/")%>alertify.js" type="text/javascript"></script>
+
+    <script src="<% =Page.ResolveClientUrl("~/Content/Scripts/")%>api.orientacionvocacional.js" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Content/Scripts/")%>core.orientacionvocacional.js" type="text/javascript"></script>
+
+    <script src="<% =Page.ResolveClientUrl("~/Content/Scripts/TimeCircles/")%>TimeCircles.js" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Content/Scripts/FitText.js")%>" type="text/javascript"></script>
+
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $("#tituloPortal").fitText();
+        });
+        var url_wcf = "<% =Page.ResolveClientUrl("~/wcf/")%>";
+    </script>
+    <style>
+        html, #frmMain, body, .fullcontainer, #contenedorfinal {
+            min-height: 100% !important;
+        }
+
+        body {
+            /* Margin bottom by footer height */
+            margin-bottom: 40px;
+        }
+
+        #footer {
+            background-color: red;
+            bottom: 0;
+            height: 40px;
+        }
+
+        /* Custom page CSS
+-------------------------------------------------- */
+        /* Not required for template or sticky footer method. */
+
+        .container {
+            width: auto;
+            padding: 0 15px;
+        }
+
+        /*Agregados*/
+        .color-warning {
+            background-color: #ffd600;
+        }
+
+        .color-success {
+            background-color: #388e3c;
+        }
+
+        .color-info {
+            background-color: #05AED9;
+        }
+
+        .color-error {
+            background-color: #d50000;
+        }
+    </style>
+    <script language="javascript" type="text/javascript">
+        function showMessage(text, redirection) {
+            $("#txtRedirect").val((redirection != undefined) ? "#" : "#");
+            var api = new MessageApi();
+            api.CreateMessage(text, "INFO");
+            resetHiden();
+            api.Show();
+
+        }
+
+        var sesionesDocente = [{ sesionorientacionid: undefined }];
+        var cargaSesionesDocente = false;
+
+        var SesionOrientacionDocente = {};
+        var SesionIniciadaDocente = {};
+
+        var bandDocente = false;
+
+        var relojDocente = '';
+
+        var active = false;
+        var openAlert = false;
+
+        $(document).ready($(function () {
+
+
+            getSesionOrientacionDocente();
+
+            var verificarSesionesDocente = setInterval(startStatusSesionesDocente, 900000);
+            var cargaStatusSesionesDocente = setInterval(statusSesionesDocente, 500);
+
+            function startStatusSesionesDocente() {
+                getSesionOrientacionDocente();
+                cargaStatusSesionesDocente = setInterval(statusSesionesDocente, 500);
+            }
+
+            function statusSesionesDocente() {
+                if (cargaSesionesDocente) {
+                    SesionOrientacionOrientador();
+                    clearInterval(cargaStatusSesionesDocente);
+                    cargaSesionesDocente = false;
+                }
+            }
+
+            function SesionOrientacionOrientador() {
+                cargaHrsDocente = [];
+
+                if (sesionesDocente.length != undefined) {
+                    var sAuxOri = "";
+
+                    var fecha = new Date();
+                    var nowhrs = fecha.format('HH:mm');
+                    for (var i = 0; i < sesionesDocente.length; i++) {
+                        var horaSaveFn = sesionesDocente[i].fin.split('T')[1];
+
+                        if (sesionesDocente[i].estatussesion == 0 && sesionesDocente[i].asistenciaorientador == 0 && nowhrs <= horaSaveFn) {
+                            sAuxOri += "Sesion de orientación" + "<br/>";
+                            sAuxOri += "Fecha: " + sesionesDocente[i].fecha + "<br\>";
+                            sAuxOri += "Inicio: " + sesionesDocente[i].inicio.split('T')[1] + "<br\> ";
+                            sAuxOri += "Fin: " + sesionesDocente[i].fin.split('T')[1] + "<br\>";
+                            sAuxOri += "<br\>";
+
+                            var hrs = new Object();
+                            hrs.inicio = sesionesDocente[i].inicio.split('T')[1];
+                            hrs.fin = sesionesDocente[i].fin.split('T')[1];
+                            hrs.sesionorientacionid = sesionesDocente[i].sesionorientacionid;
+                            hrs.docenteid = sesionesDocente[i].docenteid;
+                            hrs.asistenciaorientador = sesionesDocente[i].asistenciaorientador;
+                            cargaHrsDocente.push(hrs);
+                        }
+                        else if (sesionesDocente[i].estatussesion == 1 || sesionesDocente[i].asistenciaorientador == 1 && nowhrs < horaSaveFn) {
+                            SesionIniciadaDocente = sesionesDocente[i];
+                            var finSesion = SesionIniciadaDocente.fin.split('T')[1];
+
+                            relojDocente = intervalClockDocente(finSesion);
+                        }
+                    }
+
+                    var preOri = document.createElement('pre');
+                    var texto = preOri.appendChild(document.createTextNode(sAuxOri.toString()));
+
+                    var fecha = new Date();
+                    var nowhrs = fecha.format('HH:mm');
+                    nowhrs = parseFloat(nowhrs.replace(":", ".").toString());
+                    var openModal = false;
+                    var horaSaveIn = '';
+                    var horaSaveFn = '';
+
+                    if (cargaHrsDocente.length != undefined) {
+                        for (var i = 0; i < cargaHrsDocente.length; i++) {
+                            horaSaveIn = parseFloat(cargaHrsDocente[i].inicio.replace(":", ".").toString());
+                            horaSaveFn = parseFloat(cargaHrsDocente[i].fin.replace(":", ".").toString());
+                            if ((horaSaveIn - 0.15) <= nowhrs && nowhrs < horaSaveFn) {
+                                openModal = true;
+                                openAlert = true;
+                            }
+                        }
+
+                        if (openModal == true) {
+                            HrsVerifyDocente = setInterval(VerificarHorasDocente, 15000);
+                        }
+                    }
+
+                    if (openAlert == true) {
+                        var notification = alertify.notify(texto.data, 'success', 10, function () { console.log('dismissed'); });
+                    }
+                }
+            }
+
+            function VerificarHorasDocente() {
+                if (cargaHrsDocente != undefined) {
+                    var now = new Date();
+                    var fecha = now.format('HH:mm');
+
+                    for (var i = 0; i < cargaHrsDocente.length; i++) {
+                        var horainicio = cargaHrsDocente[i].inicio;
+                        var horafin = cargaHrsDocente[i].fin;
+                        if (fecha >= horainicio && fecha <= horafin && bandDocente == false) {
+                            bandDocente = true;
+                            SesionOrientacionDocente = cargaHrsDocente[i];
+                            $('#btnModalAsistenciaDocente').click();
+                        }
+                    }
+                }
+            }
+
+            $("#btnAceptSesionDocente").click(function () {
+                bandDocente = false;
+                var hrsIn = SesionOrientacionDocente.inicio;
+                var dto = {};
+                var sesion = {};
+                dto.sesionorientacionid = SesionOrientacionDocente.sesionorientacionid;
+                dto.docenteid = SesionOrientacionDocente.docenteid;
+                sesion.dto = dto;
+                clearInterval(HrsVerifyDocente);
+                saveSesionOrientacion(sesion);
+
+                setInterval(startStatusSesionesDocente, 900000);
+                $('#btnCancelarDocente').click();
+                var finSesion = SesionOrientacionDocente.fin;
+                relojDocente = intervalClockDocente(finSesion);
+            });
+
+            $('#btnCancelarDocente').click(function () {
+                bandDocente = false;
+            });
+
+            function intervalClockDocente(finSesion) {
+                if (SesionIniciadaDocente != undefined && finSesion != '' && SesionIniciadaDocente.estatussesion != 2) {
+                    var fecha = new Date();
+
+                    var fecha2 = fecha.format('yyyy-MM-dd');
+                    var nowhrs = fecha.format('HH:mm:ss');
+
+                    if (nowhrs < finSesion) {
+                        var date = fecha2;
+                        var time = finSesion;
+                        var datetime = date + ' ' + time;
+                        $('#DateCountdownDocente').show();
+                        $("#DateCountdownDocente").data('date', datetime).TimeCircles(
+                            {
+                                time:
+                                    {
+                                        Days: { show: false }
+                                    },
+                                count_past_zero: false
+                            }
+                            ).addListener(function (unit, amount, total) {
+                                if (total == 0) finalizarDocente();
+                            }).start();
+
+                    }
+                }
+                else {
+                    clearInterval(relojDocente);
+                }
+            }
+
+            function finalizarDocente() {
+                var fecha = new Date();
+                var nowhrs = fecha.format('HH:mm:ss');
+                clearInterval(relojDocente);
+                $('#DateCountdownDocente').hide();
+                var dto = {};
+                var sesion = {};
+                dto.sesionorientacionid = SesionIniciadaDocente.sesionorientacionid;
+                dto.fecha = SesionIniciadaDocente.fecha;
+                dto.alumnoid = SesionIniciadaDocente.alumnoid;
+                dto.docenteid = SesionIniciadaDocente.docenteid;
+                dto.horafinalizada = nowhrs;
+                sesion.dto = dto;
+                finSesionOrientacion(sesion);
+            }
+
+        }));
+
+        var imgLoader = '<%= Page.ResolveClientUrl("~/Content/images/SOV_cargando.flotante.gif")%>';
+        $(document).ready(function () {
+            var api = new MenuApi();
+            api.BuildMenu();
+            initMasterClient();
+            $.blockUI.defaults.fadeOut = 200;
+            $.blockUI.defaults.fadeOut = 100;
+            $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+            $.blockUI.defaults.message = '<h1 style="font-size:20px;"><img src="' + imgLoader + '" /></h1>';
+
+            $(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
+            changeColorDisableInputs();
+
+
+        });
+
+
+        function changeColorDisableInputs() {
+            $("input:disabled, textarea:disabled, select:disabled").each(function (index) {
+
+                $(this).addClass("color-black");
+            });
+        }
+
+        function initMasterClient() {
+            if ($("#<%#hdnShowMessage.ClientID%>").val() == "1") { mostrarError(); }
+            if ($("#<%#hdnShowMessage.ClientID%>").val() == "2") { mostrarWarning(); }
+            if ($("#<%#hdnShowMessage.ClientID%>").val() == "3") { mostrarInfo(); }
+
+        }
+        function mostrarError() {
+            var api = new MessageApi();
+            var text = $("#<%# hdnLastMessage.ClientID %>").val();
+            api.CreateMessage(text, "ERROR");
+            resetHiden();
+            api.Show();
+
+        }
+        function mostrarWarning() {
+            var api = new MessageApi();
+            var text = $("#<%# hdnLastMessage.ClientID %>").val();
+            api.CreateMessage(text, "WARNING");
+            resetHiden();
+            api.Show();
+
+        }
+        function mostrarInfo() {
+            var api = new MessageApi();
+            var text = $("#<%# hdnLastMessage.ClientID %>").val();
+            api.CreateMessage(text, "INFO");
+            resetHiden();
+            api.Show();
+
+
+        }
+        function resetHiden() { $("#<%# hdnShowMessage.ClientID %>").val("0"); $("#<%# hdnLastMessage.ClientID %>").val(""); }
+
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!--Deteccion jscript-->
+    <div id="jsEnabled" class="ui-state-error" style="display: none;">
+        El navegador no está ejecutando javascript
+    </div>
+    <script type="text/javascript">        $("#jsEnabled").hide();</script>
+    <!--Deteccion jscript-->
+    <div class="container-fluid" id="contenedorfinal">
+        <form id="frmMain" runat="server">
+            <asp:ScriptManager ID="ScriptManager1" runat="server" />
+            <script type="text/javascript">
+                Sys.WebForms.PageRequestManager.getInstance().add_endRequest(End);
+                function End(sender, args) { initMasterClient(); $(".boton").button(); }
+
+                Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(OnBeginRequestBlockUI);
+                function OnBeginRequestBlockUI(sender, args) {
+                    DocumentBlockUI();
+                }
+
+                function DoFormBlockUI() {
+                    $("#frmMain").submit(function () { DocumentBlockUI(); return true; });
+                }
+                function DocumentBlockUI() {
+
+                    $.blockUI.defaults.fadeOut = 200;
+                    $.blockUI.defaults.fadeOut = 100;
+                    $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+                    $.blockUI.defaults.message = '<h1 style="font-size:20px;"><img src="' + imgLoader + '" /></h1>';
+                    $.blockUI();
+                }
+
+                Sys.WebForms.PageRequestManager.getInstance().add_endRequest(OnEndRequestUnblockUI);
+                function OnEndRequestUnblockUI(sender, args) {
+                    DocumentUnblockUI();
+                }
+
+                function DocumentUnblockUI() {
+                    $.blockUI.defaults.fadeOut = 200;
+                    $.blockUI.defaults.fadeOut = 100;
+                    $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+                    $.blockUI.defaults.message = '<h1 style="font-size:20px;"><img src="' + imgLoader + '" /></h1>';
+                    $.unblockUI();
+                }
+
+                //Mouse hover -> menu bootstrap
+                $(document).ready(function () {
+                    $("li").hover(
+                    function () {
+                        if ($(this).hasClass('menu_item')) {
+                            $(this).addClass("active");
+                        }
+                    },
+                    function () {
+                        if ($(this).hasClass('menu_item')) {
+                            $(this).removeClass("active");
+                        }
+                    }
+                    );
+                });
+            </script>
+            <!--inicio header-->
+            <div class="">
+                <div class="col-md-12 col-sm-12 col-xs-12 header-container">
+                    <div class="navbar navbar-default navbar-static-top" style="border-color: #ffffff !important;">
+                        <%-- LOGO --%>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
+                                <a href="<%=Page.ResolveClientUrl("~/Default.aspx")%>">
+                                    <img id="Img1" alt="" title="Inicio" runat="server" style="margin-top: 15px" src="~/Content/images/SOV_VOCAREER1.png" class="img" />
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                                <div class="row">
+                                    <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1 text-center" style="margin-top: 20px">
+                                        <asp:Image ID="Image2" runat="server" ImageUrl="~/Content/images/SOV_ELEMENTOS_portalorientador.png" class="img" />
+                                    </div>
+                                    <div class="col-xs-9 col-sm-6 col-md-7 col-lg-6">
+                                        <h2 class="titulo-portal" style="margin-top: 30px">HERRAMIENTAS ORIENTADOR</h2>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-5 margentopizquierda text-center">
+                                        <div class="header_topmenu textcenter">
+                                            <div class="col-xs-12 col-md-12 col-lg-12 text-center">
+                                                <a href="<%=Page.ResolveClientUrl("~/Default.aspx")%>" class="first subheader">
+                                                    <asp:Label ID="LblNombreUsuario" runat="server" />
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-12 col-md-12 col-lg-12 text-center">
+                                                <asp:HyperLink ID="HpLSalir" NavigateUrl="~/Auth/RegresarPortalSocial.aspx" runat="server" CssClass="subheader">
+                                                    <span class="hidden-xs">Regresar al portal orientador</span>
+                                                    <span class="hidden-sm hidden-md hidden-lg icon"><img alt="regresar" src="~/Content/images/icono_ regresar_yoy.png" runat="server" /> Regresar</span>
+                                                </asp:HyperLink>
+                                            </div>
+                                        </div>
+                                        <ul id="menulateral" class="header_topmenu text-center">
+                                            <li class="text-center"></li>
+                                            <li class="text-center"></li>
+                                            <li class="header_submenu info-escuela">
+                                                <div class="margenborde">
+                                                    <asp:Label ID="LblMiEscuela" runat="server">Mi escuela: </asp:Label>
+                                                    <asp:Label ID="LblNombreEscuela" runat="server" Visible="false"></asp:Label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-xs-12 form-group">
+                    <div class="col-sm-8"></div>
+                    <div class="col-sm-4">
+                        <div id="DateCountdownDocente" data-date="2017-01-01 00:00:00" style="width: 250px; height: 80px; padding: 0px; box-sizing: border-box; background-color: #E0E8EF; display: none;"></div>
+                    </div>
+                </div>
+            </div>
+            <asp:MultiView ID="MultiViewTopMenu" runat="server">
+
+                <asp:View ID="ViewToMenuExpertoPruebas" runat="server">
+                    <nav role="navigation" class="navbar navbar-default col-xs-12">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li id="Li1" runat="server" visible="false" class="menu_item ">
+								<a href="<%=Page.ResolveClientUrl("~/Pages/Pruebas/BuscarPruebas.aspx")%>" class="menunavtop">Mis pruebas</a>
+							</li>
+							<li id="Li2" runat="server" visible="false" class="menu_item ">
+								<a href="<%=Page.ResolveClientUrl("~/Pages/Reactivos/BuscarReactivos.aspx")%>" class="menunavtop">Mis reactivos</a>
+							</li>
+							<li id="opcion_CrearActividad" runat="server" visible="true" class="menu_item ">
+								<a class="menunavtop" href="<%=Page.ResolveClientUrl("~/Pages/Actividades/MantenerActividadesUI.aspx")%>">MIS ACTIVIDADES</a>
+							</li>
+							<li id="opcion_Talentos" runat="server" visible="true" class="menu_item ">
+								<a href="<%=Page.ResolveClientUrl("~/Pages/Actividades/ConsultarAlumnosUI.aspx")%>">ASIGNAR ACTIVIDADES</a>
+							</li>
+							<li id="Li3" runat="server" visible="true" class="menu_item ">
+								<a href="<%=Page.ResolveClientUrl("~/Pages/Actividades/MantenerAsignacionesUI.aspx")%>">DESASIGNAR ACTIVIDADES</a>
+							</li>
+							<li id="Li4" runat="server" visible="true" class="menu_item ">
+								<a href="<%=Page.ResolveClientUrl("~/Pages/Pruebas/BuscarAlumnosSACKSUI.aspx")%>">PRUEBAS SACKS</a>
+							</li>
+                            <li id="Li5" runat="server" visible="true" class="menu_item ">
+								<a href="<%=Page.ResolveClientUrl("~/Pages/Pruebas/BuscarAlumnosFrasesVocacionalesUI.aspx")%>">PRUEBAS FRASES</a>
+							</li>
+							<li id="opcion_monitoreo" runat="server" visible="false" class="menu_item ">
+								<a href="<%=Page.ResolveClientUrl("~/Pages/Actividades/MonitorearAvanceAlumnosUI.aspx")%>" id="A4" class="menunavtop">Monitoreo avance </a>
+							</li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</nav>
+                </asp:View>
+            </asp:MultiView>
+            <!--fin header-->
+            <!--Contenido principal-->
+            <div class="row">
+                <div class="col-xs-12 col-md-12 fullcontainer">
+                    <div class="main" style="padding: 0px; margin: 0px;">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                    </div>
+                </div>
+            </div>
+            <!--End contenido principal-->
+            <!-- fin page -->
+
+            <div class="modal fade" tabindex="-1" role="dialog" id="updPanelMaster">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" id="modalHeader">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #FFF; opacity: 1; filter: none;">
+                                <span aria-hidden="true" style="font-size: 25px; opacity: 1;">&times;</span>
+                            </button>
+                            <h4 class="modal-title" style="color: white;">YOY - HERRAMIENTAS ORIENTADOR
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <p id="message"></p>
+                            <asp:HiddenField ID="hdnLastMessage" runat="server" />
+                            <asp:HiddenField ID="hdnShowMessage" runat="server" Value="0" />
+                        </div>
+                        <div class="modal-footer" id="modalFooter">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <%-- CG --%>
+            <!-- Ventana modal para abrir el contador y marcar asistencia-->
+            <!-- Elementos para evitar el cierre de la ventana modal al hacer clic fuera de ella  (data-keyboard="false" data-backdrop="static") -->
+            <button type="button" id="btnModalAsistenciaDocente" class="button_clip_39215E" data-toggle="modal" style="display: none" data-target=".dialog-md-13">YOY - HERRAMIENTAS ORIENTADOR</button>
+            <div class="modal fade dialog-md-13" tabindex="-1" data-keyboard="false" data-backdrop="static" role="dialog" aria-labelledby="ventanaModalLabel" id="divModalDocente">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="col-xs-12 titulo_marco center-block">Orientaci&oacute;n vocacional</div>
+                        </div>
+                        <div class="modal-body container_busqueda_general ui-widget-content">
+                            <div class="">
+                                <div class="row bs-wizard" style="border-bottom: 0;">
+                                    <div class="col-md-12" style="padding: 20px 0px 0px 0px">
+                                        <div class="col-xs-12">
+                                            <div class="col-xs-12 form-group">
+                                                <div class="col-sm-10">
+                                                    <p>
+                                                        <span class="ui-icon ui-icon-info" style="display: inline-block; vertical-align: middle; margin-top: 0px"></span>
+                                                        <label class="control-label">
+                                                            Inicia tu sesi&oacute;n de Skype, para conducir la sesi&oacute;n desde ah&iacute;.
+                                                        </label>
+                                                        <br />
+                                                        <label class="control-label">
+                                                            Al concluir el tiempo de la sesi&oacute;n el sistema te nofiticar&aacute;.
+                                                        </label>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="form-group">
+                                <div class="col-md-6 pull-right">
+
+                                    <button type="button" class="button_clip_39215E" id="btnAceptSesionDocente" data-dismiss="modal">Iniciar</button>
+                                    <button type="button" class="btn-cancel" id="btnCancelarDocente" data-dismiss="modal">Posponer inicio</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="footer">
+        <div class="footerpersonalizado">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PruebaMaster.master.cs" Inherits="POV.Web.Portal.Pruebas.Content.MasterPages.PruebaMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>YOY - ESTUDIANTES</title>
+    <link rel="shortcut icon" href="../Images/Yoy_Favicon20px.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>ui-lightness/jquery-ui-1.12.1.custom.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Layout.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>headerandfooter.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>container.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>modalResponsive.css" rel="stylesheet" type="text/css" />
+
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>jquery-1.12.1.min.js" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/bootstrap.js")%>" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/FitText.js")%>" type="text/javascript"></script>
+    
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $("#tituloPortal").fitText();
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="body_content">
+    <div class="contenedorFull">
+        <div class="jumbotron">
+            <form id="form1" runat="server" style="">
+                <div class="row">
+                    <div id="cabeza" class="header-container col-xs-12 col-lg-12 col-md-12 col-sm-12" style="margin: 0px; padding: 0px;">
+                        <div class="col-xs-12" style="margin: 0px; padding: 0px;">
+                            <div id="header" class="header-container" style="padding: 15px;">
+                                <div class="row vertical-divider" style="margin-top:20px; margin-top: 0px">
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" style="text-align: center">
+                                        <img alt="Logo" src="../Content/Images/SOV_VOCAREER1.png" class="img" />
+                                    </div>
+                                    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                                        <div class="menu_container">
+                                            <div class="col-xs-12 col-sm-2 col-md-1 col-lg-1" style="text-align: center; padding-top: 10px">
+                                                <img id="logoportal" alt="Logo" src="../Content/Images/SOV_ELEMENTOS_portalpruebas.png" class="" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+                                                <h2 style="margin-top: 12px; margin-left: 12px;" class="titulo-portal" id="tituloPortal" runat="server">PORTAL ESTUDIANTES</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12" id="bandaazul"></div>
+                </div>
+                <div class="row" style="background: #F2F2F2">
+                    <div id="container" class="page_container_login" style="">
+                        <div class="col-xs-12" style="margin: 0px; padding: 0px;">
+                            <div id="content" class="col-xs-12" style="margin: 0px; padding: 0px; background: #F2F2F2">
+                                <asp:ContentPlaceHolder ID="ContentPlace" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <asp:HiddenField ID="hdnLastMessage" runat="server" />
+                <asp:HiddenField ID="hdnShowMessage" runat="server" Value="0" />
+                <asp:TextBox ID="txtRedirect" runat="server" Style="display: none;"></asp:TextBox>
+            </form>
+        </div>
+        <div class="row">
+            <div id="pie" class="">
+                <div class="text-center" style="background-color: #242525; min-height: 45px">
+                    <div class="row">
+                        <div class="col-xs-4 col-md-4">
+                            <p class="avisos_footer" style="display: none;">
+                                <a href="<% =Page.ResolveClientUrl("~/InformacionPortal/TerminosCondiciones.aspx")%>" target="_self">T&eacute;rminos y Condiciones.</a>&nbsp;&nbsp;
+                                <a href="<% =Page.ResolveClientUrl("~/InformacionPortal/AcercaDe.aspx")%>" target="_self">Acerca de</a>&nbsp;&nbsp;
+                            </p>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                            <p class="avisos_footer" style="color: #0067ac; display: none;">
+                                &copy;<asp:Label ID="lblFechaAnio" runat="server"></asp:Label>, Todos los derechos reservados, Compañia.
+                            </p>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                            <p class="avisos_footer_login" style="display: none;"><a href="#" target="_self">Aviso de privacidad.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

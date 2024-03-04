@@ -1,0 +1,796 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F34BDEC-3D3E-4609-8AE3-CFC3BB7D41B9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.Web.PortalUniversidad</RootNamespace>
+    <AssemblyName>POV.Web.PortalUniversidad</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IISExpressSSLPort>44302</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <TargetFrameworkProfile />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxEditors.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1.Web, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\EntityFramework611.net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\EntityFramework611.net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Base">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Comun\Bibliotecas\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="POV.Prueba.Diagnostico.Dinamica.BO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\POV.Prueba.Diagnostico.Dinamica.BO\bin\Debug\POV.Prueba.Diagnostico.Dinamica.BO.dll</HintPath>
+    </Reference>
+    <Reference Include="Recaptcha">
+      <HintPath>..\..\Comun\Bibliotecas\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Auth\Login.aspx" />
+    <Content Include="Auth\Logout.aspx" />
+    <Content Include="Auth\RecuperarPassword.aspx" />
+    <Content Include="Carreras\BuscarCarreras.aspx" />
+    <Content Include="Carreras\NuevaCarrera.aspx" />
+    <Content Include="Carreras\VincularCarreras.aspx" />
+    <Content Include="Controls\GridViewPager.ascx" />
+    <Content Include="Controls\Images\Back.gif" />
+    <Content Include="Controls\Images\header_back.gif" />
+    <Content Include="Controls\Images\PgFirst.gif" />
+    <Content Include="Controls\Images\PgLast.gif" />
+    <Content Include="Controls\Images\PgNext.gif" />
+    <Content Include="Controls\Images\PgPrev.gif" />
+    <Content Include="Controls\Images\plus.gif" />
+    <Content Include="Default.aspx" />
+    <Content Include="Eventos\BuscarEventos.aspx" />
+    <Content Include="Eventos\EditarEvento.aspx" />
+    <Content Include="Eventos\NuevoEvento.aspx" />
+    <Content Include="Files\protocolo\EmailTemplateRecuperarPassword.html" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\backgorundloginescuela.jpg" />
+    <Content Include="images\btn_search.png" />
+    <Content Include="images\fooder-yoy.jpg" />
+    <Content Include="images\footerpattern.png" />
+    <Content Include="images\header-yoy.jpg" />
+    <Content Include="images\headerpattern.png" />
+    <Content Include="images\ico.lanzadora.universidad.especialista.png" />
+    <Content Include="images\Ico.reactivos.png" />
+    <Content Include="images\POVLogo.png" />
+    <Content Include="images\POVLogo_Header.png" />
+    <Content Include="images\SOV_cargando.flotante.gif" />
+    <Content Include="images\SOV_ELEMENTOS_portalestudiante.png" />
+    <Content Include="images\SOV_ELEMENTOS_portalorientador.png" />
+    <Content Include="images\SOV_imgError.png" />
+    <Content Include="images\SOV_tutores.png" />
+    <Content Include="images\SOV_universidad.png" />
+    <Content Include="images\SOV_VOCAREER1.png" />
+    <Content Include="images\universidad.png" />
+    <Content Include="images\universidadlogin.png" />
+    <Content Include="images\VOCAREER_agregar.png" />
+    <Content Include="images\VOCAREER_carreras.png" />
+    <Content Include="images\VOCAREER_editar.png" />
+    <Content Include="images\VOCAREER_EditarPerfil.png" />
+    <Content Include="images\VOCAREER_escuela.png" />
+    <Content Include="images\VOCAREER_eventos.png" />
+    <Content Include="images\VOCAREER_expedientes.png" />
+    <Content Include="images\VOCAREER_login.png" />
+    <Content Include="images\VOCAREER_orientadores.png" />
+    <Content Include="images\VOCAREER_suprimir.png" />
+    <Content Include="images\VOCAREER_usuario.png" />
+    <Content Include="images\Yoy_Favicon20px.png" />
+    <Content Include="Orientadores\BuscarOrientadores.aspx" />
+    <Content Include="Orientadores\EditarOrientador.aspx" />
+    <Content Include="Orientadores\NuevoOrientador.aspx" />
+    <Content Include="Errors\Error.aspx" />
+    <Content Include="Errors\PageNotFound.aspx" />
+    <Content Include="Files\protocolo\config.txt" />
+    <Content Include="Files\protocolo\EmailTemplateNewOrientador.html" />
+    <Content Include="Files\protocolo\EmailTemplateNewUser.html" />
+    <Content Include="Global.asax" />
+    <Content Include="images\add-icon.gif" />
+    <Content Include="images\add_teachers.png" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\arrow_rtl.png" />
+    <Content Include="images\backgorundlogin.png" />
+    <Content Include="images\Banner_Administracion.png" />
+    <Content Include="images\banner_bg.jpg" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bglogin.jpg" />
+    <Content Include="images\btn_paypal.gif" />
+    <Content Include="images\edit-button.png" />
+    <Content Include="images\edit-icon.gif" />
+    <Content Include="images\escuela_image.png" />
+    <Content Include="images\faviconAdmon.ico" />
+    <Content Include="images\faviconSocial.ico" />
+    <Content Include="images\header.gif" />
+    <Content Include="images\head_mail.jpg" />
+    <Content Include="images\Home.png" />
+    <Content Include="images\hr.gif" />
+    <Content Include="images\icon_10_migrupo.png" />
+    <Content Include="images\icon_17_escuela.png" />
+    <Content Include="images\icon_19_alumnos.png" />
+    <Content Include="images\icon_22_docentes.png" />
+    <Content Include="images\icon_24_pefil_usuario.png" />
+    <Content Include="images\icon_32_sus_reactiv.png" />
+    <Content Include="images\imgError.jpg" />
+    <Content Include="images\information.png" />
+    <Content Include="images\key.png" />
+    <Content Include="images\login-icon.gif" />
+    <Content Include="images\LOGO-LOGIN.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\magnifier.png" />
+    <Content Include="images\menu\body_bg.png" />
+    <Content Include="images\menu\dropdown_linkbg.gif" />
+    <Content Include="images\menu\GradientSmall.png" />
+    <Content Include="images\menu\subnav_btn - copia.gif" />
+    <Content Include="images\menu\subnav_btn.gif" />
+    <Content Include="images\menu\topnav_bg.gif" />
+    <Content Include="images\menu\topnav_hover.gif" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\minus-button.png" />
+    <Content Include="images\nuevoaspirante.png" />
+    <Content Include="images\page_gear.png" />
+    <Content Include="images\pisalogin.jpg" />
+    <Content Include="images\plus-button.png" />
+    <Content Include="images\Premium1.png" />
+    <Content Include="images\save-icon.gif" />
+    <Content Include="images\search.png" />
+    <Content Include="images\social.png" />
+    <Content Include="images\tick.png" />
+    <Content Include="images\usericon.jpg" />
+    <Content Include="images\logopisa.jpg" />
+    <Content Include="images\zonebar-downarrow.png" />
+    <Content Include="images\zonebar-navleft.png" />
+    <Content Include="images\zonebar-navright.png" />
+    <Content Include="InformacionPortal\InfoTerminosCondiciones.htm" />
+    <Content Include="log-data\admin-log.txt" />
+    <Content Include="Logic\ErrorLog.txt" />
+    <Content Include="Pages\VincularExpediente.aspx" />
+    <Content Include="Pages\DetalleExpedienteAlumnoUniversidad.aspx" />
+    <Content Include="Pages\EditarContrasena.aspx" />
+    <Content Include="Pages\EditarPerfil.aspx" />
+    <Content Include="Pages\ExpedienteAlumnoUniversidad.aspx" />
+    <Content Include="Scripts\alertify.js" />
+    <Content Include="Scripts\alertify.min.js" />
+    <Content Include="Scripts\api.alumnos.js" />
+    <Content Include="Scripts\api.confirmacion.js" />
+    <Content Include="Scripts\api.usuarios.js" />
+    <Content Include="Scripts\api\api.dialogs.js" />
+    <Content Include="Scripts\api\api.menu.js" />
+    <Content Include="Scripts\api\api.shared.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker-v4.15.35.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\core.alumnos.js" />
+    <Content Include="Scripts\core.confirmacion.js" />
+    <Content Include="Scripts\core.usuarios.js" />
+    <Content Include="Scripts\jquery-1.12.1.min.js" />
+    <Content Include="Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\jquery-migrate-1.2.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.custom.min.js" />
+    <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="Scripts\jquery.maskedinput-1.3.min.js" />
+    <Content Include="Scripts\jquery.textareaCounter.plugin.js" />
+    <Content Include="Scripts\jquery.timeentry.min.js" />
+    <Content Include="Scripts\jquery.tmpl.min.js" />
+    <Content Include="Scripts\jquery.ui.datepicker-es.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\json.js" />
+    <Content Include="Scripts\lumx.js" />
+    <Content Include="Scripts\messages_es.js" />
+    <Content Include="Scripts\moment-with-locales-v2.9.0.js" />
+    <Content Include="Scripts\utils\event-scheduler_service.js" />
+    <Content Include="Scripts\utils\transclude-replace_directive.js" />
+    <Content Include="Scripts\utils\transclude_directive.js" />
+    <Content Include="Scripts\utils\utils_service.js" />
+    <Content Include="Scripts\validator.js" />
+    <Content Include="Styles\alertify.core.css" />
+    <Content Include="Styles\alertify.css" />
+    <Content Include="Styles\alertify.default.css" />
+    <Content Include="Styles\alertify.rtl.min.css" />
+    <Content Include="Styles\alertify\alertify.css" />
+    <Content Include="Styles\alertify\themes\bootstrap.min.css" />
+    <Content Include="Styles\alertify\themes\default.min.css" />
+    <Content Include="Styles\alertify\themes\semantic.min.css" />
+    <Content Include="Styles\Aspirantes.css" />
+    <Content Include="Styles\bootstrap-datetimepicker.min.css" />
+    <Content Include="Styles\bootstrap-navbar-color.css" />
+    <Content Include="Styles\bootstrap-theme.css" />
+    <Content Include="Styles\bootstrap.css" />
+    <Content Include="Styles\Default.css" />
+    <Content Include="Styles\fonts.css" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Styles\fonts\helr45w.ttf" />
+    <Content Include="Styles\gridview.css" />
+    <Content Include="Styles\headerandfooter.css" />
+    <Content Include="Styles\Icons.css" />
+    <Content Include="Styles\jquery.timeentry.css" />
+    <Content Include="Styles\login.css" />
+    <Content Include="Styles\lumx.css" />
+    <Content Include="Styles\Menu.css" />
+    <Content Include="Styles\overcast\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Styles\overcast\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="Styles\overcast\images\ui-bg_flat_55_c0402a_40x100.png" />
+    <Content Include="Styles\overcast\images\ui-bg_flat_55_eeeeee_40x100.png" />
+    <Content Include="Styles\overcast\images\ui-bg_glass_100_f8f8f8_1x400.png" />
+    <Content Include="Styles\overcast\images\ui-bg_glass_35_dddddd_1x400.png" />
+    <Content Include="Styles\overcast\images\ui-bg_glass_60_eeeeee_1x400.png" />
+    <Content Include="Styles\overcast\images\ui-bg_inset-hard_75_999999_1x100.png" />
+    <Content Include="Styles\overcast\images\ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+    <Content Include="Styles\overcast\images\ui-icons_3383bb_256x240.png" />
+    <Content Include="Styles\overcast\images\ui-icons_454545_256x240.png" />
+    <Content Include="Styles\overcast\images\ui-icons_70b2e1_256x240.png" />
+    <Content Include="Styles\overcast\images\ui-icons_999999_256x240.png" />
+    <Content Include="Styles\overcast\images\ui-icons_fbc856_256x240.png" />
+    <Content Include="Styles\overcast\jquery-ui-1.8.17.custom.css" />
+    <Content Include="Styles\pagination.css" />
+    <Content Include="Styles\PaquetesPremium.css" />
+    <Content Include="Styles\print.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\styleTabs.css" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_gloss-wave_35_959595_500x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_highlight-soft_75_959595_1x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_444444_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_49156a_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_4d405a_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_555555_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_777620_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_777777_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Styles\ui-lightness\jquery-ui-1.8.16.custom.css" />
+    <Content Include="Styles\ui-lightness\jquery-ui-1.12.1.custom.css" />
+    <Content Include="wcf\UsuarioService.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppCode\Page\CatalogPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppCode\Page\MasterPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppCode\Page\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\RecuperarPassword.aspx.cs">
+      <DependentUpon>RecuperarPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth\RecuperarPassword.aspx.designer.cs">
+      <DependentUpon>RecuperarPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carreras\BuscarCarreras.aspx.cs">
+      <DependentUpon>BuscarCarreras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carreras\BuscarCarreras.aspx.designer.cs">
+      <DependentUpon>BuscarCarreras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carreras\NuevaCarrera.aspx.cs">
+      <DependentUpon>NuevaCarrera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carreras\NuevaCarrera.aspx.designer.cs">
+      <DependentUpon>NuevaCarrera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carreras\VincularCarreras.aspx.cs">
+      <DependentUpon>VincularCarreras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carreras\VincularCarreras.aspx.designer.cs">
+      <DependentUpon>VincularCarreras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GridViewPager.ascx.cs">
+      <DependentUpon>GridViewPager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\GridViewPager.ascx.designer.cs">
+      <DependentUpon>GridViewPager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultSite.Master.cs">
+      <DependentUpon>DefaultSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultSite.Master.designer.cs">
+      <DependentUpon>DefaultSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\BuscarEventos.aspx.cs">
+      <DependentUpon>BuscarEventos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Eventos\BuscarEventos.aspx.designer.cs">
+      <DependentUpon>BuscarEventos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\EditarEvento.aspx.cs">
+      <DependentUpon>EditarEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Eventos\EditarEvento.aspx.designer.cs">
+      <DependentUpon>EditarEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\NuevoEvento.aspx.cs">
+      <DependentUpon>NuevoEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Eventos\NuevoEvento.aspx.designer.cs">
+      <DependentUpon>NuevoEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orientadores\BuscarOrientadores.aspx.cs">
+      <DependentUpon>BuscarOrientadores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orientadores\BuscarOrientadores.aspx.designer.cs">
+      <DependentUpon>BuscarOrientadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orientadores\EditarOrientador.aspx.cs">
+      <DependentUpon>EditarOrientador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orientadores\EditarOrientador.aspx.designer.cs">
+      <DependentUpon>EditarOrientador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orientadores\NuevoOrientador.aspx.cs">
+      <DependentUpon>NuevoOrientador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orientadores\NuevoOrientador.aspx.designer.cs">
+      <DependentUpon>NuevoOrientador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Errores.Master.cs">
+      <DependentUpon>Errores.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errores.Master.designer.cs">
+      <DependentUpon>Errores.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Errors\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errors\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Errors\PageNotFound.aspx.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errors\PageNotFound.aspx.designer.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ConnectionHlp.cs" />
+    <Compile Include="Logic\ExceptionUtility.cs" />
+    <Compile Include="Logic\PayPalFunctions.cs" />
+    <Compile Include="Logic\PaypalSettings.cs" />
+    <Compile Include="Pages\VincularExpediente.aspx.cs">
+      <DependentUpon>VincularExpediente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\VincularExpediente.aspx.designer.cs">
+      <DependentUpon>VincularExpediente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DetalleExpedienteAlumnoUniversidad.aspx.cs">
+      <DependentUpon>DetalleExpedienteAlumnoUniversidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DetalleExpedienteAlumnoUniversidad.aspx.designer.cs">
+      <DependentUpon>DetalleExpedienteAlumnoUniversidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditarContrasena.aspx.cs">
+      <DependentUpon>EditarContrasena.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\EditarContrasena.aspx.designer.cs">
+      <DependentUpon>EditarContrasena.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditarPerfil.aspx.cs">
+      <DependentUpon>EditarPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\EditarPerfil.aspx.designer.cs">
+      <DependentUpon>EditarPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ExpedienteAlumnoUniversidad.aspx.cs">
+      <DependentUpon>ExpedienteAlumnoUniversidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ExpedienteAlumnoUniversidad.aspx.designer.cs">
+      <DependentUpon>ExpedienteAlumnoUniversidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="wcf\UsuarioService.svc.cs">
+      <DependentUpon>UsuarioService.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POV.Administracion\POV.Administracion.csproj">
+      <Project>{91d85c38-cb3d-404a-bf4e-abccd80b99a8}</Project>
+      <Name>POV.Administracion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.Services\POV.CentroEducativo.Services.csproj">
+      <Project>{efeaf5ff-2f2d-4c50-ae27-baf8df1df922}</Project>
+      <Name>POV.CentroEducativo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo\POV.CentroEducativo.csproj">
+      <Project>{77f2d47f-ef3f-49b4-b20f-bc34520c2df4}</Project>
+      <Name>POV.CentroEducativo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Core.Tutor\POV.Core.PadreTutor.csproj">
+      <Project>{ebc67d07-5a60-4945-a2ef-96c378f3457e}</Project>
+      <Name>POV.Core.PadreTutor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.BO\GP.SocialEngine.BO.csproj">
+      <Project>{BC81D924-3BB9-4EBD-B55F-B1C72132C069}</Project>
+      <Name>GP.SocialEngine.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.Interfaces\GP.SocialEngine.Interfaces.csproj">
+      <Project>{1501B668-DC3A-45D9-B9B5-47DF76E12587}</Project>
+      <Name>GP.SocialEngine.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GP.SocialEngine.Services\GP.SocialEngine.Services.csproj">
+      <Project>{D00D4CB1-740D-43F7-8B42-378B035EC181}</Project>
+      <Name>GP.SocialEngine.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Administracion.BO\POV.Administracion.BO.csproj">
+      <Project>{4CCD2661-0B94-4DC8-A41F-864E951FF01F}</Project>
+      <Name>POV.Administracion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Administracion.Reports\POV.Administracion.Reports.csproj">
+      <Project>{5fe5a308-87eb-4c1a-980f-59d1aa7b05b8}</Project>
+      <Name>POV.Administracion.Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Administracion.Services\POV.Administracion.Services.csproj">
+      <Project>{320268A0-718E-4B61-A9FB-489A62584562}</Project>
+      <Name>POV.Administracion.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3A6024CA-2877-409D-84C8-A1997C27616E}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.BO\POV.Comun.BO.csproj">
+      <Project>{E9BB2466-0E21-4B56-8803-DEB5969D2B49}</Project>
+      <Name>POV.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.Services\POV.Comun.Services.csproj">
+      <Project>{ADB9BA9A-C274-4101-8F0D-3CF6C86A5FB8}</Project>
+      <Name>POV.Comun.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Core.Administracion\POV.Core.Administracion.csproj">
+      <Project>{89E701C8-C86F-4280-A8BC-A0C182AEAB87}</Project>
+      <Name>POV.Core.Administracion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Core.Universidades\POV.Core.Universidades.csproj">
+      <Project>{c8069436-1347-4bd5-9e99-62434848ce79}</Project>
+      <Name>POV.Core.Universidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Expediente.BO\POV.Expediente.BO.csproj">
+      <Project>{34C7EB86-2321-432E-82B5-FE8119A9B622}</Project>
+      <Name>POV.Expediente.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Expediente.Services\POV.Expediente.Services.csproj">
+      <Project>{272D5848-BB03-46D3-A15F-6CDF48A11806}</Project>
+      <Name>POV.Expediente.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Expediente\POV.Expediente.csproj">
+      <Project>{808a84f3-6dc1-435d-bf2f-853da4515a1e}</Project>
+      <Name>POV.Expediente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Licencias.BO\POV.Licencias.BO.csproj">
+      <Project>{19961067-7725-4435-8EAD-6E2B635F5D34}</Project>
+      <Name>POV.Licencias.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Licencias.Services\POV.Licencias.Services.csproj">
+      <Project>{13AB22DF-D898-416F-A63F-A6CD09622760}</Project>
+      <Name>POV.Licencias.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Localizacion.BO\POV.Localizacion.BO.csproj">
+      <Project>{662EEBF8-41AA-4DAF-9603-AB9E92009F77}</Project>
+      <Name>POV.Localizacion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Localizacion.Services\POV.Localizacion.Services.csproj">
+      <Project>{9F69AACA-BD9F-48B3-ADDC-0049FFF35C1A}</Project>
+      <Name>POV.Localizacion.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Logger.Services\POV.Logger.Services.csproj">
+      <Project>{B7F1FB2E-42C5-47B7-B717-F9249F2D6843}</Project>
+      <Name>POV.Logger.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.BO\POV.Modelo.BO.csproj">
+      <Project>{D81E25E7-7ED3-4F7B-9CCF-A3E1E97B198A}</Project>
+      <Name>POV.Modelo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.Services\POV.Modelo.Services.csproj">
+      <Project>{f229a4b9-5990-4813-ab22-d38963e16eac}</Project>
+      <Name>POV.Modelo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo\POV.Modelo.csproj">
+      <Project>{36c1aff9-323f-4330-aa43-4fb0ab4a0a70}</Project>
+      <Name>POV.Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.BO\POV.Prueba.BO.csproj">
+      <Project>{90C2958D-1935-448E-9AC5-F9ABCEC3784B}</Project>
+      <Name>POV.Prueba.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Dinamica.Services\POV.Prueba.Diagnostico.Dinamica.Services.csproj">
+      <Project>{614A4DE8-03DF-46CE-97C2-A8FA3534362F}</Project>
+      <Name>POV.Prueba.Diagnostico.Dinamica.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Services\POV.Prueba.Diagnostico.Services.csproj">
+      <Project>{E4AE7EA0-C62F-4A5C-9E9E-8C69D83347E8}</Project>
+      <Name>POV.Prueba.Diagnostico.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Reportes.BO\POV.Prueba.Reportes.BO.csproj">
+      <Project>{79428E4A-6095-48E6-9AC0-860FB8F5CF5E}</Project>
+      <Name>POV.Prueba.Reportes.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Reportes.Services\POV.Prueba.Reportes.Services.csproj">
+      <Project>{FB6E12BD-39AF-471D-96E6-88C0DC8B817E}</Project>
+      <Name>POV.Prueba.Reportes.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.BO\POV.Reactivos.BO.csproj">
+      <Project>{ED9CC55D-68F6-4BE0-9DAE-00BCD226C289}</Project>
+      <Name>POV.Reactivos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.Services\POV.Reactivos.Services.csproj">
+      <Project>{4C5F2ED6-F95D-414E-943B-6A4B7726FC8C}</Project>
+      <Name>POV.Reactivos.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ReactivosUsuario.BO\POV.ReactivosUsuario.BO.csproj">
+      <Project>{1F5A8F39-92B1-4503-BAE7-3440F8D01084}</Project>
+      <Name>POV.ReactivosUsuario.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.ReactivosUsuario.Services\POV.ReactivosUsuario.Services.csproj">
+      <Project>{5D0BFD0F-628B-4740-AA20-CBDAC4BE66DF}</Project>
+      <Name>POV.ReactivosUsuario.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.BO\POV.Seguridad.BO.csproj">
+      <Project>{86840DAD-9FCC-46AA-8C98-3CAB83195EC7}</Project>
+      <Name>POV.Seguridad.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.Services\POV.Seguridad.Services.csproj">
+      <Project>{6F8B4B55-E2AB-4592-A770-982EA091583B}</Project>
+      <Name>POV.Seguridad.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Web.Controllers\POV.Web.Controllers.csproj">
+      <Project>{d51f43f8-2b07-40cf-abd1-7f8df08914e9}</Project>
+      <Name>POV.Web.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Web.DTO.Services\POV.Web.DTO.Services.csproj">
+      <Project>{DB09AD05-BBC3-4672-902D-230376B1C667}</Project>
+      <Name>POV.Web.DTO.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Web.DTO\POV.Web.DTO.csproj">
+      <Project>{901037D3-2FC7-46E3-BE63-88328B76A37E}</Project>
+      <Name>POV.Web.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Errores.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DefaultSite.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\fonts\HelveticaNeueLTPro-MdCnO.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="pdf\avisoprivacidadyoy.pdf" />
+    <Content Include="pdf\terminoscondicionesyoy.pdf" />
+    <None Include="Properties\PublishProfiles\POV.PortalUniversidad.pubxml" />
+    <Content Include="Styles\fonts\HelveticaNeue-BoldCond.otf" />
+    <Content Include="Styles\fonts\HelveticaNeue-LightCond.otf" />
+    <Content Include="Styles\fonts\Aileron-Regular.otf" />
+    <Content Include="Styles\fonts\Roboto-BoldCondensed_0.ttf" />
+    <Content Include="Styles\fonts\Roboto-Bold_2.ttf" />
+    <Content Include="Styles\fonts\Roboto-Condensed_0.ttf" />
+    <Content Include="Styles\fonts\Roboto-Regular_1.ttf" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>28686</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

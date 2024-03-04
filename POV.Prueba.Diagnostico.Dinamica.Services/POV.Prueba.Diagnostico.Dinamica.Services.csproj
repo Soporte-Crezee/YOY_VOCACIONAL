@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{614A4DE8-03DF-46CE-97C2-A8FA3534362F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POV.Prueba.Diagnostico.Dinamica</RootNamespace>
+    <AssemblyName>POV.Prueba.Diagnostico.Dinamica.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Framework.Base">
+      <HintPath>..\Comun\Bibliotecas\Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\BancoReactivosDinamicoInsHlp.cs" />
+    <Compile Include="DAO\BancoReactivosDinamicoUpdHlp.cs" />
+    <Compile Include="DAO\SumarioGeneralFrasesVocacionalesInsHlp.cs" />
+    <Compile Include="DAO\SumarioGeneralFrasesVocacionalesRetHlp.cs" />
+    <Compile Include="DAO\EscalaDinamicaDelHlp.cs" />
+    <Compile Include="DAO\EscalaDinamicaInsHlp.cs" />
+    <Compile Include="DAO\EscalaDinamicaRetHlp.cs" />
+    <Compile Include="DAO\EscalaDinamicaUpdHlp.cs" />
+    <Compile Include="DAO\PruebaDinamicaDelHlp.cs" />
+    <Compile Include="DAO\PruebaDinamicaInsHlp.cs" />
+    <Compile Include="DAO\PruebaDinamicaRetHlp.cs" />
+    <Compile Include="DAO\BancoReactivosDinamicoRetHlp.cs" />
+    <Compile Include="DAO\ReactivoBancoReactivosDinamicoInsHlp.cs" />
+    <Compile Include="DAO\ReactivoBancoReactivosDinamicoUpdHlp.cs" />
+    <Compile Include="DAO\ReactivosBancoDinamicoRetHlp.cs" />
+    <Compile Include="DAO\RegistroPruebaDinamicaInsHlp.cs" />
+    <Compile Include="DAO\RegistroPruebaDinamicaRetHlp.cs" />
+    <Compile Include="DAO\RegistroPruebaDinamicaUpdHlp.cs" />
+    <Compile Include="DAO\RespuestaPreguntaDinamicaInsHlp.cs" />
+    <Compile Include="DAO\RespuestaPreguntaDinamicaRetHlp.cs" />
+    <Compile Include="DAO\RespuestaPreguntaDinamicaUpdHlp.cs" />
+    <Compile Include="DAO\RespuestaReactivoDinamicaInsHlp.cs" />
+    <Compile Include="DAO\RespuestaReactivoDinamicaRetHlp.cs" />
+    <Compile Include="DAO\RespuestaReactivoDinamicaUpdHlp.cs" />
+    <Compile Include="DAO\ResultadoClasificadorDinamicaInsHlp.cs" />
+    <Compile Include="DAO\ResultadoClasificadorDinamicaRetHlp.cs" />
+    <Compile Include="DAO\ResultadoPruebaDinamicaInsHlp.cs" />
+    <Compile Include="DAO\ResultadoPruebaDinamicaRetHlp.cs" />
+    <Compile Include="DAO\SumarioGeneralSACKInsHlp.cs" />
+    <Compile Include="DAO\SumarioGeneralSACKSRetHlp.cs" />
+    <Compile Include="DA\BaremoRavenDARetHlp.cs" />
+    <Compile Include="DA\PruebaAlumnosFrasesVocacionalesDARetHlp.cs" />
+    <Compile Include="DA\ResultadoPruebaFrasesVocacionalesDARetHlp.cs" />
+    <Compile Include="DA\DiscrepanciaRavenDARetHlp.cs" />
+    <Compile Include="DA\PruebaAlumnosSacksDARetHlp.cs" />
+    <Compile Include="DA\PruebasAlumnosDARetHlp.cs" />
+    <Compile Include="DA\RespuestaPlantillaAllportDARetHlp.cs" />
+    <Compile Include="DA\RespuestaPlantillaKuderDARetHlp.cs" />
+    <Compile Include="DA\PlantillaResultadoCleaverRetHlp.cs" />
+    <Compile Include="DA\ResultadoPruebaCHASIDEDARetHlp.cs" />
+    <Compile Include="DA\ResultadoPruebaCleaverDARetHlp.cs" />
+    <Compile Include="DA\ResultadoPruebaDinamicaEscuelaDARetHlp.cs" />
+    <Compile Include="DA\ResultadoPruebaDinamicaGrupoDARetHlp.cs" />
+    <Compile Include="DA\ResultadoCalificaPruebaModeloAlumnoClasificaDARetHlp.cs" />
+    <Compile Include="DA\ResultadoCalificaPruebaModeloAlumnoSeleccionDARetHlp.cs" />
+    <Compile Include="DA\ResultadoPruebaModeloAlumnoDARetHlp.cs" />
+    <Compile Include="DA\RespuestaOpcionDinamicaDetalleDAInsHlp.cs" />
+    <Compile Include="DA\RespuestaOpcionDinamicaDetalleDARetHlp.cs" />
+    <Compile Include="DA\ResultadoPruebaSACKSDARetHlp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\CalculoResultadoRavenCtrl.cs" />
+    <Compile Include="Service\PruebaDinamicaCtrl.cs" />
+    <Compile Include="Service\BancoReactivosDinamicoCtrl.cs" />
+    <Compile Include="Service\RegistroPruebaDinamicaCtrl.cs" />
+    <Compile Include="Service\RespuestaPlantillaAllportCtrl.cs" />
+    <Compile Include="Service\RespuestaPlantillaKuderCtrl.cs" />
+    <Compile Include="Service\RespuestaPreguntaDinamicaCtrl.cs" />
+    <Compile Include="Service\RespuestaReactivoDinamicaCtrl.cs" />
+    <Compile Include="Service\ResultadoClasificadorDinamicaCtrl.cs" />
+    <Compile Include="Service\ResultadoPruebaDinamicaCtrl.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\GP.SocialEngine.Interfaces\GP.SocialEngine.Interfaces.csproj">
+      <Project>{1501B668-DC3A-45D9-B9B5-47DF76E12587}</Project>
+      <Name>GP.SocialEngine.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.BO\POV.CentroEducativo.BO.csproj">
+      <Project>{3A6024CA-2877-409D-84C8-A1997C27616E}</Project>
+      <Name>POV.CentroEducativo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.CentroEducativo.Services\POV.CentroEducativo.Services.csproj">
+      <Project>{EFEAF5FF-2F2D-4C50-AE27-BAF8DF1DF922}</Project>
+      <Name>POV.CentroEducativo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Comun.BO\POV.Comun.BO.csproj">
+      <Project>{E9BB2466-0E21-4B56-8803-DEB5969D2B49}</Project>
+      <Name>POV.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Expediente.BO\POV.Expediente.BO.csproj">
+      <Project>{34C7EB86-2321-432E-82B5-FE8119A9B622}</Project>
+      <Name>POV.Expediente.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Expediente.Services\POV.Expediente.Services.csproj">
+      <Project>{272D5848-BB03-46D3-A15F-6CDF48A11806}</Project>
+      <Name>POV.Expediente.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.BO\POV.Modelo.BO.csproj">
+      <Project>{d81e25e7-7ed3-4f7b-9ccf-a3e1e97b198a}</Project>
+      <Name>POV.Modelo.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Modelo.Services\POV.Modelo.Services.csproj">
+      <Project>{F229A4B9-5990-4813-AB22-D38963E16EAC}</Project>
+      <Name>POV.Modelo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.BO\POV.Prueba.BO.csproj">
+      <Project>{90C2958D-1935-448E-9AC5-F9ABCEC3784B}</Project>
+      <Name>POV.Prueba.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Calificaciones.BO\POV.Prueba.Calificaciones.BO.csproj">
+      <Project>{18F00F92-8333-4209-86AF-0EA43CAE2833}</Project>
+      <Name>POV.Prueba.Calificaciones.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Calificaciones.Services\POV.Prueba.Calificaciones.Services.csproj">
+      <Project>{222B4ED3-E51C-4989-A531-69281DDBEB03}</Project>
+      <Name>POV.Prueba.Calificaciones.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Prueba.Diagnostico.Dinamica.BO\POV.Prueba.Diagnostico.Dinamica.BO.csproj">
+      <Project>{A36C3552-74FF-41AF-9466-E59288F9272A}</Project>
+      <Name>POV.Prueba.Diagnostico.Dinamica.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.BO\POV.Reactivos.BO.csproj">
+      <Project>{ED9CC55D-68F6-4BE0-9DAE-00BCD226C289}</Project>
+      <Name>POV.Reactivos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Reactivos.Services\POV.Reactivos.Services.csproj">
+      <Project>{4C5F2ED6-F95D-414E-943B-6A4B7726FC8C}</Project>
+      <Name>POV.Reactivos.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POV.Seguridad.BO\POV.Seguridad.BO.csproj">
+      <Project>{86840dad-9fcc-46aa-8c98-3cab83195ec7}</Project>
+      <Name>POV.Seguridad.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

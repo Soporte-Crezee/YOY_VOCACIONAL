@@ -1,0 +1,269 @@
+﻿.title_form_login {
+    color: #444;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    font-family: Helvetica;
+    text-shadow: 0px -1px #f5f5f5;
+}
+
+.portada {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+
+.text {
+    margin: 30px 0px 30px 0px;
+    padding: 10px;
+    background: rgba(255,255,255,0.6);
+    display: inline-block;
+    text-align: justify;
+}
+
+#info_login {
+    float: left;
+    margin: 10px;
+    height: 700px;
+    width: 550px;
+}
+
+.form_login {
+    border: 0;
+    margin: 0px;
+    display: block;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+    .form_login p label, .form_login p span {
+        width: 70px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .form_login p input {
+        height: 20px;
+        width: 225px;
+        margin-bottom: 15px;
+        padding: 3px;
+        font-size: 16px;
+    }
+
+    .form_login p select {
+        width: 188px;
+        margin-bottom: 15px;
+        padding: 3px;
+        font-size: 16px;
+    }
+
+    .form_login ul {
+        margin-top: 7px;
+        font-size: 11px;
+        float: left;
+    }
+
+    .form_login li {
+        display: inline;
+        margin-left: 10px;
+        float: left;
+    }
+
+        .form_login li a {
+            display: inline;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+            .form_login li a:hover {
+                text-decoration: underline;
+            }
+
+#TxtNombre, #TxtPassword {
+}
+
+.loginCard {
+    background-clip: padding-box;
+    background-color: #c8c6e2;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    float: left;
+    font-size: 14pt;
+    left: 0;
+    list-style: outside none none;
+    margin: 2px 0 0;
+    min-width: 160px;
+    width: 270px;
+    padding: 5px 0;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    z-index: 1000;
+}
+
+.txt-helvetica {
+    font-family: Helvetica Neue LT Pro;
+    font-size: 12pt;
+}
+
+.txt-helvetica-normal {
+    font-family: Helvetica;
+}
+
+.txt-helvetica-bold {
+    font-family: Helvetica;
+    font-weight: bolder !important;
+}
+
+.txt-helvetica-italic {
+    font-family: Helvetica;
+    font-style: italic;
+}
+
+.txt-helvetica-italic-bold {
+    font-family: Helvetica;
+    font-style: italic;
+    font-weight: bolder !important;
+}
+
+.txt-helvetica-color {
+    color: #77aea9;
+    font-family: Helvetica Neue LT Pro;
+    font-style: italic;
+    font-weight: bolder !important;
+}
+
+#btn_soy_usuario:hover {
+    cursor: pointer;
+}
+
+.btn-entrar {
+    background-color: #05aed9;
+    border-color: #05aed9;
+    font-family: Helvetica Neue LT Pro;
+    font-weight: bolder !important;
+    color: #fff;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12pt;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-shadow: inset 0 0 0 2px #f1f1f1;
+    text-transform: capitalize;
+}
+
+    .btn-entrar:hover {
+        background: #7fc3dc;
+        font-family: Helvetica Neue LT Pro;
+        color: #ffffff;
+        box-shadow: inset 0 0 0 2px #f1f1f1;
+        font-size: 12pt;
+        text-transform: capitalize;
+        color: #FFF;
+    }
+
+.btn-entrar:focus{
+    color: #FFF !important;
+}
+
+.btn-entrar:target {
+    color: #FFF !important;
+}
+
+#btnOlvidasteContrasena {
+    color: #242525;
+    font-size: 14pt;
+    font-family: Helvetica;
+    text-decoration: underline;
+}
+
+#LblNewUser {
+    color: #fff;
+    font-size: 12pt;
+    font-family: Helvetica;
+    color: #2e6da4;
+}
+
+.titulo-portal {
+    color: #082d49;
+    font-family: Helvetica-Bold;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.error_recuperar {
+    display: none;
+    color: Red;
+    font-size: 12pt;
+}
+
+.ventana_modal {
+    width: 100%;
+    background-image: url("../images/fondo_modal.png");
+    position: absolute;
+    height: 100%;
+    display: none;
+}
+
+.contenedor_modal {
+    width: 700px;
+    padding: 55px;
+    margin: 50px auto;
+    background-color: White;
+    border: 2px solid #66225e;
+    -moz-border-radius: 10px; /* Firefox*/
+    -ms-border-radius: 10px; /* IE 8.*/
+    -webkit-border-radius: 10px; /* Safari,Chrome.*/
+    border-radius: 10px; /* El estándar.*/
+    box-shadow: 5px 5px 15px #000;
+}
+
+    .contenedor_modal h3 {
+        color: #A5439A;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+.recuperar_contra {
+    font-size: 14px;
+}
+
+#paso1 h4, #paso2Correo h4, #paso2SinCorreo h4 {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14pt;
+    color: #ffffff;
+}
+
+#paso1 {
+}
+
+    #paso1 p {
+        text-align: left;
+        margin-bottom: 0px;
+    }
+
+#rbSI {
+}
+
+#txtCorreo {
+    width: 195px;
+}
+
+/*.footer {
+    min-height: 50px;
+    vertical-align: middle;
+     margin-bottom: 0;
+    padding: 12px 12px;
+}*/

@@ -1,0 +1,85 @@
+﻿/* Header */
+
+#Image1 {
+    padding-top: 5px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#Image2 {
+    margin: 20px 0px 0px 10px; 
+    padding: 0px;
+    width: 50px;
+}
+
+.titulo-portal {
+    margin-top:30px !important;
+}
+
+@media screen and (max-width:423px) {
+    .titulo-portal {
+        margin-top:20px !important;
+    }
+}
+
+/* Content */
+
+.container {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #EEE;
+    width: 100%;
+}
+
+    /* Breadcrumb */
+
+.breadcrumb {
+    background: #05AED9 !important;
+    color: #FFF !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.breadcrumb li{
+    font-size:30px !important;
+}
+
+.breadcrumb > li > a, .breadcrumb > li{
+    color: #FFF !important;
+    font-family: Roboto-Bold !important;
+}
+
+.breadcrumb > li + li:before {
+    color: #FFF;
+}
+     
+#lnkBack {
+    font-family: Roboto-Bold !important;
+}
+
+#lnkBack:hover {
+    color: #FFF;
+}
+
+    /* Fin */
+
+#toolBar {
+    /*width: 110px;*/
+    width:100%;
+    margin: 4px auto;
+}
+
+#viewer {
+    /*width: 675px;*/
+    width: 100%;
+    margin: 0 auto;
+}
+
+#toolBar > table, #viewer > div {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Fin */

@@ -1,0 +1,2732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="404.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Actividades/ManejadorTareasUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Actividades/RealizarActividadesDocenteUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Auth/AccesoHerramientasDocente.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Auth/Login.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Auth/Logout.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Auth/PruebaDiagnostica.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Auth/RecuperarPassword.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Auth/ValidarAutoLogin.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Auth/ValidarBateriaBullying.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Auth/ValidarDiagnostica.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="bin/AWSSDK.dll">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="bin/conekta.dll">
+      <publishTime>09/09/2022 11:17:22</publishTime>
+    </File>
+    <File Include="bin/conekta.pdb">
+      <publishTime>08/29/2022 10:38:43</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Charts.v12.1.Core.dll">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Office.v12.1.Core.dll">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="bin/DevExpress.PivotGrid.v12.1.Core.dll">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="bin/DevExpress.RichEdit.v12.1.Core.dll">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Utils.v12.1.dll">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraCharts.v12.1.dll">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraEditors.v12.1.dll">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraPivotGrid.v12.1.dll">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="bin/Framework.Base.dll">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="bin/Framework.Base.Entity.dll">
+      <publishTime>08/31/2022 11:27:07</publishTime>
+    </File>
+    <File Include="bin/Framework.Base.Entity.pdb">
+      <publishTime>08/29/2022 10:35:03</publishTime>
+    </File>
+    <File Include="bin/GP.SocialEngine.BO.dll">
+      <publishTime>08/31/2022 11:27:14</publishTime>
+    </File>
+    <File Include="bin/GP.SocialEngine.BO.pdb">
+      <publishTime>08/29/2022 10:35:09</publishTime>
+    </File>
+    <File Include="bin/GP.SocialEngine.Interfaces.dll">
+      <publishTime>08/31/2022 11:27:06</publishTime>
+    </File>
+    <File Include="bin/GP.SocialEngine.Interfaces.pdb">
+      <publishTime>08/29/2022 10:35:02</publishTime>
+    </File>
+    <File Include="bin/GP.SocialEngine.Services.dll">
+      <publishTime>08/31/2022 11:27:19</publishTime>
+    </File>
+    <File Include="bin/GP.SocialEngine.Services.pdb">
+      <publishTime>08/29/2022 10:35:14</publishTime>
+    </File>
+    <File Include="bin/Ionic.Zip.dll">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/13/2016 18:06:14</publishTime>
+    </File>
+    <File Include="bin/POV.Administracion.BO.dll">
+      <publishTime>08/31/2022 11:27:27</publishTime>
+    </File>
+    <File Include="bin/POV.Administracion.BO.pdb">
+      <publishTime>08/29/2022 10:35:23</publishTime>
+    </File>
+    <File Include="bin/POV.Administracion.dll">
+      <publishTime>09/02/2022 14:25:15</publishTime>
+    </File>
+    <File Include="bin/POV.Administracion.pdb">
+      <publishTime>08/29/2022 10:36:22</publishTime>
+    </File>
+    <File Include="bin/POV.Administracion.Services.dll">
+      <publishTime>09/09/2022 11:17:36</publishTime>
+    </File>
+    <File Include="bin/POV.Administracion.Services.pdb">
+      <publishTime>08/29/2022 12:13:17</publishTime>
+    </File>
+    <File Include="bin/POV.AmazonAWS.Services.dll">
+      <publishTime>08/31/2022 11:27:09</publishTime>
+    </File>
+    <File Include="bin/POV.AmazonAWS.Services.pdb">
+      <publishTime>08/29/2022 10:35:02</publishTime>
+    </File>
+    <File Include="bin/POV.Blog.BO.dll">
+      <publishTime>08/31/2022 11:27:17</publishTime>
+    </File>
+    <File Include="bin/POV.Blog.BO.pdb">
+      <publishTime>08/29/2022 10:35:07</publishTime>
+    </File>
+    <File Include="bin/POV.Blog.dll">
+      <publishTime>09/02/2022 14:25:15</publishTime>
+    </File>
+    <File Include="bin/POV.Blog.pdb">
+      <publishTime>08/29/2022 10:36:20</publishTime>
+    </File>
+    <File Include="bin/POV.CentroEducativo.BO.dll">
+      <publishTime>08/31/2022 11:27:10</publishTime>
+    </File>
+    <File Include="bin/POV.CentroEducativo.BO.pdb">
+      <publishTime>08/29/2022 10:35:04</publishTime>
+    </File>
+    <File Include="bin/POV.CentroEducativo.dll">
+      <publishTime>09/02/2022 14:25:11</publishTime>
+    </File>
+    <File Include="bin/POV.CentroEducativo.pdb">
+      <publishTime>08/29/2022 10:36:16</publishTime>
+    </File>
+    <File Include="bin/POV.CentroEducativo.Services.dll">
+      <publishTime>08/31/2022 11:27:31</publishTime>
+    </File>
+    <File Include="bin/POV.CentroEducativo.Services.pdb">
+      <publishTime>08/29/2022 10:35:27</publishTime>
+    </File>
+    <File Include="bin/POV.Comun.BO.dll">
+      <publishTime>08/31/2022 11:27:06</publishTime>
+    </File>
+    <File Include="bin/POV.Comun.BO.pdb">
+      <publishTime>08/29/2022 10:33:00</publishTime>
+    </File>
+    <File Include="bin/POV.Comun.Services.dll">
+      <publishTime>08/31/2022 11:27:09</publishTime>
+    </File>
+    <File Include="bin/POV.Comun.Services.pdb">
+      <publishTime>08/29/2022 10:33:01</publishTime>
+    </File>
+    <File Include="bin/POV.ConfiguracionActividades.BO.dll">
+      <publishTime>09/02/2022 14:24:58</publishTime>
+    </File>
+    <File Include="bin/POV.ConfiguracionActividades.BO.pdb">
+      <publishTime>08/29/2022 10:35:56</publishTime>
+    </File>
+    <File Include="bin/POV.ConfiguracionActividades.dll">
+      <publishTime>09/02/2022 14:25:12</publishTime>
+    </File>
+    <File Include="bin/POV.ConfiguracionActividades.pdb">
+      <publishTime>08/29/2022 10:36:16</publishTime>
+    </File>
+    <File Include="bin/POV.ConfiguracionesPlataforma.BO.dll">
+      <publishTime>08/31/2022 11:27:25</publishTime>
+    </File>
+    <File Include="bin/POV.ConfiguracionesPlataforma.BO.pdb">
+      <publishTime>08/29/2022 10:35:21</publishTime>
+    </File>
+    <File Include="bin/POV.ConfiguracionesPlataforma.dll">
+      <publishTime>09/02/2022 14:25:13</publishTime>
+    </File>
+    <File Include="bin/POV.ConfiguracionesPlataforma.pdb">
+      <publishTime>08/29/2022 10:36:14</publishTime>
+    </File>
+    <File Include="bin/POV.ContenidosDigital.BO.dll">
+      <publishTime>08/31/2022 11:27:08</publishTime>
+    </File>
+    <File Include="bin/POV.ContenidosDigital.BO.pdb">
+      <publishTime>08/29/2022 10:35:03</publishTime>
+    </File>
+    <File Include="bin/POV.ContenidosDigital.Busqueda.BO.dll">
+      <publishTime>08/31/2022 11:27:18</publishTime>
+    </File>
+    <File Include="bin/POV.ContenidosDigital.Busqueda.BO.pdb">
+      <publishTime>08/29/2022 10:35:08</publishTime>
+    </File>
+    <File Include="bin/POV.ContenidosDigital.Busqueda.Services.dll">
+      <publishTime>08/31/2022 11:27:41</publishTime>
+    </File>
+    <File Include="bin/POV.ContenidosDigital.Busqueda.Services.pdb">
+      <publishTime>08/29/2022 10:35:41</publishTime>
+    </File>
+    <File Include="bin/POV.ContenidosDigital.DTO.BO.dll">
+      <publishTime>08/31/2022 11:27:12</publishTime>
+    </File>
+    <File Include="bin/POV.ContenidosDigital.DTO.BO.pdb">
+      <publishTime>08/29/2022 10:38:33</publishTime>
+    </File>
+    <File Include="bin/POV.ContenidosDigital.DTO.Services.dll">
+      <publishTime>09/02/2022 14:25:00</publishTime>
+    </File>
+    <File Include="bin/POV.ContenidosDigital.DTO.Services.pdb">
+      <publishTime>08/29/2022 10:38:41</publishTime>
+    </File>
+    <File Include="bin/POV.ContenidosDigital.Services.dll">
+      <publishTime>08/31/2022 11:27:14</publishTime>
+    </File>
+    <File Include="bin/POV.ContenidosDigital.Services.pdb">
+      <publishTime>08/29/2022 10:35:04</publishTime>
+    </File>
+    <File Include="bin/POV.Core.Administracion.dll">
+      <publishTime>09/02/2022 14:24:55</publishTime>
+    </File>
+    <File Include="bin/POV.Core.Administracion.pdb">
+      <publishTime>08/29/2022 10:38:36</publishTime>
+    </File>
+    <File Include="bin/POV.Core.PadreTutor.dll">
+      <publishTime>09/02/2022 14:25:18</publishTime>
+    </File>
+    <File Include="bin/POV.Core.PadreTutor.pdb">
+      <publishTime>08/29/2022 10:38:36</publishTime>
+    </File>
+    <File Include="bin/POV.Core.PortalUsuarios.dll">
+      <publishTime>09/02/2022 14:24:54</publishTime>
+    </File>
+    <File Include="bin/POV.Core.PortalUsuarios.pdb">
+      <publishTime>08/29/2022 10:35:44</publishTime>
+    </File>
+    <File Include="bin/POV.DetalleExpediente.Services.dll">
+      <publishTime>09/09/2022 11:17:36</publishTime>
+    </File>
+    <File Include="bin/POV.DetalleExpediente.Services.pdb">
+      <publishTime>08/29/2022 12:13:20</publishTime>
+    </File>
+    <File Include="bin/POV.Expediente.BO.dll">
+      <publishTime>08/31/2022 11:27:26</publishTime>
+    </File>
+    <File Include="bin/POV.Expediente.BO.pdb">
+      <publishTime>08/29/2022 10:35:22</publishTime>
+    </File>
+    <File Include="bin/POV.Expediente.dll">
+      <publishTime>09/02/2022 14:25:22</publishTime>
+    </File>
+    <File Include="bin/POV.Expediente.pdb">
+      <publishTime>08/29/2022 10:38:40</publishTime>
+    </File>
+    <File Include="bin/POV.Expediente.Reports.dll">
+      <publishTime>08/31/2022 11:27:53</publishTime>
+    </File>
+    <File Include="bin/POV.Expediente.Reports.pdb">
+      <publishTime>08/30/2022 18:11:48</publishTime>
+    </File>
+    <File Include="bin/POV.Expediente.Services.dll">
+      <publishTime>08/31/2022 11:27:38</publishTime>
+    </File>
+    <File Include="bin/POV.Expediente.Services.pdb">
+      <publishTime>08/29/2022 10:35:31</publishTime>
+    </File>
+    <File Include="bin/POV.Licencias.BO.dll">
+      <publishTime>08/31/2022 11:27:26</publishTime>
+    </File>
+    <File Include="bin/POV.Licencias.BO.pdb">
+      <publishTime>08/29/2022 10:35:22</publishTime>
+    </File>
+    <File Include="bin/POV.Licencias.Services.dll">
+      <publishTime>09/02/2022 14:24:48</publishTime>
+    </File>
+    <File Include="bin/POV.Licencias.Services.pdb">
+      <publishTime>08/29/2022 10:35:38</publishTime>
+    </File>
+    <File Include="bin/POV.Localizacion.BO.dll">
+      <publishTime>08/31/2022 11:27:08</publishTime>
+    </File>
+    <File Include="bin/POV.Localizacion.BO.pdb">
+      <publishTime>08/29/2022 10:35:02</publishTime>
+    </File>
+    <File Include="bin/POV.Localizacion.Services.dll">
+      <publishTime>08/31/2022 11:27:12</publishTime>
+    </File>
+    <File Include="bin/POV.Localizacion.Services.pdb">
+      <publishTime>08/29/2022 10:35:04</publishTime>
+    </File>
+    <File Include="bin/POV.Logger.Services.dll">
+      <publishTime>08/31/2022 11:27:07</publishTime>
+    </File>
+    <File Include="bin/POV.Logger.Services.pdb">
+      <publishTime>08/29/2022 10:32:59</publishTime>
+    </File>
+    <File Include="bin/POV.Modelo.Blog.dll">
+      <publishTime>08/31/2022 11:27:21</publishTime>
+    </File>
+    <File Include="bin/POV.Modelo.Blog.pdb">
+      <publishTime>08/29/2022 10:35:08</publishTime>
+    </File>
+    <File Include="bin/POV.Modelo.BO.dll">
+      <publishTime>08/31/2022 11:27:06</publishTime>
+    </File>
+    <File Include="bin/POV.Modelo.BO.pdb">
+      <publishTime>08/29/2022 10:35:02</publishTime>
+    </File>
+    <File Include="bin/POV.Modelo.dll">
+      <publishTime>09/02/2022 14:25:04</publishTime>
+    </File>
+    <File Include="bin/POV.Modelo.Estandarizado.BO.dll">
+      <publishTime>08/31/2022 11:27:07</publishTime>
+    </File>
+    <File Include="bin/POV.Modelo.Estandarizado.BO.pdb">
+      <publishTime>08/29/2022 10:35:03</publishTime>
+    </File>
+    <File Include="bin/POV.Modelo.Estandarizado.Services.dll">
+      <publishTime>08/31/2022 11:27:09</publishTime>
+    </File>
+    <File Include="bin/POV.Modelo.Estandarizado.Services.pdb">
+      <publishTime>08/29/2022 10:35:04</publishTime>
+    </File>
+    <File Include="bin/POV.Modelo.pdb">
+      <publishTime>08/29/2022 10:36:04</publishTime>
+    </File>
+    <File Include="bin/POV.Modelo.Services.dll">
+      <publishTime>08/31/2022 11:27:11</publishTime>
+    </File>
+    <File Include="bin/POV.Modelo.Services.pdb">
+      <publishTime>08/29/2022 10:35:05</publishTime>
+    </File>
+    <File Include="bin/POV.Operaciones.BO.dll">
+      <publishTime>08/31/2022 11:27:16</publishTime>
+    </File>
+    <File Include="bin/POV.Operaciones.BO.pdb">
+      <publishTime>08/29/2022 10:35:09</publishTime>
+    </File>
+    <File Include="bin/POV.Profesionalizacion.BO.dll">
+      <publishTime>08/31/2022 11:27:13</publishTime>
+    </File>
+    <File Include="bin/POV.Profesionalizacion.BO.pdb">
+      <publishTime>08/29/2022 10:35:07</publishTime>
+    </File>
+    <File Include="bin/POV.Profesionalizacion.DTO.BO.dll">
+      <publishTime>08/31/2022 11:27:19</publishTime>
+    </File>
+    <File Include="bin/POV.Profesionalizacion.DTO.BO.pdb">
+      <publishTime>08/29/2022 10:38:34</publishTime>
+    </File>
+    <File Include="bin/POV.Profesionalizacion.DTO.Services.dll">
+      <publishTime>09/02/2022 14:25:02</publishTime>
+    </File>
+    <File Include="bin/POV.Profesionalizacion.DTO.Services.pdb">
+      <publishTime>08/29/2022 12:13:04</publishTime>
+    </File>
+    <File Include="bin/POV.Profesionalizacion.Services.dll">
+      <publishTime>08/31/2022 11:27:35</publishTime>
+    </File>
+    <File Include="bin/POV.Profesionalizacion.Services.pdb">
+      <publishTime>08/29/2022 10:35:31</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.BO.dll">
+      <publishTime>08/31/2022 11:27:15</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.BO.pdb">
+      <publishTime>08/29/2022 10:35:09</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.Calificaciones.BO.dll">
+      <publishTime>09/02/2022 14:19:51</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.Calificaciones.BO.pdb">
+      <publishTime>08/29/2022 10:35:25</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.Calificaciones.Services.dll">
+      <publishTime>09/02/2022 14:19:56</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.Calificaciones.Services.pdb">
+      <publishTime>08/29/2022 10:35:26</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.Diagnostico.Dinamica.BO.dll">
+      <publishTime>09/02/2022 14:19:42</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.Diagnostico.Dinamica.BO.pdb">
+      <publishTime>08/29/2022 10:35:23</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.Diagnostico.Dinamica.Services.dll">
+      <publishTime>08/31/2022 11:27:43</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.Diagnostico.Dinamica.Services.pdb">
+      <publishTime>08/29/2022 12:12:56</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.Diagnostico.Services.dll">
+      <publishTime>09/09/2022 11:17:29</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.Diagnostico.Services.pdb">
+      <publishTime>08/29/2022 12:13:05</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.DTO.BO.dll">
+      <publishTime>08/31/2022 11:27:19</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.DTO.BO.pdb">
+      <publishTime>08/29/2022 10:35:05</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.DTO.Services.dll">
+      <publishTime>09/09/2022 11:17:33</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.DTO.Services.pdb">
+      <publishTime>08/29/2022 12:13:20</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.Reportes.BO.dll">
+      <publishTime>08/31/2022 11:27:27</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.Reportes.BO.pdb">
+      <publishTime>08/29/2022 10:35:24</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.Reportes.Services.dll">
+      <publishTime>09/09/2022 11:17:32</publishTime>
+    </File>
+    <File Include="bin/POV.Prueba.Reportes.Services.pdb">
+      <publishTime>08/29/2022 12:13:09</publishTime>
+    </File>
+    <File Include="bin/POV.Reactivos.BO.dll">
+      <publishTime>08/31/2022 11:27:12</publishTime>
+    </File>
+    <File Include="bin/POV.Reactivos.BO.pdb">
+      <publishTime>08/29/2022 10:35:07</publishTime>
+    </File>
+    <File Include="bin/POV.Reactivos.Services.dll">
+      <publishTime>08/31/2022 11:27:14</publishTime>
+    </File>
+    <File Include="bin/POV.Reactivos.Services.pdb">
+      <publishTime>08/29/2022 10:35:09</publishTime>
+    </File>
+    <File Include="bin/POV.ReactivosUsuario.BO.dll">
+      <publishTime>08/31/2022 11:27:18</publishTime>
+    </File>
+    <File Include="bin/POV.ReactivosUsuario.BO.pdb">
+      <publishTime>08/29/2022 10:35:11</publishTime>
+    </File>
+    <File Include="bin/POV.ReactivosUsuario.Services.dll">
+      <publishTime>08/31/2022 11:27:25</publishTime>
+    </File>
+    <File Include="bin/POV.ReactivosUsuario.Services.pdb">
+      <publishTime>08/29/2022 10:35:18</publishTime>
+    </File>
+    <File Include="bin/POV.Seguridad.BO.dll">
+      <publishTime>08/31/2022 11:27:24</publishTime>
+    </File>
+    <File Include="bin/POV.Seguridad.BO.pdb">
+      <publishTime>08/29/2022 10:35:20</publishTime>
+    </File>
+    <File Include="bin/POV.Seguridad.Services.dll">
+      <publishTime>08/31/2022 11:27:35</publishTime>
+    </File>
+    <File Include="bin/POV.Seguridad.Services.pdb">
+      <publishTime>08/29/2022 10:35:31</publishTime>
+    </File>
+    <File Include="bin/POV.Social.Services.dll">
+      <publishTime>08/31/2022 11:27:41</publishTime>
+    </File>
+    <File Include="bin/POV.Social.Services.pdb">
+      <publishTime>08/29/2022 10:38:41</publishTime>
+    </File>
+    <File Include="bin/POV.Web.Administracion.dll">
+      <publishTime>09/09/2022 11:17:51</publishTime>
+    </File>
+    <File Include="bin/POV.Web.Administracion.pdb">
+      <publishTime>08/31/2022 11:30:43</publishTime>
+    </File>
+    <File Include="bin/POV.Web.Controllers.AptitudesSobresalientes.dll">
+      <publishTime>09/09/2022 11:17:34</publishTime>
+    </File>
+    <File Include="bin/POV.Web.Controllers.AptitudesSobresalientes.pdb">
+      <publishTime>08/29/2022 12:13:20</publishTime>
+    </File>
+    <File Include="bin/POV.Web.Controllers.dll">
+      <publishTime>09/09/2022 11:17:34</publishTime>
+    </File>
+    <File Include="bin/POV.Web.Controllers.pdb">
+      <publishTime>08/29/2022 12:13:13</publishTime>
+    </File>
+    <File Include="bin/POV.Web.DTO.dll">
+      <publishTime>08/31/2022 11:27:11</publishTime>
+    </File>
+    <File Include="bin/POV.Web.DTO.pdb">
+      <publishTime>08/29/2022 10:35:06</publishTime>
+    </File>
+    <File Include="bin/POV.Web.DTO.Services.dll">
+      <publishTime>09/09/2022 11:17:39</publishTime>
+    </File>
+    <File Include="bin/POV.Web.DTO.Services.pdb">
+      <publishTime>08/29/2022 12:13:42</publishTime>
+    </File>
+    <File Include="bin/POV.Web.Portal.Pruebas.dll">
+      <publishTime>09/09/2022 11:17:41</publishTime>
+    </File>
+    <File Include="bin/POV.Web.Portal.Pruebas.pdb">
+      <publishTime>08/29/2022 16:25:47</publishTime>
+    </File>
+    <File Include="bin/POV.Web.PortalSocial.dll">
+      <publishTime>09/09/2022 11:17:58</publishTime>
+    </File>
+    <File Include="bin/POV.Web.PortalSocial.pdb">
+      <publishTime>08/31/2022 11:30:50</publishTime>
+    </File>
+    <File Include="ContenidosDigitales/BuscarContenidos.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="ContenidosDigitales/VerContenidoDigital.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Controls/GridViewPager.ascx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Controls/Images/Back.gif">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Controls/Images/header_back.gif">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Controls/Images/PgFirst.gif">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Controls/Images/PgLast.gif">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Controls/Images/PgNext.gif">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Controls/Images/PgPrev.gif">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Controls/Images/plus.gif">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="CuentaUsuario/AceptarTerminos.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="CuentaUsuario/ActivarUsuario.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="CuentaUsuario/ConfirmarAlumno.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="CuentaUsuario/ConfirmarMaestro.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="CuentaUsuario/EditarContrasena.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="DefaultSite.Master">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="EncuestaSatisfaccion.txt">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Error.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Errores.Master">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/ImagenUsuario/ImagenPerfil.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/ImagenUsuario/UnknownProfile.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/ImagenUsuario/UnknownProfile_thumb.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/protocolo/config.txt">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/protocolo/configHabitos.txt">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/protocolo/EmailTemplateCancelacionOrientacion.html">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/protocolo/EmailTemplateConfirmacionOrientacion.html">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/protocolo/EmailTemplateConfirmarCorreo.html">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/protocolo/EmailTemplateDatosIncorrectos.html">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/protocolo/EmailTemplateNotificacionMP.html">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/protocolo/EmailTemplateNuevoUser.html">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/protocolo/EmailTemplatePagoOxxo.html">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/protocolo/EmailTemplatePagoTarjeta.html">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/protocolo/EmailTemplateRecuperarPassword.html">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/protocolo/EmailTemplateReembolso.html">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/protocolo/EmailTemplateSolicitudOrientacion.html">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/protocolo/ValoresAllport.txt">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Files/ResourceProxy.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/ajax-loader.gif">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/alumnoslogin.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/backgorundlogin.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/backgroundloginestudiante.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/backgroundloginorientador.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/banner_bg.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/botonEntrar.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/botonIrASeccion.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/botonNO.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/botonRecuperar.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/botonSI.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/botonSiguiente.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/boton_login.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/boton_login_hover.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/btnRegistrar.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/btnsocioeconomica-off.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/btnsocioeconomica.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/btn_panel_login.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/btn_regresar_reportes_h.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/btn_regresar_reportes_n.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/btn_regresar_report_listado_h.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/btn_regresar_report_listado_n.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/btn_search.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnactitudes-off.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnactitudes-on.PNG">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnansiedad-off.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnansiedad-on.PNG">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnautoconcepto-off.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnautoconcepto-on.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnbullying-off.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnbullying-on.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnciberbullying-off.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnciberbullying-on.PNG">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btncomunicacion-off.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btncomunicacion-on.PNG">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btndepresion-off.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btndepresion-on.PNG">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnempatia-off.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnempatia-on.PNG">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnhumor-off.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnhumor-on.PNG">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnimagen-off.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnimagen-on.PNG">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnvictimizacion-off.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnvictimizacion-on.PNG">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnviolencia-off.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/btnviolencia-on.PNG">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/bloqueI.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/bloqueII.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/bloqueIII.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/circulo_ralto.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/circulo_rmedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/circulo_rnulo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala10_ralto.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala10_rmedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala10_rnulo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala12_leve.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala12_moderado.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala12_noriesgo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala12_severo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala2_cfuerte.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala2_cmedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala2_cnulo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala3_ECcritico.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala3_ECelevado.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala3_ECpromedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala3_Ecritico_Celevado.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala3_Ecritico_Cpromedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala3_Eelevado_Ccritico.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala3_Eelevado_Cpromedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala3_Epromedio_Ccritico.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala3_Epromedio_Celevado.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala5.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala6_ralto.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala6_rmoderado.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala6_rnulo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Fnulo_VErmedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Fralto_VErmedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Fralto_VErnulo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Fralto_Vrmedio_Eralto.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Fralto_Vrmedio_Ernulo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Fralto_Vrnulo_Eralto.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Fralto_Vrnulo_Vrmedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Frmedio_VEralto.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Frmedio_VErnulo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Frmedio_Vralto_Ermedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Frmedio_Vralto_Ernulo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Frmedio_Vrnulo_Eralto.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Frmedio_Vrnulo_Ermedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Frnulo_VEralto.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Frnulo_Vralto_Ermedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Frnulo_Vralto_Ernulo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Frnulo_Vrmedio_Eralto.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8Frnulo_Vrmedio_Ernulo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8FVEralto.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8FVErmedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8FVErnulo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8FVralto_Ermedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8FVralto_Ernulo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8FVrmedio_Eralto.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8FVrmedio_Ernulo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8FVrnulo_Eralto.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala8FVrnulo_Vrmedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/escala9.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/triangulo_ralto.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/triangulo_rmedio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/bullying/Report/triangulo_rnulo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/buscando.flotante.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/cabecera_topalumnos_der.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/cabecera_topalumnos_izq.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/Captura.PNG">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/cargando.flotante.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/competencias.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/confirmar_Datos_alumno.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/dgfcms.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/eje-tematico-grande.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/email.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/enviando.flotante.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/En_Construccion.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/escuela_image.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/faviconSocial.ico">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/FONDO-RANKING_32x32.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/fondoLibro.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/fondo_centro.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/fondo_modal.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/footerpattern.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/footer_img.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/headerpattern.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/header_login.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/header_pass.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/head_mail.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/hr.gif">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/abuso.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/accept.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/alumnos.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/Ayuda.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/bullet_arrow_down.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/cambiar_esc.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/comment.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/comments.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/comments_add.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/comments_delete.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/comment_add.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/comment_delete.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/comment_edit.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/cross.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/default_file.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/delete.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/Dificultad.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/download.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/email.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/email_attach.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/email_go.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/emoticon_grin.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/emoticon_happy.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/emoticon_smile.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/emoticon_surprised.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/emoticon_tongue.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/emoticon_unhappy.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/emoticon_waii.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/emoticon_wink.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/error.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/excel.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/exclamation.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/eye.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/favorite.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/fuente.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/group.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/group_add.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/group_edit.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/group_error.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/group_gear.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/group_key.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/heart.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/help.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/ico.Actividades.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/ico.buscar.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/ico.calificaciones.todos.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/ico.iniciar.off.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/ico.iniciar.tarea.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/ico.pruevas.asignadas.resultado.de.prueba.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/icon_32_sus_reactiv.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/icon_a.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/icon_b.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/icon_calendar.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/icon_cerrar.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/icon_cuenta.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/icon_e.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/icon_r.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/icon_reactivos.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/icon_trash.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/image.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/lightbulb.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/link.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/magnifier.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/mostrarmas.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/muro.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/newspaper.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/note.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/note_add.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/note_delete.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/note_edit.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/note_error.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/noticias.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/page_delete.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/page_edit.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/page_white_text.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/pdf.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/pencil.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/power_point.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/publicaciones_companeros.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/report.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/reportar.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/salir.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/status_online.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/stop.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/tick.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/user.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/user_comment.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/user_delete.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/user_edit.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/vcard.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/video.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/viñetaMapaSitio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/VOCAREER_apuntes.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/VOCAREER_aspirantes.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/VOCAREER_buscar.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/VOCAREER_favoritos.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/VOCAREER_icon_calendar.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/VOCAREER_mensajes.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/VOCAREER_miCuenta.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/VOCAREER_muro.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/VOCAREER_notificaciones.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/VOCAREER_reporteAbuso.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/wand.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/weather_clouds.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/word.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/you-tube.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icons/YOY_logout.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icon_17_escuela.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icon_ciencias.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icon_config_calendar.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icon_lectura.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icon_matematicas.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icon_salir.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/icon_tecnologia.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/imgCarousel_cambiaContrasena.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/imgCarousel_confirmaCorreo.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/imgCarousel_Contactos.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/imgCarousel_miCuenta.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/imgCarousel_Pruebas.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/imgError.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/imgError.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/like.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/login_background_481-x-767.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/login_logo_small.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/login_recuadro_small.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/login_slogan_small.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/logo.PNG">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/logo_header.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/menu_asistente.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/menu_cursos.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/menu_ejes.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/methods_oxxopay.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/methods_visa_mc.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/miGrupo.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/misDocentes.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/mostrar-grande.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/notice.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/nueva_busqueda_grande.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/orientador.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/orientadoreslogin.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/part-100.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/part-101.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/part-70.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/part-75.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/part-76.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/part-77.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/part-78.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/part-99.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/POVemail.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/procesando.flotante.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/sep.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/sep2.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/snte.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/social.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/SOV_cargando.flotante.gif">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/SOV_ELEMENTOS_portalestudiante.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/SOV_ELEMENTOS_portalorientador.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/SOV_imgError.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/SOV_portalorientadores.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/SOV_portalsocial.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/SOV_tutores.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/SOV_universidad.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/SOV_VOCAREER1.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/thumb_ciencias.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/thumb_lectura.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/thumb_mate.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/tick.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/top_bar.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/uaem.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/vivir_mejor.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/VOCAREER_aspirantesComunes.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/VOCAREER_borde.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/VOCAREER_buscando-flotante.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/VOCAREER_editarPerfil.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/VOCAREER_enviando.flotante.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/VOCAREER_expediente.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/VOCAREER_icon_config_calendar.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/VOCAREER_mensajesPrivados.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/VOCAREER_procesando.flotante.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/VOCAREER_salir.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/YOY icono_user.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/YOY_btnImg_continuarPrueba.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/YOY_btnImg_iniciarPrueba.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/YOY_btnImg_procesoPrueba.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/YOY_btnImg_Reporte.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/Yoy_Favicon20px.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/YOY_icono_user.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/YOY_icon_solicitudes.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/YOY_imgIconPruebas_Inteligencia.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/YOY_imgIconPruebas_Personalidad.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/YOY_imgIconPruebas_Valores.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/YOY_imgIconPruebas_Vocacionales.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Images/YOY_imgIcon_HabitosEstudio.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="InformacionPortal/AcercaDe.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="InformacionPortal/InfoTerminosCondiciones.htm">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="InformacionPortal/SiteMap.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="InformacionPortal/SiteMapAlumno.xml">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="InformacionPortal/SiteMapDocente.xml">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="InformacionPortal/TerminosCondiciones.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="pdf/avisoprivacidadyoy.pdf">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="pdf/terminoscondicionesyoy.pdf">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/CarrerasEventosUniversidadUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/ExpedienteAlumno.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Muro.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Noticias.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/PortalAlumno.master">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Pruebas.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ExpedienteAlumnoReport.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoAllport.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoBullying.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoChaside.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoCleaver.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoDominos.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoEstilosdeAprendizaje.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoFrasesVocacionales.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoHabitos.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoInteligenciasMultiples.aspx">
+      <publishTime>08/30/2022 16:29:37</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoInventariodeIntereses.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoInventarioHerrera.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoKuder.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoPruebaLuscher.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoRaven.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoRotter.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoSACKS.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoSucesosdeVida.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoTerman.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/Reportes/ReporteAlumnoResultadoZavic.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/SeleccionarCarrera.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalAlumno/ViewBlog.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Alumnos.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/DetalleExpedienteAlumnoOrientador.aspx">
+      <publishTime>09/07/2022 19:08:52</publishTime>
+    </File>
+    <File Include="PortalDocente/ExpedienteAlumnoOrientador.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Inicio.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Muro.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Noticias.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/OrientacionVocacional.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/PortalDocente.master">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/BuscarAlumnosAllportUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/BuscarAlumnosBullyingUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/BuscarAlumnosChasideUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/BuscarAlumnosCleaverUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/BuscarAlumnosDominosUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/BuscarAlumnosFrasesVocacionalesUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/BuscarAlumnosHabitosUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/BuscarAlumnosInteligenciasMultiplesUI.aspx">
+      <publishTime>09/06/2022 13:45:35</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/BuscarAlumnosKuderUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/BuscarAlumnosRavenUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/BuscarAlumnosRotterUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/BuscarAlumnosSacksUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/BuscarAlumnosTermanUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/BuscarAlumnosZavicUI.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/DetalleReporteResultado.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/ReporteAlumnoResultadoAllport.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/ReporteAlumnoResultadoBullying.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/ReporteAlumnoResultadoChaside.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/ReporteAlumnoResultadoCleaver.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/ReporteAlumnoResultadoDominos.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/ReporteAlumnoResultadoFrasesVocacionales.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/ReporteAlumnoResultadoHabitos.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/ReporteAlumnoResultadoKuder.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/ReporteAlumnoResultadoRaven.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/ReporteAlumnoResultadoRotter.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/ReporteAlumnoResultadoSacks.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/ReporteAlumnoResultadoTerman.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/ReporteAlumnoResultadoZavic.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalDocente/Reportes/ReporteResultadoPruebasAlumno.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalGrupo/Alumnos.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalGrupo/MiDocente.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalGrupo/NoticiasDocentes.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="PortalGrupo/PortalGrupo.master">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="redireccion.txt">
+      <publishTime>08/29/2022 12:35:56</publishTime>
+    </File>
+    <File Include="Scripts/alertify.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.asignacionactividad.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.asistencia.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.block.ui.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.contactos.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.contenidos.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.cursos.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.dialogs.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.ejestematicos.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.favoritos.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.informacion.situacion.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.mensajes.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.notificaciones.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.orientacionvocacional.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.publicaciones.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.reactivos.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.reporteabuso.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.shared.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.situacionaprendizaje.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.usuarios.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/api.visor.contenido.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/autoresize.jquery.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-datetimepicker-v4.15.35.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.asignacionactividad.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.asistencia.busqueda.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.asistencia.informacion.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.asistencia.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.compartir.contenido.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.contactos.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.contenidos.busqueda.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.cursos.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.dialogs.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.ejestematicos.busqueda.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.ejestematicos.informacion.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.favoritos.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.informacion.asistencia.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.informacion.situacion.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.mensajes.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.menu.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.notificaciones.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.orientacionvocacional.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.popup.ayuda.natware.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.publicaciones.docente.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.publicaciones.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.publicaciones.mi.docente.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.reactivos.busqueda.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.reactivos.publicaciones.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.reactivos.resolver.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.reactivos.suscripcion.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.reporteabuso.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.situacionaprendizaje.busqueda.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.situacionaprendizaje.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.usuarios.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/core.validation.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/fullcalendar/es-do.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/fullcalendar/es.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/fullcalendar/fullcalendar.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/fullcalendar/moment.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/iframe.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.12.1.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.2.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-migrate-1.2.1.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.11.4.custom.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.12.1.custom.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.16.custom.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.autosize.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.blockUI.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.easing.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jQuery.jPlayer.2.4.0/add-on/jplayer.playlist.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jQuery.jPlayer.2.4.0/add-on/jquery.jplayer.inspector.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jQuery.jPlayer.2.4.0/Jplayer.swf">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jQuery.jPlayer.2.4.0/jquery.jplayer.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jQuery.jPlayer.2.4.0/popcorn/popcorn.jplayer.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.maskedinput-1.3.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.notice.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.slimscroll.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.textareaCounter.plugin.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.tmpl.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui.datepicker-es.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui.datepicker.validation.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui.datepicker.validation.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui.datepicker.validation.pack.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.youtubepopup.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/json.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/messageslogin_es.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/messages_es.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/api.contactos.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/api.dialogs.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/api.mensajes.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/api.notificaciones.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/api.publicaciones.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/api.reactivos.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/api.reporteabuso.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/api.shared.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/core.contactos.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/core.mensajes.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/core.menu.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/core.notificaciones.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/core.publicaciones.docente.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/core.publicaciones.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/core.publicaciones.mi.docente.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/core.reactivos.busqueda.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/core.reactivos.publicaciones.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/core.reactivos.resolver.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/core.reactivos.suscripcion.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/core.reporteabuso.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/core.validation.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/json.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/messageslogin_es.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/min/messages_es.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/moment-with-locales-v2.9.0.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/pdfobject.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/rating/star-rating.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/swfobject.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/telefonoinput/css/demo.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/telefonoinput/css/intlTelInput.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/telefonoinput/img/flags%402x.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/telefonoinput/img/flags.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/telefonoinput/js/intlTelInput.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/telefonoinput/js/intlTelInput.min.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/telefonoinput/js/utils.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/TimeCircles/TimeCircles.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/tmpl/asistencia.tmpl.htm">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/tmpl/contacto.tmpl.htm">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/tmpl/cursos.tmpl.htm">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/tmpl/ejestematicos.tmpl.htm">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/tmpl/InformacionSituacion.tmpl.htm">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/tmpl/pubs.tmpl.htm">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/tmpl/reactivo.tmpl.htm">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/tmpl/situacionaprendizaje.tmpl.htm">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/tour/jquery.hemiIntro.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/tour/tour.config.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/validator.js">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/VisoresTmpl/VisorAudio.htm">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Scripts/VisoresTmpl/VisorVideo.htm">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="SeleccionarEscuela.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>09/06/2022 14:27:17</publishTime>
+    </File>
+    <File Include="Social/EditarPerfil.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Social/Mensajes.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Social/MisIntereses.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Social/NotificacionesSocial.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Social/NuevoMensaje.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Social/Perfil.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Social/ReportesAbuso.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Social/VerPublicacion.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Social/VerReporteAbuso.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Social/ViewMuro.aspx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/alertify.bootstrap.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/alertify.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/alertify.default.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/alertify.semantic.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/AptitudesSobresalientes.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/bootstrap-datetimepicker.min.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/bootstrap-modal-carousel.min.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/bootstrap-navbar-color.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/bootstrap-steps.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/bootstrap-theme.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/bootstrap.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/container.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/CommentForm.ascx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/CommentView.ascx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/css/rtl.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/css/styles.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/fonts/fontello.eot">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/fonts/fontello.svg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/fonts/fontello.ttf">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/fonts/fontello.woff">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/images/carrow.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/images/sarrow.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/newsletter.html">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/PostNavigation.ascx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/PostView.ascx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/RelatedPosts.ascx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/site.master">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/theme.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/theme.xml">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Custom/Themes/Standard/WidgetContainer.ascx">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Default-responsive.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Default.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/DefaultIE7.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/DefaultIE9.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fonts/Aileron-Regular.otf">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fonts/helr45w.ttf">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fonts/HelveticaNeue-BoldCond.otf">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fonts/HelveticaNeue-LightCond.otf">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fonts/HelveticaNeueLTPro-MdCnO.otf">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fonts/Roboto-BoldCondensed_0.ttf">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fonts/Roboto-Bold_2.ttf">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fonts/Roboto-Condensed_0.ttf">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fonts/Roboto-Regular_1.ttf">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40-.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/cupertino/images/ui-bg_glass_50_3baae3_1x400.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/cupertino/images/ui-icons_2694e8_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/cupertino/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/cupertino/images/ui-icons_3d80b3_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/cupertino/images/ui-icons_72a7cf_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/cupertino/images/ui-icons_ffffff_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/cupertino/jquery-ui.min.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/fullcalendar.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/fullcalendar/fullcalendar.print.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/gridview.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/headerandfooter.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Icons.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/images/ui-icons_444444_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/images/ui-icons_555555_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/images/ui-icons_ffffff_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/img/loading.gif">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/jquery-ui-v1.12.0.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/jquery.easing.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/jquery.notice.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Login-responsive.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Login.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/lumx.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/muro.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/notifyme.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/pink.flag/jplayer.pink.flag.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/pink.flag/jplayer.pink.flag.jpg">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/pink.flag/jplayer.pink.flag.seeking.gif">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/pink.flag/jplayer.pink.flag.video.play.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Profesionalizacion.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/rating/bootstrap.min.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/rating/star-rating.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Reactivos.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/reporte.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/styleAcordion.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/Talentos.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/TimeCircles/readme.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/TimeCircles/TimeCircles.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/tour/jquery.hemiIntro.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/tour/justified-nav.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-bg_flat_10_000000_40x100.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-bg_gloss-wave_35_959595_500x100.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-bg_highlight-soft_75_959595_1x100.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-icons_222222_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-icons_228ef1_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-icons_444444_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-icons_49156a_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-icons_4d405a_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-icons_555555_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-icons_777620_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-icons_777777_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-icons_ef8c08_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-icons_ffd27a_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/images/ui-icons_ffffff_256x240.png">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/jquery-ui-1.12.1.custom.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Styles/ui-lightness/jquery-ui-1.8.16.custom.css">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="wcf/AsignacionActividadService.svc">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="wcf/AsistenciaService.svc">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="wcf/ContactosService.svc">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="wcf/ContenidosDigitalesService.svc">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="wcf/CursosService.svc">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="wcf/EjesTematicosService.svc">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="wcf/FavoritosService.svc">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="wcf/MensajesService.svc">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="wcf/NotificacionService.svc">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="wcf/OrientacionVocacionalService.svc">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="wcf/PublicacionesService.svc">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="wcf/ReactivosService.svc">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="wcf/ReporteAbusoService.svc">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="wcf/SituacionesService.svc">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="wcf/UsuarioService.svc">
+      <publishTime>12/15/2020 10:51:40</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/09/2022 12:11:19</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

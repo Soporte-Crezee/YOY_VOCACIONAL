@@ -1,0 +1,60 @@
+﻿.titulo-portal {
+    color:#05AED9 !important;
+    font-family: Roboto-Bold;
+    margin-top: 20px !important;
+    font-size: 24px !important;    
+}
+
+.nav.navbar-nav>li>a, .titulo_summary, .nombre-usuario-portal{
+    font-family: Roboto-Bold-Condensed !important;
+    font-size: 16px !important;
+}
+
+.img-portal {
+    max-width: none !important;
+}
+
+div.menu_toolbar_container nav.navbar.navbar-default,
+div.navbar.navbar-default.navbar-static-top {
+    margin-bottom: 0px;
+}
+
+.header-container {
+    background:url('../Content/images/header-yoy.jpg') !important;
+}
+
+/*.background_div_contenedor {
+    background-color: #05AED9 !important;
+}
+
+.border_div_contenedor {
+    border: 10px solid #F2F2F2 !important;
+}*/
+
+.jumbotron {
+    background: #F2F2F2;
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../Styles/fonts/Roboto-Bold_2.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold-Condensed';
+    src: url('../Styles/fonts/Roboto-BoldCondensed_0.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../Styles/fonts/Roboto-Regular_1.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Condensed';
+    src: url('../Styles/fonts/Roboto-Condensed_0.ttf');
+}
+
+@font-face {
+    font-family: 'Alieron';
+    src: url('../Styles/fonts/Aileron-Regular.otf');
+}

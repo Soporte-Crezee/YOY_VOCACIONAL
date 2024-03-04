@@ -1,0 +1,226 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DefaultSite.master.cs" Inherits="POV.Web.PortalSocial.DefaultSite" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>YOY - SOCIAL</title>
+    <link rel="shortcut icon" href="~/Images/Yoy_Favicon20px.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width" />
+
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>jquery-1.12.1.min.js" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>bootstrap.js" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>api.dialogs.js" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>jquery.blockUI.js" type="text/javascript"></script>
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>api.shared.js" type="text/javascript"></script>
+
+
+
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Default.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>Icons.css" rel="stylesheet" type="text/css" />
+
+    <!-- Nuevos estilos genericos -->
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>headerandfooter.css" rel="stylesheet" type="text/css" />
+    <link href="<% =Page.ResolveClientUrl("~/Styles/")%>container.css" rel="stylesheet" type="text/css" />
+    <script src="<% =Page.ResolveClientUrl("~/Scripts/")%>validator.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var imgLoader = '<%= Page.ResolveClientUrl("~/images/SOV_cargando.flotante.gif")%>';
+
+        $(document).ready(function () {
+            initMasterClient();
+        });
+
+        function showMessage(text, redirection) {
+            $("#txtRedirect").val((redirection != undefined) ? "#" : "#");
+            var api = new MessageApi();
+            api.CreateMessage(text, "INFO");
+            api.Show();
+            resetHiden();
+        }
+
+        function initMasterClient() {
+            var apimess = new MessageApi();
+            apimess.PrepareDialog();
+            if ($("#<%#hdnShowMessage.ClientID%>").val() == "1") { mostrarError(); }
+            if ($("#<%#hdnShowMessage.ClientID%>").val() == "2") { mostrarWarning(); }
+            if ($("#<%#hdnShowMessage.ClientID%>").val() == "3") { mostrarInfo(); }
+        }
+        function mostrarError() {
+            var api = new MessageApi();
+            var text = $("#<%# hdnLastMessage.ClientID %>").val();
+            api.CreateMessage(text, "ERROR");
+            api.Show();
+            resetHiden();
+        }
+        function mostrarWarning() {
+            var api = new MessageApi();
+            var text = $("#<%# hdnLastMessage.ClientID %>").val();
+            api.CreateMessage(text, "WARNING");
+            api.Show();
+            resetHiden();
+        }
+        function mostrarInfo() {
+            var api = new MessageApi();
+            var text = $("#<%# hdnLastMessage.ClientID %>").val();
+            api.CreateMessage(text, "INFO");
+            api.Show();
+            resetHiden();
+        }
+        function resetHiden() { $("#<%# hdnShowMessage.ClientID %>").val("0"); $("#<%# hdnLastMessage.ClientID %>").val(""); }
+
+        var hdnmessageinputid = "#<%# hdnLastMessage.ClientID %>";
+        var hdnmessagetypeinputid = "#<%# hdnShowMessage.ClientID %>";
+
+    </script>
+    <!-- Fin estilos genericos -->
+    <style type="text/css">
+        .row {
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+        }
+
+        .icon {
+            height: 20px;
+            width: 20px;
+        }
+
+        .icon-logout {
+            background: url('../Images/icons/YOY_logout.png');
+        }
+
+        .btn.btn-sm, .btn-green {
+            border-radius: 8px !important;
+            font-style: italic;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true" />
+        <script type="text/javascript">
+            $(document).ready(function () {
+                Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(OnBeginRequestBlockUI);
+                Sys.WebForms.PageRequestManager.getInstance().add_endRequest(OnEndRequestUnblockUI);
+            });
+
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(End);
+            function End(sender, args) { initMasterClient(); $(".boton").button(); }
+
+            function OnBeginRequestBlockUI(sender, args) {
+                DocumentBlockUI();
+            }
+            function DoFormBlockUI() {
+                $("#form1").submit(function () { DocumentBlockUI(); return true; });
+            }
+            function DocumentBlockUI() {
+
+                $.blockUI.defaults.fadeOut = 200;
+                $.blockUI.defaults.fadeOut = 100;
+                $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+                $.blockUI.defaults.message = '<h1 style="font-size:20px;"><img src="' + imgLoader + '" /></h1>';
+                $.blockUI();
+            }
+            function OnEndRequestUnblockUI(sender, args) {
+                DocumentUnblockUI();                                                             
+            }
+            function DocumentUnblockUI() {
+                $.blockUI.defaults.fadeOut = 200;
+                $.blockUI.defaults.fadeOut = 100;
+                $.blockUI.defaults.overlayCSS.backgroundColor = "white";
+                $.blockUI.defaults.message = '<h1 style="font-size:20px;"><img src="' + imgLoader + '" /></h1>';
+                $.unblockUI();
+            }
+
+        </script>
+        <div class="">
+            <div class="navbar navbar-default navbar-static-top">
+                <div class="">
+                    <div id="header" class="header-container col-xs-12">
+                        <div class="row" style="margin-top: 20px;">
+                            <div class="col-xs-12 col-lg-3 col-sm-12 col-md-12" style="text-align: center">
+                                <img src="~/Images/SOV_VOCAREER1.png" runat="server" id="imgLogo_Header" alt="logo" class="" />
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                                <div id="menu-top" class="menu_container">
+                                    <div class="">
+                                        <div class="text-center">
+                                            <h2 id="tituloDefault" runat="server" class="titulo-portal">VERIFICA QUE TU INFORMACI&Oacute;N SEA CORRECTA
+                                            </h2>
+                                        </div>
+                                        <div style="text-align: right;" class="">
+                                            <!--<div class="header_topmenu">-->
+                                            <div class="list-inline" id="botonsalir">
+                                                <div>
+                                                    <span class="icon icon-logout"></span>
+                                                    <asp:HyperLink ID="HplLogout" runat="server" ToolTip="Salir del portal">Salir</asp:HyperLink>
+                                                </div>
+                                            </div>
+                                            <!--</div>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper" class="">
+                <div id="content" class="container">
+                    <asp:ContentPlaceHolder ID="page_content" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <div class="modal fade" tabindex="-1" role="dialog" id="Div1">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header" id="Div2">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #FFF; opacity: 1; filter: none;">
+                                        <span aria-hidden="true" style="font-size: 25px; opacity: 1;">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title" style="color: white;">YOY - SOCIAL
+                                    </h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p id="P1" class="container-fluid"></p>
+                                    <div id="emergentes" class="container-fluid">
+                                    </div>
+                                    <asp:HiddenField ID="HiddenField1" runat="server" />
+                                    <asp:HiddenField ID="HiddenField2" runat="server" Value="0" />
+                                    <div class="modal-footer" id="Div3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" tabindex="-1" role="dialog" id="updPanelMaster">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" id="modalHeader">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #FFF; opacity: 1; filter: none;">
+                                <span aria-hidden="true" style="font-size: 25px; opacity: 1;">&times;</span>
+                            </button>
+                            <h4 class="modal-title" style="color: white;">YOY - SOCIAL
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <p id="message" class="container-fluid"></p>
+                            <asp:HiddenField ID="hdnLastMessage" runat="server" />
+                            <asp:HiddenField ID="hdnShowMessage" runat="server" Value="0" />
+                            <div class="modal-footer" id="modalFooter">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
