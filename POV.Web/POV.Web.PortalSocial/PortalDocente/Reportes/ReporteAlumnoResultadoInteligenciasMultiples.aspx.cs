@@ -1,6 +1,7 @@
 ﻿using Framework.Base.DataAccess;
 using POV.CentroEducativo.BO;
 using POV.CentroEducativo.Service;
+using POV.CentroEducativo.Services;
 using POV.Core.RedSocial.Implement;
 using POV.Core.RedSocial.Interfaces;
 using POV.Expediente.BO;
@@ -9,6 +10,7 @@ using POV.Expediente.Service;
 using POV.Expediente.Services;
 using POV.Licencias.BO;
 using POV.Licencias.Service;
+using POV.Logger.Service;
 using POV.Modelo.BO;
 using POV.Prueba.Diagnostico.Dinamica.BO;
 using POV.Prueba.Diagnostico.Service;
@@ -46,10 +48,10 @@ namespace POV.Web.PortalSocial.PortalDocente.Reportes
             get { return this.Request.QueryString["num"]; }
         }
 
-        private decimal SS_RespuestaInteligenciasMultiples
+        private Dictionary<string, string> SS_RespuestaIntMul
         {
-            get { return (decimal)this.Session["RespuestaInteligenciasMultiples"]; }
-            set { this.Session["RespuestaInteligenciasMultiples"] = value; }
+            get { return (Dictionary<string, string>)this.Session["RespuestaEstilo"]; }
+            set { this.Session["RespuestaEstilo"] = value; }
         }
 
         private string SS_FechaFin
@@ -57,21 +59,14 @@ namespace POV.Web.PortalSocial.PortalDocente.Reportes
             get { return (string)this.Session["FechaFin"]; }
             set { this.Session["FechaFin"] = value; }
         }
-       
+
         private IUserSession userSession;
         private IRedirector redirector;
-        private readonly IDataContext dctx = ConnectionHelper.Default.Connection;
 
         private AlumnoCtrl alumnoCtrl;
-
-        private ExpedienteEscolarCtrl expedienteEscolarCtrl;
-
         private UsuarioCtrl usuarioCtrl;
-
+        private readonly IDataContext dctx = ConnectionHelper.Default.Connection;
         private LicenciaEscuelaCtrl licenciaEscuelaCtrl;
-
-        private InfoAlumnoUsuarioCtrl infoAlumnoUsuarioCtrl;
-
         private RespuestaAlumnoCtrl respuestaAlumnoCtrl;
         private ResultadoPruebasOrientacionVocacionalCtrl resultadoPruebasOrientacionVocacionalCtrl;
         #endregion
@@ -84,12 +79,11 @@ namespace POV.Web.PortalSocial.PortalDocente.Reportes
             alumnoCtrl = new AlumnoCtrl();
             usuarioCtrl = new UsuarioCtrl();
             licenciaEscuelaCtrl = new LicenciaEscuelaCtrl();
-
-            expedienteEscolarCtrl = new ExpedienteEscolarCtrl();
-            infoAlumnoUsuarioCtrl = new InfoAlumnoUsuarioCtrl();
             respuestaAlumnoCtrl = new RespuestaAlumnoCtrl();
             resultadoPruebasOrientacionVocacionalCtrl = new ResultadoPruebasOrientacionVocacionalCtrl();
         }
+
+        #region Eventos de la pagina
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -104,25 +98,27 @@ namespace POV.Web.PortalSocial.PortalDocente.Reportes
                 }
             }
 
-            SS_AlumnoCarga = null;
-            SS_UsuarioCarga = null;
-            SS_RespuestaInteligenciasMultiples = 0;
-            SS_FechaFin = string.Empty;
+                    SS_RespuestaIntMul = null;
+                    SS_AlumnoCarga = null;
+                    SS_UsuarioCarga = null;
+                    SS_FechaFin = string.Empty;
+                    CargarDatos();
 
-            CargarDatos();
-            
-            if (SS_AlumnoCarga == null || SS_UsuarioCarga == null || SS_FechaFin == string.Empty)
-            {
-                redirector.GoToHomePage(false);
-            }
-            else
-            {
-                //ResultadoPruebaInteligenciasMultiplesRpt report = new ResultadoPruebaInteligenciasMultiplesRpt(this.SS_AlumnoCarga, this.SS_UsuarioCarga, this.SS_RespuestaInteligenciasMultiples, this.SS_FechaFin);
-                //rptVAlumnos.PageByPage = false;
-                //rptVAlumnos.Report = report;
-            }
+                    if (SS_AlumnoCarga == null || SS_UsuarioCarga == null || SS_RespuestaIntMul == null || SS_FechaFin == string.Empty)
+                    {
+                        redirector.GoToHomePage(false);
+                    }
+                    else { 
+                            ResultadoPruebaInteligenciasMultiplesRpt report = new ResultadoPruebaInteligenciasMultiplesRpt(this.SS_AlumnoCarga, this.SS_UsuarioCarga, this.SS_RespuestaIntMul, this.SS_FechaFin);
+                            rptVAlumnos.PageByPage = false;
+                            rptVAlumnos.Report = report;
+                    }
+
         }
 
+        #endregion
+
+        #region Métodos Auxiliares
         private void CargarDatos()
         {
             Alumno alumnoEstudiante = new Alumno();//InterfaceToFiltroAlumno();
@@ -130,13 +126,12 @@ namespace POV.Web.PortalSocial.PortalDocente.Reportes
                 alumnoEstudiante.AlumnoID = long.Parse(QS_Alumno);
             string al_Curp = alumnoEstudiante.Curp;
             Alumno alumno = alumnoCtrl.LastDataRowToAlumno(alumnoCtrl.Retrieve(dctx, alumnoEstudiante));
-
             Usuario usuarioAlumno = licenciaEscuelaCtrl.RetrieveUsuario(ConnectionHelper.Default.Connection, new Alumno { AlumnoID = alumno.AlumnoID, Curp = alumno.Curp });
-            // Para obtener intereses
+
             Contrato contrato = userSession.Contrato;
             ContratoCtrl contratoCtrl = new ContratoCtrl();
             List<PruebaContrato> pruebas = contratoCtrl.RetrievePruebasAsignadoContrato(dctx, contrato, new CicloContrato { CicloEscolar = userSession.CurrentCicloEscolar });
-            
+
             var pruebaDinamica = new PruebaDinamica();
 
             // Datos del alumno
@@ -152,14 +147,13 @@ namespace POV.Web.PortalSocial.PortalDocente.Reportes
             tipoPresentacionPruebas.Add(ETipoPruebaPresentacion.InteligengiasMultiples);
             List<RespuestaAlumno> respuestaAlumno = respuestaAlumnoCtrl.RetrieveRespuestaAlumno(dctx, alumno, tipoPresentacionPruebas, EEstadoPrueba.CERRADA).Distinct().ToList();
 
-            decimal sumaCalificacionHabitos = 0;
-
+            // Obtener pruebas
+            Dictionary<string, string> sumaCalificacionesInteligencias = new Dictionary<string, string>();
             foreach (var prueba in respuestaAlumno)
             {
+                // Resultado Allport
                 if (prueba.TipoPruebaPresentacion == (byte)ETipoPruebaPresentacion.InteligengiasMultiples)
                 {
-                    sumaCalificacionHabitos = prueba.Calificacion.Value;
-
                     AResultadoPrueba resultado = new ResultadoPruebaDinamica();
                     resultado.ResultadoPruebaID = prueba.ResultadoPruebaID;
                     resultado.Prueba = new PruebaDinamica();
@@ -167,27 +161,28 @@ namespace POV.Web.PortalSocial.PortalDocente.Reportes
                     resultado = new PruebaDiagnosticoCtrl().RetrieveCompleteResultadoPrueba(dctx, resultado);
 
                     var registro = resultado as ResultadoPruebaDinamica;
+                    sumaCalificacionesInteligencias = resultadoPruebasOrientacionVocacionalCtrl.RetrieveResultadoPruebaInteligenciasMultiples(dctx, registro, alumno);
                     DateTime tmpFecha = new DateTime();
                     tmpFecha = Convert.ToDateTime(registro.RegistroPrueba.FechaFin);
                     SS_FechaFin = tmpFecha.ToShortDateString();
 
-                    SS_RespuestaInteligenciasMultiples = sumaCalificacionHabitos;
+                    SS_RespuestaIntMul = sumaCalificacionesInteligencias;
                 }
             }
+
             #endregion
 
+
         }
+
 
         private void FillBack()
         {
             if (HttpContext.Current.Request.UrlReferrer != null)
-            {
                 lnkBack.NavigateUrl = HttpContext.Current.Request.UrlReferrer.PathAndQuery;
-            }
             else
-            {
                 lnkBack.NavigateUrl = "~/Default.aspx";
-            }
         }
+        #endregion
     }
 }

@@ -17,7 +17,7 @@ namespace POV.Expediente.Reports.Reports
         private System.Collections.Generic.Dictionary<string, string> SS_RespuestaIntMul;
         private string p;
 
-        public ResultadoPruebaInteligenciasMultiplesRpt()
+        public ResultadoPruebaInteligenciasMultiplesRpt(Alumno sS_AlumnoCarga)
         {
             InitializeComponent();
         }
@@ -29,6 +29,11 @@ namespace POV.Expediente.Reports.Reports
 
             SetData(alumno, usuario, SS_RespuestaIntMul, p);
         }
+
+        public ResultadoPruebaInteligenciasMultiplesRpt(Alumno sS_AlumnoCarga, Usuario sS_UsuarioCarga, decimal sS_RespuestaInteligenciasMultiples, string sS_FechaFin) : this(sS_AlumnoCarga)
+        {
+        }
+
         public void SetData(Alumno alumno, Usuario usuario, IDictionary<string, string> respuestasInteligencias, string fechaFin)
         {
 

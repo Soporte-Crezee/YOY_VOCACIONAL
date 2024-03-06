@@ -35,5 +35,8 @@ namespace POV.CentroEducativo.BO
         /// Determinar si la prueba es Premium ó Gratuita
         /// </summary>
         public EEsPremium EsPremium { get; set; }
+
+
+        public DateTime? FechaFin { get; set; }
     }
 }

@@ -46,6 +46,11 @@ namespace POV.Web.PortalSocial.PortalAlumno.Reportes
             set { this.Session["UsuarioCarga"] = value; }
         }
 
+        private string QS_Alumno
+        {
+            get { return this.Request.QueryString["num"]; }
+        }
+
         private Dictionary<string, string> SS_RespuestaIntMul
         {
             get { return (Dictionary<string, string>)this.Session["RespuestaEstilo"]; }
@@ -60,11 +65,12 @@ namespace POV.Web.PortalSocial.PortalAlumno.Reportes
 
         private IUserSession userSession;
         private IRedirector redirector;
+        private readonly IDataContext dctx = ConnectionHelper.Default.Connection;
 
         private AlumnoCtrl alumnoCtrl;
         private UsuarioCtrl usuarioCtrl;
-        private readonly IDataContext dctx = ConnectionHelper.Default.Connection;
-
+        private ExpedienteEscolarCtrl expedienteEscolarCtrl;
+        private LicenciaEscuelaCtrl licenciaEscuelaCtrl;
         private RespuestaAlumnoCtrl respuestaAlumnoCtrl;
         private ResultadoPruebasOrientacionVocacionalCtrl resultadoPruebasOrientacionVocacionalCtrl;
         #endregion
@@ -76,7 +82,7 @@ namespace POV.Web.PortalSocial.PortalAlumno.Reportes
 
             alumnoCtrl = new AlumnoCtrl();
             usuarioCtrl = new UsuarioCtrl();
-
+            licenciaEscuelaCtrl = new LicenciaEscuelaCtrl();
             respuestaAlumnoCtrl = new RespuestaAlumnoCtrl();
             resultadoPruebasOrientacionVocacionalCtrl = new ResultadoPruebasOrientacionVocacionalCtrl();
         }
@@ -84,8 +90,6 @@ namespace POV.Web.PortalSocial.PortalAlumno.Reportes
         #region Eventos de la pagina
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
-            {
                 if (!IsPostBack)
                 {
                     if (!userSession.IsLogin())
@@ -94,45 +98,29 @@ namespace POV.Web.PortalSocial.PortalAlumno.Reportes
                     }
                     else
                     {
-
                         FillBack();
                     }
-
                 }
-                else
-                {
-                    if (!userSession.IsLogin())
-                    {
-                        redirector.GoToLoginPage(true);
-                    }
-                }
-                EFAlumnoCtrl alumnoCtrl = new EFAlumnoCtrl(null);
-                Alumno alumno = alumnoCtrl.Retrieve(new Alumno { AlumnoID = userSession.CurrentAlumno.AlumnoID }, false).FirstOrDefault();
-
-                if ((bool)alumno.CorreoConfirmado)
-                {
                    SS_RespuestaIntMul = null;
                     SS_AlumnoCarga = null;
                     SS_UsuarioCarga = null;
                     SS_FechaFin = string.Empty;
+
                     CargarDatos();
+
                     if (SS_AlumnoCarga == null || SS_UsuarioCarga == null ||SS_RespuestaIntMul == null || SS_FechaFin == string.Empty)
                     {
                         redirector.GoToHomePage(false);
                     }
+                    else { 
 
-                    ResultadoPruebaInteligenciasMultiplesRpt report = new ResultadoPruebaInteligenciasMultiplesRpt(this.SS_AlumnoCarga, this.SS_UsuarioCarga, SS_RespuestaIntMul, this.SS_FechaFin);
-                    rptVAlumnos.PageByPage = false;
-                    rptVAlumnos.Report = report;
-                }
-                else
-                    redirector.GoToHomeAlumno(true);
-            }
-            catch (Exception ex)
-            {
-                LoggerHlp.Default.Error(this, ex);
-                throw ex;
-            }
+                         ResultadoPruebaInteligenciasMultiplesRpt report = new ResultadoPruebaInteligenciasMultiplesRpt(this.SS_AlumnoCarga, this.SS_UsuarioCarga, this.SS_RespuestaIntMul, this.SS_FechaFin);
+                         rptVAlumnos.PageByPage = false;
+                         rptVAlumnos.Report = report;
+                    }
+
+      
+
         }
         #endregion
 
@@ -147,17 +135,19 @@ namespace POV.Web.PortalSocial.PortalAlumno.Reportes
             // Para obtener intereses
             //GrupoCicloEscolar grupoCicloEscolar = userSession.CurrentGrupoCicloEscolar;
             //Contrato contrato = userSession.Contrato;
+            Alumno alumnoEstudiante = new Alumno();//InterfaceToFiltroAlumno();
             ContratoCtrl contratoCtrl = new ContratoCtrl();
             List<PruebaContrato> pruebas = contratoCtrl.RetrievePruebasAsignadoContrato(dctx, userSession.Contrato, new CicloContrato { CicloEscolar = userSession.CurrentGrupoCicloEscolar.CicloEscolar });
 
             var pruebaDinamica = new PruebaDinamica();
 
             // Datos del alumno
-            Alumno alumno = alumnoCtrl.LastDataRowToAlumno(alumnoCtrl.Retrieve(dctx, new Alumno { AlumnoID = userSession.CurrentAlumno.AlumnoID }));
+            Alumno alumno = alumnoCtrl.LastDataRowToAlumno(alumnoCtrl.Retrieve(dctx, alumnoEstudiante));
             SS_AlumnoCarga = alumno;
 
             // Datos de Usuario
-            Usuario usuario = usuarioCtrl.LastDataRowToUsuario(usuarioCtrl.Retrieve(dctx, new Usuario { UsuarioID = userSession.CurrentUser.UsuarioID }));
+            Usuario usuarioAlumno = licenciaEscuelaCtrl.RetrieveUsuario(ConnectionHelper.Default.Connection, new Alumno { AlumnoID = alumno.AlumnoID, Curp = alumno.Curp });
+            Usuario usuario = usuarioCtrl.LastDataRowToUsuario(usuarioCtrl.Retrieve(dctx, usuarioAlumno));
             SS_UsuarioCarga = usuario;
 
             #region Pruebas
